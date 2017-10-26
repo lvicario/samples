@@ -1,0 +1,6 @@
+/**
+ * Styles specific for Thai
+ */
+ 
+.view-jackpot .view-header .jackpot-header {background: url("../../images/jackpot-header-th.jpg") no-repeat !important;}
+.view-game-list .view-header .games-menu li a {font-size: 12px !important;}
