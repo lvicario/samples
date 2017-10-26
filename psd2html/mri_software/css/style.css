@@ -1,0 +1,237 @@
+
+/* CSS RESETS ================================= */
+html, body, div, span, applet, object, iframe,  h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin: 0; padding: 0; border: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline;}
+table						{border-collapse: collapse; border-spacing: 0;}
+caption, th, td				{text-align: left; font-weight: normal;}
+table, td, th				{vertical-align: middle;}
+a img						{border:none;}
+
+@font-face {
+    font-family: 'TradeGothicLTStdRegular';
+    src: url('../type/tradegothicltstd-webfont.eot');
+    src: url('../type/tradegothicltstd-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../type/tradegothicltstd-webfont.woff') format('woff'),
+         url('../type/tradegothicltstd-webfont.ttf') format('truetype'),
+         url('../type/tradegothicltstd-webfont.svg#TradeGothicLTStdRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TradeGothicLTStdBold';
+    src: url('../type/tradegothicltstd-bd2-webfont.eot');
+    src: url('../type/tradegothicltstd-bd2-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../type/tradegothicltstd-bd2-webfont.woff') format('woff'),
+         url('../type/tradegothicltstd-bd2-webfont.ttf') format('truetype'),
+         url('../type/tradegothicltstd-bd2-webfont.svg#TradeGothicLTStdBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TradeGothicLTStdCnBold';
+    src: url('../type/tradegothicltstd-bdcn20-webfont.eot');
+    src: url('../type/tradegothicltstd-bdcn20-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../type/tradegothicltstd-bdcn20-webfont.woff') format('woff'),
+         url('../type/tradegothicltstd-bdcn20-webfont.ttf') format('truetype'),
+         url('../type/tradegothicltstd-bdcn20-webfont.svg#TradeGothicLTStdCnBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* GLOBAL STYLE ================================ */
+body						{font: normal 14px 'TradeGothicLTStdRegular', Arial, sans-serif; line-height: 19.5px; text-decoration: none; text-align: center; color: #666666; background: #fff; margin: 0; padding: 0;}
+a							{text-decoration: none; color: #004B85; outline: none;}
+a:hover						{color: #006CBF;}
+h1, h2, h3, h4, h5, h6, p,
+ul, table					{margin: 0 0 1em;}
+h1, h2, h3, h4, h5, h6		{font-family: 'TradeGothicLTStdBold'; font-weight: normal; color: #004b85; line-height: normal; letter-spacing: -1px;}
+h1							{font-size: 36px;}
+h2							{font-size: 36px;}
+h3							{font-size: 24px; font-family: 'TradeGothicLTStdCnBold';}
+h4							{font-size: 18px;}
+h5							{font-size: 16px;}
+h6							{font-size: 14px;}
+input[type="text"]			{padding: 6px 8px; border: 1px solid #cdcdcd; font-family: Arial, Helvetica, sans-serif; color: #ccc; font-size: 14px;}
+input[type="submit"]		{padding: 2px 15px;  background: #00599f; border: none; font-family: 'TradeGothicLTStdBold'; color: #fff; font-size: 16px; text-align: center; text-transform: uppercase;}
+/*hr							{clear: both; height: 1px; margin: 0 0 1em; color: #d3d3d3; background-color: #d3d3d3;  border: 0 none;}*/
+
+/* Added style for Sandbox */
+p							{clear: both;}
+.aligncenter 				{display:block; margin:0 auto 10px; }
+.alignleft 					{float:left; margin: 0 20px 10px 0;}
+.alignright					{float:right; margin: 0 0 10px 20px;}
+
+blockquote					{margin: 1em;}
+strong						{font-weight: normal; font-family: 'TradeGothicLTStdBold';}
+em,dfn						{font-style: italic;}
+dfn							{font-weight: bold;}
+sup, sub					{line-height: 0;}
+
+abbr, 
+acronym						{border-bottom: 1px dotted #666;}
+address						{margin: 0 0 1em; font-style: italic;}
+del							{color:#666;}
+
+pre							{margin: 1em 0; white-space: pre;}
+pre,code,tt					{font: 1em 'andale mono', 'lucida console', monospace; line-height: 1.5em;}
+
+
+li ul, 
+li ol						{margin:0 1em;}
+ul, ol						{margin: 0 1em 1em 1em;}
+
+ul							{list-style-type: disc;}
+ol							{list-style-type: decimal;}
+
+dl							{margin: 0 0 1em 0;}
+dl dt						{font-weight: bold;}
+dd							{margin-left: 1em;}
+
+/* UTILITIES =================================== */
+.clearfix:after					{content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+.clearfix						{overflow: hidden;}
+* html .clearfix				{height: 1%;}
+
+.clear							{clear: both;}
+.center							{text-align: center;}
+
+/* MAIN LAYOUT STYLE ===================================== */
+#wrapper 						{width: 950px; margin: 0 auto; padding: 0 37px; border-left: 1px solid #b9b9b9; border-right: 1px solid #b9b9b9; text-align: left;}
+#wrapper						{-webkit-box-shadow:0px 0px 20px 0px #696969; -moz-box-shadow:0px 0px 20px 0px #696969; -o-box-shadow:0px 0px 20px 0px #696969; -ms-box-shadow:0px 0px 20px 0px #696969; box-shadow:0px 0px 20px 0px #696969;}
+#header							{height: 168px; margin-bottom: 28px; position: relative;}
+#content						{}
+.main							{float: left; width: 649px;}
+.sidebar						{float: right; width: 265px; margin: 0; list-style-type: none;}
+#footer							{padding: 1px 0; clear: both;}
+
+/* HEADER ===================================== */
+#header	h1								{margin: 0;}
+#header	h1 a							{width: 132px; height: 85px; background: url(../images/logo.png) no-repeat; text-indent: -9999px; position: absolute; top: 22px; left: 0px;}
+#header	.slogan							{width: 230px; position: absolute; top: 37px; left: 172px;}
+#header	.slogan strong					{display: block; margin-bottom: 5px; font-family: 'TradeGothicLTStdCnBold'; color: #004b85; font-size: 24px; line-height: 24.72px; letter-spacing: -0.5px;}
+#header	.slogan span					{font-family: 'TradeGothicLTStdBold'; color: #4e5a62;}
+.right-col								{position: absolute; top: 60px; right: 0;}
+.right-col .searchform					{float: left;}
+.right-col .searchform .txt				{display: inline-block; width: 21px; height: 21px; background: url(../images/magnifying_glass.png) no-repeat; text-indent: -9999px; vertical-align: middle;}
+.right-col .searchform #s				{width: 194px; height: 20px; padding: 0px 3px; border: 1px solid #c5d6e3; font-family: 'TradeGothicLTStdRegular'; color: #666; vertical-align: middle;}
+.right-col .searchform #searchsubmit	{width: 19px; height: 22px; margin-left: -5px; padding: 0; background: #fff url(../images/submit_btn_arrow.png) no-repeat center center; border: 1px solid #c5d6e3; border-left: none; text-indent: -9999px; cursor: pointer; vertical-align: middle;}
+.right-col .addthis_toolbox				{float: left; width: 92px; height: 29px; margin: -7px 9px 0 15px; padding: 7px 15px 0; border-left: 1px solid #ccc; border-right: 1px solid #ccc;}
+.right-col .addthis_toolbox a			{margin-left: 2px;}
+.right-col .addthis_toolbox a.at300m	{display: none;}
+.right-col .my-mri						{float: right; clear: none; margin: -14px 0 0;}
+.right-col .my-mri a					{display: block; width: 81px; height: 51px; background: url(../images/logo_my_mri.png) no-repeat; text-indent: -9999px;}
+/* Main Nav */
+.main-nav											{}
+.main-nav .menu										{width: 950px; height: 31px; margin: 0; padding: 0; background: #004b85; font-family: 'TradeGothicLTStdBold'; text-align: right; list-style-type: none; position: absolute; top: 137px;}
+.main-nav .menu .main-nav-item						{display: inline;}
+.main-nav .menu .main-nav-tab						{display: inline-block; height: 31px; line-height: 31px; padding: 0 12px; color: #fff; font-size: 14px; text-transform: uppercase;}
+.main-nav .menu .main-nav-item-active .main-nav-tab	{background-color: #c9d757; color: #003d6e;}
+.main-nav .menu .main-nav-dd						{display: none; padding: 10px; background: #2672ad; background: rgba(0,89,159,0.85); text-align: left; position: absolute; top: 31px; left: 0; z-index:1000;}
+.main-nav .menu .main-nav-item-active .main-nav-dd	{display: block;}
+.main-nav .menu .main-nav-dd ul						{margin: 0; list-style-type: none;}
+.main-nav .menu .main-nav-dd ul li					{}
+.main-nav .menu .main-nav-dd ul li a				{color: #fff; text-transform: uppercase; line-height: 23px;}
+.main-nav .menu .main-nav-dd ul li a:hover			{color: #daeb5f;}
+
+/* MAIN ===================================== */
+.post-header					{padding: 4px 0 21px;}
+.post-header h2					{margin: 0 0 2px;}
+.post-header p					{font-size: 22px;}
+
+.post-thumb						{margin-bottom: 38px;}
+
+
+/* SIDEBAR ===================================== */
+.widget							{margin: 0 0 40px; padding: 1px 15px; font-family: 'TradeGothicLTStdBold';}
+.widget h3						{margin-bottom: 18px; padding-bottom: 18px; font-family: 'TradeGothicLTStdBold'; font-size: 18px; text-transform: uppercase;}
+.side-form						{padding: 20px 23px; background: #f8f8f8; border: 1px solid #ccc; text-align: right;}
+.side-form h3					{margin: 0; text-align: left;}
+.side-form input[type="text"]	{width: 197px; margin-bottom: 10px;}
+.side-form input[type="submit"]	{margin-top: 9px; cursor: pointer;}
+.side-info						{}
+.side-info h3					{border-bottom: 2px solid #e4e4e4;}
+.side-info p					{margin-bottom: 22px;}
+.side-info p span				{display: block; margin-bottom: 5px; color: #006cbf; font-size: 12px; text-transform: uppercase;}
+.side-info p a					{cursor: pointer;}
+.side-info .more				{display: block; height: 48px; line-height: 48px; padding-left: 12px; background: #00599f url(../images/more_arrow_box.png) no-repeat right center; color: #fff; font-size: 16px; text-transform: uppercase;}
+.side-info .more:hover			{background-color: #002f56;}
+
+/* FOOTER ===================================== */
+#footer h4							{color: #006cbf; font-size: 14px; text-transform: uppercase; letter-spacing: normal;}
+#footer .foot-one					{margin-top: 40px; padding: 45px 0 34px; border-top: 2px solid #e4e4e4; overflow: hidden;}
+#footer .foot-one .col				{float: left; width: 160px; margin-left: 37px;}
+#footer .foot-one .col:first-child	{margin-left: 0;}
+#footer .foot-one .col ul			{margin: 0 0 1em; list-style-type: none;}
+#footer .foot-one .col ul li		{}
+#footer .foot-one .col ul li a		{}
+#footer .foot-two					{margin: 0 -37px; padding: 13px 37px; background: #ecf1f5; position: relative;}
+#footer .foot-two .info				{}
+#footer .foot-two .info h4,
+#footer .foot-two .info p			{margin: 0; color: #003d6d;}
+#footer .foot-two .right-col		{top: 31px; right: 37px;}
+#footer .foot-three					{padding: 58px 0 55px; color: #1f7ec7; font-size: 12px; text-align: center; line-height: 17.5px;}
+#footer .foot-three h4				{margin: 0; color: #004b85;}
+
+/* HOMEPAGE ===================================== */
+.home .main							{width: 662px;}
+.home #footer .foot-one				{margin-top: 0; border-top: none;}
+
+.main .bx-wrapper						{height: 323px; margin-bottom: 48px;}
+.main .bx-wrapper .bx-window			{}
+.main .bx-wrapper .bx-captions			{width: 465px; padding: 15px 20px; background: #2672ad; background: rgba(0,75,133,0.5); font-family: 'TradeGothicLTStdCnBold'; color: #fff; font-size: 24px; line-height: 29px; position: absolute; bottom: 34px;}
+.main .bx-wrapper .bx-pager				{position: absolute; bottom: 2px; right: 19px;}
+.main .bx-wrapper .bx-pager a			{display: inline-block; width: 17px; height: 17px; margin: 0 0 0 -3px; background: url(../images/slider_control.png) no-repeat; text-indent: -9999px; cursor: pointer;}
+.main .bx-wrapper .bx-pager a:hover,
+.main .bx-wrapper .bx-pager a.pager-active {background-position: left bottom;}
+.slideshow								{margin: 0;}
+
+.featured								{margin: 0; list-style-type: none;}
+.featured li							{float: left; width: 200px; margin-left: 30px;}
+.featured li:first-child				{margin-left: 0;}
+.featured li h2							{margin-bottom: 14px; font-family: 'TradeGothicLTStdCnBold'; font-size: 24px;}
+.featured li p							{}
+.featured li p a						{font-family: 'TradeGothicLTStdBold';}
+
+.sol-slider								{clear: both; margin: 0 -37px; padding: 29px 20px 13px 50px; background: #ecf1f5;}
+.sol-slider h2							{margin-bottom: 28px; font-family: 'TradeGothicLTStdCnBold';}
+.sol-slider ul							{width: 954px; margin: 0; padding: 0; list-style-type: none; overflow: hidden;}
+.sol-slider ul li						{float: left; width: 315px;}
+.sol-slider ul li:first-child			{}
+.sol-slider ul li div					{margin-bottom: 26px; margin-right: 35px; overflow: hidden;}
+.sol-slider ul li div h3				{margin-left: 142px; margin-bottom: 0; font-family: 'TradeGothicLTStdBold'; font-size: 18px;}
+.sol-slider ul li div p					{margin-left: 142px; margin-bottom: 0; clear: none;}
+.sol-slider ul li div p a				{}
+.sol-slider ul li div img				{float: left;}
+.sol-slider .bx-prev,
+.sol-slider .bx-next					{display: block; width: 35px; height: 74px; background: #004b85 no-repeat center center; text-indent: -9999px; position: absolute; top: 50px;}
+.sol-slider .bx-prev					{background-image: url(../images/solution_arrow_prev.png); left: -50px;}
+.sol-slider .bx-next					{background-image: url(../images/solution_arrow_next.png); right: -29px;}
+.sol-slider .bx-prev:hover,
+.sol-slider .bx-next:hover				{background-color: #002e53;}
+
+.home-info							{margin-bottom: 27px; padding: 10px 35px 12px; background: #004b85; color: #fff; position: relative;}
+.home-info .idTabs					{margin: 0; list-style-type: none;}
+.home-info .idTabs li				{display: inline;}
+.home-info .idTabs li a				{display: inline-block; margin-right: 5px; margin-bottom: 15px; padding-bottom: 0; border-bottom: none; font-size: 14px; padding: 5px 10px; color: #fff; text-transform: uppercase;}
+.home-info .idTabs li a:hover,
+.home-info .idTabs li a.selected	{background: #c9d757; color: #004b85;}
+.slides								{margin: 0; list-style-type: none;}
+.slides li							{}
+.slides li p						{margin-bottom: 15px;}
+.slides li p span					{display: block; margin-bottom: 5px; color: #dbec60; font-size: 12px; text-transform: uppercase;}
+.slides li p a						{color: #fff;}
+.slides li .more					{color: #dbec60; font-size: 12px; text-transform: uppercase;}
+.slides li .more:hover				{color: #fff;}
+.home-info .bx-prev,
+.home-info .bx-next					{display: block; width: 17px; height: 52px; background: #002e53 no-repeat center center; text-indent: -9999px; position: absolute; top: 29px;}
+.home-info .bx-prev					{background-image: url(../images/news_event_prev.png); left: -35px;}
+.home-info .bx-next					{background-image: url(../images/news_event_next.png); right: -35px;}
+.home-info .bx-prev:hover,
+.home-info .bx-next:hover			{background-color: #00599f;}
+
+/* IE7 Fixes */
+*+html .right-col							{width: 490px;}
+*+html .right-col .searchform .txt			{float: left; display: inline; margin-right: 4px;}
+*+html .right-col .searchform #s			{float:  left; display: inline;}
+*+html .right-col .searchform #searchsubmit	{float:  left; display: inline; margin-left: -1px; width: 30px;}
+*+html .home-info							{padding-top: 0;}
+*+html .home-info .idTabs					{margin-top: -7px;}

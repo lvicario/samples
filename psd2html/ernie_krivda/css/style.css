@@ -1,0 +1,183 @@
+
+/* CSS RESETS ================================= */
+html, body, div, span, applet, object, iframe,  h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin: 0; padding: 0; border: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline;}
+table						{border-collapse: collapse; border-spacing: 0;}
+caption, th, td				{text-align: left; font-weight: normal;}
+table, td, th				{vertical-align: middle;}
+a img						{border:none;}
+
+@font-face {
+    font-family: 'GothamBook';
+    src: url('../type/gotham-book-webfont.eot');
+    src: url('../type/gotham-book-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../type/gotham-book-webfont.woff') format('woff'),
+         url('../type/gotham-book-webfont.ttf') format('truetype'),
+         url('../type/gotham-book-webfont.svg#GothamBook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GothamBookItalic';
+    src: url('../type/gotham-bookitalic-webfont.eot');
+    src: url('../type/gotham-bookitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../type/gotham-bookitalic-webfont.woff') format('woff'),
+         url('../type/gotham-bookitalic-webfont.ttf') format('truetype'),
+         url('../type/gotham-bookitalic-webfont.svg#GothamBookItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GothamMedium';
+    src: url('../type/gotham-medium-webfont.eot');
+    src: url('../type/gotham-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../type/gotham-medium-webfont.woff') format('woff'),
+         url('../type/gotham-medium-webfont.ttf') format('truetype'),
+         url('../type/gotham-medium-webfont.svg#GothamMedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GothamMediumItalic';
+    src: url('../type/gotham-mediumitalic-webfont.eot');
+    src: url('../type/gotham-mediumitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../type/gotham-mediumitalic-webfont.woff') format('woff'),
+         url('../type/gotham-mediumitalic-webfont.ttf') format('truetype'),
+         url('../type/gotham-mediumitalic-webfont.svg#GothamMediumItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* GLOBAL STYLE ================================ */
+body						{font: normal 16px/24px Arial, Helvetica, sans-serif; letter-spacing: -.25px; text-decoration: none; text-align: center; color: #fff; background: #101010 url(../images/bg_main.jpg) no-repeat center top; margin: 0; padding: 0;}
+a							{color: #f19023; text-decoration: none; outline: none;}
+a:hover						{text-decoration: underline;}
+h1, h2, h3, h4, h5, h6, p,
+ul, table					{margin: 18px 0;}
+h1							{font-size: 24px;}
+h2							{font-size: 18px;}
+h3							{font-size: 14px;}
+h4, h5, h6					{font-size: 12px;}
+strong						{font-weight: bold;}
+em							{font-style: italic;}
+
+/* UTILITIES =================================== */
+.clearfix:after					{visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0;}
+* html .clearfix				{zoom: 1;} /* IE6 */
+*+html .clearfix				{zoom: 1;} /* IE7 */
+
+.clear							{clear: both;}
+.center							{text-align: center;}
+
+/* WRAPPER ===================================== */
+#wrapper 						{width: 1240px; padding-top: 13px; text-align: left; background: url(../images/light_effect.png) no-repeat 500px 0; margin: 0 auto;}
+.col-one						{float: left; display: inline;}
+.col-two						{float: right; display: inline;}
+
+ul.top-nav						{width: 1178px; margin: 0; text-align: right; list-style-type: none;}
+ul.top-nav li					{display: inline;}
+ul.top-nav li a					{display: inline-block; padding: 3px 12px; font-size: 14px; color: #fff; background-color: #373838; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; box-shadow: 3px 3px 3px rgba(0,0,0,0.08), -3px 3px 3px rgba(0,0,0,0.08), inset 0px 4px 4px rgba(0,0,0,0.2);}
+ul.top-nav li a:hover			{margin: -2px; margin-top: 0; background-color: #000; text-decoration: none; border: 2px solid #292929; border-top: none;}
+
+/* CONTENT TOP ===================================== */
+#content-top						{padding-top: 1px;}
+#content-top .records				{text-align: center;}
+#content-top .records a				{display: inline-block; width: 121px; height: 32px; background: url(../images/capri_records_ltd.png) no-repeat; text-indent: -9999px;}
+#content-top .intro					{margin-bottom: 35px; padding: 0 95px; text-align: center; font-family: 'GothamMedium';}
+#content-top .downbeat				{position: absolute; bottom: -58px;}
+#content-top .social				{list-style-type: none; position: absolute; bottom: -40px; right: 0;}
+#content-top .social li				{margin-bottom: 12px;}
+#content-top .social li a			{}
+#content-top .social li a img		{opacity: 0.25; filter: alpha(opacity=25);}
+#content-top .social li a:hover img	{opacity: 1; filter: alpha(opacity=100);}
+
+#content-top .col-one				{width: 545px;}
+#content-top .col-two				{width: 540px; margin-right: 60px; height: 548px; position: relative;}
+
+/* SLIDESHOW */
+.HomepageSlider						{width: 545px;}
+.jflow-content-slider				{width: 545px; height: 450px; padding-top: 1px; margin-bottom: 20px; background: url(../images/big_cd.png) no-repeat 70% 50%; position: relative;}
+.HomepageSlider #jFlowSlide			{height: 450px; border: 3px solid #fff;}
+.HomepageSlider #slides				{}
+.HomepageSlider .jFlowSlideContainer{overflow: hidden !important;}
+.HomepageSlider .slide-wrapper		{position: relative;}
+.HomepageSlider #myController		{position: absolute; bottom: -35px; right: 298px;}
+.HomepageSlider .jFlowControl		{float: left; display: inline; width: 8px; height: 9px; margin-right: 5px; background: url(../images/slider_bullet.png) no-repeat center bottom; text-indent: -9999px; cursor: pointer;}
+.HomepageSlider .jFlowControl:hover,
+.HomepageSlider .jFlowSelected		{background-position: center top;}
+
+.logo								{}							
+.logo h1							{margin: 0;}
+.logo h1 a							{display: block; width: 487px; height: 87px; background: url(../images/logo.png) no-repeat; text-indent: -9999px;}
+.logo p								{margin: 2px 5px 27px 0; font: normal 40px 'GothamMedium'; color: #3562a8; text-align: right;}
+
+/* Testimonial */
+.testimonial						{width: 510px; height: 115px; padding-top: 1px; position: relative;}
+.testimonial #jFlowSlide2			{}
+.testimonial #slides2				{}
+.testimonial .jFlowSlideContainer	{overflow: hidden !important;}
+.testimonial .slide-wrapper2		{position: relative;}
+.testimonial #myController2			{height: 8px; position: absolute; bottom: 0px; right: 0;}
+.testimonial .jFlowControl2			{float: left; display: inline; width: 8px; height: 8px; margin-right: 5px; background: url(../images/slider_bullet_2.png) no-repeat center bottom; text-indent: -9999px; cursor: pointer;}
+.testimonial .jFlowControl2:hover,
+.testimonial .jFlowSelected			{background-position: center top !important;}
+
+.testimonial blockquote				{margin-right: -20px; margin-bottom: 10px; font-size: 15.5px; font-family: 'GothamBookItalic'; background: url(../images/quote_left.png) no-repeat 0 0;}
+.testimonial blockquote span		{padding-left: 35px; background: url(../images/quote_right.png) no-repeat 100% 5%; padding-right: 30px;}
+.testimonial cite					{float: right; display: inline; font-size: 15.5px; font-family: 'GothamBook'; line-height: 18px;}
+.testimonial cite span				{display: block; padding-left: 13px; color: #3562a8;}
+
+.feat-song							{width: 535px; position: absolute; bottom: -5px; left:  5px;}
+.feat-song .thumb					{float: left; display: inline; width: 162px; margin: 0 40px 0 0;}
+.feat-song .thumb img				{width: 156px; height: 153px; border: 3px solid #fff;}
+.feat-song ol						{float: left; display: inline; width: 320px; margin: -5px 0 20px; font-size: 13px; font-family: 'GothamMedium'; color: #f19023; list-style-type: decimal;}
+.feat-song ol li					{background: url(../images/dotted_white_line.png) repeat-x 0% 70%;} 
+.feat-song ol li a.title			{}
+.feat-song ol li span				{color: #fff; font-size: 9.8px; padding: 0 5px;}
+.feat-song ol li strong				{color: #fff;}
+.feat-song ol li a.btn				{float: right; display: inlne; width: 17px; height: 17px; margin-top: 3px; padding-left: 10px; background: #191919 url(../images/btn_play.png) no-repeat right center; text-indent: -9999px;}
+.feat-song ol li a.btn:hover		{background-image: url(../images/btn_play_hover.png); text-decoration: none;}
+.feat-song ol li a.title,
+.feat-song ol li span,
+.feat-song ol li strong				{background: #191919;}
+.feat-song p.buy					{clear: both; font-size: 14px; font-family: 'GothamBook'; color: #f19023;}
+.feat-song p.buy a					{margin-left: 20px;}
+.feat-song p.buy img				{vertical-align: middle; opacity: 0.25; filter: alpha(opacity=25);}
+.feat-song p.buy a:hover img		{opacity: 1; filter: alpha(opacity=100);}
+
+/* CONTENT MAIN ===================================== */
+#content-main						{clear: both; margin-top: 40px;}
+#content-main .col-one				{width: 545px;}
+#content-main .col-two				{width: 600px;}
+#content-main .box					{padding: 1px 15px; background-color: #1a1a1a; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px;}
+#content-main h2					{font: normal 22px 'GothamBook'; letter-spacing: -1px;}
+#content-main h2 q,
+#content-main h2 span 				{color: #3562a8;}
+.more-btn							{margin-bottom: 30px; text-align: right;}
+.more-btn a							{display: inline-block; width: 105px; height: 27px; text-align: center; color: #fff; font: normal 14px/25px 'GothamBook'; letter-spacing: -.5px; background: url(../images/btn_more_info.png) no-repeat;}
+#content-main .col-one .image		{float: left; display: inline; margin: -5px 10px 0 0;}
+#content-main .col-two .video		{width: 521px; margin-left: 35px;}
+#content-main .col-two .video-box	{border: 12px solid #fff;}
+
+#content-main .band					{padding-bottom: 20px;}
+#content-main .band a				{display: block; padding: 12px 10px; overflow: hidden;}
+#content-main .band a:hover			{background-color: #101010; text-decoration: none;}
+#content-main .band a:hover img		{opacity: 1; filter: alpha(opacity=100);}
+#content-main .band a img			{float: left; display: inline; opacity: 0.4; filter: alpha(opacity=40);}
+#content-main .band a h3			{margin: 0 0 0 100px; font: normal 20px 'GothamBook'; color: #da8321;}
+#content-main .band a p				{margin: 0 0 0 100px; color: #fff;}
+
+#content-main .about-cpac			{margin-top: 80px; padding: 0 70px 0 15px; font-size: 14px;}
+#content-main .about-cpac .more-btn	{margin-right: -70px;}
+
+/* FOOTER 1 ===================================== */
+#footer								{clear: both; padding: 70px 0 30px; font-size: 14px; text-align: center;}
+#footer a							{color: #fff;}
+#footer a:hover						{color: #DA8321; text-decoration: none;}
+
+/* IE7 Fix */
+*+html #footer						{padding-top: 15px;}
+*+html .feat-song ol				{margin-bottom: 10px;}
+*+html .feat-song ol li a.btn		{margin-top: -20px;}
+*+html .feat-song ol li a.title		{display: inline-block; margin-left: -10px; padding-left: 10px; background-color: #1d1d1c;}
+#content-top .records a				{display: block; margin-left: auto; margin-right: auto;}
+

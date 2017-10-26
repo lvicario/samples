@@ -1,0 +1,234 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Homepage</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="screen, projection" />
+<script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.flow.1.2.auto.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#myController").jFlow({
+		slides: "#slides",
+		controller: ".jFlowControl", // must be class, use . sign
+		slideWrapper : "#jFlowSlide", // must be id, use # sign
+		selectedWrapper: "jFlowSelected",  // just pure text, no sign
+		auto: true,		//auto change slide, default true
+		width: "450px",
+		height: "446px",
+		duration: 600,  // time in miliseconds to transition one slide
+		interval: 5000, // this is the amount of milliseconds before the switch happens
+		prev: ".jFlowPrev", // must be class, use . sign
+		next: ".jFlowNext" // must be class, use . sign
+	});
+	$("#myController2").jFlow({
+		slides: "#slides2",
+		controller: ".jFlowControl2", // must be class, use . sign
+		slideWrapper : "#jFlowSlide2", // must be id, use # sign
+		selectedWrapper: "jFlowSelected",  // just pure text, no sign
+		auto: true,		//auto change slide, default true
+		width: "510px",
+		height: "100px",
+		duration: 600,  // time in miliseconds to transition one slide
+		interval: 5000, // this is the amount of milliseconds before the switch happens
+		prev: ".jFlowPrev", // must be class, use . sign
+		next: ".jFlowNext" // must be class, use . sign
+	});
+});
+</script>
+</head>
+
+<body>
+<div id="wrapper">
+	<ul class="top-nav">
+        <li><a href="#">visit erniekrivda.com</a></li>
+        <li><a href="#">contact</a></li>
+    </ul>
+    <div id="content-top">
+    	<p class="records"><a href="#">CAPRI Records Ltd.</a></p>
+        <p class="intro">Jazz tenor sax legend <a href="#">Ernie Krivda</a> &amp; Grammy-winning producer <a href="#">Michael Seifert</a> pay tribute to fellow Cleveland icon <a href="#">Harvey Pekar</a> by bringing new energy to Old School Jazz on Blues for Pekar. </p>
+        <div class="col-one">
+        	<div class="HomepageSlider">
+                <div class="jflow-content-slider">
+                    <div id="slides">
+                        <div class="slide-wrapper">
+                            <img src="images/slide_1.jpg" width="450" height="446" alt="" />
+                        </div>
+                        <div class="slide-wrapper">
+                            <img src="images/slide_1.jpg" width="450" height="446" alt="" />
+                        </div>
+                        <div class="slide-wrapper">
+                            <img src="images/slide_1.jpg" width="450" height="446" alt="" />
+                        </div>
+                        <div class="slide-wrapper">
+                            <img src="images/slide_1.jpg" width="450" height="446" alt="" />
+                        </div>
+                    </div>
+                    <div id="myController">
+                        <span class="jFlowControl">1</span>
+                        <span class="jFlowControl">2</span>
+                        <span class="jFlowControl">3</span>
+                        <span class="jFlowControl">4</span>
+                    </div>
+                    
+                    <a href="#" class="downbeat"><img src="images/downbeat.png" width="102" height="41" alt="" /></a>
+                    
+                    <ul class="social">
+                    	<li><a href="#"><img src="images/social_facebook.png" width="52" height="11" alt="" /></a></li>
+                        <li><a href="#"><img src="images/social_youtube.png" width="50" height="21" alt="" /></a></li>
+                        <li><a href="#"><img src="images/social_sonicbids.png" width="48" height="21" alt="" /></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-two">
+        	<div class="logo">
+            	<h1><a href="#">Ernie Krivda</a></h1>
+                <p>blues for pekar</p>
+			</div>
+            <div class="testimonial">
+                <div id="slides2">
+                    <div class="slide-wrapper2">
+                    	<blockquote><span>A great disc....some American MUSICAL Splendor in Pekar's  honor...a unique player that isn't like anyone else...</span></blockquote>
+                        <cite>&minus; Jeff Simon <span>Buffalo News</span></cite>
+					</div>
+                    <div class="slide-wrapper2">
+                    	<blockquote><span>A great disc....some American MUSICAL Splendor in Pekar's  honor...a unique player that isn't like anyone else...</span></blockquote>
+                        <cite>&minus; Jeff Simon <span>Buffalo News</span></cite>
+					</div>
+                    <div class="slide-wrapper2">
+                    	<blockquote><span>A great disc....some American MUSICAL Splendor in Pekar's  honor...a unique player that isn't like anyone else...</span></blockquote>
+                        <cite>&minus; Jeff Simon <span>Buffalo News</span></cite>
+					</div>
+                    <div class="slide-wrapper2">
+                    	<blockquote><span>A great disc....some American MUSICAL Splendor in Pekar's  honor...a unique player that isn't like anyone else...</span></blockquote>
+                        <cite>&minus; Jeff Simon <span>Buffalo News</span></cite>
+					</div>
+                    <div class="slide-wrapper2">
+                    	<blockquote><span>A great disc....some American MUSICAL Splendor in Pekar's  honor...a unique player that isn't like anyone else...</span></blockquote>
+                        <cite>&minus; Jeff Simon <span>Buffalo News</span></cite>
+					</div>
+                    <div class="slide-wrapper2">
+                    	<blockquote><span>A great disc....some American MUSICAL Splendor in Pekar's  honor...a unique player that isn't like anyone else...</span></blockquote>
+                        <cite>&minus; Jeff Simon <span>Buffalo News</span></cite>
+					</div>
+                    <div class="slide-wrapper2">
+                    	<blockquote><span>A great disc....some American MUSICAL Splendor in Pekar's  honor...a unique player that isn't like anyone else...</span></blockquote>
+                        <cite>&minus; Jeff Simon <span>Buffalo News</span></cite>
+					</div>
+                    <div class="slide-wrapper2">
+                    	<blockquote><span>A great disc....some American MUSICAL Splendor in Pekar's  honor...a unique player that isn't like anyone else...</span></blockquote>
+                        <cite>&minus; Jeff Simon <span>Buffalo News</span></cite>
+					</div>
+                    <div class="slide-wrapper2">
+                    	<blockquote><span>A great disc....some American MUSICAL Splendor in Pekar's  honor...a unique player that isn't like anyone else...</span></blockquote>
+                        <cite>&minus; Jeff Simon <span>Buffalo News</span></cite>
+					</div>
+                </div>
+                <div id="myController2">
+                    <span class="jFlowControl2">1</span>
+                    <span class="jFlowControl2">2</span>
+                    <span class="jFlowControl2">3</span>
+                    <span class="jFlowControl2">4</span>
+                    <span class="jFlowControl2">5</span>
+                    <span class="jFlowControl2">6</span>
+                    <span class="jFlowControl2">7</span>
+                    <span class="jFlowControl2">8</span>
+                    <span class="jFlowControl2">9</span>
+                </div>
+            </div>
+            <div class="feat-song">
+            	<div class="thumb"><img src="images/slide_1.jpg" width="450" height="446" alt="" /></div>
+                <ol>
+                	<li><a href="#" class="title">The End of a Love Affair</a><span>(Reading)</span><strong>10:37</strong><a href="#" class="btn">Play</a></li>
+                    <li><a href="#" class="title">More Than You Know</a><span>(Reading)</span><strong>10:37</strong><a href="#" class="btn">Play</a></li>
+                    <li><a href="#" class="title">Valse Hot</a><span>(Reading)</span><strong>10:37</strong><a href="#" class="btn">Play</a></li>
+                    <li><a href="#" class="title">Darn that Dream</a><span>(Reading)</span><strong>10:37</strong><a href="#" class="btn">Play</a></li>
+                    <li><a href="#" class="title">Fried Bananas</a><span>(Reading)</span><strong>10:37</strong><a href="#" class="btn">Play</a></li>
+                    <li><a href="#" class="title">One for Willie</a><span>(Reading)</span><strong>10:37</strong><a href="#" class="btn">Play</a></li>
+                    <li><a href="#" class="title">Blues for Pekar</a><span>(Reading)</span><strong>10:37</strong><a href="#" class="btn">Play</a></li>
+                </ol>
+                <p class="buy">Buy the album today at: <a href="#"><img src="images/logo_amazon.png" width="71" height="18" alt="" /></a><a href="#"><img src="images/logo_allmusic.png" width="51" height="18" alt="" /></a></p>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div><!-- END #content-top -->
+    <div id="content-main">
+    	<div class="col-one">
+        	<div class="box">
+            	<h2>What People Are Saying About <q>Blues for Pekar</q></h2>
+                <p class="image"><img src="images/about_blues_pekar.jpg" width="123" height="123" alt="" /></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at volutpa est.  Aenean at lectus et elit suscipit feugiat.  Nam quam dui, fauci bus et mollis vitae, facili sis non orci. In laoreet faucibus sapien eget luctus.. Alquam  laoreet consequat consectetur. Nullam ac felis erat, vel varius diam. Duis porta mattis dolor nec hendrerit.</p>
+                <p><strong>Nulla conditum molestie nisi</strong>, et tincidunt mauris luctus ac. Pellentesque in viverra ante. Ut nec tortor a turpis con sequat lobortis vel vitae augue. Proin semper, libero malesuada sodales commodo, turpis mauris pretium mi, vel porttitor quam nulla et lorem. Mauris pellentesque faucibus enim. Sed dictum viverra lorem, eget gravida purus sodales quis. Morbi iaculis dolor nulla, in mollis lorem. Praesent ullamcorper ante vitae neque gravida vestibulum. Nullam posuere sapien eget nibh rutrum pharetra. Aenean ut orci ante. Suspendisse potenti. Donec sed dapibus ligula.</p>
+                <p><strong>Nunc condimentum purus tortor</strong>. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec condimentum urna massa. Mauris auctor lacinia convallis. Nunc ac quam lacus, non faucibus arcu. Nunc nibh erat, laoreet et dignissim ut, luctus at odio. Maecenas  iaculis nunc, sed accumsan purus aliquam vitae. Cras et.</p>
+            </div>
+            <p class="more-btn"><a href="#">See More</a></p>
+            
+            <div class="box">
+            	<h2>About <span>Ernie</span></h2>
+                <p class="image"><img src="images/about_ernie.jpg" width="123" height="123" alt="" /></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at volutpa est.  Aenean at lectus et elit suscipit feugiat.  Nam quam dui, fauci bus et mollis vitae, facili sis non orci. In laoreet faucibus sapien eget luctus.. Alquam  laoreet consequat consectetur. Nullam ac felis erat, vel varius diam. Duis porta mattis dolor nec hendrerit.</p>
+                <p><strong>Nulla conditum molestie nisi</strong>, et tincidunt mauris luctus ac. Pellentesque in viverra ante. Ut nec tortor a turpis con sequat lobortis vel vitae augue. Proin semper, libero malesuada sodales commodo, turpis mauris pretium mi, vel porttitor quam nulla et lorem. Mauris pellentesque faucibus enim. Sed dictum viverra lorem, eget gravida purus sodales quis. Morbi iaculis dolor nulla, in mollis lorem. Praesent ullamcorper ante vitae neque gravida vestibulum. Nullam posuere sapien eget nibh rutrum pharetra. Aenean ut orci ante. Suspendisse potenti. Donec sed dapibus ligula.</p>
+                <p><strong>Nunc condimentum purus tortor</strong>. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec condimentum urna massa. Mauris auctor lacinia convallis. Nunc ac quam lacus, non faucibus arcu. Nunc nibh erat, laoreet et dignissim ut, luctus at odio. Maecenas  iaculis nunc, sed accumsan purus aliquam vitae. Cras et.</p>
+            </div>
+            <p class="more-btn"><a href="#">Go To Site</a></p>
+            
+            <div class="about-cpac">
+            	<h2>About the <span>CPAC Fellowship</span></h2>
+                <p>Vivera lorem, eget gravida purus sodales quis. Morbi iaculis dolor nulla, in mollis lorem. Praesent ullamcorper ante vitae neque gravida vestibulum. Nullam posuere sapien eget nibh rutrum pharetra. Aenean ut orci ante. Suspendisse potenti. Donec sed dapibus ligula.</p>
+                <p>Morbi varius consequat egestas. Aenean congue semper leo eu varius. Duis pulvinar porta eros, vel porttitor leo mollis sit amet. Etiam et est vitae sapien pellentesque pulvinar et nec leo. Proin leo eros, faucibus quis tristique ac, auctor eu odio. </p>
+                <p class="more-btn"><a href="#">Learn More</a></p>
+            </div>
+        </div>
+        
+        <div class="col-two">
+        	<h2>Behind the Scenes: Making of <q>Blues for Pekar</q></h2>
+            <p>Jazz sax legend Ernie Krivda narrates this video piece, which is dedicated to the life and memory of famous music critic, media personality, and longtime friend, American Splendor's Harvey Pekar.</p>
+            <div class="video">
+            	<div class="video-box"><img src="images/video_image.jpg" width="497" height="280" alt="" /></div>
+                <p class="more-btn"><a href="#">More Videos</a></p>
+			</div>
+            <div class="box">
+            	<h2>About <span>The Band</span></h2>
+                <div class="band">
+                	<a href="#">
+                    	<img src="images/about_ernie_krivda.png" width="80" height="80" alt="" />
+                        <h3>Ernie Krivda</h3>
+                        <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec condimentum urna massa. Mauris auctor lacinia convallis. Nunc ac quam lacus, non faucibus arcu. Nunc nibh erat, laoreet et dignissim ut, luctus at odio. </p>
+                   	</a>
+                    <a href="#">
+                    	<img src="images/about_claude_black.png" width="80" height="80" alt="" />
+                        <h3>Claude Black </h3>
+                        <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec condimentum urna massa. Mauris auctor lacinia convallis. Nunc ac quam lacus, non faucibus arcu. Nunc nibh erat, laoreet et dignissim ut, luctus at odio. </p>
+                    </a>
+                    <a href="#">
+                    	<img src="images/about_marion_hayden.png" width="80" height="79" alt="" />
+                        <h3>Marion Hayden</h3>
+                        <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec condimentum urna massa. Mauris auctor lacinia convallis. Nunc ac quam lacus, non faucibus arcu. Nunc nibh erat, laoreet et dignissim ut, luctus at odio. </p>
+                    </a>
+                    <a href="#">
+                    	<img src="images/about_renell_gonsalves.png" width="80" height="80" alt="" />
+                        <h3>Renell Gonsalves  </h3>
+                        <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec condimentum urna massa. Mauris auctor lacinia convallis. Nunc ac quam lacus, non faucibus arcu. Nunc nibh erat, laoreet et dignissim ut, luctus at odio. </p>
+                    </a>
+                    <a href="#">
+                    	<img src="images/about_sean_jones.png" width="80" height="80" alt="" />
+                        <h3>with Sean Jones </h3>
+                        <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec condimentum urna massa. Mauris auctor lacinia convallis. Nunc ac quam lacus, non faucibus arcu. Nunc nibh erat, laoreet et dignissim ut, luctus at odio. </p>
+                    </a>
+                    <a href="#">
+                    	<img src="images/about_dominick_farinacci.png" width="80" height="80" alt="" />
+                        <h3>and Dominick Farinacci</h3>
+                        <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec condimentum urna massa. Mauris auctor lacinia convallis. Nunc ac quam lacus, non faucibus arcu. Nunc nibh erat, laoreet et dignissim ut, luctus at odio. </p>
+                    </a>
+                </div>
+			</div>
+        </div>
+    </div><!-- END #content-main -->
+    
+    <div id="footer">&copy; 2011 <a href="#">Ernie Krivda</a> - Blues for Pekar, all rights reserved | site design &amp; development by <a href="#">Be Bold Advertising, LLC</a></div>
+    
+</div><!-- END #wrapper -->
+
+</body>
+</html>
