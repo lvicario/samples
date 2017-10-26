@@ -1,0 +1,180 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Homepage</title>
+<link href="css/styles.css" rel="stylesheet" type="text/css" />
+<link href="css/iselector.css" rel="stylesheet" type="text/css" />
+<link href="css/blue.css" rel="stylesheet" type="text/css" />
+<!--[if IE]><link href="ie.css" media="all" rel="stylesheet" type="text/css" /><![endif]-->
+<script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.flow.1.2.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#myController").jFlow({
+		slides: "#slides",
+		controller: ".jFlowControl", // must be class, use . sign
+		slideWrapper : "#jFlowSlide", // must be id, use # sign
+		selectedWrapper: "jFlowSelected",  // just pure text, no sign
+		auto: true,		//auto change slide, default true
+		width: "950px",
+		height: "359px",
+		duration: 600,  // time in miliseconds to transition one slide
+		interval: 5000, // this is the amount of milliseconds before the switch happens
+		prev: ".jFlowPrev", // must be class, use . sign
+		next: ".jFlowNext" // must be class, use . sign
+	});
+});
+</script>
+
+
+</head>
+
+<body>
+
+<div id="Container">
+    <div id="Outer">
+    	<div id="Header">
+        	<div id="Logo"><div id="LogoContainer"><h1><a href="#">Baby Beanbags</a></h1></div></div>
+            <div id="TopMenu">
+            	<p>Free Delivery Australia Wide</p>
+            	<ul>
+                	<li class="First"><a href="#">Shipping &amp; Delivery</a></li>
+                    <li><a href="#">Buy Online</a></li>
+                    <li><a href="#">Log in</a></li>
+                </ul>
+            </div>
+            <div id="MyCart" class="CartLink"><a href="shopping_cart.htm">View Cart</a><span>My Cart : 0 items</span></div>
+            <div id="Menu">
+            	<ul>
+                	<li class="First ActivePage"><a href="index.htm"><span>Home</span></a></li>
+                    <li><a href="our_collection.htm"><span>Our Collection</span></a></li>
+                    <li><a href="#"><span>Accessories</span></a></li>
+                    <li><a href="benefits.htm"><span>Benefits</span></a></li>
+                    <li><a href="testimonials.htm"><span>Testimonials</span></a></li>
+                    <li><a href="care.htm"><span>Care &amp; Tips</span></a></li>
+                    <li><a href="faq.htm"><span>FAQs</span></a></li>
+                    <li><a href="stockist.htm"><span>Stockists</span></a></li>
+                    <li><a href="about_us.htm"><span>About Us</span></a></li>
+                    <li><a href="contact_us.htm"><span>Contact Us</span></a></li>
+                    <li><a href="blog.htm"><span>Blog</span></a></li>
+                </ul>
+            </div>
+        </div><!-- END #Header -->
+        
+        <div id="Wrapper">
+            <div id="LayoutColumn1" class="Content Widest">
+                <div class="Block Moveable Panel HomepageSlider">
+                    <div class="jflow-content-slider">
+                        <div id="slides">
+                            <div class="slide-wrapper">
+                                <span class="btn"><a href="#" class="collection">View Collection</a><a href="#" class="buy">Buy Now</a></span>
+                                <img src="images/slider_img_1.jpg" width="950" height="359" alt="" />
+                            </div>
+                            <div class="slide-wrapper">
+                                <span class="btn"><a href="#" class="collection">View Collection</a><a href="#" class="buy">Buy Now</a></span>
+                                <img src="images/slider_img_1.jpg" width="950" height="359" alt="" />
+                            </div>
+                            <div class="slide-wrapper">
+                                <span class="btn"><a href="#" class="collection">View Collection</a><a href="#" class="buy">Buy Now</a></span>
+                                <img src="images/slider_img_1.jpg" width="950" height="359" alt="" />
+                            </div>
+                            <div class="slide-wrapper">
+                                <span class="btn"><a href="#" class="collection">View Collection</a><a href="#" class="buy">Buy Now</a></span>
+                                <img src="images/slider_img_1.jpg" width="950" height="359" alt="" />
+                            </div>
+                        </div>
+                            
+                        <div id="myController">
+                            <span class="jFlowControl">1</span>
+                            <span class="jFlowControl">2</span>
+                            <span class="jFlowControl">3</span>
+                            <span class="jFlowControl">4</span>
+                        </div>
+                        
+                        <div class="WhyBeanbags">
+                            <h3>Why Mums Love it...</h3>
+                            <div>
+                                <p>Necae ipsanto tatur? Quia sit ulpario tescitas et omniend ignam,Axim nobis a dit a sita si inimpor eperum quibust audae est lorem.</p>
+                                <ul>
+                                    <li><a href="#">Cosy &amp; secure &gt;</a></li>
+                                    <li><a href="#">Helps relieve reflux &amp; wind &gt;</a></li>
+                                    <li><a href="#">Prevents flathead &gt;</a></li>
+                                    <li><a href="#">Lightweight &amp; portable &gt;</a></li>
+                                    <li><a href="#">Newborn to school age &gt;</a></li>
+                                </ul>
+                                <p class="more"><a href="#">More about the benefits</a></p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="Block Moveable Panel HomeIcons">
+                    <ul>
+                        <li><a href="#"><img src="images/home_icon_safety_standards.png" width="143" height="119" alt="" /></a></li>
+                        <li><a href="#"><img src="images/home_icon_free_delivery.png" width="143" height="119" alt="" /></a></li>
+                        <li><a href="#"><img src="images/home_icon_beanbags_filled.png" width="143" height="119" alt="" /></a></li>
+                        <li><a href="#"><img src="images/home_icon_guarantee.png" width="143" height="119" alt="" /></a></li>
+                        <li><a href="#"><img src="images/home_icon_secure_payment.png" width="143" height="119" alt="" /></a></li>
+                    </ul>
+                </div>
+                <div class="Block Moveable Panel HomeInfo">
+                    <ul>
+                        <li class="testimonial">
+                            <div>
+                                <blockquote><span>The baby beanbag is our new favourite addition to the house. It allows me to have baby Kai with me in every room.  He loves it!</span></blockquote>
+                                <em>Tanya, new mum &tilde; Sydney</em>
+                                <a href="#" class="more">What other mums say &gt;</a>
+                            </div>
+                        </li>
+                        <li class="about">
+                            <h3>About Baby Beanbags</h3>
+                            <p>Necae ipsanto tatur? Quia sit ulpario tescitas et omniend ignam,Axim nobis a dit a sita si inimpor eperum quibust audae est lorem. Necae ipsanto tatur. Quia sit ulpario tescitas et omniend ignam,Axim nobis a dit a sita si inimpor eperum quibust audae est lorem. Necae ipsanto tatur? Quia sit ulpario.</p>
+                        </li>
+                        <li class="video">
+                            <div class="VideoContainer"><img src="images/video_image.jpg" width="227" height="139" alt="" /></div>
+                            <p>Necae ipsanto tatur. Quia sit ulpario  Axim nobis a dit a sita si inimpor tescitas et omniend ignam.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div><!-- END #Wrapper -->
+        
+        <div id="Footer">
+        	<div class="inner">
+                <ul>
+                    <li><a href="our_collection.htm">Our Collection</a></li>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="shopping_cart.htm">Shopping Cart</a></li>
+                    <li><a href="#">Buy Online</a></li>
+                    <li><a href="#">Delivery</a></li>
+                </ul>
+                <ul>
+                    <li><a href="benefits.htm">Benefits</a></li>
+                    <li><a href="care.htm">Care &amp; Tips</a></li>
+                    <li><a href="faq.htm">FAQs</a></li>
+                    <li><a href="testimonials.htm">Testimonials</a></li>
+                    <li><a href="stockist.htm">Stockists</a></li>
+                </ul>
+                <ul>
+                    <li><a href="about_us.htm">About Us</a></li>
+                    <li><a href="contact_us.htm">Contact Us</a></li>
+                    <li><a href="blog.htm">Blog</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Facebook</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Returns Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="sitemap.htm">Sitemap</a></li>
+                </ul>
+                <p class="PayMethod"><img src="images/payment_method.png" width="185" height="57" alt="" /><span>No Paypal account needed.</span></p>
+                <p class="Copyright">&copy; Copyright  2011 Baby Beanbags. All rights reserved.</p>
+			</div>
+        </div><!-- END #Footer -->
+    </div><!-- END #Outer -->
+</div><!-- END #Container -->
+
+</body>
+</html>

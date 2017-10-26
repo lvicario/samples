@@ -1,0 +1,262 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Product Display</title>
+<link href="css/styles.css" rel="stylesheet" type="text/css" />
+<link href="css/iselector.css" rel="stylesheet" type="text/css" />
+<link href="css/blue.css" rel="stylesheet" type="text/css" />
+<!--[if IE]><link href="ie.css" media="all" rel="stylesheet" type="text/css" /><![endif]-->
+<script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.flow.1.2.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#myController").jFlow({
+		slides: "#slides",
+		controller: ".jFlowControl", // must be class, use . sign
+		slideWrapper : "#jFlowSlide", // must be id, use # sign
+		selectedWrapper: "jFlowSelected",  // just pure text, no sign
+		auto: true,		//auto change slide, default true
+		width: "950px",
+		height: "359px",
+		duration: 400,
+		prev: ".jFlowPrev", // must be class, use . sign
+		next: ".jFlowNext" // must be class, use . sign
+	});
+});
+</script>
+
+<script type="text/javascript">
+/* Simple Toggle by Soh Tanaka - www.sohtanaka.com  */
+$(document).ready(function(){
+	
+	//Set default open/close settings
+	$('.acc_container').hide(); //Hide/close all containers
+	$('.acc_trigger:first').addClass('active').next().show(); //Add "active" class to first trigger, then show/open the immediate next container
+	
+	$(".acc_trigger").click(function(){
+		$(this).toggleClass("active").next().slideToggle("fast");
+		return false; //Prevent the browser jump to the link anchor
+	});
+});
+</script>
+
+
+</head>
+
+<body>
+
+<div id="Container">
+    <div id="Outer">
+    	<div id="Header">
+        	<div id="Logo"><div id="LogoContainer"><h1><a href="#">Baby Beanbags</a></h1></div></div>
+            <div id="TopMenu">
+            	<p>Free Delivery Australia Wide</p>
+            	<ul>
+                	<li class="First"><a href="#">Shipping &amp; Delivery</a></li>
+                    <li><a href="#">Buy Online</a></li>
+                    <li><a href="#">Log in</a></li>
+                </ul>
+            </div>
+            <div id="MyCart" class="CartLink"><a href="shopping_cart.htm">View Cart</a><span>My Cart : 0 items</span></div>
+            <div id="Menu">
+            	<ul>
+                	<li class="First ActivePage"><a href="index.htm"><span>Home</span></a></li>
+                    <li><a href="our_collection.htm"><span>Our Collection</span></a></li>
+                    <li><a href="#"><span>Accessories</span></a></li>
+                    <li><a href="benefits.htm"><span>Benefits</span></a></li>
+                    <li><a href="testimonials.htm"><span>Testimonials</span></a></li>
+                    <li><a href="care.htm"><span>Care &amp; Tips</span></a></li>
+                    <li><a href="faq.htm"><span>FAQs</span></a></li>
+                    <li><a href="stockist.htm"><span>Stockists</span></a></li>
+                    <li><a href="about_us.htm"><span>About Us</span></a></li>
+                    <li><a href="contact_us.htm"><span>Contact Us</span></a></li>
+                    <li><a href="blog.htm"><span>Blog</span></a></li>
+                </ul>
+            </div>
+        </div><!-- END #Header -->
+        
+        <div id="Wrapper">
+            <div id="LayoutColumn1" class="Content Wide">
+                <div id="ProductDetails" class="Block Moveable Panel PrimaryProductDetails">
+                    <div class="BlockContent">
+                        <div class="FloatRight AddThis">
+                           <!-- AddThis Button BEGIN -->
+                            <div class="addthis_toolbox addthis_default_style ">
+                            <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+                            <a class="addthis_button_tweet"></a>
+                            <a class="email" href="#"><img src="images/email_icon.png" width="60" height="20" alt="" /></a>
+                            </div>
+                            <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4e1d3dc962fb9f8f"></script>
+                            <!-- AddThis Button END -->
+                        </div>
+                        <h2>Caramel Fudge Baby Beanbag</h2>
+                        <div class="ProductEssential">
+                            <div class="ProductEssentialInner">
+                                <div class="ProductThumb">
+                                    <div class="ProductThumbImage" style="position: relative;"><a href="#"><img src="images/product_thumb_large.jpg" width="348" height="275" alt="" /></a></div>
+                                    <div class="ImageCarouselBox">
+                                        <div class="ProductTinyImageList">
+                                            <ul>
+                                                <li><div class="TinyOuterDiv"><div><a href="#"><img src="images/product_thumb_tiny_1.jpg" width="57" height="57" alt="" /></a></div></div></li>
+                                                <li><div class="TinyOuterDiv"><div><a href="#"><img src="images/product_thumb_tiny_2.jpg" width="57" height="57" alt="" /></a></div></div></li>
+                                                <li><div class="TinyOuterDiv"><div><a href="#"><img src="images/product_thumb_tiny_3.jpg" width="57" height="57" alt="" /></a></div></div></li>
+                                                <li><div class="TinyOuterDiv"><div><a href="#"><img src="images/product_thumb_tiny_4.jpg" width="57" height="57" alt="" /></a></div></div></li>
+                                                <li><div class="TinyOuterDiv"><div><a href="#"><img src="images/product_thumb_tiny_5.jpg" width="57" height="57" alt="" /></a></div></div></li>
+                                            </ul>
+                                        </div>
+                                        <!-- AddThis Button BEGIN -->
+                                        <a class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pubid=xa-4e1a8d093d404f79"><img src="http://s7.addthis.com/static/btn/v2/lg-share-en.gif" width="125" height="16" alt="Bookmark and Share" style="border:0"/></a>
+                                        <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4e1a8d093d404f79"></script>
+                                        <!-- AddThis Button END -->
+                                    </div>
+                                </div><!-- End .ProductThumb -->
+                                <div class="ProductMain">
+                                    <div class="ProductDetailsGrid">
+                                        <div class="DetailRow RetailPrice">
+                                            <div class="Label">Price:</div>
+                                            <div class="Value"><span>$149.99</span> ($119.99 without beans)</div>
+                                        </div>
+                                        <div class="DetailRow Availability">
+                                            <div class="Label">Availability:</div>
+                                            <div class="Value">in stock</div>
+                                        </div>
+                                        <div class="DetailRow Quantity">
+                                            <div class="Label">Qty:</div>
+                                            <div class="Value">
+                                                <input name="" type="text" />
+                                                <select name="">
+                                                    <option>With Beans</option>
+                                                    <option>With Beans</option>
+                                                    <option>With Beans</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="DetailRow AddCartButton"><input name="" type="image" src="images/AddCartButton.png" /></div>
+                                        <div class="DetailRow Included">
+                                            <div class="Label">Includes:</div>
+                                            <div class="Value">
+                                                <ul>
+                                                    <li>Filled Baby Beanbag</li>
+                                                    <li>2 swappable seat covers (1 with harness)</li>
+                                                    <li>Free Delivery in Australia.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="DetailRow ShortDescription">
+                                            <div class="Label">Short Description</div>
+                                            <div class="Value">Ullore landis sunt officient alisimet lam sequeprorrum quist volorpor rem volorpo ressinctussus mosandest qui quam in conectotae. Nihiciisrepudig niantiunto od moluptasit, cusandusdae quist volorpor rem volorpo ressinctussus mosandest qui quam in conectotae ets eritim.</div>
+                                        </div>
+                                    </div>
+                                </div><!-- End .ProductMain -->
+                                <br class="Clear" />
+                            </div>
+                        </div><!-- End .ProductEssential -->
+                    </div>
+                </div>
+                
+                <div id="ProductTabs" class="Panel">
+                    <ul id="ProductTabsList" class="TabNav">
+                        <li class="Active" id="ProductDescription_Tab"><a href="#">Description</a></li>
+                        <li class="" id="ProductByCategory_Tab"><a href="#">Warranty</a></li>
+                        <li class="" id="ProductReviews_Tab"><a href="#">Details</a></li>
+                    </ul>
+                </div>
+                <div id="ProductDescription" class="Block Panel ProductDescription ProductTabContent">
+                    <h3>Product Description</h3>
+                    <div class="ProductDescriptionContainer">
+                        <p>Necae ipsanto tatur Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
+                        <h4>Subheader lorem ipsum</h4>
+                        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.</p>
+                        <h4>Subheader lorem ipsum</h4>
+                        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="LayoutColumn2" class="Right">
+                <div id="SideIcons" class="Block SideIcons Moveable Panel">
+                    <div class="BlockContent">
+                        <a href="#" class="FreeDelivery">Free Delivery Australia Wide</a>
+                        <a href="#" class="Filled">Our Beanbags are Filled and Ready to Use</a>
+                    </div>
+                </div>
+                
+                <div id="AccMenu" class="Block AccMenu Moveable Panel">
+                    <div class="BlockContent">
+                        <h3 class="acc_trigger"><a href="#">Seat Covers</a></h3>
+                        <div style="display: none;" class="acc_container">
+                            <div class="acc_block">
+                                <h4>Each Beanbag comes with 2 swappable seat covers :</h4>
+                                <p><img src="images/img_seat_covers.png" width="224" height="185" alt="" /></p>
+                                <ul>
+                                	<li>Washable.</li>
+                                    <li>Soft velvety material.</li>
+                                    <li>Waterproof backing.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <h3 class="acc_trigger"><a href="#">Delivery Info</a></h3>
+                        <div style="display: none;" class="acc_container">
+                            <div class="acc_block">
+                                <p>Delivery information</p>
+                            </div>
+                        </div>
+                        <h3 class="acc_trigger"><a href="#">Care Instructions</a></h3>
+                        <div style="display: none;" class="acc_container">
+                            <div class="acc_block">
+                                <p>Care instruction information</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="Testimonial" class="Block Testimonial Moveable Panel">
+                    <h2>What Mums say...</h2>
+                    <div class="BlockContent">
+                        <img src="images/img_testimonials_side.jpg" width="207" height="125" alt="" />
+                        <q>The baby beanbag is our new favourite addition to the house. It allows me to have baby Kai with me in every room. He loves it! </q>
+                        <em>Tanya, new mum &tilde; Sydney</em>
+                        <a href="#" class="more">What other mums say &gt;</a>
+                    </div>
+                </div>
+            </div>
+        </div><!-- END #Wrapper -->
+        
+        <div id="Footer">
+        	<div class="inner">
+                <ul>
+                    <li><a href="our_collection.htm">Our Collection</a></li>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="shopping_cart.htm">Shopping Cart</a></li>
+                    <li><a href="#">Buy Online</a></li>
+                    <li><a href="#">Delivery</a></li>
+                </ul>
+                <ul>
+                    <li><a href="benefits.htm">Benefits</a></li>
+                    <li><a href="care.htm">Care &amp; Tips</a></li>
+                    <li><a href="faq.htm">FAQs</a></li>
+                    <li><a href="testimonials.htm">Testimonials</a></li>
+                    <li><a href="stockist.htm">Stockists</a></li>
+                </ul>
+                <ul>
+                    <li><a href="about_us.htm">About Us</a></li>
+                    <li><a href="contact_us.htm">Contact Us</a></li>
+                    <li><a href="blog.htm">Blog</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Facebook</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Returns Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="sitemap.htm">Sitemap</a></li>
+                </ul>
+                <p class="PayMethod"><img src="images/payment_method.png" width="185" height="57" alt="" /><span>No Paypal account needed.</span></p>
+                <p class="Copyright">&copy; Copyright  2011 Baby Beanbags. All rights reserved.</p>
+			</div>
+        </div><!-- END #Footer -->
+    </div><!-- END #Outer -->
+</div><!-- END #Container -->
+
+</body>
+</html>

@@ -1,0 +1,521 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>05 - About</title>
+<link href="css/styles.css" rel="stylesheet" type="text/css" />
+<link href="css/iselector.css" rel="stylesheet" type="text/css" />
+<link href="css/blue.css" rel="stylesheet" type="text/css" />
+<!--[if IE]><link href="ie.css" media="all" rel="stylesheet" type="text/css" /><![endif]-->
+<script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
+<script type="text/javascript" src="js/modernizr.custom.43934.js"></script>
+<!-- dropdown Menu -->
+<script type="text/javascript" src="js/hoverIntent.js"></script>
+<script type="text/javascript" src="js/dropdown.js"></script>
+<!-- Homepage Slider -->
+<script type="text/javascript" src="js/jquery.flow.1.2.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#myController").jFlow({
+		slides: "#slides",
+		controller: ".jFlowControl", // must be class, use . sign
+		slideWrapper : "#jFlowSlide", // must be id, use # sign
+		selectedWrapper: "jFlowSelected",  // just pure text, no sign
+		auto: true,		//auto change slide, default true
+		width: "1000px",
+		height: "405px",
+		duration: 600,  // time in miliseconds to transition one slide
+		interval: 5000, // this is the amount of milliseconds before the switch happens
+		prev: ".jFlowPrev", // must be class, use . sign
+		next: ".jFlowNext" // must be class, use . sign
+	});
+});
+</script>
+<!-- Product Slider -->
+<script type="text/javascript" src="js/jquery.carouFredSel-4.5.2-packed.js"></script>
+<script type="text/javascript" language="javascript">
+	$(function() {
+		//	Scrolled by user interaction
+		$('.RelatedProducts .ProductList').carouFredSel({
+			prev: '.prev2',
+			next: '.next2',
+			pagination: "#pager2",
+			auto: false
+		});
+	});
+</script>
+<!-- Vertical Align -->
+<script type="text/javascript" src="js/vertical-align.js"></script>
+<script type="text/javascript">
+$(document).ready(function (e) {
+	$('#Branding img.logo').vAlign();
+	$('#Branding p').vAlign();
+});
+</script>
+<!-- Selectbox -->
+<script type="text/javascript" src="js/selectbox.js"></script>
+<script type="text/javascript">
+	$(function () {
+		$("select").selectbox();
+	});
+</script>
+</head>
+
+<body>
+
+<div id="Container">
+	<div id="Outer">
+    	<div id="Header">
+        	<div id="Logo"><div id="LogoContainer"><h1><a href="01_index.htm">Playbill</a></h1></div></div>
+            <div class="BasketSearch">
+                <div id="SearchForm">
+                    <form action="" method="">
+                        <label for="search_query">Search</label>
+                        <input type="text" id="search_query" class="Textbox" value="" />
+                        <input type="image" src="images/Search.png" class="Button" />
+                    </form>
+                </div>
+                <div id="MyCart"><a href="06_cart.htm">Your Basket (0)</a></div>
+			</div>
+            <img src="images/light_effect_header.png" width="648" height="54" alt="" class="LightEffect" />
+            <div id="Menu">
+            	<ul>
+                	<li class="First ActivePage Theatre">
+                    	<a href="02_products.htm"><span>Theatre</span></a>
+                        <div class="sub-menu">
+                        	<div class="col-one">
+                                <h2>All Shows</h2>
+                                <ul>
+                                    <li><a href="02_products.htm">Love Never Dies</a></li>
+                                    <li><a href="02_products.htm">Mary Poppins the Musical</a></li>
+                                    <li><a href="02_products.htm">Bangarra Dance Theatre</a></li>
+                                    <li><a href="02_products.htm">Kenny Rogers</a></li>
+                                    <li><a href="02_products.htm">Les Miserable</a></li>
+                                    <li><a href="02_products.htm">West Side Story</a></li>
+                                    <li><a href="02_products.htm">Andre Rieu</a></li>
+                                    <li><a href="02_products.htm">Avenue Q</a></li>
+                                    <li><a href="02_products.htm">The Phantom of the Opera</a></li>
+                                    <li><a href="02_products.htm">Nida</a></li>
+                                    <li><a href="02_products.htm">Music of Andrew Lloyd Webber</a></li>
+                                    <li><a href="02_products.htm">'Weird Al' Yankovic</a></li>
+                                    <li><a href="02_products.htm">Dr Zhivago The Musical</a></li>
+                                    <li><a href="02_products.htm">Billy Connolly - The Man</a></li>
+                                    <li><a href="02_products.htm">Ben Hur</a></li>
+                                    <li><a href="02_products.htm">Mamma Mia!</a></li>
+                                    <li><a href="02_products.htm">Cats</a></li>
+                                    <li><a href="02_products.htm">Guys and Dolls</a></li>
+                                    <li><a href="02_products.htm">High School Musical</a></li>
+                                </ul>
+							</div>
+                            <div class="col-two">
+                                <h2><span>Latest Added</span></h2>
+                                <ul class="ProductList">
+                                    <li class="Odd">
+                                        <div class="ProductImage"><a href="04_product_details.htm"><img src="images/sample_img_drop_1.jpg" width="104" height="133" alt="" /></a></div>
+                                        <div class="ProductDetails"><strong><a href="04_product_details.htm">Mary Poppins</a></strong></div>
+                                        <div class="ProductLink"><a href="02_products.htm">View range &raquo;</a></div>
+                                    </li>
+                                    <li class="Even">
+                                        <div class="ProductImage"><a href="04_product_details.htm"><img src="images/sample_img_drop_2.jpg" width="104" height="133" alt="" /></a></div>
+                                        <div class="ProductDetails"><strong><a href="04_product_details.htm">West Side Story</a></strong></div>
+                                        <div class="ProductLink"><a href="02_products.htm">View range &raquo;</a></div>
+                                    </li>
+                                    <li class="Odd">
+                                        <div class="ProductImage"><a href="04_product_details.htm"><img src="images/sample_img_drop_3.jpg" width="104" height="133" alt="" /></a></div>
+                                        <div class="ProductDetails"><strong><a href="04_product_details.htm">Bangarra Dance...</a></strong></div>
+                                        <div class="ProductLink"><a href="02_products.htm">View range &raquo;</a></div>
+                                    </li>
+                                    <li class="Even">
+                                        <div class="ProductImage"><a href="04_product_details.htm"><img src="images/sample_img_drop_4.jpg" width="104" height="133" alt="" /></a></div>
+                                        <div class="ProductDetails"><strong><a href="04_product_details.htm">Grump Old Women</a></strong></div>
+                                        <div class="ProductLink"><a href="02_products.htm">View range &raquo;</a></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+					</li>
+                    <li class="Sport">
+                    	<a href="02_products.htm"><span>Sport</span></a>
+                        <div class="sub-menu">
+                        	<div class="col-one">
+                                <h2>All Shows</h2>
+                                <ul>
+                                    <li><a href="02_products.htm">Love Never Dies</a></li>
+                                    <li><a href="02_products.htm">Mary Poppins the Musical</a></li>
+                                    <li><a href="02_products.htm">Bangarra Dance Theatre</a></li>
+                                    <li><a href="02_products.htm">Kenny Rogers</a></li>
+                                    <li><a href="02_products.htm">Les Miserable</a></li>
+                                    <li><a href="02_products.htm">West Side Story</a></li>
+                                    <li><a href="02_products.htm">Andre Rieu</a></li>
+                                    <li><a href="02_products.htm">Avenue Q</a></li>
+                                    <li><a href="02_products.htm">The Phantom of the Opera</a></li>
+                                    <li><a href="02_products.htm">Nida</a></li>
+                                    <li><a href="02_products.htm">Music of Andrew Lloyd Webber</a></li>
+                                    <li><a href="02_products.htm">'Weird Al' Yankovic</a></li>
+                                    <li><a href="02_products.htm">Dr Zhivago The Musical</a></li>
+                                    <li><a href="02_products.htm">Billy Connolly - The Man</a></li>
+                                    <li><a href="02_products.htm">Ben Hur</a></li>
+                                    <li><a href="02_products.htm">Mamma Mia!</a></li>
+                                    <li><a href="02_products.htm">Cats</a></li>
+                                    <li><a href="02_products.htm">Guys and Dolls</a></li>
+                                    <li><a href="02_products.htm">High School Musical</a></li>
+                                </ul>
+							</div>
+                            <div class="col-two">
+                                <h2><span>Latest Added</span></h2>
+                                <ul class="ProductList">
+                                    <li class="Odd">
+                                        <div class="ProductImage"><a href="04_product_details.htm"><img src="images/sample_img_drop_1.jpg" width="104" height="133" alt="" /></a></div>
+                                        <div class="ProductDetails"><strong><a href="04_product_details.htm">Mary Poppins</a></strong></div>
+                                        <div class="ProductLink"><a href="02_products.htm">View range &raquo;</a></div>
+                                    </li>
+                                    <li class="Even">
+                                        <div class="ProductImage"><a href="04_product_details.htm"><img src="images/sample_img_drop_2.jpg" width="104" height="133" alt="" /></a></div>
+                                        <div class="ProductDetails"><strong><a href="04_product_details.htm">West Side Story</a></strong></div>
+                                        <div class="ProductLink"><a href="02_products.htm">View range &raquo;</a></div>
+                                    </li>
+                                    <li class="Odd">
+                                        <div class="ProductImage"><a href="04_product_details.htm"><img src="images/sample_img_drop_3.jpg" width="104" height="133" alt="" /></a></div>
+                                        <div class="ProductDetails"><strong><a href="04_product_details.htm">Bangarra Dance...</a></strong></div>
+                                        <div class="ProductLink"><a href="02_products.htm">View range &raquo;</a></div>
+                                    </li>
+                                    <li class="Even">
+                                        <div class="ProductImage"><a href="04_product_details.htm"><img src="images/sample_img_drop_4.jpg" width="104" height="133" alt="" /></a></div>
+                                        <div class="ProductDetails"><strong><a href="04_product_details.htm">Grump Old Women</a></strong></div>
+                                        <div class="ProductLink"><a href="02_products.htm">View range &raquo;</a></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="Music">
+                    	<a href="02_products.htm"><span>Music</span></a>
+                        <div class="sub-menu">
+                        	<div class="col-one">
+                                <h2>All Shows</h2>
+                                <ul>
+                                    <li><a href="02_products.htm">Love Never Dies</a></li>
+                                    <li><a href="02_products.htm">Mary Poppins the Musical</a></li>
+                                    <li><a href="02_products.htm">Bangarra Dance Theatre</a></li>
+                                    <li><a href="02_products.htm">Kenny Rogers</a></li>
+                                    <li><a href="02_products.htm">Les Miserable</a></li>
+                                    <li><a href="02_products.htm">West Side Story</a></li>
+                                    <li><a href="02_products.htm">Andre Rieu</a></li>
+                                    <li><a href="02_products.htm">Avenue Q</a></li>
+                                    <li><a href="02_products.htm">The Phantom of the Opera</a></li>
+                                    <li><a href="02_products.htm">Nida</a></li>
+                                    <li><a href="02_products.htm">Music of Andrew Lloyd Webber</a></li>
+                                    <li><a href="02_products.htm">'Weird Al' Yankovic</a></li>
+                                    <li><a href="02_products.htm">Dr Zhivago The Musical</a></li>
+                                    <li><a href="02_products.htm">Billy Connolly - The Man</a></li>
+                                    <li><a href="02_products.htm">Ben Hur</a></li>
+                                    <li><a href="02_products.htm">Mamma Mia!</a></li>
+                                    <li><a href="02_products.htm">Cats</a></li>
+                                    <li><a href="02_products.htm">Guys and Dolls</a></li>
+                                    <li><a href="02_products.htm">High School Musical</a></li>
+                                </ul>
+							</div>
+                            <div class="col-two">
+                                <h2><span>Latest Added</span></h2>
+                                <ul class="ProductList">
+                                    <li class="Odd">
+                                        <div class="ProductImage"><a href="04_product_details.htm"><img src="images/sample_img_drop_1.jpg" width="104" height="133" alt="" /></a></div>
+                                        <div class="ProductDetails"><strong><a href="04_product_details.htm">Mary Poppins</a></strong></div>
+                                        <div class="ProductLink"><a href="02_products.htm">View range &raquo;</a></div>
+                                    </li>
+                                    <li class="Even">
+                                        <div class="ProductImage"><a href="04_product_details.htm"><img src="images/sample_img_drop_2.jpg" width="104" height="133" alt="" /></a></div>
+                                        <div class="ProductDetails"><strong><a href="04_product_details.htm">West Side Story</a></strong></div>
+                                        <div class="ProductLink"><a href="02_products.htm">View range &raquo;</a></div>
+                                    </li>
+                                    <li class="Odd">
+                                        <div class="ProductImage"><a href="04_product_details.htm"><img src="images/sample_img_drop_3.jpg" width="104" height="133" alt="" /></a></div>
+                                        <div class="ProductDetails"><strong><a href="04_product_details.htm">Bangarra Dance...</a></strong></div>
+                                        <div class="ProductLink"><a href="02_products.htm">View range &raquo;</a></div>
+                                    </li>
+                                    <li class="Even">
+                                        <div class="ProductImage"><a href="04_product_details.htm"><img src="images/sample_img_drop_4.jpg" width="104" height="133" alt="" /></a></div>
+                                        <div class="ProductDetails"><strong><a href="04_product_details.htm">Grump Old Women</a></strong></div>
+                                        <div class="ProductLink"><a href="02_products.htm">View range &raquo;</a></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+					</li>
+                    <li class="Clearance">
+                    	<a href="02_products.htm"><span>Clearance</span></a>
+                        <div class="sub-menu">
+                        	<div class="col-one">
+                                <h2>All Shows</h2>
+                                <ul>
+                                    <li><a href="02_products.htm">Love Never Dies</a></li>
+                                    <li><a href="02_products.htm">Mary Poppins the Musical</a></li>
+                                    <li><a href="02_products.htm">Bangarra Dance Theatre</a></li>
+                                    <li><a href="02_products.htm">Kenny Rogers</a></li>
+                                    <li><a href="02_products.htm">Les Miserable</a></li>
+                                    <li><a href="02_products.htm">West Side Story</a></li>
+                                    <li><a href="02_products.htm">Andre Rieu</a></li>
+                                    <li><a href="02_products.htm">Avenue Q</a></li>
+                                    <li><a href="02_products.htm">The Phantom of the Opera</a></li>
+                                    <li><a href="02_products.htm">Nida</a></li>
+                                    <li><a href="02_products.htm">Music of Andrew Lloyd Webber</a></li>
+                                    <li><a href="02_products.htm">'Weird Al' Yankovic</a></li>
+                                    <li><a href="02_products.htm">Dr Zhivago The Musical</a></li>
+                                    <li><a href="02_products.htm">Billy Connolly - The Man</a></li>
+                                    <li><a href="02_products.htm">Ben Hur</a></li>
+                                    <li><a href="02_products.htm">Mamma Mia!</a></li>
+                                    <li><a href="02_products.htm">Cats</a></li>
+                                    <li><a href="02_products.htm">Guys and Dolls</a></li>
+                                    <li><a href="02_products.htm">High School Musical</a></li>
+                                </ul>
+							</div>
+                            <div class="col-two">
+                                <h2><span>Latest Added</span></h2>
+                                <ul class="ProductList">
+                                    <li class="Odd">
+                                        <div class="ProductImage"><a href="04_product_details.htm"><img src="images/sample_img_drop_1.jpg" width="104" height="133" alt="" /></a></div>
+                                        <div class="ProductDetails"><strong><a href="04_product_details.htm">Mary Poppins</a></strong></div>
+                                        <div class="ProductLink"><a href="02_products.htm">View range &raquo;</a></div>
+                                    </li>
+                                    <li class="Even">
+                                        <div class="ProductImage"><a href="04_product_details.htm"><img src="images/sample_img_drop_2.jpg" width="104" height="133" alt="" /></a></div>
+                                        <div class="ProductDetails"><strong><a href="04_product_details.htm">West Side Story</a></strong></div>
+                                        <div class="ProductLink"><a href="02_products.htm">View range &raquo;</a></div>
+                                    </li>
+                                    <li class="Odd">
+                                        <div class="ProductImage"><a href="04_product_details.htm"><img src="images/sample_img_drop_3.jpg" width="104" height="133" alt="" /></a></div>
+                                        <div class="ProductDetails"><strong><a href="04_product_details.htm">Bangarra Dance...</a></strong></div>
+                                        <div class="ProductLink"><a href="02_products.htm">View range &raquo;</a></div>
+                                    </li>
+                                    <li class="Even">
+                                        <div class="ProductImage"><a href="04_product_details.htm"><img src="images/sample_img_drop_4.jpg" width="104" height="133" alt="" /></a></div>
+                                        <div class="ProductDetails"><strong><a href="04_product_details.htm">Grump Old Women</a></strong></div>
+                                        <div class="ProductLink"><a href="02_products.htm">View range &raquo;</a></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+					</li>
+                    <li class="AllProducts">
+                    	<a href="02_products.htm"><span>All Products</span></a>
+                        <div class="sub-menu">
+                        	<div class="col-one">
+                                <h2>All Shows</h2>
+                                <ul>
+                                    <li><a href="02_products.htm">Love Never Dies</a></li>
+                                    <li><a href="02_products.htm">Mary Poppins the Musical</a></li>
+                                    <li><a href="02_products.htm">Bangarra Dance Theatre</a></li>
+                                    <li><a href="02_products.htm">Kenny Rogers</a></li>
+                                    <li><a href="02_products.htm">Les Miserable</a></li>
+                                    <li><a href="02_products.htm">West Side Story</a></li>
+                                    <li><a href="02_products.htm">Andre Rieu</a></li>
+                                    <li><a href="02_products.htm">Avenue Q</a></li>
+                                    <li><a href="02_products.htm">The Phantom of the Opera</a></li>
+                                    <li><a href="02_products.htm">Nida</a></li>
+                                    <li><a href="02_products.htm">Music of Andrew Lloyd Webber</a></li>
+                                    <li><a href="02_products.htm">'Weird Al' Yankovic</a></li>
+                                    <li><a href="02_products.htm">Dr Zhivago The Musical</a></li>
+                                    <li><a href="02_products.htm">Billy Connolly - The Man</a></li>
+                                    <li><a href="02_products.htm">Ben Hur</a></li>
+                                    <li><a href="02_products.htm">Mamma Mia!</a></li>
+                                    <li><a href="02_products.htm">Cats</a></li>
+                                    <li><a href="02_products.htm">Guys and Dolls</a></li>
+                                    <li><a href="02_products.htm">High School Musical</a></li>
+                                </ul>
+							</div>
+                            <div class="col-two">
+                                <h2><span>Latest Added</span></h2>
+                                <ul class="ProductList">
+                                    <li class="Odd">
+                                        <div class="ProductImage"><a href="04_product_details.htm"><img src="images/sample_img_drop_1.jpg" width="104" height="133" alt="" /></a></div>
+                                        <div class="ProductDetails"><strong><a href="04_product_details.htm">Mary Poppins</a></strong></div>
+                                        <div class="ProductLink"><a href="02_products.htm">View range &raquo;</a></div>
+                                    </li>
+                                    <li class="Even">
+                                        <div class="ProductImage"><a href="04_product_details.htm"><img src="images/sample_img_drop_2.jpg" width="104" height="133" alt="" /></a></div>
+                                        <div class="ProductDetails"><strong><a href="04_product_details.htm">West Side Story</a></strong></div>
+                                        <div class="ProductLink"><a href="02_products.htm">View range &raquo;</a></div>
+                                    </li>
+                                    <li class="Odd">
+                                        <div class="ProductImage"><a href="04_product_details.htm"><img src="images/sample_img_drop_3.jpg" width="104" height="133" alt="" /></a></div>
+                                        <div class="ProductDetails"><strong><a href="04_product_details.htm">Bangarra Dance...</a></strong></div>
+                                        <div class="ProductLink"><a href="02_products.htm">View range &raquo;</a></div>
+                                    </li>
+                                    <li class="Even">
+                                        <div class="ProductImage"><a href="04_product_details.htm"><img src="images/sample_img_drop_4.jpg" width="104" height="133" alt="" /></a></div>
+                                        <div class="ProductDetails"><strong><a href="04_product_details.htm">Grump Old Women</a></strong></div>
+                                        <div class="ProductLink"><a href="02_products.htm">View range &raquo;</a></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+					</li>
+                </ul>
+            </div>
+            <div id="TopMenu">
+            	<ul>
+                	<li class="First"><a href="05_about.htm">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Sign in</a></li>
+                </ul>
+            </div>
+        </div><!-- END #Header -->
+        
+        <div id="Branding">
+        	<div class="inner">
+                <img src="images/logo_syndey.png" width="186" height="84" alt="" class="logo" />
+                <p>Official Shirts, Shorts, Socks &amp; More</p>
+                <img src="images/light_effect_branding.png" width="652" height="129" alt="" class="LightEffect" />
+			</div>
+        </div><!-- END #Branding -->
+        
+        <div id="Wrapper">
+        	<div id="LayoutColumn1" class="Left">
+            	<div id="SideCategoryList" class="Block CategoryList Moveable Panel">
+                	<div class="BlockContent">
+                    	<div class="SideCategoryListClassic">
+                        	<ul>
+                            	<li>
+                                	<a href="#">About Us</a>
+                                    <ul>
+                                        <li><a href="#">Overview</a></li>
+                                        <li><a href="#">International Offices</a></li>
+                                        <li><a href="#">Souvenir &amp; Publishing</a></li>
+                                        <li><a href="#">Event Merchandising</a></li>
+                                        <li><a href="#">Art / Creative Design</a></li>
+                                        <li><a href="#">Offset Printing</a></li>
+                                        <li><a href="#">Venue Concessions</a></li>
+                                        <li><a href="#">Venue Management</a></li>
+                                        <li class="LastChild"><a href="#">Advertising Opportunities</a></li>
+									</ul>
+                                </li>
+                            </ul>
+                            <ul>
+                            	<li>
+                                	<a href="#">Newsletter Sign Up</a>
+                                </li>
+                            </ul>
+                            <ul>
+                            	<li>
+                                	<a href="#">Returns</a>
+                                </li>
+                            </ul>
+                            <ul>
+                            	<li>
+                                	<a href="#">Shipping</a>
+                                </li>
+                            </ul>
+                            <ul>
+                            	<li>
+                                	<a href="#">Legals</a>
+                                </li>
+                            </ul>
+                            <ul>
+                            	<li>
+                                	<a href="#">Contact Details</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- END #LayoutColumn1 -->
+            
+            <div id="LayoutColumn2" class="Content Wide WideWithLeft">
+            	<div class="heading heading-cat">
+                    <div id="CategoryHeading" class="Block Moveable Panel">
+                        <div class="BlockContent">
+                            <h2>About Us</h2>
+                        </div>
+                    </div>
+                    <div id="CategoryBreadcrumb" class="Block Moveable Panel Breadcrumb">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li>Overview</li>
+                        </ul>
+                    </div>
+                    <div id="CategoryFilters" class="Block Moveable Panel CategoryFilters">
+                        <select name="">
+                            <option>Category</option>
+                            <option>Category 2</option>
+                            <option>Category 3</option>
+                        </select>
+                        <select name="">
+                            <option>Size</option>
+                            <option>Size 2</option>
+                            <option>Size 3</option>
+                        </select>
+                        <select name="">
+                            <option>Price</option>
+                            <option>Price 2</option>
+                            <option>Price 3</option>
+                        </select>
+                    </div>
+				</div>
+                
+                <div id="PageContent" class="Block Moveable Panel">
+                	<h2>Overview</h2>
+                    <div class="BlockContent">
+                    	<img src="images/about_image.jpg" width="240" height="240" alt="" class="PageThumb" />
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tortor tortor, fringilla in lacinia accumsan, auctor id nisi. In vel magna eget diam malesuada porttitor. Curabitur vehicula luctus felis a aliquam. Sed tempor lacinia sapien, ut molestie libero laoreet pellentesque. Cras faucibus est non diam cursus vel commodo lorem dapibus. Morbi vel blandit erat. Aliquam erat volutpat. Sed porttitor laoreet facilisis. Pellentesque condimentum rutrum pharetra. Proin semper condimentum imperdiet.</p>
+                        <p>Nullam eleifend, erat pulvinar hendrerit aliquam, lorem eros tempor lectus, sed tincidunt risus lorem placerat nisl. Etiam euismod ipsum vel felis pellentesque vel gravida nulla pellentesque. In sodales enim id est consequat adipiscing. Vestibulum sodales cursus mattis. Quisque et magna sed nulla tempus mollis in sed augue. Integer iaculis felis eu lacus imperdiet cursus. Nullam eleifend, erat pulvinar hendrerit aliquam, lorem 
+eros tempor lectus, sed tincidunt risus lorem placerat nisl. Etiam euismod ipsum vel felis pellentesque vel gravida nulla pellentesque. In sodales enim id est consequat adipiscing. Vestibulum sodales cursus mattis. Quisque et magna sed nulla tempus mollis in sed augue. Integer iaculis felis eu lacus imperdiet cursus. </p>
+                        <h3>Bold Sub Header</h3>
+                        <p>Vestibulum non turpis nec nisi ullamcorper sodales quis quis nisi. Donec lacus elit, eleifend vel porta in, ultrices in nibh. Maecenas sapien ligula, aliquet et rutrum at, facilisis et felis. Nulla justo sem, ullamcorper a imperdiet eu, dignissim sit amet diam. Pellentesque id justo vitae sapien fringilla rhoncus. Duis vitae diam eget est tincidunt ullamcorper. Quisque convallis odio ut nulla imperdiet pellentesque. Praesent imperdiet imperdiet lacus ut aliquet. Donec aliquet vehicula iaculis. Sed vulputate lacus eros. Praesent ullamcorper, purus at dapibus porttitor, urna nunc tincidunt ante, iaculis egestas risus quam vel est. Sed porta risus elit, quis tincidunt dui. Etiam viverra metus a nunc sagittis luctus. Praesent euismod, enim vitae sollicitudin fermentum, diam leo pharetra augue, sollicitudin consequat diam enim sit amet velit. Suspendisse accumsan scelerisque posuere. Morbi suscipit egestas ipsum, eget pharetra turpis eleifend quis.</p>
+                        <p>Proin erat turpis, volutpat in rhoncus vitae, venenatis eu velit. Aliquam non sem ac est dignissim interdum et ut turpis. Sed condimentum lacinia dui eu posuere. Donec eget egestas dui. Nulla id erat dui, ut eleifend augue. Aenean pharetra felis id orci scelerisque vitae fringilla justo lobortis. Sed vitae odio est. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed a varius purus. In posuere eleifend magna, quis gravida nunc dictum id. Etiam quis enim et lectus dignissim elementum scelerisque vitae leo. Aliquam vitae ipsum eros.</p>
+                    </div>
+                </div><!-- END #PageContent -->
+                
+            </div><!-- END #LayoutColumn1 -->
+            <div class="Clear"></div>
+        </div><!-- END #Wrapper -->
+        
+        <div id="Footer">
+        	<div class="inner">
+            	<p class="Signup">Keep in Touch! Subscribe to our newsletter for product updates <a href="#">Sign up</a></p>
+                <div class="col-one">
+                	<h4>Customer Service</h4>
+                    <ul>
+                    	<li><a href="#">About us</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Shippings</a></li>
+                        <li><a href="#">Legals</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="col-two">
+                	<img src="images/light_effect_footer.png" width="841" height="59" alt="" class="LightEffect" />
+                    <ul class="ProductList">
+                        <li class="Odd">
+                            <div class="ProductImage"><a href="#"><img src="images/sample_img_drop_1.jpg" width="104" height="133" alt="" /></a></div>
+                            <div class="ProductDetails"><strong><a href="#">Mary Poppins</a></strong></div>
+                            <div class="ProductLink"><a href="#">20% Off &raquo;</a></div>
+                        </li>
+                        <li class="Even">
+                            <div class="ProductImage"><a href="#"><img src="images/sample_img_drop_2.jpg" width="104" height="133" alt="" /></a></div>
+                            <div class="ProductDetails"><strong><a href="#">West Side Story</a></strong></div>
+                            <div class="ProductLink"><a href="#">20% Off &raquo;</a></div>
+                        </li>
+                        <li class="Odd">
+                            <div class="ProductImage"><a href="#"><img src="images/sample_img_drop_3.jpg" width="104" height="133" alt="" /></a></div>
+                            <div class="ProductDetails"><strong><a href="#">Bangarra Dance...</a></strong></div>
+                            <div class="ProductLink"><a href="#">20% Off &raquo;</a></div>
+                        </li>
+                        <li class="Even">
+                            <div class="ProductImage"><a href="#"><img src="images/sample_img_drop_4.jpg" width="104" height="133" alt="" /></a></div>
+                            <div class="ProductDetails"><strong><a href="#">Grump Old Women</a></strong></div>
+                            <div class="ProductLink"><a href="#">20% Off &raquo;</a></div>
+                        </li>
+                    </ul>
+                </div>
+                <p class="Copyright">
+                	&copy; Copyright Playbill 2011.  All rights reserved. 
+                </p>
+            </div>
+        </div>
+        
+    </div><!-- END #Outer -->
+</div><!-- END #Container -->
+
+</body>
+</html>

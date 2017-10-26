@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Stockist Launch</title>
+<link href="css/styles.css" rel="stylesheet" type="text/css" />
+<link href="css/iselector.css" rel="stylesheet" type="text/css" />
+<link href="css/blue.css" rel="stylesheet" type="text/css" />
+<!--[if IE]><link href="ie.css" media="all" rel="stylesheet" type="text/css" /><![endif]-->
+<script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.flow.1.2.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#myController").jFlow({
+		slides: "#slides",
+		controller: ".jFlowControl", // must be class, use . sign
+		slideWrapper : "#jFlowSlide", // must be id, use # sign
+		selectedWrapper: "jFlowSelected",  // just pure text, no sign
+		auto: true,		//auto change slide, default true
+		width: "950px",
+		height: "359px",
+		duration: 400,
+		prev: ".jFlowPrev", // must be class, use . sign
+		next: ".jFlowNext" // must be class, use . sign
+	});
+});
+</script>
+
+</head>
+
+<body>
+
+<div id="Container">
+    <div id="Outer">
+    	<div id="Header">
+        	<div id="Logo"><div id="LogoContainer"><h1><a href="#">Baby Beanbags</a></h1></div></div>
+            <div id="TopMenu">
+            	<p>Free Delivery Australia Wide</p>
+            	<ul>
+                	<li class="First"><a href="#">Shipping &amp; Delivery</a></li>
+                    <li><a href="#">Buy Online</a></li>
+                    <li><a href="#">Log in</a></li>
+                </ul>
+            </div>
+            <div id="MyCart" class="CartLink"><a href="shopping_cart.htm">View Cart</a><span>My Cart : 0 items</span></div>
+            <div id="Menu">
+            	<ul>
+                	<li class="First ActivePage"><a href="index.htm"><span>Home</span></a></li>
+                    <li><a href="our_collection.htm"><span>Our Collection</span></a></li>
+                    <li><a href="#"><span>Accessories</span></a></li>
+                    <li><a href="benefits.htm"><span>Benefits</span></a></li>
+                    <li><a href="testimonials.htm"><span>Testimonials</span></a></li>
+                    <li><a href="care.htm"><span>Care &amp; Tips</span></a></li>
+                    <li><a href="faq.htm"><span>FAQs</span></a></li>
+                    <li><a href="stockist.htm"><span>Stockists</span></a></li>
+                    <li><a href="about_us.htm"><span>About Us</span></a></li>
+                    <li><a href="contact_us.htm"><span>Contact Us</span></a></li>
+                    <li><a href="blog.htm"><span>Blog</span></a></li>
+                </ul>
+            </div>
+        </div><!-- END #Header -->
+        
+        <div id="Wrapper">
+            <div id="LayoutColumn1" class="Content Wide">
+                <div id="PageContent" class="Block Moveable Panel">
+                    <h2>Stockists</h2>
+                    <div class="BlockContent">
+                    	<div class="StockistContent">
+                        	<p>
+                            	<img src="images/retail_stockists_coming_soon.png" width="119" height="116" alt="" class="CommingSoon" />
+                            	The following stores stock a range of Baby Beanbags. If your nearest store cannot supply the bag you require, or you would like to be included in our list of stockists feel free to <a href="#">contact us for assistance</a>.
+                            </p>
+                            <h3>Online Stores</h3>
+                            <ul class="StockistStore">
+                            	<li>
+                                	<p class="logo"><img src="images/logo_perfect_baby_shower.png" width="168" height="77" class="logo" /></p>
+                                    <address>
+                                    	<strong>Perfect Baby Shower</strong>
+                                        <span class="url"><a href="http://www.perfectbabyshower.com.au">www.perfectbabyshower.com.au</a></span>
+                                    </address>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="LayoutColumn2" class="Right">
+                <div id="StockistContact" class="Block StockistContact Moveable Panel">
+                    <div class="BlockContent">
+                        <p>If you would like to become a Baby Beanbag stockist, please contact us for details.</p>
+                    </div>
+                </div>
+            </div>
+        </div><!-- END #Wrapper -->
+        
+        <div id="Footer">
+        	<div class="inner">
+                <ul>
+                    <li><a href="our_collection.htm">Our Collection</a></li>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="shopping_cart.htm">Shopping Cart</a></li>
+                    <li><a href="#">Buy Online</a></li>
+                    <li><a href="#">Delivery</a></li>
+                </ul>
+                <ul>
+                    <li><a href="benefits.htm">Benefits</a></li>
+                    <li><a href="care.htm">Care &amp; Tips</a></li>
+                    <li><a href="faq.htm">FAQs</a></li>
+                    <li><a href="testimonials.htm">Testimonials</a></li>
+                    <li><a href="stockist.htm">Stockists</a></li>
+                </ul>
+                <ul>
+                    <li><a href="about_us.htm">About Us</a></li>
+                    <li><a href="contact_us.htm">Contact Us</a></li>
+                    <li><a href="blog.htm">Blog</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Facebook</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Returns Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="sitemap.htm">Sitemap</a></li>
+                </ul>
+                <p class="PayMethod"><img src="images/payment_method.png" width="185" height="57" alt="" /><span>No Paypal account needed.</span></p>
+                <p class="Copyright">&copy; Copyright  2011 Baby Beanbags. All rights reserved.</p>
+			</div>
+        </div><!-- END #Footer -->
+    </div><!-- END #Outer -->
+</div><!-- END #Container -->
+
+</body>
+</html>

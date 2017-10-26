@@ -1,0 +1,178 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Sitemap</title>
+<link href="css/styles.css" rel="stylesheet" type="text/css" />
+<link href="css/iselector.css" rel="stylesheet" type="text/css" />
+<link href="css/blue.css" rel="stylesheet" type="text/css" />
+<!--[if IE]><link href="ie.css" media="all" rel="stylesheet" type="text/css" /><![endif]-->
+<script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.flow.1.2.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#myController").jFlow({
+		slides: "#slides",
+		controller: ".jFlowControl", // must be class, use . sign
+		slideWrapper : "#jFlowSlide", // must be id, use # sign
+		selectedWrapper: "jFlowSelected",  // just pure text, no sign
+		auto: true,		//auto change slide, default true
+		width: "950px",
+		height: "359px",
+		duration: 400,
+		prev: ".jFlowPrev", // must be class, use . sign
+		next: ".jFlowNext" // must be class, use . sign
+	});
+});
+</script>
+
+<script type="text/javascript">
+/* Simple Toggle by Soh Tanaka - www.sohtanaka.com  */
+$(document).ready(function(){
+	
+	//Set default open/close settings
+	$('.acc_container').hide(); //Hide/close all containers
+	$('.acc_trigger:first').addClass('active').next().show(); //Add "active" class to first trigger, then show/open the immediate next container
+	
+	$(".acc_trigger").click(function(){
+		$(this).toggleClass("active").next().slideToggle("fast");
+		return false; //Prevent the browser jump to the link anchor
+	});
+});
+</script>
+
+
+</head>
+
+<body>
+
+<div id="Container">
+    <div id="Outer">
+    	<div id="Header">
+        	<div id="Logo"><div id="LogoContainer"><h1><a href="#">Baby Beanbags</a></h1></div></div>
+            <div id="TopMenu">
+            	<p>Free Delivery Australia Wide</p>
+            	<ul>
+                	<li class="First"><a href="#">Shipping &amp; Delivery</a></li>
+                    <li><a href="#">Buy Online</a></li>
+                    <li><a href="#">Log in</a></li>
+                </ul>
+            </div>
+            <div id="MyCart" class="CartLink"><a href="shopping_cart.htm">View Cart</a><span>My Cart : 0 items</span></div>
+            <div id="Menu">
+            	<ul>
+                	<li class="First ActivePage"><a href="index.htm"><span>Home</span></a></li>
+                    <li><a href="our_collection.htm"><span>Our Collection</span></a></li>
+                    <li><a href="#"><span>Accessories</span></a></li>
+                    <li><a href="benefits.htm"><span>Benefits</span></a></li>
+                    <li><a href="testimonials.htm"><span>Testimonials</span></a></li>
+                    <li><a href="care.htm"><span>Care &amp; Tips</span></a></li>
+                    <li><a href="faq.htm"><span>FAQs</span></a></li>
+                    <li><a href="stockist.htm"><span>Stockists</span></a></li>
+                    <li><a href="about_us.htm"><span>About Us</span></a></li>
+                    <li><a href="contact_us.htm"><span>Contact Us</span></a></li>
+                    <li><a href="blog.htm"><span>Blog</span></a></li>
+                </ul>
+            </div>
+        </div><!-- END #Header -->
+        
+        <div id="Wrapper">
+            <div id="LayoutColumn1" class="Content Wide">
+                <div id="SitemapContent" class="Block Moveable Panel">
+                    <h2><span>Baby Beanbags Sitemap</span></h2>
+                    <p>The sitemap below lists all the pages available on the Baby Beanbags website. <br />If you can’t find what you’re looking for please <a href="#">contact us</a>.</p>
+                    <div class="BlockContent">
+                    	<div class="SitemapGeneral">
+                        	<h3><span>General</span></h3>
+                            <ul>
+                                <li><a href="#"><span>Home</span></a></li>
+                                <li><a href="#"><span>Benefits</span></a></li>
+                                <li><a href="#"><span>Testimonials</span></a></li>
+                                <li><a href="#"><span>Care Instructions</span></a></li>
+                                <li><a href="#"><span>FAQs</span></a></li>
+                                <li><a href="#"><span>About Us</span></a></li>
+                                <li><a href="#"><span>Blog</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="SitemapShopping">
+                        	<h3><span>Shopping</span></h3>
+                            <ul>
+                                <li><a href="#"><span>Our Collection</span></a></li>
+                                <li><a href="#"><span>Accessories</span></a></li>
+                                <li><a href="#"><span>Cart</span></a></li>
+                                <li><a href="#"><span>Login</span></a></li>
+                                <li><a href="#"><span>Shipping &amp; delivery</span></a></li>
+                                <li><a href="#"><span>Returns Policy</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="SitemapContact">
+                        	<h3><span>Get in Touch</span></h3>
+                            <ul>
+                                <li><a href="#"><span>Contact Us</span></a></li>
+                                <li><a href="#"><span>Facebook</span></a></li>
+                                <li><a href="#"><span>Twitter</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="SitemapLegal">
+                        	<h3><span>Legal Stuff</span></h3>
+                            <ul>
+                                <li><a href="#"><span>Terms of Use</span></a></li>
+                                <li><a href="#"><span>Privacy Policy</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="LayoutColumn2" class="Right">
+                <div id="Links" class="Block Links Moveable Panel">
+                    <h2>Helpful Links</h2>
+                    <div class="BlockContent">
+                        <ul>
+                        	<li><a href="#">Contact Us</a></li>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Delivery Information</a></li>
+                            <li><a href="#">Returns</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div><!-- END #Wrapper -->
+        
+        <div id="Footer">
+        	<div class="inner">
+                <ul>
+                    <li><a href="our_collection.htm">Our Collection</a></li>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="shopping_cart.htm">Shopping Cart</a></li>
+                    <li><a href="#">Buy Online</a></li>
+                    <li><a href="#">Delivery</a></li>
+                </ul>
+                <ul>
+                    <li><a href="benefits.htm">Benefits</a></li>
+                    <li><a href="care.htm">Care &amp; Tips</a></li>
+                    <li><a href="faq.htm">FAQs</a></li>
+                    <li><a href="testimonials.htm">Testimonials</a></li>
+                    <li><a href="stockist.htm">Stockists</a></li>
+                </ul>
+                <ul>
+                    <li><a href="about_us.htm">About Us</a></li>
+                    <li><a href="contact_us.htm">Contact Us</a></li>
+                    <li><a href="blog.htm">Blog</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Facebook</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Returns Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="sitemap.htm">Sitemap</a></li>
+                </ul>
+                <p class="PayMethod"><img src="images/payment_method.png" width="185" height="57" alt="" /><span>No Paypal account needed.</span></p>
+                <p class="Copyright">&copy; Copyright  2011 Baby Beanbags. All rights reserved.</p>
+			</div>
+        </div><!-- END #Footer -->
+    </div><!-- END #Outer -->
+</div><!-- END #Container -->
+
+</body>
+</html>

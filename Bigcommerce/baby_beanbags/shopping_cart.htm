@@ -1,0 +1,225 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Shopping Cart</title>
+<link href="css/styles.css" rel="stylesheet" type="text/css" />
+<link href="css/iselector.css" rel="stylesheet" type="text/css" />
+<link href="css/blue.css" rel="stylesheet" type="text/css" />
+<!--[if IE]><link href="ie.css" media="all" rel="stylesheet" type="text/css" /><![endif]-->
+<script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.flow.1.2.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#myController").jFlow({
+		slides: "#slides",
+		controller: ".jFlowControl", // must be class, use . sign
+		slideWrapper : "#jFlowSlide", // must be id, use # sign
+		selectedWrapper: "jFlowSelected",  // just pure text, no sign
+		auto: true,		//auto change slide, default true
+		width: "950px",
+		height: "359px",
+		duration: 400,
+		prev: ".jFlowPrev", // must be class, use . sign
+		next: ".jFlowNext" // must be class, use . sign
+	});
+});
+</script>
+
+
+</head>
+
+<body>
+
+<div id="Container">
+    <div id="Outer">
+    	<div id="Header">
+        	<div id="Logo"><div id="LogoContainer"><h1><a href="#">Baby Beanbags</a></h1></div></div>
+            <div id="TopMenu">
+            	<p>Free Delivery Australia Wide</p>
+            	<ul>
+                	<li class="First"><a href="#">Shipping &amp; Delivery</a></li>
+                    <li><a href="#">Buy Online</a></li>
+                    <li><a href="#">Log in</a></li>
+                </ul>
+            </div>
+            <div id="MyCart" class="CartLink"><a href="shopping_cart.htm">View Cart</a><span>My Cart : 0 items</span></div>
+            <div id="Menu">
+            	<ul>
+                	<li class="First ActivePage"><a href="index.htm"><span>Home</span></a></li>
+                    <li><a href="our_collection.htm"><span>Our Collection</span></a></li>
+                    <li><a href="#"><span>Accessories</span></a></li>
+                    <li><a href="benefits.htm"><span>Benefits</span></a></li>
+                    <li><a href="testimonials.htm"><span>Testimonials</span></a></li>
+                    <li><a href="care.htm"><span>Care &amp; Tips</span></a></li>
+                    <li><a href="faq.htm"><span>FAQs</span></a></li>
+                    <li><a href="stockist.htm"><span>Stockists</span></a></li>
+                    <li><a href="about_us.htm"><span>About Us</span></a></li>
+                    <li><a href="contact_us.htm"><span>Contact Us</span></a></li>
+                    <li><a href="blog.htm"><span>Blog</span></a></li>
+                </ul>
+            </div>
+        </div><!-- END #Header -->
+        
+        <div id="Wrapper">
+            <div id="LayoutColumn1" class="Content Wide">
+            	<div id="CartHeader" class="Block Moveable Panel">
+                    <h2>
+                    	<span class="FloatRight"><a title="" onclick="" href="checkout.htm"><img alt="" src="images/CheckoutButton.gif" /></a></span>
+                        Your Shopping Cart
+                    </h2>
+                </div>
+            	<div id="CartContent" class="Block Moveable Panel">
+					<div class="BlockContent">
+                    	<form id="cartForm" action="">
+                            <table class="CartContents Stylize General" cellspacing="0" cellpadding="0">
+                                <thead>
+                                    <tr class="First Last Odd Even">
+                                        <th colspan="2">Cart Items</th>
+                                        <th class="ARight">Qty</th>
+                                        <th class="ARight">Item Price</th>
+                                        <th class="ARight">Subtotal</th>
+                                    </tr>
+                                </thead>
+                                <tfoot>
+                                    <tr class="SubTotal First">
+                                        <td colspan="4" class="Even">Subtotal:</td>
+                                        <td class="Odd"><em class="ProductPrice">$326.95</em></td>
+                                    </tr>
+                                    <tr class="SubTotal Odd Even">
+                                        <td colspan="5" class="Even"> <a class="EstimateShippingLink" href="#"><em>Calculate shipping &amp; Handling</em></a></td>
+                                    </tr>
+                                    <tr class="SubTotal Last">
+                                        <td colspan="4" class="Odd"><strong>Grand Total:</strong></td>
+                                        <td class="Even"><em class="ProductPrice">$326.95</em></td>
+                                    </tr>
+                                    </tfoot>
+                                   <tbody>
+                                      <tr class="First Odd">
+                                        <td class="CartThumb Odd"><a href="product_display.htm"><img src="images/img_cart_1.jpg" width="174" height="128" alt="" /></a>&nbsp;</td>
+                                        <td colspan="1" class="ProductName Even"><a href="product_display.htm">Caramel Fudge Baby Beanbag</a><span>(Filled,  includes 2 seat covers)</span></td>
+                                        <td align="center" class="CartItemQuantity Odd">
+                                            <select class="Field45 quantityInput" name="">
+                                                <option value="0">0</option>
+                                                <option value="1" selected="selected">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                                <option value="9">9</option>
+                                                <option value="10">10</option>
+                                                <option value="11">11</option>
+                                            </select>
+                                            <div><a class="CartRemoveLink" href="#">remove</a></div>
+                                        </td>
+                                        <td align="center" class="CartItemIndividualPrice Even"> $149.99<br /></td>
+                                        <td align="right" class="CartItemTotalPrice Odd"><em class="ProductPrice">$149.99<br />
+                                        </em></td>
+                                    </tr>
+                                    <tr class="Last Even">
+                                        <td class="CartThumb Even"><a href="product_display.htm"><img src="images/img_cart_2.jpg" width="174" height="128" alt="" /></a>&nbsp;</td>
+                                        <td colspan="1" class="ProductName Odd"><a href="product_display.htm">Disco Jellybean Baby Beanbag</a><span>(Filled,  includes 2 seat covers)</span></td>
+                                        <td align="center" class="CartItemQuantity Even">
+                                            <select class="Field45 quantityInput" name="">
+                                                <option value="0">0</option>
+                                                <option value="1" selected="selected">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                                <option value="9">9</option>
+                                                <option value="10">10</option>
+                                                <option value="11">11</option>
+                                            </select>
+                                            <div><a class="CartRemoveLink" href="#">remove</a></div>
+                                        </td>
+                                        <td align="center" class="CartItemIndividualPrice Odd"> $149.99<br /></td>
+                                        <td align="right" class="CartItemTotalPrice Even"><em class="ProductPrice">$149.99<br />
+                                        </em></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="FloatLeft"><input type="image" alt="Update" src="images/UpdateQtyButton.gif" /></div>
+                            <div class="FloatRight">
+                                <div class="ProceedToCheckout"><div class="CheckoutButton"><a title="" onclick="" href="checkout.htm"><img alt="" src="images/CheckoutButton.gif" /></a></div></div>
+                                <div class="KeepShopping"><a href="index.htm">Click here to keep shopping</a></div>
+							</div>
+                            <br class="Clear" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="LayoutColumn2" class="Right">
+                <div id="SideCouponCodeBox" class="Block Moveable Panel">
+					<h2>Coupon Code</h2>
+                    <div class="BlockContent">
+                    	<form method="post" action="#">
+                        	<div class="CouponCode">
+                                <p>If you have a coupon code enter it below and click <q>Go</q>.</p>
+                                <input id="couponcode" class="Textbox Field100" type="text" name="couponcode" />
+                                <input name="" type="image" src="images/GoButton.png" alt="Go" />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+                <div id="SideGiftCertificateCodeBox" class="Block Moveable Panel">
+					<h2>Redeem Gift Certificate</h2>
+                    <div class="BlockContent">
+                    	<form method="post" action="#">
+                        	<div class="GiftCertificateCode">
+                            	<p>To pay for your order with a gift certificate please enter the code and click <q>Go</q>.</p>
+                                <input id="giftcertificatecode" class="Textbox Field100" type="text" name="giftcertificatecode" />
+								<input name="" type="image" src="images/GoButton.png" alt="Go" />
+                            </div>
+                        </form>
+                    </div>
+				</div>
+            </div>
+        </div><!-- END #Wrapper -->
+        
+        <div id="Footer">
+        	<div class="inner">
+                <ul>
+                    <li><a href="our_collection.htm">Our Collection</a></li>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="shopping_cart.htm">Shopping Cart</a></li>
+                    <li><a href="#">Buy Online</a></li>
+                    <li><a href="#">Delivery</a></li>
+                </ul>
+                <ul>
+                    <li><a href="benefits.htm">Benefits</a></li>
+                    <li><a href="care.htm">Care &amp; Tips</a></li>
+                    <li><a href="faq.htm">FAQs</a></li>
+                    <li><a href="testimonials.htm">Testimonials</a></li>
+                    <li><a href="stockist.htm">Stockists</a></li>
+                </ul>
+                <ul>
+                    <li><a href="about_us.htm">About Us</a></li>
+                    <li><a href="contact_us.htm">Contact Us</a></li>
+                    <li><a href="blog.htm">Blog</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Facebook</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Returns Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="sitemap.htm">Sitemap</a></li>
+                </ul>
+                <p class="PayMethod"><img src="images/payment_method.png" width="185" height="57" alt="" /><span>No Paypal account needed.</span></p>
+                <p class="Copyright">&copy; Copyright  2011 Baby Beanbags. All rights reserved.</p>
+			</div>
+        </div><!-- END #Footer -->
+    </div><!-- END #Outer -->
+</div><!-- END #Container -->
+
+</body>
+</html>

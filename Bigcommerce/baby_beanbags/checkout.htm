@@ -1,0 +1,362 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Checkout</title>
+<link href="css/styles.css" rel="stylesheet" type="text/css" />
+<link href="css/iselector.css" rel="stylesheet" type="text/css" />
+<link href="css/blue.css" rel="stylesheet" type="text/css" />
+<!--[if IE]><link href="ie.css" media="all" rel="stylesheet" type="text/css" /><![endif]-->
+<script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.flow.1.2.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#myController").jFlow({
+		slides: "#slides",
+		controller: ".jFlowControl", // must be class, use . sign
+		slideWrapper : "#jFlowSlide", // must be id, use # sign
+		selectedWrapper: "jFlowSelected",  // just pure text, no sign
+		auto: true,		//auto change slide, default true
+		width: "950px",
+		height: "359px",
+		duration: 400,
+		prev: ".jFlowPrev", // must be class, use . sign
+		next: ".jFlowNext" // must be class, use . sign
+	});
+});
+</script>
+
+
+</head>
+
+<body>
+
+<div id="Container">
+    <div id="Outer">
+    	<div id="Header">
+        	<div id="Logo"><div id="LogoContainer"><h1><a href="#">Baby Beanbags</a></h1></div></div>
+            <div id="TopMenu">
+            	<p>Free Delivery Australia Wide</p>
+            	<ul>
+                	<li class="First"><a href="#">Shipping &amp; Delivery</a></li>
+                    <li><a href="#">Buy Online</a></li>
+                    <li><a href="#">Log in</a></li>
+                </ul>
+            </div>
+            <div id="MyCart" class="CartLink"><a href="shopping_cart.htm">View Cart</a><span>My Cart : 0 items</span></div>
+            <div id="Menu">
+            	<ul>
+                	<li class="First ActivePage"><a href="index.htm"><span>Home</span></a></li>
+                    <li><a href="our_collection.htm"><span>Our Collection</span></a></li>
+                    <li><a href="#"><span>Accessories</span></a></li>
+                    <li><a href="benefits.htm"><span>Benefits</span></a></li>
+                    <li><a href="testimonials.htm"><span>Testimonials</span></a></li>
+                    <li><a href="care.htm"><span>Care &amp; Tips</span></a></li>
+                    <li><a href="faq.htm"><span>FAQs</span></a></li>
+                    <li><a href="stockist.htm"><span>Stockists</span></a></li>
+                    <li><a href="about_us.htm"><span>About Us</span></a></li>
+                    <li><a href="contact_us.htm"><span>Contact Us</span></a></li>
+                    <li><a href="blog.htm"><span>Blog</span></a></li>
+                </ul>
+            </div>
+        </div><!-- END #Header -->
+        
+        <div id="Wrapper">
+            <div id="LayoutColumn1" class="Content Widest">
+                <div class="Block ExpressCheckout">
+                    <div class="ExpressCheckoutBlock %%GLOBAL_CollapsedStepClassAccountDetails%%" id="CheckoutStepAccountDetails" style="%%GLOBAL_ExpressCheckoutHideAccountDetails%%">
+                        <h3 class="ExpressCheckoutTitle">
+                            <a class="ChangeLink" href="#" onclick="return ExpressCheckout.ChangeStep('AccountDetails');">Edit</a>
+                            Step 1: Account Details
+                            <span class="ExpressCheckoutCompletedContent"></span>
+                        </h3>
+                        <div class="ExpressCheckoutContent">
+                            <div class="CreateAccount">
+                                <form action="#" method="post" onsubmit="ExpressCheckout.GuestCheckout(); return false;">
+                                    <div id="CheckoutGuestForm" style="%%GLOBAL_HideGuestCheckoutOptions%%">
+                                        <h4>Not an existing customer?</h4>
+                                        <p>Register with us for a faster checkout, to  track the status of your order and more. You can also checkout as a guest.</p>
+                                        <div class="PL40">
+											<dl>
+												<dd><label><input type="radio" onclick="$('#BillingDetailsLabel').html('Billing Details');" value="guest" id="checkout_type_guest" name="checkout_type" />
+												     Checkout as guest</label></dd>
+												<dd><label><input type="radio" onclick="$('#BillingDetailsLabel').html('Billing &amp; Account Details');" checked="checked" value="register" id="checkout_type_register" name="checkout_type" />
+												     Register </label></dd>
+												<dd class="Submit">
+													<input type="submit" value="Continue" id="CreateAccountButton" /> <span style="display: none" class="LoadingIndicator"><img alt="" src="http://localhost/mike_shoppingcart/templates/default/images/Loading.gif" /></span>
+												</dd>
+											</dl>
+										</div>
+                                    </div>
+                                </form>
+                            </div>
+    
+                            <div class="AccountLogin">
+                                <h4>Already have an account?</h4>
+                                <p id="LoginIntro">If you have an account with us, please sign in.</p>
+    
+                                <form action="#" id="LoginForm" method="post" onsubmit="ExpressCheckout.Login(); return false;">
+                                    <div class="FormContainer HorizontalFormContainer NarrowFormContainer">
+                                        <p style="display: none" class="ErrorMessage" id="CheckoutLoginError">%%GLOBAL_LoginMessage%%</p>
+                                        <dl>
+                                            <dt>Email Address:</dt>
+                                            <dd><input type="text" class="Textbox Field150 InitialFocus" name="login_email" id="login_email" /></dd>
+                                            <dt>Password:</dt>
+                                            <dd><input type="password" class="Textbox Field150" name="login_pass" id="login_pass" /></dd>
+                                        </dl>
+                                    </div>
+                                    <p class="Submit"><input id="LoginButton" type="submit" value="Sign in" /><span class="LoadingIndicator" style="display: none"><img src="%%GLOBAL_IMG_PATH%%/Loading.gif" alt="" /></span></p>
+                                    <p class="ForgotPassword"> <a href="%%GLOBAL_ShopPath%%/login.php?action=reset_password">Forgot your password?</a></p>
+                                </form>
+                            </div>
+                            <div class="Clear"></div>
+                        </div>
+                    </div><!-- END #CheckoutStepAccountDetails -->
+                    
+                    <div class="Clear ExpressCheckoutBlock %%GLOBAL_CollapsedStepClassBillingAddress%%" id="CheckoutStepBillingAddress">
+                        <h3 class="ExpressCheckoutTitle">
+                            <a class="ChangeLink" href="#" onclick="return ExpressCheckout.ChangeStep('BillingAddress');">Edit</a>
+                            Step 2: Billing &amp; Account Details
+                            <span id="BillingDetailsLabel"></span>
+                            <span class="ExpressCheckoutCompletedContent"></span>
+                        </h3>
+                        <div class="ExpressCheckoutContent">
+                            <form method="post" action="#" onsubmit="return ExpressCheckout.Choose%%GLOBAL_UpperAddressType%%Address();">
+                                <div class="Clear PL20 Add%%GLOBAL_UpperAddressType%%Address" style="%%GLOBAL_HideCreateAddress%%">
+                                    <img src="%%GLOBAL_IMG_PATH%%/NodeJoin.gif" class="FloatLeft" style="%%GLOBAL_HideChooseAddress%%" alt="" />
+                                    <div class="FormContainer HorizontalFormContainer Clear">
+                                        <dl>
+                                            <dt>Email *</dt>
+                                            <dd><input name="" type="text" /></dd>
+                                            <dt>Password *</dt>
+                                            <dd><input name="" type="text" /></dd>
+                                            <dt>Confirm Password *</dt>
+                                            <dd><input name="" type="text" /></dd>
+                                            <dt>Title *</dt>
+                                            <dd><select name=""><option>Title1</option><option>Title2</option><option>Title3</option></select></dd>
+                                            <dt>First Name *</dt>
+                                            <dd><input name="" type="text" /></dd>
+                                            <dt>Last Name *</dt>
+                                            <dd><input name="" type="text" /></dd>
+                                            <dt>Company Name</dt>
+                                            <dd><input name="" type="text" /></dd>
+                                            <dt>Phone Number *</dt>
+                                            <dd><input name="" type="text" /></dd>
+                                            <dt>Address Line 1 *</dt>
+                                            <dd><input name="" type="text" /></dd>
+                                            <dt>Address Line 2 *</dt>
+                                            <dd><input name="" type="text" /></dd>
+                                            <dt>Suburb / City *</dt>
+                                            <dd><input name="" type="text" /></dd>
+                                            <dt>Country *</dt>
+                                            <dd><select name=""><option>Country 1</option><option>Country 2</option><option>Country 3</option></select></dd>
+                                            <dt>State / Province *</dt>
+                                            <dd><select name=""><option>Province 1</option><option>Province 2</option><option>Province 3</option></select></dd>
+                                            <dt>Zip / Postcode *</dt>
+                                            <dd><input name="" type="text" /></dd>
+                                            <dt>Save This Address?</dt>
+                                            <dd><input name="" type="checkbox" value="" class="Checkbox" />Yes, save this address to my address book</dd>
+                                            <dt>Ship to This Address?</dt>
+                                            <dd><input name="" type="checkbox" value="" class="Checkbox" />Yes, ship to this address</dd>
+                                            <dd class="Submit"><input type="submit" class="%%GLOBAL_AddressType%%Button" value="Bill &amp; Ship to this Address" /> <span class="LoadingIndicator" style="display: none"><img src="%%GLOBAL_IMG_PATH%%/Loading.gif" alt="" /></span></dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </form>
+                            
+                        </div>
+                    </div><!-- END #CheckoutStepBillingAddress -->
+                    
+                    <div class="Clear ExpressCheckoutBlock %%GLOBAL_CollapsedStepClassShippingAddress%%" id="CheckoutStepShippingAddress" style="%%GLOBAL_ExpressCheckoutHideShippingAddress%%">
+                        <h3 class="ExpressCheckoutTitle">
+                            <a class="ChangeLink" href="#" onclick="return ExpressCheckout.ChangeStep('ShippingAddress');">Edit</a>
+                            Step 3: Shipping Details
+                            <span class="ExpressCheckoutCompletedContent"></span>
+                        </h3>
+                        <div class="ExpressCheckoutContent">
+                            <form method="post" action="#" onsubmit="return ExpressCheckout.Choose%%GLOBAL_UpperAddressType%%Address();">
+                                <div class="Clear PL20 Add%%GLOBAL_UpperAddressType%%Address" style="%%GLOBAL_HideCreateAddress%%">
+                                    <img src="%%GLOBAL_IMG_PATH%%/NodeJoin.gif" class="FloatLeft" style="%%GLOBAL_HideChooseAddress%%" alt="" />
+                                    <div class="FormContainer HorizontalFormContainer Clear">
+                                        <dl>
+                                            <dt>Title *</dt>
+                                            <dd><select name=""><option>Title1</option><option>Title2</option><option>Title3</option></select></dd>
+                                            <dt>First Name *</dt>
+                                            <dd><input name="" type="text" /></dd>
+                                            <dt>Last Name *</dt>
+                                            <dd><input name="" type="text" /></dd>
+                                            <dt>Phone Number *</dt>
+                                            <dd><input name="" type="text" /></dd>
+                                            <dt>Address Line 1 *</dt>
+                                            <dd><input name="" type="text" /></dd>
+                                            <dt>Address Line 2 *</dt>
+                                            <dd><input name="" type="text" /></dd>
+                                            <dt>Suburb / City *</dt>
+                                            <dd><input name="" type="text" /></dd>
+                                            <dt>Country *</dt>
+                                            <dd><select name=""><option>Country 1</option><option>Country 2</option><option>Country 3</option></select></dd>
+                                            <dt>State / Province *</dt>
+                                            <dd><select name=""><option>Province 1</option><option>Province 2</option><option>Province 3</option></select></dd>
+                                            <dt>Zip / Postcode *</dt>
+                                            <dd><input name="" type="text" /></dd>
+                                            <dt>Save This Address?</dt>
+                                            <dd><input name="" type="checkbox" value="" class="Checkbox" />Yes, save this address to my address book</dd>
+                                            <dd class="Submit"><input type="submit" class="%%GLOBAL_AddressType%%Button" value="Ship to this Address" /> <span class="LoadingIndicator" style="display: none"><img src="%%GLOBAL_IMG_PATH%%/Loading.gif" alt="" /></span></dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div><!-- END #CheckoutStepShippingAddress -->
+                    
+                    <div class="Clear ExpressCheckoutBlock %%GLOBAL_CollapsedStepClassShippingProvider%%" id="CheckoutStepShippingProvider" style="%%GLOBAL_ExpressCheckoutHideShippingProviders%%">
+                        <h3 class="ExpressCheckoutTitle">
+                            <a class="ChangeLink" href="#" onclick="return ExpressCheckout.ChangeStep('ShippingProvider');">Edit</a>
+                            Step 4: Shipping Method
+                            <span class="ExpressCheckoutCompletedContent"></span>
+                        </h3>
+                        <div class="ExpressCheckoutContent">
+                            <p>Please choose the shipping method for your order:</p>
+                            <p class="FlatRate"><input name="" type="radio" value="" class="Checkbox" /><span>Flat Rate Per Order</span> <strong>$10.00</strong></p>
+                            <p class="Submit"><input name="" type="submit" value="Continue" /></p>
+                        </div>
+                    </div><!-- END #CheckoutStepShippingProvider -->
+                    
+                    <div id="CheckoutStepConfirmation" class="ExpressCheckoutBlock">
+                        <h3 class="ExpressCheckoutTitle">
+                            <a class="ChangeLink" href="#" onclick="return ExpressCheckout.ChangeStep('Confirmation');">Edit</a>
+                            Step 5: Order Confirmation
+                            <span class="ExpressCheckoutCompletedContent"></span>
+                        </h3>
+                        <div class="ExpressCheckoutContent">
+                            <form method="post" action="%%GLOBAL_ShopPath%%/checkout.php" id="OrderConfirmationForm" onsubmit="return ExpressCheckout.ConfirmPaymentProvider()">
+                                <p>Please review the contents of your order below and then choose how you'd like to pay for your order.</p>
+                                <table border="0" cellspacing="0" cellpadding="0" class="OrderTable">
+                                    <tr>
+                                        <th width="50%" scope="col">Product Name</th>
+                                        <th width="13%" scope="col" class="ACenter">Quantity</th>
+                                        <th width="18%" scope="col" class="ARight">Item Price</th>
+                                        <th width="19%" scope="col" class="ARight">Item Total</th>
+                                    </tr>
+                                    <tr class="Item LightBg">
+                                        <td>Jimmyjane Indulgence Set</td>
+                                        <td class="ACenter">2</td>
+                                        <td class="ARight">$30.00 AUD</td>
+                                        <td class="ARight">$60.00 AUD</td>
+                                    </tr>
+                                    <tr class="Item LightBg">
+                                        <td>Jimmyjane Indulgence Set</td>
+                                        <td class="ACenter">1</td>
+                                        <td class="ARight">$35.00 AUD</td>
+                                        <td class="ARight">$35.00 AUD</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2" rowspan="3">&nbsp;</td>
+                                        <td class="LightBg">Sub Total</td>
+                                        <td class="LightBg ARight">$95.00 AUD</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="LightBg">Shipping and Handling<br />
+                                        <em>Flat Rate Per Order</em></td>
+                                        <td class="LightBg ARight">$20.00 AUD</td>
+                                    </tr>
+                                    <tr class="TotalCost">
+                                        <td colspan="2" class="LightBg"><p><span class="FloatLeft">Total</span><span class="FloatRight">$125.00 AUD</span></p></td>
+                                    </tr>
+                                    <tr class="BottomLine">
+                                        <td colspan="4">&nbsp;</td>
+                                    </tr>
+                                    <tr class="ReducePad">
+                                        <td colspan="4">&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2" class="PayMethod">How Would You Like to Pay?
+                                            <p><input name="" type="radio" value="" class="Checkbox" /> Paypal <img src="images/pay_method_paypal.png" width="38" height="23" alt="" /></p>
+                                            <p><input name="" type="radio" value="" class="Checkbox" /> Credit Card <img src="images/pay_method_mastercard.png" width="38" height="23" alt="" /> <img src="images/pay_method_paypal.png" width="38" height="23" alt="" /></p>
+                                        </td>
+                                        <td colspan="2" class="LightBg">
+                                            <p>Redeem a Gift Certificate or Coupon</p>
+                                            <p>To apply a gift certificate or coupon code to this order,  please enter the code below and click 'Apply'.</p>
+                                            <p>Code <input name="" type="text" /> <span class="Submit"><input type="submit" value="Apply" /></span></p>
+                                        </td>
+                                    </tr>
+                                    <tr class="BottomLine">
+                                        <td colspan="4">&nbsp;</td>
+                                    </tr>
+                                    <tr class="ReducePad">
+                                        <td colspan="4">&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="4">Order Instructions/Comments (Optional)<br />
+                                            <textarea name="textarea" id="textarea" cols="135" rows="5"></textarea>
+                                        </td>
+                                    </tr>
+                                    <tr class="BottomLine">
+                                        <td colspan="4">&nbsp;</td>
+                                    </tr>
+                                    <tr class="ReducePad">
+                                        <td colspan="4">&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="4">Join Our Mailing List</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="4"><input name="" type="radio" value="" class="Checkbox" /> 
+                                        I would like to receive Baby Beanbags offers and promotions</td>
+                                    </tr>
+                                    <tr class="BottomLine">
+                                        <td colspan="4">&nbsp;</td>
+                                    </tr>
+                                    <tr class="ReducePad">
+                                        <td colspan="4">&nbsp;</td>
+                                    </tr>
+                                    <tr class="ARight">
+                                        <td colspan="4" class="Submit"><input type="submit" value="continue to payment page" /></td>
+                                    </tr>
+                                </table>
+                            </form>
+                        </div>
+                    </div><!-- END #CheckoutStepConfirmation -->
+                    
+                </div><!-- END #ExpressCheckout -->
+            </div>
+        </div><!-- END #Wrapper -->
+        
+        <div id="Footer">
+        	<div class="inner">
+                <ul>
+                    <li><a href="our_collection.htm">Our Collection</a></li>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="shopping_cart.htm">Shopping Cart</a></li>
+                    <li><a href="#">Buy Online</a></li>
+                    <li><a href="#">Delivery</a></li>
+                </ul>
+                <ul>
+                    <li><a href="benefits.htm">Benefits</a></li>
+                    <li><a href="care.htm">Care &amp; Tips</a></li>
+                    <li><a href="faq.htm">FAQs</a></li>
+                    <li><a href="testimonials.htm">Testimonials</a></li>
+                    <li><a href="stockist.htm">Stockists</a></li>
+                </ul>
+                <ul>
+                    <li><a href="about_us.htm">About Us</a></li>
+                    <li><a href="contact_us.htm">Contact Us</a></li>
+                    <li><a href="blog.htm">Blog</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Facebook</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Returns Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="sitemap.htm">Sitemap</a></li>
+                </ul>
+                <p class="PayMethod"><img src="images/payment_method.png" width="185" height="57" alt="" /><span>No Paypal account needed.</span></p>
+                <p class="Copyright">&copy; Copyright  2011 Baby Beanbags. All rights reserved.</p>
+			</div>
+        </div><!-- END #Footer -->
+    </div><!-- END #Outer -->
+</div><!-- END #Container -->
+
+</body>
+</html>

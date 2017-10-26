@@ -1,0 +1,262 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Blog</title>
+<link href="css/styles.css" rel="stylesheet" type="text/css" />
+<link href="css/iselector.css" rel="stylesheet" type="text/css" />
+<link href="css/blue.css" rel="stylesheet" type="text/css" />
+<!--[if lte IE 8]><link href="ie.css" media="all" rel="stylesheet" type="text/css" /><![endif]-->
+<script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.flow.1.2.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#myController").jFlow({
+		slides: "#slides",
+		controller: ".jFlowControl", // must be class, use . sign
+		slideWrapper : "#jFlowSlide", // must be id, use # sign
+		selectedWrapper: "jFlowSelected",  // just pure text, no sign
+		auto: true,		//auto change slide, default true
+		width: "950px",
+		height: "359px",
+		duration: 400,
+		prev: ".jFlowPrev", // must be class, use . sign
+		next: ".jFlowNext" // must be class, use . sign
+	});
+});
+</script>
+
+<script type="text/javascript">
+/* Simple Toggle by Soh Tanaka - www.sohtanaka.com  */
+$(document).ready(function(){
+	
+	//Set default open/close settings
+	$('.acc_container').hide(); //Hide/close all containers
+	$('.acc_trigger:first').addClass('active').next().show(); //Add "active" class to first trigger, then show/open the immediate next container
+	
+	$(".acc_trigger").click(function(){
+		$(this).toggleClass("active").next().slideToggle("fast");
+		return false; //Prevent the browser jump to the link anchor
+	});
+});
+</script>
+
+
+</head>
+
+<body>
+
+<div id="Container">
+    <div id="Outer">
+    	<div id="Header">
+        	<div id="Logo"><div id="LogoContainer"><h1><a href="#">Baby Beanbags</a></h1></div></div>
+            <div id="TopMenu">
+            	<p>Free Delivery Australia Wide</p>
+            	<ul>
+                	<li class="First"><a href="#">Shipping &amp; Delivery</a></li>
+                    <li><a href="#">Buy Online</a></li>
+                    <li><a href="#">Log in</a></li>
+                </ul>
+            </div>
+            <div id="MyCart" class="CartLink"><a href="shopping_cart.htm">View Cart</a><span>My Cart : 0 items</span></div>
+            <div id="Menu">
+            	<ul>
+                	<li class="First ActivePage"><a href="index.htm"><span>Home</span></a></li>
+                    <li><a href="our_collection.htm"><span>Our Collection</span></a></li>
+                    <li><a href="#"><span>Accessories</span></a></li>
+                    <li><a href="benefits.htm"><span>Benefits</span></a></li>
+                    <li><a href="testimonials.htm"><span>Testimonials</span></a></li>
+                    <li><a href="care.htm"><span>Care &amp; Tips</span></a></li>
+                    <li><a href="faq.htm"><span>FAQs</span></a></li>
+                    <li><a href="stockist.htm"><span>Stockists</span></a></li>
+                    <li><a href="about_us.htm"><span>About Us</span></a></li>
+                    <li><a href="contact_us.htm"><span>Contact Us</span></a></li>
+                    <li><a href="blog.htm"><span>Blog</span></a></li>
+                </ul>
+            </div>
+        </div><!-- END #Header -->
+        
+        <div id="Wrapper">
+            <div id="LayoutColumn1" class="Content Wide">
+                <div id="LatestBlog" class="Block Moveable Panel LatestBlog">
+                    <h2>Latest Blog Posts</h2>
+                    <div class="BlockContent">
+                        <ul class="BlogList">
+                            <li>
+                                <div class="BlogImage">
+                                    <a href="blog_post.htm"><img src="images/blog_image_1.jpg" width="218" height="141" alt="" /></a>
+                                </div>
+                                <div class="BlogTitle">
+                                    <a href="blog_post.htm">Many young babies lorem. </a>
+                                </div>
+                                <div class="BlogDetail">
+                                    Moving the filling to the back of the beanbag you can sit your baby in an upright position.  <a href="blog_post.htm" class="ReadMore">Read More</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="BlogImage">
+                                    <a href="blog_post.htm"><img src="images/blog_image_2.jpg" width="218" height="141" alt="" /></a>
+                                </div>
+                                <div class="BlogTitle">
+                                    <a href="blog_post.htm">Many young babies lorem. </a>
+                                </div>
+                                <div class="BlogDetail">
+                                    Moving the filling to the back of the beanbag you can sit your baby in an upright position. <a href="blog_post.htm" class="ReadMore">Read More</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="BlogImage">
+                                    <a href="blog_post.htm"><img src="images/blog_image_3.jpg" width="218" height="141" alt="" /></a>
+                                </div>
+                                <div class="BlogTitle">
+                                    <a href="blog_post.htm">Many young babies lorem. </a>
+                                </div>
+                                <div class="BlogDetail">
+                                    Moving the filling to the back of the beanbag you can sit your baby in an upright position. <a href="blog_post.htm" class="ReadMore">Read More</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="BlogImage">
+                                    <a href="#"><img src="images/blog_image_1.jpg" width="218" height="141" alt="" /></a>
+                                </div>
+                                <div class="BlogTitle">
+                                    <a href="#">Many young babies lorem. </a>
+                                </div>
+                                <div class="BlogDetail">
+                                    Moving the filling to the back of the beanbag you can sit your baby in an upright position.  <a href="#" class="ReadMore">Read More</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="BlogImage">
+                                    <a href="#"><img src="images/blog_image_2.jpg" width="218" height="141" alt="" /></a>
+                                </div>
+                                <div class="BlogTitle">
+                                    <a href="#">Many young babies lorem. </a>
+                                </div>
+                                <div class="BlogDetail">
+                                    Moving the filling to the back of the beanbag you can sit your baby in an upright position. <a href="#" class="ReadMore">Read More</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="BlogImage">
+                                    <a href="#"><img src="images/blog_image_3.jpg" width="218" height="141" alt="" /></a>
+                                </div>
+                                <div class="BlogTitle">
+                                    <a href="#">Many young babies lorem. </a>
+                                </div>
+                                <div class="BlogDetail">
+                                    Moving the filling to the back of the beanbag you can sit your baby in an upright position. <a href="#" class="ReadMore">Read More</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="BlogImage">
+                                    <a href="#"><img src="images/blog_image_1.jpg" width="218" height="141" alt="" /></a>
+                                </div>
+                                <div class="BlogTitle">
+                                    <a href="#">Many young babies lorem. </a>
+                                </div>
+                                <div class="BlogDetail">
+                                    Moving the filling to the back of the beanbag you can sit your baby in an upright position.  <a href="#" class="ReadMore">Read More</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="BlogImage">
+                                    <a href="#"><img src="images/blog_image_2.jpg" width="218" height="141" alt="" /></a>
+                                </div>
+                                <div class="BlogTitle">
+                                    <a href="#">Many young babies lorem. </a>
+                                </div>
+                                <div class="BlogDetail">
+                                    Moving the filling to the back of the beanbag you can sit your baby in an upright position. <a href="#" class="ReadMore">Read More</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="BlogImage">
+                                    <a href="#"><img src="images/blog_image_3.jpg" width="218" height="141" alt="" /></a>
+                                </div>
+                                <div class="BlogTitle">
+                                    <a href="#">Many young babies lorem. </a>
+                                </div>
+                                <div class="BlogDetail">
+                                    Moving the filling to the back of the beanbag you can sit your baby in an upright position. <a href="#" class="ReadMore">Read More</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="PrevNext">
+                            <ul>
+                                <li class="Prev"><a href="#">Prev</a></li>
+                                <li><a href="#">1</a></li>
+                                <li class="Current"><a href="#">2</a></li>
+                                <li class="Next"><a href="#">Next</a></li>
+                            </ul>
+                        </div><!-- END .PrevNext -->
+                    </div>
+                </div><!-- END #LatestBlog -->
+            </div>
+            <div id="LayoutColumn2" class="Right">
+                <div id="SideBlogCategory" class="Block BlogCategory Moveable Panel">
+                    <h2>Categories</h2>
+                    <div class="BlockContent">
+                        <ul>
+                            <li><a href="#">Category Title 1</a></li>
+                            <li class="Current"><a href="#">Category Title 2</a></li>
+                            <li><a href="#">Category Title 3</a></li>
+                            <li><a href="#">Category Title 4</a></li>
+                            <li><a href="#">Category Title 5</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div id="SideBlogArchive" class="Block BlogArchive Moveable Panel">
+                    <h2>Archive</h2>
+                    <div class="BlockContent">
+                        <ul>
+                            <li><a href="#">May 2011</a></li>
+                            <li><a href="#">April 2011</a></li>
+                            <li><a href="#">March 2011</a></li>
+                            <li><a href="#">February 2011</a></li>
+                            <li><a href="#">January 2011</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div><!-- END #Wrapper -->
+        
+        <div id="Footer">
+        	<div class="inner">
+                <ul>
+                    <li><a href="our_collection.htm">Our Collection</a></li>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="shopping_cart.htm">Shopping Cart</a></li>
+                    <li><a href="#">Buy Online</a></li>
+                    <li><a href="#">Delivery</a></li>
+                </ul>
+                <ul>
+                    <li><a href="benefits.htm">Benefits</a></li>
+                    <li><a href="care.htm">Care &amp; Tips</a></li>
+                    <li><a href="faq.htm">FAQs</a></li>
+                    <li><a href="testimonials.htm">Testimonials</a></li>
+                    <li><a href="stockist.htm">Stockists</a></li>
+                </ul>
+                <ul>
+                    <li><a href="about_us.htm">About Us</a></li>
+                    <li><a href="contact_us.htm">Contact Us</a></li>
+                    <li><a href="blog.htm">Blog</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Facebook</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Returns Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="sitemap.htm">Sitemap</a></li>
+                </ul>
+                <p class="PayMethod"><img src="images/payment_method.png" width="185" height="57" alt="" /><span>No Paypal account needed.</span></p>
+                <p class="Copyright">&copy; Copyright  2011 Baby Beanbags. All rights reserved.</p>
+			</div>
+        </div><!-- END #Footer -->
+    </div><!-- END #Outer -->
+</div><!-- END #Container -->
+
+</body>
+</html>
