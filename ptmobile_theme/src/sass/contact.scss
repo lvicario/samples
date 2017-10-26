@@ -1,0 +1,53 @@
+@import 'global/common';
+
+// Section/Components
+@import 'components/form';
+@import 'components/contact-option';
+@import 'vendor/jquery.fancybox';
+
+.contact-container {
+    width: 275px;
+    margin: 0 auto;
+
+    h3 {
+    	color: $default-font-color;
+        padding: 0 0 0 20px;
+    }
+
+    .success-message {
+    	padding: 50px 15px 65px;
+    	color: $contact-us-success-message-font-color;
+    	background: $contact-us-success-message-background-color;
+    	font-size: $default-font-size;
+    	margin: 0 auto;
+
+        a {
+            color: $contact-us-success-message-link-color;
+            text-decoration: underline;
+        }
+    }
+}
+
+.user-dial {
+    color: $default-font-color;
+    padding: 20px;
+    .contact-number {
+        color: $default-font-color;
+    }
+}
+
+.fancybox-wrap {
+    background: $lightbox-background-color;
+    @extend .text-center;
+}
+
+.fancybox-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    @include iconify-text($sprite, -121px, -1240px, 24px, 27px);
+}
+
+.fancybox-skin {
+    background: transparent;
+}

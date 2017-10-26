@@ -1,0 +1,50 @@
+.language-lightbox {
+    .language-switcher-locale-url {
+        width: 264px;
+        border: 4px solid $lightbox-border-color;
+        background-color: $lightbox-item-link-bg-color;
+        color: $lightbox-item-link-color;
+
+        ul {
+            margin-bottom: 0;
+            padding-left: 0;
+        }
+
+        li {
+            display: inline;
+        }
+
+        a {
+            display: block;
+            height: 38px;
+            line-height: 38px;
+            padding: 0 10px 0 60px;
+            border-bottom: 1px solid $lightbox-border-color;
+            background: $lightbox-item-link-bg-color url($sprite) no-repeat;
+            color: $lightbox-item-link-color;
+            text-decoration: none;
+
+            &:before {
+                display: none;
+            }
+
+            &:hover {
+                background-color: $lightbox-border-color;
+            }
+        }
+
+        .en a {
+            background-position: 7px -1514px;
+        }
+
+        .zh-hans a {
+            background-position: 7px -1574px;
+        }
+
+        // @include media(">=tablet") {
+        //     a {
+        //         padding-left: 120px;
+        //     }
+        // }
+    }
+}

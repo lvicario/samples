@@ -1,0 +1,41 @@
+@import 'global/common';
+
+// Section/Components
+@import 'components/language-selector';
+@import 'components/checkbox';
+@import 'vendor/jquery.fancybox';
+@import 'components/language-lightbox';
+
+.balance-option {
+	margin: 20px 0;
+	padding: 0 $side-gap 0 $side-gap;
+	font-size: 14px;
+
+    > input {
+        float: right;
+    }
+
+    @include media(">=tablet") {
+        padding-left: $side-gap + $side-gap-addition;
+        padding-right: $side-gap + $side-gap-addition;
+    }
+}
+
+.language-switcher-locale-url {
+    a {
+        padding-left: $side-gap;
+        font-size: 14px;
+
+        &:before {
+            right: $side-gap;
+        }
+
+        @include media(">=tablet") {
+        	padding-left: $side-gap + $side-gap-addition;
+
+            &:before {
+                right: $side-gap + $side-gap-addition;
+            }
+        }
+    }
+}

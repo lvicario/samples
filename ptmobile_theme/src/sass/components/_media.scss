@@ -1,0 +1,56 @@
+.media {
+	@extend .clearfix;
+	margin-bottom: 20px;
+
+	&-object {
+		margin: 0 10px 10px 0;
+		float: left;
+		width: 150px;
+		border: 1px solid #e5c99b;
+	}
+
+	&-heading {
+		overflow: hidden;
+		max-height: 55px;
+		margin: 5px 0 0;
+		font-size: 16px;
+		line-height: 18px;
+		font-weight: normal;
+
+		a {
+			color: #e5c99b;
+			text-decoration: none;
+		}
+	}
+
+	&-body {
+		overflow: hidden;
+		font-size: 14px;
+	}
+
+	&-blurb {
+		display: none;
+	}
+
+	&-link {
+		a {
+			color: #ffe000;
+			text-decoration: none;
+		}
+	}
+
+	@include media(">=tablet") {
+		&-heading {
+			max-height: 36px;
+		}
+		&-blurb {
+			overflow: hidden;
+			display: block;
+			max-height: 55px;
+			margin-bottom: 0;
+		}
+		&-link {
+			text-align: right;
+		}
+	}
+}

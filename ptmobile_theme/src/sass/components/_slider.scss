@@ -1,0 +1,115 @@
+@import '../vendor/jquery.bxslider';
+
+// Slider
+.main-slider {
+	max-width: $container-max-width;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.main-slider .bx-wrapper {
+	margin-bottom: 0;
+}
+
+.main-slider .bx-wrapper img {
+    width: 100%;
+}
+
+.main-slider .bx-wrapper .bx-viewport {
+	@include box-shadow(none);
+    border: none;
+    left: 0;
+}
+
+// Controls
+.main-slider .bx-wrapper .bx-controls-direction a {
+	width: 9px;
+	height: 23px;
+	background-image: url($sprite);
+	@include transition(none);
+}
+
+.main-slider .bx-wrapper .bx-controls-direction a {
+	@extend .hide-text;
+	top: 50%;
+	margin-top: -45px;
+	width: 40px;
+	height: 90px;
+	background: none;
+
+	&:before {
+		position: absolute;
+		top: 50%;
+		margin-top: -12px;
+		left: 50%;
+		margin-left: -5px;
+		display: block;
+		content: "";
+		width: 9px;
+		height: 23px;
+		background-image: url($sprite);
+	}
+}
+
+.main-slider .bx-wrapper a.bx-prev {
+	left: 0;
+	margin-left: -6px;
+
+	&:before {
+		background-position: 0 -760px;	
+	}
+
+	&:hover:before {
+		background-position: 0 -880px;
+	}
+}
+
+.main-slider .bx-wrapper a.bx-next {
+	right: 0;
+	margin-right: -6px;
+
+	&:before {
+		background-position: 0 -700px;
+	}
+
+	&:hover:before {
+		background-position: 0 -820px;
+	}
+}
+
+@include media(">=tablet") {	
+	.main-slider .bx-wrapper .bx-controls-direction a {
+
+		&:before {
+			margin-top: -25px;
+			width: 20px;
+			height: 51px;
+		}
+	}
+
+	.main-slider .bx-wrapper .bx-controls-direction .bx-prev {
+		margin-left: 0;
+
+		&:before {
+			margin-left: -8px;
+			background-position: 0 -1440px;
+		}
+
+		&:hover:before {
+			background-position: -40px -1440px;
+		}
+	}
+
+	.main-slider .bx-wrapper .bx-controls-direction .bx-next {
+		margin-right: 0;
+
+		&:before {
+			margin-left: -11px;
+			background-position: -80px -1440px;
+		}	
+
+		&:hover:before {
+			background-position: -120px -1440px;
+		}	
+	}
+}

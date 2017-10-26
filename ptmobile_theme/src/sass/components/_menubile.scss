@@ -1,0 +1,383 @@
+@include media("<tablet") {
+    html,
+    .menubile-bound {
+        overflow-x: hidden;
+        overflow-y: auto;
+        height: auto;
+        width: 100%;
+    }
+
+    .nav {
+        display: none;
+    }
+    
+    .menubile-nav {
+        
+    }
+
+    .menubile-nav {
+        position: absolute;
+        top: -100%;
+        left: -100%;
+        z-index: -1;
+        display: block;
+        overflow: scroll;
+        overflow-x: visible;
+        overflow: hidden;
+        height: 100%;
+
+        width: $navobile-width;
+        border-right: 1px solid $navobile-border-color;
+        background: $navobile-background-color;
+        color: $navobile-font-color;
+        @include transition(all .2s linear);
+    }
+
+    .menubile-bound .menubile-nav-open {
+        z-index: 5 !important;
+        overflow: auto;
+        overflow-x: visible;
+    }
+
+    .menubile-bound .menubile-nav {
+        left: 0;
+        position: fixed;
+        top: 0;
+        z-index: 1;
+    }
+
+    .menubile-nav ul {
+        overflow: hidden;
+    }
+
+    .menubile-nav li {
+        float: none;
+        overflow: hidden;
+    }
+
+    .menubile-content {
+        position: relative;
+        z-index: 3;
+        min-height: 320px;
+        background: $default-bg-color;
+
+        -webkit-transition: -webkit-transform 0.2s linear;
+        -moz-transition: -moz-transform 0.2s linear;
+        -o-transition: -ms-transform 0.2s linear;
+        -ms-transition: -o-transform 0.2s linear;
+        transition: transform 0.2s linear;
+    }
+
+    .csstransforms .menubile-content-open {
+        @include translateX(0);
+        background-color: $default-bg-color;
+    }
+
+    .csstransforms .menubile-content-close {
+        @include translateX($navobile-width);
+    }
+}
+
+@include media(">=tablet") {
+    .menubile-nav {
+            display: none;
+    }
+}
+
+
+.navobile-link {
+    @include iconify-text($sprite, 15px, -1163px, 55px, 50px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+
+    @include media(">=tablet") {
+        display: none;
+    }
+}
+
+@include media("<tablet") {
+    .nav {
+        
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+        
+        li {
+            display: inline;
+        }
+
+        a {
+            position: relative;
+            display: block;
+            height: 50px;
+            line-height: 50px;
+            padding: 0 0 0 57px;
+            border-bottom: 1px solid $navobile-border-color;
+            background: transparent url($sprite) no-repeat 100px 100px;
+            color: $navobile-font-color;
+            font-size: 14px;
+            text-decoration: none;
+            -webkit-transition: color .3s, background-color .3s;
+                 -o-transition: color .3s, background-color .3s;
+                    transition: color .3s, background-color .3s;
+            &:hover,
+            &:focus,
+            &:active,
+            &.active-menu {
+                color: $navobile-font-color-hover;
+                background-color: $navobile-background-color-hover;
+            }
+
+            &.in-active-menu {
+                color: #fff;
+                background-color: transparent;
+            }
+        }
+
+        .home a {
+            background-position: 23px 14px;
+            &:hover,
+            &:focus,
+            &:active,
+            &.active-menu {
+                background-position: 23px -46px;
+            }
+        }
+
+        .promotion a {
+            background-position: 23px -106px;
+            &:hover,
+            &:focus,
+            &:active,
+            &.active-menu {
+                background-position: 23px -166px;
+            }
+            &.in-active-menu {
+                background-position: 23px -106px;
+            }
+        }
+        
+        .support a {
+            background-position: 23px -229px;
+            &:hover,
+            &:focus,
+            &:active,
+            &.active-menu {
+                background-position: 23px -289px;
+            }
+            &.in-active-menu {
+                background-position: 23px -229px;
+            }
+        }
+        
+        .setting a {
+            background-position: 23px -349px;
+            &:hover,
+            &:focus,
+            &:active,
+            &.active-menu {
+                background-position: 23px -409px;
+            }
+        }
+
+        .logout a {
+            background-position: 23px -468px;
+            &:hover,
+            &:focus,
+            &:active,
+            &.active-menu {
+                background-position: 23px -528px;
+            }
+        }
+
+        .expanded > a:before {
+            position: absolute;
+            top: 12px;
+            right: 10px;
+            display: block;
+            content: " ";
+            width: 9px;
+            height: 23px;
+            background: url($sprite) no-repeat 0 -600px;
+        }
+
+        .expanded > a:hover:before,
+        .expanded > a:focus:before,
+        .expanded > a:active:before,
+        .expanded > a.active-menu:before {
+            top: 20px;
+            width: 23px;
+            height: 9px;
+            background-position: 0 -660px;
+        }
+        .expanded > a.in-active-menu:before {
+            top: 12px;
+            width: 9px;
+            height: 23px;
+            background-position: 0 -600px;
+        }
+
+        .expanded > ul {
+            display: none;
+        }
+
+        .expanded li a {
+            background-image: none;
+            background-color: $navobile-submenu-bg-color;
+
+            &:hover,
+            &:focus,
+            &:active {
+                color: $navobile-submenu-color;
+            }
+            &.in-active-menu {
+                background-image: none;
+                background-color: $navobile-submenu-bg-color;
+            }
+        }
+    }
+}
+
+
+@include media(">=tablet") {    
+    .nav {
+        height: 50px;
+        margin-top: 2px;
+        background-color: $header-mini-bg;
+
+        ul {
+
+            position: relative;
+            max-width: $container-max-width;
+            margin: 0 auto;
+            padding-left: 0;
+            list-style-type: none;
+        }
+
+        li {
+            position: relative;
+            z-index: 2;
+            float: left;
+        }
+
+        a {
+            float: left;
+            line-height: 50px;
+            padding: 0 20px;
+            color: #fff;
+            font-size: 14px;
+            text-decoration: none;
+
+            &.in-active-menu {
+                color: #fff !important;
+                background-color: transparent !important;
+            }
+
+            &:hover,
+            &:focus,
+            &:active,
+            &.active-trail,
+            &.active-menu {
+                color: #e5c99b;
+                background-color: #750101;
+            }
+        }
+
+        .setting a,        
+        .logout a {
+            background-image: url($sprite);
+            background-repeat: no-repeat;
+        }
+
+        .setting a {
+            padding-left: 45px;
+            background-position: 15px -349px;
+            // &:hover,
+            // &.active-menu {
+            //     background-position: 15px -409px;
+            // }
+        }
+
+        .logout a {
+            padding-left: 42px;
+            background-position: 15px -468px;
+            // &:hover,
+            // &.active-menu {
+            //     background-position: 15px -528px;
+            // }
+        }
+        
+        .setting {
+            position: absolute;
+            top: 0;
+            right: 111px;
+        }
+
+        .logout {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        // .setting,
+        // .logout,
+        // .setting a,
+        // .logout a {
+        //     float: right;
+        // }
+            
+        .expanded {
+            & > a {
+                padding-right: 28px;
+
+                &:before {
+                    position: absolute;
+                    top: 14px;
+                    right: 16px;
+                    display: block;
+                    content: " ";
+                    width: 9px;
+                    height: 23px;
+                    background: url($sprite) no-repeat 0 -600px;
+                }
+
+                &:hover:before,
+                &:focus:before,
+                &:active:before,
+                &.active-menu:before,
+                &.active-trail:before {
+                    background-position: 0 -700px;
+                }
+            }
+
+            & > ul {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 300px;
+                background-color: rgba(117,1,1,.9);
+
+                li {
+                    float: none;
+                }
+
+                a {
+                    width: 100%;
+                    color: #fff;
+                    text-align: center;
+
+                    &:hover,
+                    &:focus,
+                    &:active, {
+                        background-color: #af0000;
+                        color: #e5c99b;
+                    }
+                }
+            }
+        }
+    }
+}

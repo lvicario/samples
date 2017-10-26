@@ -1,0 +1,121 @@
+@import 'global/common';
+
+body {
+	@include background-image($page-404-portrait-mobile-background, cover, 0, 0);
+	font-size: 14px;
+	h1 {
+		margin: 45px auto 0;
+		color: $page-404-heading-color;
+	}
+	p {
+		margin: 20px auto 0;
+	}
+	.suggested-links {
+		position: absolute;
+		width: 100%;
+		bottom: 40px;
+		h3 {
+			color: $page-404-link-color;
+			padding-bottom: 15px;
+			border-bottom: 1px solid $page-404-border-color;
+			margin: 0 15% 15px;
+		}
+		ul {
+			list-style-type: none;
+			padding: 0 55px;
+			margin-bottom: 0;
+			li {
+				display: inline-block;
+				width: 40%;
+				margin-bottom: 5px;
+				margin-left: 9px;
+				margin-right: 9px;
+				a {
+					color: $page-404-link-color;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}
+
+@include media("landscape", "<tablet") {
+	body {
+		@include background-image($page-404-landscape-mobile-background, cover, 0, 0);
+		font-size: 14px;
+		h1 {
+			margin: 15px auto 0;
+		}
+		p { 
+			margin: 5px auto 0;
+		}
+		.suggested-links {
+			bottom: 10px;
+			h3 {
+				margin: 0 30% 5px;
+			}
+			ul {
+				li {
+					margin-bottom: 2px;
+					width: 25%;
+				}
+			}
+		}
+	}
+}
+
+@include media(">=tablet") {
+	body {
+		@include background-image($page-404-portrait-tablet-background, cover, 0, 0);
+		h1 {
+			margin-top: 90px;
+		}
+		p {
+			margin-top: 35px;
+		}
+		.suggested-links {
+			bottom: 105px;
+			h3 {
+				font-size: 16px;
+				margin: 0 30% 20px;
+				padding-bottom: 25px;
+			}
+			ul {
+				padding: 0 80px;
+				li {
+					width: 20%;
+					margin-left: 30px;
+					margin-right: 30px;
+					margin-bottom: 25px;
+				}
+			}
+		}
+	}
+}
+
+@include media("landscape", ">=tablet") {
+	body {
+		@include background-image($page-404-landscape-tablet-background, cover, 0, 0);
+		h1 {
+			margin-top: 40px;
+		}
+		p {
+			margin-top: 35px;
+		}
+		.suggested-links {
+			bottom: 55px;
+			h3 {
+				padding-bottom: 25px;
+			}
+			ul {
+				padding: 0 80px;
+				li {
+					width: 20%;
+					margin-left: 30px;
+					margin-right: 30px;
+					margin-bottom: 25px;
+				}
+			}
+		}
+	}
+}
