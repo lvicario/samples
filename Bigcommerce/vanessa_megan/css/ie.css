@@ -1,0 +1,13 @@
+/* IE6 & IE7 Fix ================================= */
+
+* html #ProductList li								{padding-left: 0; margin-right: 25px;}
+*+html #ProductList li								{padding-left: 0; margin-right: 25px;}
+* html #NewsletterBox								{height: 36px; padding-top: 5px; line-height: normal;}
+*+html #NewsletterBox								{height: 35px; padding-top: 6px; line-height: normal;}
+* html #RelatedProducts #ProductList li				{height: 220px; padding: 0; border: 0; margin: 0 18px 0 0;}
+*+html #RelatedProducts #ProductList li				{height: 220px; padding: 0; border: 0; margin: 0 18px 0 0;}
+* html #RelatedProducts #ProductList .SlideButton	{top: 43px; right: 0px; left: 0px;}
+* html .Blog .LatestBlog .BlogList li				{padding-left: 0; margin-right: 8px;}
+* html .Blog #RelatedBlog .BlogList li				{padding-left: 0px; margin-right: 10px;}
+* html .Blog #RelatedBlog .BlogList li.SlideButton 	{top: 28px; right: 0; left: 0px;}
+* html #Branding .img								{z-index: 2;}

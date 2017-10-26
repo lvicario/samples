@@ -1,0 +1,225 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Category</title>
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+    
+	<link href="../__master/Styles/styles.css" type="text/css" rel="stylesheet" />
+    <link href="Styles/styles.css" media="all" type="text/css" rel="stylesheet" />
+    <link href="Styles/iselector.css" media="all" type="text/css" rel="stylesheet" />
+    <link href="Styles/blue.css" media="all" type="text/css" rel="stylesheet" />
+    <link href="Styles/custom.css" media="all" type="text/css" rel="stylesheet" />
+    <!--[if IE]><link href="Styles/ie.css" media="all" type="text/css" rel="stylesheet" /><![endif]-->
+	<link href="../../javascript/jquery/plugins/imodal/imodal.css" type="text/css" rel="stylesheet" />
+    <link href="../../javascript/jquery/plugins/jqzoom/css/jquery.jqzoom.css" type="text/css" rel="stylesheet" />
+    
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+	<script type="text/javascript" src="../../javascript/menudrop.js?1"></script>
+	<script type="text/javascript" src="../../javascript/common.js?1"></script>
+	<script type="text/javascript" src="../../javascript/iselector.js?1"></script>
+
+	<script type="text/javascript" src="../../javascript/jquery/plugins/imodal/imodal.js?1"></script>
+	<script type="text/javascript" src="../../javascript/jquery/plugins/jquery.form.js?1"></script>
+	<script type="text/javascript" src="../../javascript/quicksearch.js"></script>
+</head>
+
+<body>
+	<div id="Container">
+    	<div id="Outer">
+            <div id="Header">
+            	<div id="Logo"><div id="LogoContainer"><h1><a href="http://collettedinnigans.mybigcommerce.com/">Collette Dinnigan</a></h1></div></div>
+                <a href="#" class="MainSite">Visit main website</a>
+                <div id="HeadBlock">
+                	<div class="TopBlock">
+                    	<p><span class="BagTitle">My Bag</span> <a href="#" class="BagItems">121 items</a> - <span class="BagPrice">$1,480</span> | <a href="#" class="HelpLink">Help</a></p>
+                        <!-- AddThis Button BEGIN -->
+                        <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+                        <a class="addthis_button_preferred_4"><img src="images/connect_fb.png" width="16" height="16" alt="Send to Facebook" /></a>
+                        <a class="addthis_button_preferred_2"><img src="images/connect_tw.png" width="16" height="16" alt="Tweet This" /></a>
+                        </div>
+                        <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4fbdbb0568a85128"></script>
+                        <!-- AddThis Button END -->
+                    </div>
+                    <div class="BottomBlock">
+                    	<div id="SearchForm">
+                            <form onsubmit="return check_small_search_form()" method="get" action="">
+                                <input type="text" class="Textbox" id="search_query" name="search_query" autocomplete="off" value="Search" onfocus="if (this.value == 'Search') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search';}">
+                                <input type="image" class="Button" src="images/blue/Search.gif">
+                            </form>
+                        </div>
+                        <div id="TopMenu">
+                            <ul>
+                                <li class="First"><a href="#">Login</a></li>
+                                <li><a href="#">Register</a></li>
+                                <li><a href="#">Newsletter</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="Menu">
+                    <ul>
+                    	<li class="First"><a href="#"><span>Home</span></a></li>
+                        <li><a href="#"><span>Collette Dinnigan</span></a></li>
+                        <li><a href="#"><span>Cellette by Collette Dinnigan</span></a></li>
+                        <li><a href="#"><span>Bridal</span></a></li>
+                        <li><a href="#"><span>Lingerie</span></a></li>
+                        <li><a href="#"><span>Infant</span></a></li>
+                        <li><a href="#"><span>Gifts &amp; Accessories</span></a></li>
+                        <li><a href="#"><span>All About Collette</span></a></li>
+                    </ul>
+                </div>
+            </div><!-- #Header -->
+            <div id="Wrapper">
+                <div id="LayoutColumn1" class="Left">
+                	<img src="images/collette_by_collette_dinnigan.png" width="163" height="45" alt="" class="LogoLeftSide" />
+                	<div id="SideCategoryList" class="Block CategoryList Moveable Panel">
+                        <div class="BlockContent">
+                            <div class="SideCategoryListClassic">
+                                <ul>
+                                	<li>
+                                    	<a href="#">Clothing</a>
+                                        <ul>
+                                        	<li><a href="#">Dresses</a></li>
+                                            <li><a href="#">Tops</a></li>
+                                            <li><a href="#">Pants</a></li>
+                                            <li class="open">
+                                            	<a href="#">Coats &amp; Jackets</a>
+                                                <ul>
+                                                	<li><a href="#">Trench Coats</a></li>
+                                                    <li><a href="#">Blazers</a></li>
+                                                    <li><a href="#">Casual Jackets</a></li>
+                                                    <li><a href="#">Coats</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Skirts</a></li>
+                                        	<li class="LastChild"><a href="#">Knitwear</a></li>
+										</ul>
+									</li>
+								</ul>
+								<ul>
+                                	<li>
+                                    	<a href="#">Lingerie</a>
+									</li>
+								</ul>
+                                <div class="afterSideCategoryList"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- .Left -->
+                
+                <div id="LayoutColumn2" class="Content Wide WideWithLeft">
+                	<div id="CategoryBreadcrumb" class="Block Moveable Panel Breadcrumb">
+                        <ul>
+                            <li><a href="#">Clothing</a></li>
+                            <li><a href="#">Coats &amp; Jackets</a></li>
+                            <li>Casual Jackets</li>
+                        </ul>
+                    </div>
+                    
+                    <div id="CategoryContent" class="Block CategoryContent Moveable Panel">
+						<ul class="ProductList">
+                        	<li class="Odd">
+								<div class="ProductImage QuickView">
+                                	<a href="#">
+                                    	<img src="images/product_images/list_image_1.jpg" width="198" height="296" alt="" />
+                                        <span>New Arrival</span>
+                                    </a>
+                                </div>
+                                <div class="ProductDetails"><strong><a href="#">Cubana Cotton Lace Dress</a></strong></div>
+                                <div class="ProductPriceRating"><em>$90.00</em></div>
+                            </li>
+                            <li class="Even">
+                            	<div class="ProductImage QuickView"><a href="#"><img src="images/product_images/list_image_2.jpg" width="198" height="296" alt="" /></a></div>
+                                <div class="ProductDetails"><strong><a href="#">Cubana Cotton Lace Dress</a></strong></div>
+                                <div class="ProductPriceRating"><em>$90.00</em></div>
+                            </li>
+                            <li class="Odd">
+								<div class="ProductImage QuickView">
+                                	<a href="#">
+                                    	<img src="images/product_images/list_image_3.jpg" width="198" height="296" alt="" />
+                                        <span>New Arrival | Runway</span>
+                                    </a>
+                                </div>
+                                <div class="ProductDetails"><strong><a href="#">Cubana Cotton Lace Dress</a></strong></div>
+                                <div class="ProductPriceRating"><em>$90.00</em></div>
+                            </li>
+                            <li class="Even">
+                            	<div class="ProductImage QuickView"><a href="#"><img src="images/product_images/list_image_4.jpg" width="198" height="296" alt="" /></a></div>
+                                <div class="ProductDetails"><strong><a href="#">Cubana Cotton Lace Dress</a></strong></div>
+                                <div class="ProductPriceRating"><em>$90.00</em></div>
+                            </li>
+                        	<li class="Odd">
+								<div class="ProductImage QuickView"><a href="#"><img src="images/product_images/list_image_5.jpg" width="198" height="296" alt="" /></a></div>
+                                <div class="ProductDetails"><strong><a href="#">Cubana Cotton Lace Dress</a></strong></div>
+                                <div class="ProductPriceRating"><em>$90.00</em></div>
+                            </li>
+                            <li class="Even">
+                            	<div class="ProductImage QuickView">
+                                	<a href="#">
+                                    	<img src="images/product_images/list_image_6.jpg" width="198" height="296" alt="" />
+                                        <span>Press</span>
+                                    </a>
+                                </div>
+                                <div class="ProductDetails"><strong><a href="#">Cubana Cotton Lace Dress</a></strong></div>
+                                <div class="ProductPriceRating"><em>$90.00</em></div>
+                            </li>
+                            <li class="Odd">
+								<div class="ProductImage QuickView"><a href="#"><img src="images/product_images/list_image_7.jpg" width="198" height="296" alt="" /></a></div>
+                                <div class="ProductDetails"><strong><a href="#">Cubana Cotton Lace Dress</a></strong></div>
+                                <div class="ProductPriceRating"><em>$90.00</em></div>
+                            </li>
+                            <li class="Even">
+                            	<div class="ProductImage QuickView">
+                                	<a href="#">
+                                    	<img src="images/product_images/list_image_8.jpg" width="198" height="296" alt="" />
+                                        <span>Press | Runway</span>
+                                    </a>
+                                </div>
+                                <div class="ProductDetails"><strong><a href="#">Cubana Cotton Lace Dress</a></strong></div>
+                                <div class="ProductPriceRating"><em>$90.00</em></div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div id="CategoryPagingBottom" class="Block Moveable Panel PagingBottom">
+						<div class="CategoryPagination">
+                            <ul class="PagingList">
+                                <li><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li class="ActivePage">3</li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                                <li><a href="#">6</a></li>
+                                <li><a href="#">7</a></li>
+                                <li><a href="#">8</a></li>
+                                <li><a href="#">9</a></li>
+                                <li><a href="#">10</a></li>
+                            </ul>
+                        </div>
+					</div>
+                    
+                </div><!-- .Content -->
+                <br class="Clear">
+            </div><!-- #Wrapper -->
+            <br class="Clear">
+            <div id="Footer">
+				<ul>
+                	<li><a href="#">General Fit Guide</a></li>
+                    <li><a href="#">Shipping Information</a></li>
+                    <li><a href="#">Returns &amp; Exchanges</a></li>
+                    <li><a href="#">Terms &amp; Conditions</a></li>
+                    <li><a href="#">Secure Shopping</a></li>
+                    <li><a href="#">FAQ's</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                </ul>
+                <div class="fb">
+                    <div class="addthis_toolbox addthis_default_style"><a class="addthis_button_facebook_like" fb:like:layout="button_count"></a></div> 
+                    <a href="#" class="NewsletterLink">Newsletter</a>
+				</div>
+            </div><!-- #Footer -->
+            <br class="Clear">
+        </div><!-- #Outer -->
+	</div><!-- #Container -->
+</body>
+</html>

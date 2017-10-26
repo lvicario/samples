@@ -1,0 +1,489 @@
+@font-face {
+    font-family: 'FuturaStdBookRegular';
+    src: url('../type/futurastd-book-webfont.eot');
+    src: url('../type/futurastd-book-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../type/futurastd-book-webfont.woff') format('woff'),
+         url('../type/futurastd-book-webfont.ttf') format('truetype'),
+         url('../type/futurastd-book-webfont.svg#FuturaStdBookRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'FuturaStdBookBold';
+    src: url('../type/futurastd-bold-webfont.eot');
+    src: url('../type/futurastd-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../type/futurastd-bold-webfont.woff') format('woff'),
+         url('../type/futurastd-bold-webfont.ttf') format('truetype'),
+         url('../type/futurastd-bold-webfont.svg#FuturaStdBookBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'FuturaStdMediumRegular';
+    src: url('../type/futurastd-medium-webfont.eot');
+    src: url('../type/futurastd-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../type/futurastd-medium-webfont.woff') format('woff'),
+         url('../type/futurastd-medium-webfont.ttf') format('truetype'),
+         url('../type/futurastd-medium-webfont.svg#FuturaStdMediumRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* General ====================================  */
+body							{background: #fff url(../images/bg_header.png) repeat-x left top; font-family: Arial, Helvetica, sans-serif; font-size: 13px; color: #383838; height: 100%;}
+input, select					{font-family: 'FuturaStdMediumRegular'; font-size: 12px; color: #383838;}
+input							{vertical-align: middle;}
+input[type="text"],
+input[type="password"]			{padding: 3px 5px; border: 1px solid #d7d4d4;}
+input[type="submit"]			{height: 28px; line-height: 26px; padding: 0 30px 0 18px !important; background-color: #fff; border: 1px solid #bdbbbb; color: #58595b; font-size: 16px; text-transform: uppercase; cursor: pointer;}
+input[type="submit"]			{
+									background-image: url(../images/input_arrow_bg.png), url(../images/input_gradient_bg.png);
+									background-repeat: no-repeat, repeat-x;
+									background-position: right center, left bottom;
+									-webkit-border-radius: 14px; -moz-border-radius: 14px; -o-border-radius: 14px; -ms-border-radius: 14px; border-radius: 14px;
+									
+								}
+p								{line-height: 1.3; margin-bottom: 15px;}
+a								{font-weight: normal; text-decoration: underline;}
+h2, .TitleHeading				{font-size: 1.3em; font-weight: bold; margin: 6px 0 6px 0; font-size: 21px; font-weight: normal; color: #383838; font-family: 'FuturaStdBookRegular'; text-transform: uppercase;}
+h3								{font-size: 1.1em; margin-bottom: 6px;}
+h4								{font-size: 1.1em; margin-bottom: 4px;}
+img, img a						{border: 0;}
+ul, ol							{margin: 0 0 10px 30px;}
+li								{margin: 0; margin-bottom: 2px; padding: 0;}
+blockquote						{margin-left: 28px;}
+select option					{padding: 0 10px;}
+hr								{margin: 10px 0; padding: 0; background: #dcd9d9; height: 1px; border:0;}
+
+/* Page Container */
+#Container				{width: 1056px !important; margin: 0 auto;}
+
+/* Outer Content Wrapper (Surrounds header & content) */
+#Outer							{margin-top: 0; clear: both; background: none;}
+#Wrapper						{clear: both;}
+
+/* Header ==================================== */
+#Header							{height: 152px; clear: both; margin: 0 0 39px 0; padding-bottom: 0; background: #000; border-bottom: none; position: relative; color: #fff;}
+#Header a						{color: #9f9f9f;}
+#Header a:hover					{color: #fff;}
+#Header a.MainSite				{padding-left: 18px; background: url(../images/link_arrow_left.png) no-repeat left center; font-family: 'FuturaStdMediumRegular'; text-decoration: none; position: absolute; top: 21px; right: 415px;}
+
+/* Logo */
+#Logo							{float: left; width: 148px; margin-top: 11px;}
+#Logo h1						{display: inline; font-size: 2.4em; font-weight: normal; padding-left: 0; height: 45px; margin-top: 10px; background: none;}
+#Logo h1 a						{display: block; height: 90px; background: url(../images/logo.png) no-repeat;  text-decoration: none; text-indent: -9999px;}
+
+#HeadBlock								{float: right; width: 370px; margin: 17px 0 0;}
+#HeadBlock .TopBlock					{overflow: hidden; border-bottom: 1px dotted #c4c4c4; padding: 0 0 8px; margin: 0 0 10px; font-family: Arial, Helvetica, sans-serif;}
+#HeadBlock .TopBlock p					{float: left; margin: 0 0 0;}
+#HeadBlock .TopBlock p a.BagTitle		{display: inline-block; height: 24px; line-height: 24px; padding: 0 16px 0 45px; background: url(../images/my_bag_icon.png) no-repeat left center; color: #fff; font-family: 'FuturaStdMediumRegular'; text-transform: uppercase; text-decoration: none;}
+#HeadBlock .TopBlock p a.BagItems		{color: #fff;}
+#HeadBlock .TopBlock p span.BagPrice	{margin-right: 8px;}
+#HeadBlock .TopBlock p a.HelpLink		{margin-left: 8px; font-family: 'FuturaStdMediumRegular'; text-transform: uppercase; text-decoration: none;}
+#HeadBlock .TopBlock .addthis_toolbox	{float: right; margin: 5px 0 0; width: 40px;}
+#HeadBlock .TopBlock .addthis_toolbox a	{}
+#HeadBlock .BottomBlock					{}
+
+/* Top Search Form */
+#SearchForm						{padding-top: 0; float: left;}
+#SearchForm label				{font-weight: bold;}
+#SearchForm input.Textbox		{width: 99px; height: 19px; border: none; background: #e4e4e4; padding: 3px 8px; font-size: 13px; color: #9f9f9f; font-family: Arial, Helvetica, sans-serif; vertical-align: middle;}
+#SearchForm .Button				{width: 27px; height: 25px; padding: 0; margin-top: 0; margin-left: -4px; vertical-align: middle;}
+#SearchForm p					{text-align: right; margin: 0 0 0 45px; font-size: 0.9em;}
+#SearchForm a					{text-decoration: none;}
+
+/* Top Navigational Menu */
+#TopMenu						{float: right; height: 27px; padding: 0;}
+#TopMenu ul						{list-style: none; padding: 0; margin: 0 -11px 0 0;}
+#TopMenu li						{list-style: none; float: left; margin: 0; padding: 0;}
+#TopMenu li.First a				{border-left: 0; padding-left: 0; padding-right: 0;}
+#TopMenu li a, #TopMenu li div	{display: block; height: 14px; line-height: 15px; padding: 0 10px 0 10px; margin: 5px 0 0 0; font-family: 'FuturaStdMediumRegular'; text-decoration: none; color: #9f9f9f; font-size: 13px; text-transform: uppercase; border: none;}
+#TopMenu li:last-child a,
+#TopMenu li:last-child div		{border-left: 1px solid #8e9f9f;}
+#TopMenu li div a				{padding: 0; margin: 0; display: inline; font-size: 1em;}
+#TopMenu li a:hover				{text-decoration: none;}
+
+/* Pages Menu */
+#Menu							{clear: both; margin: 0 0 0; padding: 0; height: 26px; font-family: 'FuturaStdMediumRegular'; position: absolute; top: 112px; left: 0; z-index: 100;}
+#Menu ul						{margin: 0 0 0 -35px; padding: 0;}
+#Menu li						{float: left; position: relative; list-style: none; margin: 0; padding: 0;}
+#Menu li.First a				{background-image: none;}
+#Menu li a						{float: left; display: block; height: 40px; padding: 0 0 0 35px; background: none; color: #9f9f9f; font-size: 14px; font-weight: normal; text-align: center; text-decoration: none; text-transform: uppercase;}
+#Menu li a:hover				{text-decoration: underline;}
+
+#Menu li ul						{width: inherit; position: inherit; clear: inherit; top: inherit; left: inherit; display: inherit; text-align: inherit; font-size: inherit; background: inherit; z-index: inherit;}
+#Menu li ul li					{clear: inherit; color: inherit; text-align: inherit; background: inherit;}
+#Menu li ul li a				{padding: inherit; font-size: inherit; text-align: inherit; margin: inherit; width: inherit; height: inherit;}
+#Menu li ul li a:hover			{text-decoration: inherit;}
+#Menu li:hover a,
+#Menu li.over a					{text-decoration: inherit; color: inherit; background-color: inherit;}
+#Menu li ul li a,
+#Menu li.over li a				{text-decoration: inherit;}
+#Menu li:hover ul,
+#Menu li.over ul				{display: inherit;}
+/* ORIG
+#Menu li ul						{width: auto; position: absolute; clear: left; top: 22px; left: 0; display: none; text-align: left; font-size: 0.9em; background: transparent; z-index: 1;}
+#Menu li ul li					{clear: both; color: white; text-align: left; background: transparent;}
+#Menu li ul li a				{padding: 3px 10px 3px 10px; font-size: 1em; text-align: left; margin: 0; width: 120px; height: auto;}
+#Menu li ul li a:hover			{text-decoration: none;}
+#Menu li:hover a,
+#Menu li.over a					{text-decoration: none; color: #fff; background-color: #000;}
+#Menu li ul li a,
+#Menu li.over li a				{text-decoration: none !important;}
+#Menu li:hover ul,
+#Menu li.over ul				{display: block;}
+*/
+/* Holly Hack. IE Requirement \*/
+* html #Menu ul li				{ float: left; height: 1%; }
+* html #Menu ul li a			{ height: 1%; }
+/* End */
+/* Dropdown Menu */
+#main-nav											{}
+#main-nav li.main-nav-item							{}
+#main-nav li .main-nav-tab							{}
+#main-nav li.main-nav-item-active .main-nav-tab		{}
+#main-nav li .main-nav-dd							{display: none; width: 440px; margin: 0; padding: 25px 30px; background-color: #f9f8f8; position: absolute; top: 40px; left: 0;}
+#main-nav li.main-nav-item-active .main-nav-dd		{display: block;}
+#main-nav li .main-nav-dd-column					{display: table-cell; padding: 0 20px 0 20px; border-left: 1px solid #ddd; *float: left; *border-left: 0;}
+#main-nav li .main-nav-dd-column:first-child		{border-left: 0; padding-right: 50px; padding-left: 0;}
+#main-nav li .main-nav-dd h3						{font-family: 'FuturaStdMediumRegular'; text-transform: uppercase; font-size: 14px; color: #302f2f; font-weight: normal;}
+#main-nav li .main-nav-dd ul						{padding: 0; list-style: none;}
+#main-nav li .main-nav-dd ul li						{float: none; display: inline;}
+#main-nav li .main-nav-dd ul li a					{float: none; display: block; padding: 3px 0 3px 10px; color: #4a4a4a; text-decoration: none; font-family: 'FuturaStdBookRegular'; text-transform: uppercase;}
+#main-nav li .main-nav-dd ul li a:hover				{background: none; color: #4a4a4a; text-decoration: underline !important;}
+
+
+/* Left Content Area ==================================== */
+.Left									{float: left; min-height: 500px; width: 166px; font-size: 12px; margin-right: 59px; background: none; font-family: 'FuturaStdBookRegular';}
+.Left h2								{font-size: 17px; margin: 5px 10px 8px; width: 140px;}
+.Left a									{color: #383838;}
+.Left .BlockContent						{margin: 0 10px 0 10px;}
+.Left ul								{margin: 0; padding: 0; text-transform: uppercase;}
+.Left li								{clear: both; list-style: none; margin: 0; padding: 3px 0; border-bottom: 1px solid #e2e2e2;}
+.Left li a								{text-decoration: none;}
+.Left li a:hover						{text-decoration: none; color: #9F9F9F;}
+
+.Left #SideCategoryList					{margin-top: 6px;}
+.Left #SideCategoryList .BlockContent	{margin: 0;}
+.Left #SideCategoryList ul				{}
+.Left #SideCategoryList li				{font-size: 14px;}
+.Left #SideCategoryList li ul li		{border-top: none; font-size: 12px;}
+.Left #SideCategoryList li.LastChild	{border-bottom: 0 !important;}
+.Left #SideCategoryList li				{padding: 4px 0;}
+.Left #SideCategoryList li ul			{padding-left: 0; border-top: 1px solid #e2e2e2;}
+.Left #SideCategoryList li ul li		{padding-left: 15px; background: url(../images/left_icon_plus.png) no-repeat 0 8px;}
+.Left #SideCategoryList li ul li.open	{background-position: 0 10px; background-image: url(../images/left_icon_dash.png); border-bottom: none;}
+.Left #SideCategoryList li ul li.open ul,
+.Left #SideCategoryList li ul li ul			{margin-top: 5px; border-top: none; border-bottom: 1px solid #e2e2e2;}
+.Left #SideCategoryList li ul li.open li,
+.Left #SideCategoryList li ul li li			{margin-left: -15px; padding-left: 15px; background-image: none; border: none;}
+.Left #SideCategoryList li ul li.open li:hover,
+.Left #SideCategoryList li ul li li:hover	{background-image: url(../images/left_icon_arrow.png);}
+.Left #SideCategoryList li ul ul li		{font-size: 10px;}
+.Left #SideCategoryList li ul ul li a	{color: #3d3d3d;}
+
+/* Primary Content Area ==================================== */
+.Content								{float: left; width: 622px; min-height: 500px; margin: 0; padding: 0; background: none; font-size: 1em;}
+.Content .Block							{clear: both;}
+.Block									{margin-top: 10px; margin-bottom: 10px;}
+.Content h2, .TitleHeading				{margin: 10px 0; font-size: 21px; font-weight: normal; color: #383838; font-family: 'FuturaStdBookRegular'; text-transform: uppercase;}
+.Content a								{font-weight: inherit; color: #383838;}
+.Content a:hover						{text-decoration: underline;}
+
+/* Primary Content Area (column span of 2) */
+.Content.Wide							{width: 831px; background: none;}
+.Content.WideWithRight					{width: 776px;}
+
+/* Primary Content Area (column span of 3 - spans entire page width) */
+.Content.Widest							{width: 1056px; background: none;}
+
+/* Right Content Area ==================================== */
+.Right									{float: right; min-height: 500px; width: 213px; font-size: 14px; padding-bottom: 10px; margin-left: 0; background: none; font-family: 'FuturaStdBookRegular';}
+.Right h2								{font-size: 17px; margin: 5px 0 8px; width: auto;}
+.Right a								{color: #383838;}
+.Right .BlockContent					{margin: 0;}
+.Right ul								{margin: 0; padding: 0;}
+.Right li								{clear: both; list-style: none; margin: 0; padding: 3px 0; border-bottom: 1px solid #c5dde9;}
+.Right li a								{text-decoration: none;}
+.Right li a:hover						{text-decoration: underline;}
+/* Added */
+.Right #SideCouponCodeBox				{margin: 20px 0 50px;}
+.Right input.Textbox					{width: 156px; padding: 8px 10px;}
+
+/* Content Head ==================================== */
+#ContentHead							{margin: 0 0 20px; overflow: hidden;}
+.HeadLeft								{float: left; width: 166px; margin: 0 59px 0 0;}
+.HeadLeft img							{}
+.HeadLeft h2							{margin-top: 20px;}
+.HeadRight								{float: left; width: 831px; margin: 30px 0 0;}
+.HeadRight .Return						{float: right; margin: 0;}
+.HeadRight .Return a					{padding-left: 18px; background: url(../images/link_arrow_left.png) no-repeat left center; font-family: 'FuturaStdMediumRegular'; color: #9f9f9f; text-decoration: none;}
+.HeadRight .Return a:hover				{color: #383838;}
+
+.Breadcrumb								{float: left; margin: 0; font-size: 12px; padding-bottom: 4px; border-bottom: none;}
+.Breadcrumb ul, .Breadcrumb li			{list-style: none; margin: 0; padding: 0;}
+.Breadcrumb li							{padding-left: 4px; display: inline; color: #6d6c6c; text-transform: uppercase; letter-spacing: 0;}
+.Breadcrumb li a						{padding-right: 14px; background: url('../images/BreadcrumbSep.gif') no-repeat right; color: #9f9f9f; text-decoration: none;}
+.Breadcrumb li a:hover					{text-decoration: none; color: #383838;}
+
+/* Product Listings ==================================== */
+.ProductList							{list-style: none; margin: 0 0 0 -13px; padding: 0;}
+.Content .ProductList li				{list-style: none; float: left; width: 198px !important; margin: 0 0 0 13px; padding: 0; overflow: hidden; min-height: 397px; border: none; font-size: 13px; font-family: 'FuturaStdBookRegular'; text-align: center;}
+.ProductList a							{text-decoration: none;}
+.ProductList .ProductImage				{margin: 0 0 12px 0; display: block /*table-cell*/; width: auto; height: auto; text-align: center; overflow: hidden; vertical-align: middle; position: relative;}
+.ProductList .ProductImage img			{vertical-align: middle;}
+.ProductList .ProductImage a 			{}
+.ProductList .ProductImage a span		{display: block; width: 100%; height: 26px; line-height: 26px; background-color: #fff; background-color: rgba(255,255,255,0.80); color: #787878; text-align: center; text-transform: uppercase; position: absolute; bottom: 5px; left: 0;}
+.ProductList p							{margin: 5px 0 5px 5px;}
+.ProductList strong a					{display: block; padding: 0 30px; margin: 0 0 2px; color: #383838; font-weight: normal; text-transform: uppercase;}
+.ProductList strong a:hover				{text-decoration: none; color: #9F9F9F;}
+.ProductPrice, .ProductList em			{width: 117px; margin: 0 auto; padding: 3px 0 0; border-top: 1px solid #dcd9d9; color: #616161; font-style: normal; font-weight: normal;}
+.Content .ProductList li:hover			{background: none;}
+.Content .ProductList .ProductDetails	{height: auto !important;}
+
+/* Category Pagination ==================================== */
+.CategoryPagination .PagingList,
+.CategoryPagination .PagingList li				{list-style: none; padding: 0; margin: 0 3px;}
+.CategoryPagination								{padding: 0; background: none; border: none; text-align: center;}
+.CategoryPagination .PagingList li a			{display: inline-block; width: 10px; height: 10px; background:url(../images/pagination_bullet.png) no-repeat; text-indent: -9999px;}
+.CategoryPagination .PagingList li a:hover		{background-position: left bottom;}
+.CategoryPagination .PagingList li.ActivePage	{display: inline-block; width: 10px; height: 10px; background:url(../images/pagination_bullet.png) no-repeat left bottom; padding: 0; text-indent: -9999px;}
+
+/* Product Details ==================================== */
+.PrimaryProductDetails .ProductThumb				{float: left; width: 531px !important; height: auto !important; margin-right: 33px; text-align: center;}
+.PrimaryProductDetails .ProductMain					{float: left; width: 492px; min-height: 539px; height:auto !important; height: 539px; padding-bottom: 50px; position: relative;}
+.PrimaryProductDetails .ProductMain h2				{margin: 0 0 10px; padding-bottom: 8px; border-bottom: 1px solid #dcd9d9;}
+/*.PrimaryProductDetails .ProductMain .ProductPrice	{width: auto; margin: 0 0 25px; padding: 0; border-top: none; color: #616161; font-size: 20px; font-style: normal; font-weight: normal;}*/
+.PrimaryProductDetails .BlockContent hr				{margin: 50px 0 20px;}
+
+/* Product Details */
+.ProductDetailsGrid .DetailRow						{clear: left; margin-top: 0; padding-left: 0;}
+.ProductDetailsGrid .Label							{float: none; display: inline; width: 130px; padding-top: 1px; margin: 0; font-weight: bold;  text-align: left; position: relative;}
+.ProductDetailsGrid .Value							{display: inline;}
+.ProductDetailsGrid .Label .Required				{position: absolute;left: -1em;}
+.ProductDetailsGrid .PriceRow						{margin-bottom: 22px;}
+.ProductDetailsGrid .PriceRow .Label				{display: none;}
+.ProductDetailsGrid .PriceRow .Value				{}
+.ProductDetailsGrid .PriceRow .Value em				{border-top: none; color: #616161; font-size: 20px; font-family: 'FuturaStdBookRegular';}
+.ProductDetailsGrid .AddCartButton					{display: block; width: 207px; padding: 20px 0 0; border-top: 1px dotted #bab8b8;}
+.ProductDetailsGrid .AddCartButton input			{}
+
+/** AJAX loading box - End  **/
+#ProductDetails #ImageScrollPrev,
+#ProductDetails #ImageScrollNext							{display: block; float: left; width: 105px; margin-top: 0; margin-left: auto; margin-right: auto; background:none; border:none; cursor:pointer; }
+#ProductDetails #ImageScrollPrev							{margin-top: -8px;}
+#ProductDetails #ImageScrollNext							{}
+#ProductDetails #ImageScrollPrev img,
+#ProductDetails #ImageScrollNext img						{width: 43px; height: 30px; margin: 0 auto;}
+#ProductDetails .ProductTinyImageList						{float: left; width: 105px !important; margin-top:17px; margin-left:auto; white-space:nowrap; overflow: hidden;}
+#ProductDetails .ProductTinyImageList ul					{padding: 0;}
+#ProductDetails .ProductTinyImageList ul li					{float: none !important; display: block; width: 40px; height: 30px; margin-left:0; margin-bottom: 16px; border: none !important; overflow: hidden; text-align: left;}
+#ProductDetails .ProductTinyImageList ul li div				{display: table-cell; text-align: center;}
+#ProductDetails .ProductTinyImageList ul li div img			{padding: 0 !important;}
+#ProductDetails .ProductTinyImageList ul li .TinyOuterDiv	{border: none !important;}
+#ProductDetails .ProductTinyImageList ul					{width: 2500px; margin: 0pt; padding: 0pt; list-style-type: none; white-space:nowrap; position: relative;}
+#ProductDetails .ProductThumbImage							{float: right; width: 391px; height: auto; margin:auto; overflow: display;}
+#ProductDetails .ImageCarouselBox							{float: left; width: 105px; margin: 0 35px 0 0; padding-left: 0 !important; text-align: center;}
+#ProductDetails .ProductMain .OutOfStockMessage				{/* clear: left; */}
+.carousel													{width: 180px; visibility: hidden; position: relative; left: -5000px;}
+
+/* Tabbed Navigation */
+.TabNav, .TabNav li						{margin: 0; padding: 0; list-style: none;}
+.TabNav									{margin-bottom: 0; padding: 0 0 50px; border-bottom: 1px solid #dcd9d9; font-size: 13px;}
+.TabNav li								{float: left;  padding: 0 1px 0 0; background-color: #dcd9d9; position: relative; top: 2px;}
+.TabNav li								{background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.00, #ffffff), color-stop(0.50, #dcd9d9)); background-image: -moz-linear-gradient(center top, #ffffff 0%, #dcd9d9 50%);}
+.TabNav li:first-child					{padding-left: 1px;}
+.TabNav li a							{float: left; height: 48px; line-height: 48px; margin-right: 0; margin-top: 0; padding: 0 20px; background-color: #f4f4f4; border: none; font-size: 12px; color: #858585; font-family: 'FuturaStdBookRegular'; text-transform: uppercase; text-decoration: none; position: static; top: auto;}
+.TabNav li a							{background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.00, #ffffff), color-stop(1.30, #f0f0f0)); background-image: -moz-linear-gradient(center top, #ffffff 0%, #f0f0f0 130%);}
+.TabNav li:first-child a				{padding-left: 15px;}
+.TabNav li a:hover						{text-decoration: none; color: #383838;}
+.TabNav li.Active a						{margin-top: 0px; padding-top: 0; color: #383838; font-weight: normal;}
+
+#ProductDetails .Block					{margin: 0 0 20px; padding: 20px 15px 10px; border: 1px solid #dcd9d9; border-top: none;}
+#ProductDetails .Block a				{text-decoration: underline; color: #58595b;}
+#ProductDetails .Block a:hover			{text-decoration: none;}
+.ProductDescription						{}
+
+.AddThisButtonBox						{float: none; margin-left: 0; margin-top: 0; position: absolute; bottom: 0; left: 0;}
+.AddThisButtonBox .txt					{float: left; margin: 0 10px 0 0; font-family: 'FuturaStdBookRegular'; color: #9f9f9f; line-height: 26px; text-transform: uppercase;}
+.AddThisButtonBox .addthis_toolbox		{float: left;}
+.AddThisButtonBox .addthis_toolbox span	{float: left;}
+.AddThisButtonBox .st_fblike_hcount				{width: 54px;}
+.AddThisButtonBox .st_twitterfollow_hcount		{width: 73px;}
+.AddThisButtonBox .pin-it-button				{float: left; margin: 3px 10px 0 0;}
+.AddThisButtonBox .st_plusone_hcount			{width: 56px; margin: 3px 10px 0 0;}
+.AddThisButtonBox .st_plusone_hcount div		{}
+.AddThisButtonBox .st_email_hcount				{margin: 3px 10px 0 0;}
+
+/* Related Products =============================== */
+.SideRelatedProducts						{}
+.SideRelatedProducts h2						{margin-bottom: 20px; font-size: 13px;}
+.SideRelatedProducts .ProductList strong a	{}
+
+/* Homepage Style ==================================== */
+.home									{background-color: #8c8685;}
+.home #Header							{margin-bottom: 0;}
+.home #Wrapper .Widest					{float: none; width: 1150px; margin: 0 -47px 0 -47px;}
+.home #FooterOuter						{background-color: #fff;}
+.home #FooterOuter #Footer				{float: none; width: 1056px; margin: 0 auto; padding-bottom: 40px; border-top: none;}
+.bx-wrapper .bx-window						{}
+.bx-wrapper .bx-window .HomeSlider			{width: 1150px; margin: 0; padding: 0; list-style-type: none;}
+.bx-wrapper .bx-window .HomeSlider p		{height: 879px; margin: 0;}
+.bx-wrapper .bx-window .HomeSlider p img	{}
+.bx-wrapper .bx-prev,
+.bx-wrapper .bx-next						{display: block; width: 58px; height: 146px; text-indent: -9999px; position: absolute; top: 292px;}
+.bx-wrapper .bx-prev						{background: url(../images/home_slider_btn_prev.png) no-repeat; left: -60px;}
+.bx-wrapper .bx-next						{background: url(../images/home_slider_btn_next.png) no-repeat; right: -60px;}
+
+/* Product Attributes ==================================== */
+html.javascript #Outer .productOptionViewRectangle li					{}
+html.javascript #Outer .productOptionViewRectangle .option label		{width: 27px; height: 27px; line-height: 27px; margin-right: 7px; padding: 0; background-color: #e1e1e1; border: none; text-align: center; color: #737373; font-size: 12px; font-family: 'FuturaStdBookRegular'; text-transform: uppercase;}
+html.javascript #Outer .productOptionViewRectangle .option label:hover	{color: #000; text-decoration: underline;}
+html.javascript #Outer .productOptionViewRectangle .option label .validation	{text-align: left; display: none;}
+html.javascript #Outer .productOptionViewRectangle .selectedValue label	{background-color: #acaaaa; color: #fff;}
+
+body .productAttributeList												{margin-bottom: 15px;}
+body .productAttributeList .productAttributeLabel						{width: auto; text-align: left;}
+body .productAttributeList .productAttributeLabel label					{width: auto; text-align: left;}
+
+/* Page Footer ==================================== */
+#Footer									{float: left; clear: both; font-size: 13px; text-align: left; width: 100%; margin: 30px 0 0 0; padding: 18px 0 30px 0; border-top: 1px solid #cfcfcf;}
+#Footer a								{font-family: 'FuturaStdMediumRegular'; color: #9f9f9f; text-transform: uppercase; text-decoration: none; line-height: 20px;}
+#Footer a:hover							{color: #383838;}
+#Footer ul								{list-style: none; margin: 0 0 0 -15px; padding: 0;}
+#Footer ul li							{float: left; list-style: none; margin: 0; padding: 0;}
+#Footer ul li a							{padding: 0 0 0 15px; border: none;}
+#Footer .fb								{float: right; width: 175px;}
+#Footer .fb .addthis_toolbox			{float: left;}
+#Footer .fb .addthis_toolbox a			{}
+#Footer .fb .NesletterLink				{float: right;}
+
+/* IModal and FastCart ==================================== */
+body #ModalOverlay							{}
+body #ModalContainer						{}
+body .modalClose							{display: none;}
+body #ModalLoadingOverlay					{}
+body #ModalLoadingIndicator					{}
+body #ModalContentContainer					{}
+body #ModalTitle, body .ModalTitle			{display: none;}
+body #ModalContent, body .ModalContent		{padding: 0;}
+body .ModalContentWithButtons .ModalContent,
+body .ModalContentWithButtons #ModalContent	{}
+body #ModalButtonRow, body .ModalButtonRow	{}
+body #ModalButtonRow input,
+body .ModalButtonRow input					{}
+body #ModalButtonRow input.Submit,
+body .ModalButtonRow input.Submit,
+body #ModalButtonRow input.SubmitButton,
+body .ModalButtonRow input.SubmitButton		{}
+/* FastCart */
+#fastCartContainer								{margin: 0 auto;}
+#fastCartWrapper								{clear: both; width: 736px; padding: 0 54px 40px 54px; background-color: #fff; font-family: 'FuturaStdBookRegular';}
+#fastCartContainer .ProductList					{margin: 0 0 0 -40px; padding: 0; list-style: none outside none;}
+#fastCartContainer .ProductList li				{float:left; width:105px !important; margin: 0 0 0 40px; padding: 0; text-align: center; overflow: hidden;}
+#fastCartContainer .ProductList li:hover		{background: none;}
+#fastCartContainer .ProductList li .ProductDetails		{height: auto; margin-bottom: 2px; padding-bottom: 2px; border-bottom: 1px solid #dcd9d9;}
+#fastCartContainer .ProductList li .ProductDetails a	{font-size: 12px;}
+#fastCartContainer .ProductList .ProductImage			{width: auto; height: auto; margin-bottom: 5px;}
+#fastCartContainer .ProductList .ProductImage img		{width: 105px; height: auto;}
+.fastCartContent								{width: auto; min-height: 235px;}
+.fastCartContent h2								{height: 116px; line-height: 116px; margin: 0 -54px; padding: 0 54px; background-color: #f1f1f1; color: #383838; font-size: 21px; font-weight: normal; text-transform: none;}
+.fastCartContent hr								{margin: 20px 0 25px;}
+.fastCartTop									{padding: 35px 5px;}
+.fastCartThumb									{float: left; width: 105px;}
+.fastCartThumb img								{width: 105px; height: auto;}
+.fastCartItemBox								{float: left; width: 314px; max-width: none; margin-left: 24px; padding: 0; font-size: 16px;}
+.fastCartItemBox a								{text-transform: uppercase; text-decoration: none;}
+.fastCartItemBox small							{color: #383838; font-size: 16px;}
+.fastCartItemBox .ProductPrice 					{border-top: none; color: #616161; font-family: 'FuturaStdMediumRegular';}
+.fastCartItemBox .Quantity						{margin-top: 20px; color: #616161;}
+.fastCartSummaryBox								{float: right; width: 220px; max-width: none; padding: 0 0 0 49px; background-color: #fff; border-left: 1px solid #d9d9d9; text-align: left; font-size: 16px;}
+.fastCartSummaryBox .subtotal					{clear:both; margin-top: 0; font-size: 16px; font-weight: normal;}
+.fastCartSummaryBox .subtotal em				{border-top: none; color: #383838;}
+.fastCartSummaryBox .actionLink					{margin-top:10px; margin-bottom: 18px; padding-top: 10px; border-top: 1px dotted #a2a1a1; font-size: 14px;}
+.fastCartSummaryBox .ProceedToCheckout			{margin: 0 0 0 -18px;}
+.fastCartSummaryBox .ProceedToCheckout .CheckoutButton	{display: block !important;}
+.fastCartQuantity								{margin-top: 15px;}
+.fastCartContent .fastCartTop a,
+.fastCartContent .ProductList .ProductDetails a	{padding: 0; color: #383838;}
+.fastCartContent .ProductList em				{border-top: none; color: #383838;}
+.Content .ProductList li,
+.fastCartContent .ProductList li				{border: none;}
+.fastCartBottom									{padding: 0px 5px;}
+.fastCartBottom h3								{color: #383838; font-size: 13px; font-weight: normal; text-transform: uppercase;}
+.fastCartBottom p								{margin-bottom: 20px; color: #5e5e5e; font-size: 14px;}
+
+/* Express Checkout ==================================== */
+.ExpressCheckout												{margin-bottom: 50px; font-family: 'FuturaStdBookRegular'; font-size: 14px; color: #383838;}
+.ExpressCheckout input[type="text"],
+.ExpressCheckout input[type="password"]							{}
+.ExpressCheckout h2												{display: none;}
+.ExpressCheckoutBlock .ExpressCheckoutTitle						{margin-bottom: 0; padding: 20px 0; background: #fff; border: none; border-bottom: 1px solid #dcd9d9; color: #383838; font-size: 21px; font-weight: normal; text-transform: uppercase; position: relative;}
+.ExpressCheckoutBlockCollapsed .ExpressCheckoutTitle			{background: #fff; border: none; border-bottom: 1px solid #dcd9d9; color: #b7b6b6;}
+.ExpressCheckoutBlock h3										{}
+.ExpressCheckoutBlock h3 a										{font-size: 12px;}
+.ExpressCheckoutBlock h4										{font-size: 13px; text-transform: uppercase; font-weight: normal;}
+.ExpressCheckoutBlock											{padding-top: 0;}
+.ExpressCheckoutBlock .ExpressCheckoutCompletedContent			{display: none;}
+.ExpressCheckoutBlockCompleted .ExpressCheckoutCompletedContent	{margin: 5px 0 0 150px; display: inline; font-size: 12px; font-weight: normal; font-style: italic;}
+.ExpressCheckoutBlockCollapsed .ExpressCheckoutContent			{display: none;}
+.ExpressCheckoutBlock .ExpressCheckoutContent					{padding-top: 15px; padding-bottom: 25px; border-bottom: 1px solid #dcd9d9; overflow: hidden;}
+.ExpressCheckoutBlock .ExpressCheckoutContent a					{color: #383838; text-decoration: underline;}
+.ExpressCheckoutBlock .ExpressCheckoutContent a:hover			{color: #9f9f9f;}
+a.ChangeLink													{position: absolute; right: 15px;}
+.ExpressCheckoutBlock a.ChangeLink								{display: none;}
+.ExpressCheckoutBlockCompleted a.ChangeLink						{display: inline;}
+.ExpressCheckoutCompletedContent								{position: absolute; left: 250px;}
+
+.ExpressCheckout .CreateAccount									{float: left; width: 460px; padding-right: 36px; border-right: none;}
+.ExpressCheckout .AccountLogin									{float: right; width: 460px; padding-right: 36px;}
+.ExpressCheckout .CreateAccount h4,
+.ExpressCheckout .AccountLogin h4								{margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px solid #dcd9d9;}
+.ExpressCheckout .CreateAccount h4,
+.ExpressCheckout .AccountLogin h4								{margin-right: -36px;}
+.ExpressCheckout .CreateAccount .PL40							{padding-left: 0; font-size: 16px;}
+.ExpressCheckout .CreateAccount .PL40 .Submit					{margin-top: 40px !important;}
+.ExpressCheckout .AccountLogin input[type="text"],
+.ExpressCheckout .AccountLogin input[type="password"]			{margin-top: -10px; margin-bottom: 18px; padding: 8px 10px; vertical-align: top;}
+.ExpressCheckout .AccountLogin dl								{margin-top: 22px;}
+.ExpressCheckout .AccountLogin dl a								{font-size: 12px;}
+.ExpressCheckout .AccountLogin p.Submit							{margin-left: 0;}
+
+
+/* Cart Contents Table / General Tables ==================================== */
+/* General Tables */
+table.General, table.CartContents					{width: 100%; margin: 10px 0; border: none;}
+table.General thead tr th,
+table.CartContents thead tr th						{padding: 10px 0; background: none; color: #383838; border-top: 1px solid #dcd9d9; border-bottom: 1px solid #dcd9d9; text-align: left; font-family: 'FuturaStdBookRegular'; font-size: 13px; font-weight: normal; color: #383838; text-transform: uppercase;}
+table.General tbody td,
+table.CartContents tbody td							{padding: 26px 0 7px; vertical-align: top; font-family: 'FuturaStdBookRegular'; font-size: 13px; color: #383838;}
+table.General tbody tr.First td						{border-top: 0;}
+/* Cart Contents Tables */
+.CartContents tbody td,
+.CartContents tfoot td								{border-bottom: 0;}
+.CartContents .ProductName a						{font-weight: normal;}
+.ProceedToCheckout									{text-align: right;}
+.Content .ProceedToCheckout							{float: right; width: 200px;}
+.ProceedToCheckout a								{padding-top: 5px;}
+/* Added Styles for Cart */
+table.CartContents a											{color: #383838;}
+table.CartContents a:hover										{color: #9F9F9F;}
+table.CartContents tbody td.CartThumb							{}
+table.CartContents tbody td.CartThumb img						{width: 105px; height: 159px;}
+table.CartContents tbody td.ProductName							{padding-left: 20px; font-size: 16px;}
+table.CartContents tbody td.ProductName a.name					{text-transform: uppercase; text-decoration: none;}
+table.CartContents tbody td.ProductName a.CustomizeItemLink		{display: none;}
+table.CartContents tbody td.CartItemQuantity					{}
+table.CartContents tbody td.CartItemIndividualPrice				{text-align: right;}
+table.CartContents tbody td.CartItemTotalPrice					{}
+table.CartContents tfoot tr.SubTotal td							{padding: 13px 0; border-top: 1px dotted #dcd9d9; color: #383838; font-family: 'FuturaStdBookRegular'; font-size: 13px; font-weight: normal; color: #383838;}
+table.CartContents tfoot tr.SubTotal td .EstimateShippingLink em {font-style: normal; font-size: 14px;}
+table.CartContents tfoot tr.First td							{border-top-style: solid; text-transform: uppercase; }
+table.CartContents tfoot tr.Last td								{border-bottom: 1px solid #dcd9d9; text-transform: uppercase; font-family: 'FuturaStdBookBold';}
+table.CartContents .ProductPrice,
+table.CartContents .ProductList em								{border-top: none; color: #383838;}
+#CartContent .ProceedToCheckout									{width: 340px;}
+#CartContent .ProceedToCheckout .KeepShopping					{float: left; margin-top: 4px; font-size: 14px;}
+#CartContent .ProceedToCheckout .CheckoutButton					{display: block !important;}
+
+

@@ -1,0 +1,309 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Homepage</title>
+<link href="css/styles.css" rel="stylesheet" type="text/css" />
+<link href="css/iselector.css" rel="stylesheet" type="text/css" />
+<link href="css/green.css" rel="stylesheet" type="text/css" />
+<link href="css/uniform.default.css" rel="stylesheet" type="text/css" />
+<!--[if IE]><link href="ie.css" media="all" rel="stylesheet" type="text/css" /><![endif]-->
+<script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
+<script type="text/javascript" src="js/modernizr.custom.43934.js"></script>
+<!-- Homepage Slider -->
+<script type="text/javascript" src="js/s3Slider.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#slider').s3Slider({
+            timeOut: 4000
+        });
+    });
+</script>
+<!-- Category Slider -->
+<script type="text/javascript" src="js/jquery.carouFredSel-4.5.2-packed.js"></script>
+<script type="text/javascript" language="javascript">
+	$(function() {
+		//	Scrolled by user interaction
+		$('.CategorySlider ul').carouFredSel({
+			prev: '.prev1',
+			next: '.next1',
+			pagination: "#pager1",
+			auto: false
+		});
+	});
+</script>
+<!-- Uniform -->
+<script src="js/jquery.uniform.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" charset="utf-8">
+  $(function(){
+	$("input[type='checkbox'], select").uniform();
+  });
+</script>
+</head>
+
+<body>
+
+<div id="Container">
+	<div id="Outer">
+    	<div id="Header">
+        	<div id="Logo"><div id="LogoContainer"><h1><a href="#">LimeStuff</a></h1></div></div>
+            <div class="RightCol">
+                <div id="TopMenu">
+                    <ul>
+                        <li class="First"><a href="#">My Account</a></li>
+                        <li><a href="#">Sign in</a></li>
+                        <li><a href="#">Register</a></li>
+                    </ul>
+                </div>
+                <div id="MyCart"><a href="#">Your Cart</a><strong>0 items</strong></div>
+                <div class="CartCheckoutLink"><a href="#">View Cart</a> / <a href="#">Checkout</a></div>
+                <div id="SearchForm">
+                	<form action="" method="get">
+                        <strong class="Phone">tel.01794 884294</strong>
+                        <input type="text" onblur="if (this.value == '') {this.value = 'Im looking for...';}" onfocus="if (this.value == 'Im looking for...') {this.value = '';}" value="Im looking for..." class="Textbox" name="" />
+                        <input type="image" class="Button" src="images/green/Search.png" />
+                    </form>
+                </div>
+			</div>
+            <div id="Menu">
+                <ul>
+                    <li class="First ActivePage"><a href="#"><span>Home</span></a></li>
+                    <li class="ActivePage"><a href="#"><span>Products</span></a></li>
+                    <li><a href="#"><span>User Guides</span></a></li>
+                    <li><a href="#"><span>Training Courses</span></a></li>
+                    <li><a href="#"><span>Projects</span></a></li>
+                    <li><a href="#"><span>Delivery Options</span></a></li>
+                    <li><a href="#"><span>Contact Us</span></a></li>
+                </ul>
+            </div>
+        </div><!-- END #Header -->
+        
+        <div id="Wrapper">
+        	<div id="LayoutColumn1" class="Content Widest">
+            	<div id="HomeIntro" class="Block HomeIntro Moveable Panel">
+                	<div id="slider">
+                        <ul id="sliderContent">
+                            <li class="sliderImage">
+                                <a href="#"><img src="images/slide_img_1.jpg" width="609" height="394" alt="" /></a>
+                                <span class="txt">The church at appleshaw painted by m. bird using keim silicate paint</span>
+                            </li>
+                            <li class="sliderImage">
+                                <a href="#"><img src="images/slide_img_2.jpg" width="609" height="394" alt="" /></a>
+                                <span class="txt">The church at appleshaw painted by m. bird using keim silicate paint</span>
+                            </li>
+                            <li class="Clear sliderImage"></li>
+                        </ul>
+                    </div><!-- END #slider -->
+                    <div class="Welcome">
+                    	<h2>Welcome to Lime stuff LTD.</h2>
+                        <p>Based in Whiteparish, near Salisbury in Wiltshire we sell a range of lime products. </p>
+                        <p>Our products include matured lime putty, pre-blended lime putty mortars and plasters, natural hydraulic limes, cob bricks, tools and accessories.</p>
+                        <p>Our customers range from homeowners to large plastering and building contractors. We provide a comprehensive support and advisory service whether you require one tub of lime putty or an order of lime mortar delivered in dumpy bags. We hold a range of stock which can be bought from our barn on site or we can deliver nationwide.</p>
+                        <p><a href="#">Learn More &gt;</a></p>
+                    </div>
+                    <br class="Clear" />
+                </div><!-- END #HomeIntro -->
+                
+                <div id="CategorySlider" class="Block CategorySlider Moveable Panel">
+                	<div class="SideControls"><a class="prev prev1" href="#">&lt;</a><a class="next next1" href="#">&gt;</a></div>
+                	<ul>
+                    	<li>
+                            <img src="images/cat_image_materials.jpg" width="126" height="82" alt="" />
+                            <p>
+                            	<strong>Materials</strong>
+                                <span>Sand, grit, etc.</span>
+                                <a href="#">shop here &gt;&gt;</a>
+                            </p>
+                        </li>
+                        <li>
+                            <img src="images/cat_image_tools.jpg" width="126" height="82" alt="" />
+                            <p>
+                            	<strong>Tools</strong>
+                                <span>Interior and exterior</span>
+                                <a href="#">shop here &gt;&gt;</a>
+                            </p>
+                        </li>
+                        <li>
+                            <img src="images/cat_image_paints.jpg" width="126" height="82" alt="" />
+                            <p>
+                            	<strong>Paints</strong>
+                                <span>Brushes, trowels</span>
+                                <a href="#">shop here &gt;&gt;</a>
+                            </p>
+                        </li>
+                        <li>
+                            <img src="images/cat_image_tools.jpg" width="126" height="82" alt="" />
+                            <p>
+                            	<strong>Tools</strong>
+                                <span>Interior and exterior</span>
+                                <a href="#">shop here &gt;&gt;</a>
+                            </p>
+                        </li>
+                        <li>
+                            <img src="images/cat_image_paints.jpg" width="126" height="82" alt="" />
+                            <p>
+                            	<strong>Paints</strong>
+                                <span>Brushes, trowels</span>
+                                <a href="#">shop here &gt;&gt;</a>
+                            </p>
+                        </li>
+                        <li>
+                            <img src="images/cat_image_materials.jpg" width="126" height="82" alt="" />
+                            <p>
+                            	<strong>Materials</strong>
+                                <span>Sand, grit, etc.</span>
+                                <a href="#">shop here &gt;&gt;</a>
+                            </p>
+                        </li>
+                        <li>
+                            <img src="images/cat_image_paints.jpg" width="126" height="82" alt="" />
+                            <p>
+                            	<strong>Paints</strong>
+                                <span>Brushes, trowels</span>
+                                <a href="#">shop here &gt;&gt;</a>
+                            </p>
+                        </li>
+                        <li>
+                            <img src="images/cat_image_tools.jpg" width="126" height="82" alt="" />
+                            <p>
+                            	<strong>Tools</strong>
+                                <span>Interior and exterior</span>
+                                <a href="#">shop here &gt;&gt;</a>
+                            </p>
+                        </li>
+                        <li>
+                            <img src="images/cat_image_materials.jpg" width="126" height="82" alt="" />
+                            <p>
+                            	<strong>Materials</strong>
+                                <span>Brushes, trowels</span>
+                                <a href="#">shop here &gt;&gt;</a>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="ThreeCols">
+                	<ul class="HomeLinks">
+                    	<li><img src="images/homelinks_delivery.png" width="49" height="49" alt="" /> <a href="#">Delivery Charges</a></li>
+                        <li class="MultiLine"><img src="images/homelinks_price_list.png" width="49" height="49" alt="" /> <a href="#">Download Full Page Price List</a></li>
+                        <li><img src="images/homelinks_location_map.png" width="49" height="49" alt="" /> <a href="#">Location Map</a></li>
+                        <li class="MultiLine"><img src="images/homelinks_signup.png" width="49" height="49" alt="" /> <a href="#">Sign up to our Newsletter</a></li>
+                    </ul>
+                    
+                    <div id="HomeFeaturedProducts" class="Block FeaturedProducts Moveable Panel">
+                        <h2>Featured Products</h2>
+                        <div class="BlockContent">
+                            <ul class="ProductList">
+                                <li class="Odd">
+                                    <div class="ProductImage"><a href="#"><img src="images/featured_product_thumb.jpg" width="289" height="182" alt="" /></a></div>
+                                    <div class="ProductDetails"><strong><a href="#">Earthborn Paint</a></strong></div>
+                                    <div class="ShortDescription">We now stock a full range of Earthborn paint a breathable clay paint suitable for lime and gypsum plaster.</div>
+                                    <div class="More"><a href="#">learn more</a></div>
+                                </li>
+                            </ul>
+                        </div>
+                        <br class="Clear" />
+                    </div>
+                    
+                    <div class="AskQuestion">
+                    	<h2>Ask us a question</h2>
+                        <div class="FormContainer HorizontalFormContainer">
+                            <dl>
+                                <dt>Name:<span class="Required">*</span></dt>
+                                <dd><input name="" type="text" /></dd>
+                                
+                                <dt>Email:<span class="Required">*</span></dt>
+                                <dd><input name="" type="text" /></dd>
+                    
+                                <dt>Message:</dt>
+                                <dd><textarea cols="50" rows="5" class="Field300" id="contact_question" name="contact_question"></textarea><div id="SearchResults"></div></dd>
+                            </dl>
+                            <p class="NewsletterSignUp"><input name="" type="checkbox" value="" /> I would like to receive the Lime Stuff  Newsletter</p>
+                            <p class="Submit"><input name="" type="reset" value="Reset" class="ResetButton" /> <input type="submit" class="SubmitButton" value="Send" /></p>
+                        </div>
+                    </div>
+                    <br class="Clear" />
+                </div><!-- END .ThreeCols -->
+                
+            </div><!-- END #LayoutColumn1 -->
+            
+            <div class="Clear"></div>
+            
+        </div><!-- END #Wrapper -->
+        
+        <div id="Footer">
+        	<ul class="Logos">
+                <li><a href="#"><img src="images/green/logo_eco.png" width="67" height="41" alt="" /></a></li>
+                <li><a href="#"><img src="images/green/logo_earthborn.png" width="106" height="41" alt="" /></a></li>
+                <li><a href="#"><img src="images/green/logo_limetec.png" width="116" height="41" alt="" /></a></li>
+                <li><a href="#"><img src="images/green/logo_keim.png" width="28" height="41" alt="" /></a></li>
+                <li><a href="#"><img src="images/green/logo_singleton.png" width="86" height="41" alt="" /></a></li>
+                <li><a href="#"><img src="images/green/logo_rst.png" width="49" height="41" alt="" /></a></li>
+                <li><a href="#"><img src="images/green/logo_nbt.png" width="82" height="41" alt="" /></a></li>
+                <li><a href="#"><img src="images/green/logo_refina.png" width="130" height="41" alt="" /></a></li>
+            </ul>
+        	<div class="FootTop">
+                <div class="ColOne">
+                    <h3>Address:</h3>
+                    <p>Lime Stuff Ltd<br /> Unit 12<br /> Glendale Farm,<br /> Southhampton Rd,<br /> Whiteparish, <br /> Salisbury, Wiltshire<br /> SP5 2Qw</p>
+                </div>
+                <div class="ColTwo">
+                    <h3>Contact</h3>
+                    <p><strong>t.</strong>  01794 884 294<br /> <strong>f.</strong>  01794 884 760<br /> <strong>e.</strong> info@buildinglime.co.uk</p>
+                </div>
+                <div class="ColThree">
+                    <ul>
+                        <li><a href="#">About Lime</a></li>
+                        <li><a href="#">Aggregates</a></li>
+                        <li><a href="#">Chalk</a></li>
+                        <li><a href="#">Damp Issues</a></li>
+                        <li><a href="#">Earthborn Paints</a></li>
+                    </ul>
+                </div>
+                <div class="ColFour">
+                    <ul>
+                        <li><a href="#">External Paints</a></li>
+                        <li><a href="#">FAQ's</a></li>
+                        <li><a href="#">Floats</a></li>
+                        <li><a href="#">Hair</a></li>
+                        <li><a href="#">Hessian</a></li>
+                        <li><a href="#">Laths</a></li>
+                    </ul>
+                </div>
+                <div class="ColFive">
+                    <ul>
+                        <li><a href="#">LECA for Limecrete floors</a></li>
+                        <li><a href="#">Lime Mixers and Sprayers</a></li>
+                        <li><a href="#">Lime Putty</a></li>
+                        <li><a href="#">Limewash</a></li>
+                        <li><a href="#">Natural Hydraulic Lime</a></li>
+                        <li><a href="#">Plastering</a></li>
+                        <li><a href="#">Pointing</a></li>
+                    </ul>
+                </div>
+                <div class="ColSix">
+                    <ul>
+                        <li><a href="#">Pozzolan</a></li>
+                        <li><a href="#">Pre-mixed mortars, plasters +</a></li>
+                        <li><a href="#">Fillers</a></li>
+                        <li><a href="#">Rendering</a></li>
+                        <li><a href="#">Safety and Protection Equipment</a></li>
+                        <li><a href="#">Trowels</a></li>
+                        <li><a href="#">Useful links</a></li>
+                    </ul>
+                </div>
+			</div>
+            <div class="FootBottom">
+            	<img src="images/green/payment.png" width="304" height="27" alt="" />
+                <p>
+                	<span><a href="#">The Building Lime Company</a> | <a href="#">Privacy policy</a> | <a href="#">Terms of uses</a></span>
+                    <span><a href="#">Website design by Innovative Consultancy</a></span>
+                </p>
+            </div>
+        </div>
+        
+    </div><!-- END #Outer -->
+</div><!-- END #Container -->
+
+</body>
+</html>

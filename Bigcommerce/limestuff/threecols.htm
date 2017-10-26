@@ -1,0 +1,264 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ThreeCols</title>
+<link href="css/styles.css" rel="stylesheet" type="text/css" />
+<link href="css/iselector.css" rel="stylesheet" type="text/css" />
+<link href="css/green.css" rel="stylesheet" type="text/css" />
+<!--[if IE]><link href="ie.css" media="all" rel="stylesheet" type="text/css" /><![endif]-->
+<script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
+<script type="text/javascript" src="js/modernizr.custom.43934.js"></script>
+<!-- Homepage Slider -->
+<script type="text/javascript" src="js/s3Slider.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#slider').s3Slider({
+            timeOut: 4000
+        });
+    });
+</script>
+<!-- Category Slider -->
+<script type="text/javascript" src="js/jquery.carouFredSel-4.5.2-packed.js"></script>
+<script type="text/javascript" language="javascript">
+	$(function() {
+		//	Scrolled by user interaction
+		$('.CategorySlider ul').carouFredSel({
+			prev: '.prev1',
+			next: '.next1',
+			pagination: "#pager1",
+			auto: false
+		});
+	});
+</script>
+</head>
+
+<body>
+
+<div id="Container">
+	<div id="Outer">
+    	<div id="Header">
+        	<div id="Logo"><div id="LogoContainer"><h1><a href="#">LimeStuff</a></h1></div></div>
+            <div class="RightCol">
+                <div id="TopMenu">
+                    <ul>
+                        <li class="First"><a href="#">My Account</a></li>
+                        <li><a href="#">Sign in</a></li>
+                        <li><a href="#">Register</a></li>
+                    </ul>
+                </div>
+                <div id="MyCart"><a href="#">Your Cart</a><strong>0 items</strong></div>
+                <div class="CartCheckoutLink"><a href="#">View Cart</a> / <a href="#">Checkout</a></div>
+                <div id="SearchForm">
+                	<form action="" method="get">
+                        <strong class="Phone">tel.01794 884294</strong>
+                        <input type="text" onblur="if (this.value == '') {this.value = 'Im looking for...';}" onfocus="if (this.value == 'Im looking for...') {this.value = '';}" value="Im looking for..." class="Textbox" name="" />
+                        <input type="image" class="Button" src="images/green/Search.png" />
+                    </form>
+                </div>
+			</div>
+            <div id="Menu">
+                <ul>
+                    <li class="First ActivePage"><a href="#"><span>Home</span></a></li>
+                    <li class="ActivePage"><a href="#"><span>Products</span></a></li>
+                    <li><a href="#"><span>User Guides</span></a></li>
+                    <li><a href="#"><span>Training Courses</span></a></li>
+                    <li><a href="#"><span>Projects</span></a></li>
+                    <li><a href="#"><span>Delivery Options</span></a></li>
+                    <li><a href="#"><span>Contact Us</span></a></li>
+                </ul>
+            </div>
+        </div><!-- END #Header -->
+        
+        <div id="Wrapper">
+        	<div id="LayoutColumn1" class="Left">
+            	<div id="SideCategoryList" class="Block CategoryList Moveable Panel">
+					<h2>Product Categories</h2>
+					<div class="BlockContent">
+						<div class="SideCategoryListClassic">
+							<ul>
+                            	<li><a href="#">Lime Products</a></li>
+							</ul>
+                            <ul>
+                            	<li><a href="#">Pre–Mixed Mortar/Plaster</a></li>
+                            </ul>
+                            <ul>
+                            	<li><a href="#">Special Blends</a></li>
+							</ul>
+                            <ul>
+                            	<li><a href="#">Building Materials</a></li>
+                            </ul>
+                            <ul>
+                            	<li><a href="#">Tools</a></li>
+							</ul>
+							<div class="afterSideCategoryList"></div>
+						</div>
+					</div>
+				</div>
+                <div id="SideNewProducts" class="Block NewProducts Moveable Panel">
+                	<h2>New Products</h2>
+                    <div class="BlockContent">
+                    	<ul class="ProductList">
+                            <li class="Odd">
+                            	<div class="ProductDetails"><strong><a href="#">Lime Products</a></strong></div>
+                            </li>
+                            <li class="Even">
+                            	<div class="ProductDetails"><strong><a href="#">Pre–Mixed Mortar/Plaster</a></strong></div>
+                            </li>
+                            <li class="Odd">
+                            	<div class="ProductDetails"><strong><a href="#">Special Blends</a></strong></div>
+                            </li>
+                            <li class="Even">
+                            	<div class="ProductDetails"><strong><a href="#">Building Materials</a></strong></div>
+                            </li>
+                            <li class="Odd">
+                            	<div class="ProductDetails"><strong><a href="#">Tools</a></strong></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="LatestOffer" class="Block LatestOffer Moveable Panel">
+                	<h2>Our Latest Offer</h2>
+                    <div class="BlockContent">
+                    	<a href="#"><span>Buy One</span> Get One Free!</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="LayoutColumn2" class="Content">
+            	<div id="ProductBreadcrumb" class="Block Moveable Panel Breadcrumb">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li>Lime Products</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div id="LayoutColumn3" class="Right">
+            	<div id="SideCategoryList" class="Block CategoryList Moveable Panel">
+					<h2>Product Categories</h2>
+					<div class="BlockContent">
+						<div class="SideCategoryListClassic">
+							<ul>
+                            	<li><a href="#">Lime Products</a></li>
+							</ul>
+                            <ul>
+                            	<li><a href="#">Pre–Mixed Mortar/Plaster</a></li>
+                            </ul>
+                            <ul>
+                            	<li><a href="#">Special Blends</a></li>
+							</ul>
+                            <ul>
+                            	<li><a href="#">Building Materials</a></li>
+                            </ul>
+                            <ul>
+                            	<li><a href="#">Tools</a></li>
+							</ul>
+							<div class="afterSideCategoryList"></div>
+						</div>
+					</div>
+				</div>
+                <div id="SideNewProducts" class="Block NewProducts Moveable Panel">
+                	<h2>New Products</h2>
+                    <div class="BlockContent">
+                    	<ul class="ProductList">
+                            <li class="Odd">
+                            	<div class="ProductDetails"><strong><a href="#">Lime Products</a></strong></div>
+                            </li>
+                            <li class="Even">
+                            	<div class="ProductDetails"><strong><a href="#">Pre–Mixed Mortar/Plaster</a></strong></div>
+                            </li>
+                            <li class="Odd">
+                            	<div class="ProductDetails"><strong><a href="#">Special Blends</a></strong></div>
+                            </li>
+                            <li class="Even">
+                            	<div class="ProductDetails"><strong><a href="#">Building Materials</a></strong></div>
+                            </li>
+                            <li class="Odd">
+                            	<div class="ProductDetails"><strong><a href="#">Tools</a></strong></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="Clear"></div>
+            
+        </div><!-- END #Wrapper -->
+        
+        <div id="Footer">
+        	<ul class="Logos">
+                <li><a href="#"><img src="images/green/logo_eco.png" width="67" height="41" alt="" /></a></li>
+                <li><a href="#"><img src="images/green/logo_earthborn.png" width="106" height="41" alt="" /></a></li>
+                <li><a href="#"><img src="images/green/logo_limetec.png" width="116" height="41" alt="" /></a></li>
+                <li><a href="#"><img src="images/green/logo_keim.png" width="28" height="41" alt="" /></a></li>
+                <li><a href="#"><img src="images/green/logo_singleton.png" width="86" height="41" alt="" /></a></li>
+                <li><a href="#"><img src="images/green/logo_rst.png" width="49" height="41" alt="" /></a></li>
+                <li><a href="#"><img src="images/green/logo_nbt.png" width="82" height="41" alt="" /></a></li>
+                <li><a href="#"><img src="images/green/logo_refina.png" width="130" height="41" alt="" /></a></li>
+            </ul>
+        	<div class="FootTop">
+                <div class="ColOne">
+                    <h3>Address:</h3>
+                    <p>Lime Stuff Ltd<br /> Unit 12<br /> Glendale Farm,<br /> Southhampton Rd,<br /> Whiteparish, <br /> Salisbury, Wiltshire<br /> SP5 2Qw</p>
+                </div>
+                <div class="ColTwo">
+                    <h3>Contact</h3>
+                    <p><strong>t.</strong>  01794 884 294<br /> <strong>f.</strong>  01794 884 760<br /> <strong>e.</strong> info@buildinglime.co.uk</p>
+                </div>
+                <div class="ColThree">
+                    <ul>
+                        <li><a href="#">About Lime</a></li>
+                        <li><a href="#">Aggregates</a></li>
+                        <li><a href="#">Chalk</a></li>
+                        <li><a href="#">Damp Issues</a></li>
+                        <li><a href="#">Earthborn Paints</a></li>
+                    </ul>
+                </div>
+                <div class="ColFour">
+                    <ul>
+                        <li><a href="#">External Paints</a></li>
+                        <li><a href="#">FAQ's</a></li>
+                        <li><a href="#">Floats</a></li>
+                        <li><a href="#">Hair</a></li>
+                        <li><a href="#">Hessian</a></li>
+                        <li><a href="#">Laths</a></li>
+                    </ul>
+                </div>
+                <div class="ColFive">
+                    <ul>
+                        <li><a href="#">LECA for Limecrete floors</a></li>
+                        <li><a href="#">Lime Mixers and Sprayers</a></li>
+                        <li><a href="#">Lime Putty</a></li>
+                        <li><a href="#">Limewash</a></li>
+                        <li><a href="#">Natural Hydraulic Lime</a></li>
+                        <li><a href="#">Plastering</a></li>
+                        <li><a href="#">Pointing</a></li>
+                    </ul>
+                </div>
+                <div class="ColSix">
+                    <ul>
+                        <li><a href="#">Pozzolan</a></li>
+                        <li><a href="#">Pre-mixed mortars, plasters +</a></li>
+                        <li><a href="#">Fillers</a></li>
+                        <li><a href="#">Rendering</a></li>
+                        <li><a href="#">Safety and Protection Equipment</a></li>
+                        <li><a href="#">Trowels</a></li>
+                        <li><a href="#">Useful links</a></li>
+                    </ul>
+                </div>
+			</div>
+            <div class="FootBottom">
+            	<img src="images/green/payment.png" width="304" height="27" alt="" />
+                <p>
+                	<span><a href="#">The Building Lime Company</a> | <a href="#">Privacy policy</a> | <a href="#">Terms of uses</a></span>
+                    <span><a href="#">Website design by Innovative Consultancy</a></span>
+                </p>
+            </div>
+        </div>
+        
+    </div><!-- END #Outer -->
+</div><!-- END #Container -->
+
+</body>
+</html>

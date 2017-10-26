@@ -1,0 +1,200 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Shopping Cart</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/orange.css" rel="stylesheet" type="text/css" />
+<link href="css/ie.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
+
+<!-- Selectbox -->
+<script type="text/javascript" src="js/selectbox.js"></script>
+<script type="text/javascript">
+	$(function () {
+		$("select").selectbox();
+	});
+</script>
+</head>
+
+<body>
+
+<div id="Container">
+    <div id="Header">
+        <div id="Logo">
+            <div id="LogoContainer">
+                <h1><a href="index.htm">London Salon &amp; Boutique</a></h1>
+            </div>
+        </div><!-- END #Logo -->
+        <div class="Top">
+        	<div id="TopMenu">
+                <ul>
+                    <li><a href="#">My Account</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="checkout.htm">Checkout</a></li>
+                </ul>
+			</div><!-- END #TopMenu -->
+            
+            <div id="MyCart"><a href="shopping_cart.htm">My Cart (3)</a><strong>$247.00</strong></div>
+            
+            <div id="SearchForm">
+				<form action="">
+					<input type="text" value="Search" class="Textbox" /><input name="" type="submit" value="Search" class="Button" />
+				</form>
+			</div>
+            
+            <div id="Menu">
+                <ul>
+                    <li><a href="index.htm">Home</a></li>
+                    <li><a href="product_page.htm">Products</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="stockists.htm">Stockists</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="blog_page.htm">Blog</a></li>
+                    <li><a href="contact.htm">Contact</a></li>
+                </ul>
+            </div><!-- END #Menu -->
+        </div><!-- END #Top -->
+    </div><!-- END #Header -->
+
+    <div id="Wrapper">
+    	<div id="LayoutColumn1" class="Content Widest">
+        	<div id="CartContent" class="Block Moveable Panel">
+                <h2>Shopping Cart</h2>
+                <div class="BlockContent">
+                    <table border="0" cellspacing="0" cellpadding="0" class="CartContents">
+                        <tr>
+                            <th scope="col">&nbsp;</th>
+                            <th scope="col">Product Name</th>
+                            <th scope="col" class="ACenter">Remove</th>
+                            <th scope="col" class="ARight">Unit Price</th>
+                            <th scope="col" class="ACenter">Quantity</th>
+                            <th scope="col" class="ARight">Subtotal</th>
+                        </tr>
+                        <tr class="Item">
+                            <td class="Thumb"><a href="#"><img src="images/product_image_1.jpg" width="177" height="177" alt="" /></a></td>
+                            <td class="Name"><a href="#">Wild chamomile face cream (dry or sensitive skin)</a></td>
+                            <td class="Remove"><a href="#"><img src="images/cart_item_remove.png" width="15" height="13" alt="" /></a></td>
+                            <td class="Price">$30.00 AUD</td>
+                            <td class="Quantity"><select name=""><option>1</option><option>2</option><option>3</option></select></td>
+                            <td class="ItemTotal">$60.00 AUD</td>
+                        </tr>
+                        <tr class="Item">
+                            <td class="Thumb"><a href="#"><img src="images/product_image_1.jpg" width="177" height="177" alt="" /></a></td>
+                            <td class="Name"><a href="#">Wild chamomile face cream (dry or sensitive skin)</a></td>
+                            <td class="Remove"><a href="#"><img src="images/cart_item_remove.png" width="15" height="13" alt="" /></a></td>
+                            <td class="Price">$30.00 AUD</td>
+                            <td class="Quantity"><select name=""><option>1</option><option>2</option><option>3</option></select></td>
+                            <td class="ItemTotal">$60.00 AUD</td>
+                        </tr>
+                        <tr class="UpdateCart NoBg ARight">
+                            <td colspan="6"><a href="#" class="CartButton">Update Cart</a></td>
+                        </tr>
+                        <tr class="Shipping">
+                            <td colspan="6">
+                            	<span>Country*</span>
+                                <select name="">
+                                	<option>Country 1</option>
+                                    <option>Country 2</option>
+                                    <option>Country 3</option>
+								</select>
+                                <span>State / Province</span>
+                                <select name="">
+                                	<option>Province 1</option>
+                                    <option>Province 2</option>
+                                    <option>Province 3</option>
+								</select>
+                                <span class="zip">Zip / Postal Code</span>
+                                <input name="" type="text" />
+                            </td>
+                        </tr>
+                        <tr class="Shipping">
+                            <td colspan="6"><a href="#">Cancel</a> or <a href="#" class="CartButton">Calculate Shipping</a></td>
+                        </tr>
+                        <tr class="UpdateTotal ARight">
+                            <td colspan="2">&nbsp;</td>
+                            <td colspan="4">
+                            	<p>
+                                	<span>Shipping</span> <span><em>$20.00</em></span> <a href="#" class="CartButton">Update Total</a>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr class="TotalCost">
+                            <td colspan="2" class="NoBg">&nbsp;</td>
+                            <td colspan="2">Shipping &amp; handling</td>
+                            <td colspan="2" class="ARight"><strong>$10.00 AUD</strong></td>
+                        </tr>
+                        <tr class="TotalCost">
+                            <td colspan="2" class="NoBg">&nbsp;</td>
+                            <td colspan="2">Items Total</td>
+                            <td colspan="2" class="ARight"><strong>$95.00 AUD</strong></td>
+                        </tr>
+                        <tr class="TotalCost GrandTotal">
+                            <td colspan="2" class="NoBg">&nbsp;</td>
+                            <td colspan="2"><strong>Total</strong></td>
+                            <td colspan="2" class="ARight"><strong>$95.00 AUD</strong></td>
+                        </tr>
+                        <tr class="NoBg">
+                            <td colspan="2"><a href="#" class="CartButton">Continue Shopping</a></td>
+                            <td colspan="4" class="ARight"><a href="#" class="CartButton">proceed to checkout</a></td>
+                        </tr>
+                    </table>
+
+                </div>
+            </div><!-- END #CartContent -->
+        </div><!-- END #LayoutColumn1 -->
+        <div id="NewsletterBox" class="Block NewsletterSubscription Moveable Panel">
+            <h2><img src="images/icon_butterfly.png" width="37" height="35" alt="" />Join My Mailing List</h2>
+            <div class="BlockContent">
+                <form action="">
+                    <input value="Email" type="text" class="Text" />
+                    <input name="" type="submit" value="Search" class="Button" />
+                </form>
+            </div>
+        </div>
+    </div><!-- END #Wrapper -->
+</div><!-- END #Container -->
+
+<div id="Footer">
+	<div class="inner">
+        <div class="Categories">
+            <h3>Product Categories</h3>
+            <ul>
+                <li><a href="#">Baby Range</a></li>
+                <li><a href="#">Men’s Range</a></li>
+                <li><a href="#">Body Products</a></li>
+                <li><a href="#">Pamper Parties</a></li>
+                <li><a href="#">Face Products</a></li>
+                <li><a href="#">Pregnancy Range</a></li>
+                <li><a href="#">Home Products</a></li>
+                <li><a href="#">Recipies</a></li>
+            </ul>
+        </div>
+        <div class="Links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Press</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Stockists</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Home</a></li>
+            </ul>
+        </div>
+        <div class="Contact">
+            <h3>Contact</h3>
+            <p>
+                <span>Phone 0450 034 406</span>
+                <span>info@vanessamegan.com </span>
+                <span class="Connect"><a href="#"><img src="images/connect_facebook.png" width="93" height="29" alt="" /></a><a href="#"><img src="images/connect_twitter.png" width="93" height="29" alt="" /></a></span>
+            </p>
+        </div>
+        <p class="Copyright">vanessa megan &copy; 2011.  <a href="#">Web Design Sydney</a></p>
+	</div><!-- END .inner -->
+</div><!-- END #Footer -->
+
+</body>
+</html>

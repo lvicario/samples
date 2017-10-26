@@ -1,0 +1,161 @@
+/* Color: Green */
+
+body					{background: #fff url(../images/green/BodyBg.png) repeat-x left top; color: #000;}
+a						{color: #282828; font-weight: normal; text-decoration: none;}
+a:hover					{color: #534d02;}
+h2						{}
+h3						{}
+
+#Container				{background-position: 0 0; background-repeat: no-repeat;}
+
+#TopMenu 				{}
+#Topmenu li				{}
+#TopMenu li a			{color: #595224;}
+#TopMenu li div			{color: #595224;}
+#TopMenu li a:hover		{text-decoration: underline;}
+
+#Menu					{}
+#Menu li				{}
+#Menu li a				{color: #fff;}
+#Menu li.first a		{background-image: none;}
+#Menu li ul li a		{background: #a4b507; color: #fff;}
+#Menu li ul li a:hover	{background: #8e9d06;}
+#Menu li:hover a,
+#Menu li.over a			{}
+
+#Wrapper				{background: #f4f4f4;}
+
+#Logo h1				{color: #534d02;}
+#Logo h1 a				{color: #534d02;}
+
+#SearchForm				{}
+#SearchForm label		{}
+#SearchForm input		{background: #f4f4f4;border: 1px solid #acacac;}
+#SearchForm .Button		{border: 0;}
+#SearchForm a			{color: #a4b507;}
+#SearchForm p			{color: #a4b507;}
+
+.Left					{}
+.Left h2				{color: #fff; background: #aca571 url(../images/green/icon_header_side.png) no-repeat 1% 50%; -moz-box-shadow: inset 2px 4px 4px #c6c6b5; -webkit-box-shadow: inset 2px 4px 4px #c6c6b5; box-shadow: inset 2px 3px 2px #8e8861;}
+.Left li				{border-bottom: 1px dotted #ccc;}
+.Left li a				{color: #4a4628;}
+.Left li a:hover		{}
+
+.Content 				{}
+.Content h2 			{}
+.Content a				{}
+.Content.Wide			{}
+.Content.Widest			{}
+
+.Right					{}
+.Right h2				{color: #fff; background: #aca571 url(../images/green/icon_header_side.png) no-repeat 1% 50%; -moz-box-shadow: inset 2px 4px 4px #c6c6b5; -webkit-box-shadow: inset 2px 4px 4px #c6c6b5; box-shadow: inset 2px 3px 2px #8e8861;}
+.Right li				{border-bottom: 1px dotted #ccc;}
+.Right li a				{color: #4a4628;}
+.Right li a:hover		{}
+
+#Footer					{}
+
+.NewsletterSubscription input	{border: 1px solid #dadada;}
+
+.Content .ProductList li				{}
+.Content .ProductList li:hover,
+.Content .ProductList li.Over			{}
+.Content .ProductList li				{}
+.Content .ProductList .ProductImage		{}
+.Content .ProductList .ProductDetails	{}
+
+.ProductList strong,
+.ProductList strong a	{color: #282828;}
+.ProductPrice,
+.ProductList em			{}
+
+.Left .ProductPrice,
+.Left .ProductList em	{color: #fff;}
+
+.ProductList .Rating	{color: #6a6a6a;}
+
+.Right .ProductList li	{}
+
+.Content .FeaturedProducts .ProductList li				{}
+.Content .FeaturedProducts .ProductList .ProductImage	{}
+.Content .FeaturedProducts .ProductList li:hover,
+.Content .FeaturedProducts .ProductList li.Over			{}
+
+.Right .TopSellers li							{}
+.Right .TopSellers li .TopSellerNumber			{ /* Contains the number of the item */}
+.Right .TopSellers li.TopSeller1 .ProductImage	{ /* No1 seller box */}
+.Right .TopSellers li.TopSeller1				{border: 1px solid #dadada; background: #fff;}
+.Right .TopSellers li.TopSeller1 .ProductDetails	{ /* No1 seller box */}
+.Right .TopSellers li.TopSeller1 .TopSellerNumber	{color: #a4b507;}
+
+.Breadcrumb				{}
+
+.CompareItem				{ width:200px; border-left: solid 1px #f6f7e6; }
+.CompareFieldName			{ font-weight:bold; border-bottom: 1px solid #f6f7e6; }
+.CompareFieldTop			{ border-bottom:solid 1px #dadada; }
+.CompareFieldTop a:hover	{ color:#be0101; }
+.CompareCenter				{ border-left:solid 1px #dadada; border-bottom:solid 1px #f6f7e6; }
+.CompareLeft				{ border-left:solid 1px #dadada; border-bottom:solid 1px #f6f7e6; }
+
+.ViewCartLink				{background: url('../images/green/Cart.gif') no-repeat 3px 0;}
+
+table.CartContents,
+table.General					{border: 1px solid #dadada;}
+table.CartContents thead tr th,
+table.General thead tr th		{background: #f6f7e6; color: #424748; border-bottom: 1px solid #dadada;}
+
+.CartContents tfoot .SubTotal td	{border-top: 1px solid #dadada; color: #534d02;}
+
+.JustAddedProduct			{border: 1px solid #dadada; background: #fff;}
+.JustAddedProduct strong,
+.JustAddedProduct a			{color: #534d02;}
+
+.CategoryPagination 		{color: #534d02; background: #f6f7e6; border: 1px solid #dadada;}
+
+.CheckoutRedeemCoupon		{ background: #f6f7e6; padding: 10px; width: 300px; border: 1px solid #dadada; margin-bottom: 10px; }
+
+.SubCategoryList,
+.SubBrandList 				{background:#f6f7e6;}
+
+.InfoMessage 				{background: #f6f7e6 url('../images/InfoMessage.gif') no-repeat 5px 8px; color: #555;}
+.SuccessMessage 			{background: #f6f7e6 url('../images/SuccessMessage.gif') no-repeat 5px 8px; color: #555;}
+.ErrorMessage 				{background: #FFECEC url('../images/ErrorMessage.gif') no-repeat 5px 8px; color: #555;}
+
+.ComparisonTable tr:hover td,
+.ComparisonTable tr.Over td {background: #f6f7e6;}
+
+.QuickSearch 				{ border: 1px solid #dadada }
+.QuickSearchHover td		{ background: #f6f7e6; }
+.QuickSearchAllResults a 	{ background: url('../images/green/QuickSearchAllResultsButton.gif') no-repeat right; }
+
+.SearchTips .Examples 		{background: #f6f7e6; border: 1px solid #dadada;}
+
+.MiniCart .SubTotal 		{color: #534d02;}
+
+hr 							{background: #aaa9a9; border: #aaa9a9;}
+
+/* Shipping Estimation on Cart Contents Page */
+.EstimateShipping 			{border: 1px solid #dadada; background: #f6f7e6;}
+
+/* Express Checkout */
+.ExpressCheckoutBlock .ExpressCheckoutTitle 					{background: #534d02; color: #fff;}
+.ExpressCheckoutBlockCollapsed .ExpressCheckoutTitle 			{background: #e5eab7; border: 1px solid #ddd; color: #555;}
+.ExpressCheckoutBlockCompleted .ExpressCheckoutCompletedContent	{color: #888;}
+
+/* General Tables */
+table.General tbody tr td {border-top: 1px solid #efefef;}
+
+/* Tabbed Navigation */
+.TabNav 					{border-bottom: 1px solid #a4b507;}
+.TabNav li a 				{border: 1px solid #a4b507; background: #eef1cf; color: #534d02;}
+.TabNav li a:hover 			{background-color: #d6de90;}
+.TabNav li.Active a 		{border-bottom: 1px solid #fff; background: #fff;}
+
+/* Product Videos */
+#VideoContainer 			{border: 1px solid #cccccc; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;}
+.currentVideo 				{background-color: #ddf0f6;}
+.videoRow:hover 			{background-color: #efefef;}
+
+.CartContents .ItemShipping th {border-bottom-color: #dadada; border-top-color: #dadada; background: #f6f7e6;color: #424748;}
+
+

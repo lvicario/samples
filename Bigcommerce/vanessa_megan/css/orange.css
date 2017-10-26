@@ -1,0 +1,108 @@
+/* Color: Orange */
+
+body							{color: #000; background: #fcfce9;}
+a								{color: #ef7906;}
+hr								{background-color: #e4e4d3; color: #e4e4d3;}
+
+.Textbox, textarea	 			{background-color: #f0ecd8;}
+
+#Header .Top a					{color: #000;}
+
+#MyCart strong					{color: #ef7906;}
+
+#Menu ul li a					{color: #000;}
+#Menu ul li a:hover,
+#Menu ul li.Current a			{color: #ef7906}
+
+#LayoutColumn3 ul li a			{color: #160103;}
+#LayoutColumn3 ul li a:hover,
+#LayoutColumn3 ul li.Current a	{color: #ef7906;}
+
+.ColoredBg						{background-color: #f5f0d8;}
+
+#ProductList li .ProductImage a img			{border-color: #e4d5b1;}
+#ProductList li .ProductImage a:hover img	{border-color: #ef7906;}
+#ProductList li .ProductAction a			{background-color: #e4d5b1; color: #160103;}
+#ProductList li .ProductAction a:hover		{background-color: #d3c4a1;}
+
+#SideInfo blockquote						{color: #ef7906;}
+
+#SideBanner .BlockContent					{color: #958b81; background-color: #eae7d4;}
+
+#NewsletterBox								{background-color: #f3a04a;}
+#NewsletterBox .BlockContent form .Text		{background-color: #f4bd7d;}
+#NewsletterBox .BlockContent form .Button	{background-color: #e4d5b1;}
+
+.ProductMain h3										{color: #ef7906;}
+
+.ProductMain .Buttons input		{background: #e4d5b1; color: #160103;}
+
+.PrevNext ul li a				{color: #160103;}
+.PrevNext ul li.Current a		{color: #d5890c;}
+
+.Blog #BlogDetail h3			{color: #ef7906;}
+.Blog #BlogDetail .Back a		{color: #160103;}
+
+#PageContent h3					{color: #ef7906;}
+a.BackHome						{background-color: #e4d5b1; color: #160103;}
+
+.CartContents a					{color: #160103;}
+.CartContents td				{background-color: #f5f0d8;}
+.CartContents input,
+.CartContents select			{background-color: #f8f4de; border-color: #ddd5b9;}
+.CartContents td.NoBg,
+.CartContents tr.NoBg td		{background: #fcfce9;}
+.CartContents .CartButton		{background-color: #e4d5b1;}
+
+.CartContents .Item td			{border-color: #FCFCE9;}
+.CartContents .Item .Thumb		{border-color: #FCFCE9;}
+.CartContents .Item .Thumb img	{border-color: #e4d5b1;}
+.CartContents .Item .Name		{border-color: #FCFCE9;}
+
+.CartContents .UpdateCart td	{border-color:  #FCFCE9;}
+
+.CartContents .Shipping td a			{color: #EF7906;}
+.CartContents .Shipping td .CartButton	{color: #160103;}
+
+.CartContents .UpdateTotal td p			{background-color: #FCFCE9;}
+
+.ExpressCheckout h3						{background-color: #e6d8b5;}
+.ExpressCheckout .ExpressCheckoutContent{background-color: #f5f0d8;}
+
+.ExpressCheckout input,
+.ExpressCheckout Select,
+.HorizontalFormContainer input,
+.HorizontalFormContainer Select			{background-color: #f0ecd8;}
+
+.ExpressCheckout .Submit input,
+.HorizontalFormContainer .Submit input	{background-color: #e4d5b1;}
+
+.OrderTable tr.LightBg td,
+.OrderTable td.LightBg					{background-color: #fcfce9;}
+
+.OrderTable .TotalCost p				{background-color: #F5F0D8;}
+
+#Footer									{background-color: #e4d5b1;}
+#Footer .inner a						{color: #160103;}
+#Footer .inner .Copyright				{color: #6a5b36;}
+#Footer .inner .Copyright a				{color: #6a5b36;}
+
+/* FROM DEFAULT THEME ===================================================================== */
+.SpecificInfoMessage {background-color: #f8e4d1; color: #555;}
+.InfoMessage {background: #EFF8FA url('../../default/images/InfoMessage.gif') no-repeat 5px 8px; color: #555;}
+.SuccessMessage {background: #E8FFDF url('../../default/images/SuccessMessage.gif') no-repeat 5px 8px; color: #555;}
+.ErrorMessage {background: #FFECEC url('../../default/images/ErrorMessage.gif') no-repeat 5px 8px; color: #555;}
+.ComparisonTable tr:hover td, .ComparisonTable tr.Over td {background: #EFF8FA;}
+
+.CompareItem { width:200px; border-left: solid 1px #CACACA; }
+.CompareFieldName { font-weight:bold; border-bottom: 1px solid #EFF8FA; }
+.CompareFieldTop { border-bottom:solid 1px #85BADF; }
+.CompareFieldTop a:hover { color:red; }
+.CompareCenter { border-left:solid 1px #85BADF; border-bottom:solid 1px #F2F2F2; }
+.CompareLeft { border-left:solid 1px #85BADF; border-bottom:solid 1px #F2F2F2; }
+
+
+
+
+
+

@@ -1,0 +1,276 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Product Page Detail</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/orange.css" rel="stylesheet" type="text/css" />
+<link href="css/ie.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
+
+<!-- Selectbox -->
+<script type="text/javascript" src="js/selectbox.js"></script>
+<script type="text/javascript">
+	$(function () {
+		$("select").selectbox();
+	});
+</script>
+
+<!-- Scrollable -->
+<script src="js/jquery.scrollable.min.js"></script>
+<script>
+$(function() {
+	// initialize scrollable
+	$("#RelatedProducts").scrollable({
+		items: '#ProductList'
+	});
+});
+</script>
+
+</head>
+
+<body>
+
+<div id="Container">
+    <div id="Header">
+        <div id="Logo">
+            <div id="LogoContainer">
+                <h1><a href="index.htm">London Salon &amp; Boutique</a></h1>
+            </div>
+        </div><!-- END #Logo -->
+        <div class="Top">
+        	<div id="TopMenu">
+                <ul>
+                    <li><a href="#">My Account</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="checkout.htm">Checkout</a></li>
+                </ul>
+			</div><!-- END #TopMenu -->
+            
+            <div id="MyCart"><a href="shopping_cart.htm">My Cart (3)</a><strong>$247.00</strong></div>
+            
+            <div id="SearchForm">
+				<form action="">
+					<input type="text" value="Search" class="Textbox" /><input name="" type="submit" value="Search" class="Button" />
+				</form>
+			</div>
+            
+            <div id="Menu">
+                <ul>
+                    <li><a href="index.htm">Home</a></li>
+                    <li><a href="product_page.htm">Products</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="stockists.htm">Stockists</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="blog_page.htm">Blog</a></li>
+                    <li><a href="contact.htm">Contact</a></li>
+                </ul>
+            </div><!-- END #Menu -->
+        </div><!-- END #Top -->
+    </div><!-- END #Header -->
+
+    <div id="Wrapper">
+    	<div id="LayoutColumn1" class="FloatRight Content">
+        	<div id="ProductDetails" class="Block PrimaryProductDetails Moveable Panel">
+            	<h2>Body Products</h2>
+                <div class="BlockContent">
+					<div class="ProductThumb">
+                        <div class="ProductThumbImage">
+                            <a href="#" title=""> <img src="images/product_image_details.jpg" width="319" height="319" alt="" title=""></a>
+                        </div>
+					</div>  
+                    
+                    <div class="ProductMain">
+                    	<h3>Lavender Flower Body Salt Scrub 350ml</h3>
+                    	<div class="ProductDetailsGrid">
+                        	<div class="DetailRow Price">
+                                <div class="Label">Price</div>
+                                <div class="Value"><em class="ProductPrice VariationProductPrice">$36.00</em></div>
+                            </div>
+                            <div class="DetailRow Quantity">
+                            	<div class="Label">Qty</div>
+                                <div class="Value"><input name="" type="text" /></div>
+                            </div>
+                            <div class="DetailRow Buttons clearfix">
+                            	<div class="AddCartButton"><input name="" type="submit" value="Add to Cart" /></div>
+                                <div class="BuyNowButton"><input name="" type="submit" value="Buy Now" /></div>
+                            </div>
+                            <div class="DetailRow ShortDescription">
+                            	<div class="Label">Short Description</div>
+                                <div class="Value">This blend of oil, salt &amp; essential oils will smooth away dead skin cells and leave your skin feeling soft and moisturized. Directions: Scoop a small handful and rub gently onto your body, smooth oil over entire body.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Clear"></div>
+                </div>
+            </div><!-- END #ProductDetails -->
+            
+            <div id="ProductDescription" class="Block Moveable Panel ProductDescription">
+                <h2>Additional Information</h2>
+                <div class="ProductDescriptionContainer">
+                    <p>Ingredients: Fine sea salt, grapeseed oil, coconut oil, jojoba oil, Vitamin E oil, rosemary leaf extract &amp; essential oils of True Lavender &amp; lavender flowers.</p>
+                </div>
+            </div><!-- END #ProductDescription -->
+            
+            <div id="RelatedProducts" class="Block RelatedProducts Moveable Panel">
+            	<h2>Related Products</h2>
+                <a class="prev browse left disabled"></a>
+                <div class="BlockContent">
+					<ul id="ProductList">
+                        <li>
+                            <div class="ProductImage">
+                            	<a href="#"><img src="images/product_image_1.jpg" width="177" height="177" alt="" /></a>
+                            </div>
+                            <div class="ProductDetails">
+                            	<strong><a href="#">Lavender Flower Body Salt Scrub 350ml</a></strong>
+                            </div>
+                            <div class="ProductPriceRating">
+                            	<em>$36.00</em>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ProductImage">
+                            	<a href="#"><img src="images/product_image_2.jpg" width="177" height="177" alt="" /></a>
+                            </div>
+                            <div class="ProductDetails">
+                            	<strong><a href="#">Lavender Flower Body Salt Scrub 350ml</a></strong>
+                            </div>
+                            <div class="ProductPriceRating">
+                            	<em>$36.00</em>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ProductImage">
+                            	<a href="#"><img src="images/product_image_3.jpg" width="177" height="177" alt="" /></a>
+                            </div>
+                            <div class="ProductDetails">
+                            	<strong><a href="#">Lavender Flower Body Salt Scrub 350ml</a></strong>
+                            </div>
+                            <div class="ProductPriceRating">
+                            	<em>$36.00</em>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ProductImage">
+                            	<a href="#"><img src="images/product_image_4.jpg" width="177" height="177" alt="" /></a>
+                            </div>
+                            <div class="ProductDetails">
+                            	<strong><a href="#">Lavender Flower Body Salt Scrub 350ml</a></strong>
+                            </div>
+                            <div class="ProductPriceRating">
+                            	<em>$36.00</em>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ProductImage">
+                            	<a href="#"><img src="images/product_image_1.jpg" width="177" height="177" alt="" /></a>
+                            </div>
+                            <div class="ProductDetails">
+                            	<strong><a href="#">Lavender Flower Body Salt Scrub 350ml</a></strong>
+                            </div>
+                            <div class="ProductPriceRating">
+                            	<em>$36.00</em>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ProductImage">
+                            	<a href="#"><img src="images/product_image_2.jpg" width="177" height="177" alt="" /></a>
+                            </div>
+                            <div class="ProductDetails">
+                            	<strong><a href="#">Lavender Flower Body Salt Scrub 350ml</a></strong>
+                            </div>
+                            <div class="ProductPriceRating">
+                            	<em>$36.00</em>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ProductImage">
+                            	<a href="#"><img src="images/product_image_3.jpg" width="177" height="177" alt="" /></a>
+                            </div>
+                            <div class="ProductDetails">
+                            	<strong><a href="#">Lavender Flower Body Salt Scrub 350ml</a></strong>
+                            </div>
+                            <div class="ProductPriceRating">
+                            	<em>$36.00</em>
+                            </div>
+                        </li>
+                    </ul>
+                    
+                    
+                </div>
+                <a class="next browse right"></a>
+            </div>
+                        
+        </div><!-- END #LayoutColumn1 -->
+        <div id="LayoutColumn3" class="Left">
+            <div id="SideCategoryList" class="Block CategoryList Moveable Panel">
+                <h2>product categories</h2>
+                <div class="BlockContent">
+                    <ul>
+                        <li><a href="#">Baby Range</a></li>
+                        <li class="Current"><a href="#">Body Products</a></li>
+                        <li><a href="#">Face Products</a></li>
+                        <li><a href="#">Home Products</a></li>
+                        <li><a href="#">Men’s Range</a></li>
+                        <li><a href="#">Pamper Parties</a></li>
+                        <li><a href="#">Pregnancy Range</a></li>
+                        <li><a href="#">Recipies</a></li>
+                    </ul>
+                </div>
+            </div><!-- END #SideInfo -->
+        </div><!-- END #LayoutColumn3 -->
+        <div id="NewsletterBox" class="Block NewsletterSubscription Moveable Panel">
+            <h2><img src="images/icon_butterfly.png" width="37" height="35" alt="" />Join My Mailing List</h2>
+            <div class="BlockContent">
+                <form action="">
+                    <input value="Email" type="text" class="Text" />
+                    <input name="" type="submit" value="Search" class="Button" />
+                </form>
+            </div>
+        </div>
+    </div><!-- END #Wrapper -->
+</div><!-- END #Container -->
+
+<div id="Footer">
+	<div class="inner">
+        <div class="Categories">
+            <h3>Product Categories</h3>
+            <ul>
+                <li><a href="#">Baby Range</a></li>
+                <li><a href="#">Men’s Range</a></li>
+                <li><a href="#">Body Products</a></li>
+                <li><a href="#">Pamper Parties</a></li>
+                <li><a href="#">Face Products</a></li>
+                <li><a href="#">Pregnancy Range</a></li>
+                <li><a href="#">Home Products</a></li>
+                <li><a href="#">Recipies</a></li>
+            </ul>
+        </div>
+        <div class="Links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Press</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Stockists</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Home</a></li>
+            </ul>
+        </div>
+        <div class="Contact">
+            <h3>Contact</h3>
+            <p>
+                <span>Phone 0450 034 406</span>
+                <span>info@vanessamegan.com </span>
+                <span class="Connect"><a href="#"><img src="images/connect_facebook.png" width="93" height="29" alt="" /></a><a href="#"><img src="images/connect_twitter.png" width="93" height="29" alt="" /></a></span>
+            </p>
+        </div>
+        <p class="Copyright">vanessa megan &copy; 2011.  <a href="#">Web Design Sydney</a></p>
+	</div><!-- END .inner -->
+</div><!-- END #Footer -->
+
+</body>
+</html>

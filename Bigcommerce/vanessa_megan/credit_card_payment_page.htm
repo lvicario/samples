@@ -1,0 +1,194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Credit Card Payment Page</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/orange.css" rel="stylesheet" type="text/css" />
+<link href="css/ie.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
+
+<!-- Selectbox -->
+<script type="text/javascript" src="js/selectbox.js"></script>
+<script type="text/javascript">
+	$(function () {
+		$("select").selectbox();
+	});
+</script>
+</head>
+
+<body>
+
+<div id="Container">
+    <div id="Header">
+        <div id="Logo">
+            <div id="LogoContainer">
+                <h1><a href="index.htm">London Salon &amp; Boutique</a></h1>
+            </div>
+        </div><!-- END #Logo -->
+        <div class="Top">
+        	<div id="TopMenu">
+                <ul>
+                    <li><a href="#">My Account</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="checkout.htm">Checkout</a></li>
+                </ul>
+			</div><!-- END #TopMenu -->
+            
+            <div id="MyCart"><a href="shopping_cart.htm">My Cart (3)</a><strong>$247.00</strong></div>
+            
+            <div id="SearchForm">
+				<form action="">
+					<input type="text" value="Search" class="Textbox" /><input name="" type="submit" value="Search" class="Button" />
+				</form>
+			</div>
+            
+            <div id="Menu">
+                <ul>
+                    <li><a href="index.htm">Home</a></li>
+                    <li><a href="product_page.htm">Products</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="stockists.htm">Stockists</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="blog_page.htm">Blog</a></li>
+                    <li><a href="contact.htm">Contact</a></li>
+                </ul>
+            </div><!-- END #Menu -->
+        </div><!-- END #Top -->
+    </div><!-- END #Header -->
+
+    <div id="Wrapper">
+    	<div id="LayoutColumn1" class="Content Widest">
+        	<div class="Block ExpressCheckout">
+            
+            	<div id="PaymentDetails" class="ExpressCheckoutBlock">
+                	<h3 class="ExpressCheckoutTitle">Your Payment Details</h3>
+                    <div class="ExpressCheckoutContent">
+                    	<div class="FormContainer HorizontalFormContainer Clear">
+                            <dl>
+                                <dt>Name *</dt>
+                                <dd><input name="" type="text" /><span>(As it appears on your payment type)</span></dd>
+                                <dt>Payment Type *</dt>
+                                <dd>
+                                    <select name=""><option>Visa</option><option>Mastercard</option></select>
+                                    <span><img src="images/pay_method_mastercard.png" width="38" height="23" alt="" /> <img src="images/pay_method_visa.png" width="38" height="23" alt="" /></span>
+                                </dd>
+                                <dt>Card Number *</dt>
+                                <dd><input name="" type="text" /></dd>
+                                <dt>Expiration Date *</dt>
+                                <dd class="Reduced">
+                                    <select name=""><option>01</option><option>02</option><option>03</option></select>
+                                    <select name=""><option>2011</option><option>2012</option><option>2013</option></select>
+                                    <br class="Clear" />
+                                </dd>
+                                <dt>Security Number *</dt>
+                                <dd class="Reduced"><input name="" type="text" /><a href="#" class="Info">What is this?</a></dd>
+                            </dl>
+						</div>
+                    
+                    	<h4>Order Summary</h4>
+                        <table border="0" cellspacing="0" cellpadding="0" class="OrderTable">
+                            <tr>
+                                <th width="50%" scope="col">Product Name</th>
+                                <th width="13%" scope="col" class="ACenter">Quantity</th>
+                                <th width="18%" scope="col" class="ARight">Item Price</th>
+                                <th width="19%" scope="col" class="ARight">Item Total</th>
+                            </tr>
+                            <tr class="Item LightBg">
+                                <td>Jimmyjane Indulgence Set</td>
+                                <td class="ACenter">2</td>
+                                <td class="ARight">$30.00 AUD</td>
+                                <td class="ARight">$60.00 AUD</td>
+                            </tr>
+                            <tr class="Item LightBg">
+                                <td>Jimmyjane Indulgence Set</td>
+                                <td class="ACenter">1</td>
+                                <td class="ARight">$35.00 AUD</td>
+                                <td class="ARight">$35.00 AUD</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" rowspan="3">&nbsp;</td>
+                                <td class="LightBg">Sub Total</td>
+                                <td class="LightBg ARight">$95.00 AUD</td>
+                            </tr>
+                            <tr>
+                                <td class="LightBg">Shipping and Handling<br />
+                                <em>Flat Rate Per Order</em></td>
+                                <td class="LightBg ARight">$20.00 AUD</td>
+                            </tr>
+                            <tr class="TotalCost">
+                                <td colspan="2" class="LightBg"><p><span class="FloatLeft">Total</span><span class="FloatRight">$125.00 AUD</span></p></td>
+                            </tr>
+                            <tr class="BottomLine">
+                                <td colspan="4">&nbsp;</td>
+                            </tr>
+                            <tr class="ReducePad">
+                                <td colspan="4">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td class="Submit"><input type="submit" value="Back" /></td>
+                                <td colspan="3" class="Submit ARight"><input type="submit" value="Purchase Now" /></td>
+                            </tr>
+                        </table>
+
+                    </div>
+                </div><!-- END #PaymentDetails -->
+                
+            </div><!-- END #ExpressCheckout -->
+        </div><!-- END #LayoutColumn1 -->
+        <div id="NewsletterBox" class="Block NewsletterSubscription Moveable Panel">
+            <h2><img src="images/icon_butterfly.png" width="37" height="35" alt="" />Join My Mailing List</h2>
+            <div class="BlockContent">
+                <form action="">
+                    <input value="Email" type="text" class="Text" />
+                    <input name="" type="submit" value="Search" class="Button" />
+                </form>
+            </div>
+        </div>
+    </div><!-- END #Wrapper -->
+</div><!-- END #Container -->
+
+<div id="Footer">
+	<div class="inner">
+        <div class="Categories">
+            <h3>Product Categories</h3>
+            <ul>
+                <li><a href="#">Baby Range</a></li>
+                <li><a href="#">Men’s Range</a></li>
+                <li><a href="#">Body Products</a></li>
+                <li><a href="#">Pamper Parties</a></li>
+                <li><a href="#">Face Products</a></li>
+                <li><a href="#">Pregnancy Range</a></li>
+                <li><a href="#">Home Products</a></li>
+                <li><a href="#">Recipies</a></li>
+            </ul>
+        </div>
+        <div class="Links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Press</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Stockists</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Home</a></li>
+            </ul>
+        </div>
+        <div class="Contact">
+            <h3>Contact</h3>
+            <p>
+                <span>Phone 0450 034 406</span>
+                <span>info@vanessamegan.com </span>
+                <span class="Connect"><a href="#"><img src="images/connect_facebook.png" width="93" height="29" alt="" /></a><a href="#"><img src="images/connect_twitter.png" width="93" height="29" alt="" /></a></span>
+            </p>
+        </div>
+        <p class="Copyright">vanessa megan &copy; 2011.  <a href="#">Web Design Sydney</a></p>
+	</div><!-- END .inner -->
+</div><!-- END #Footer -->
+
+</body>
+</html>
+
