@@ -1,0 +1,260 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Homepage</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
+<script>
+	$(function() {
+
+        // this reduces the opacity of all elements with class="hoverfade" to 0.7 right after the page displays
+		$('.artist-list ul li').css('opacity', 1.0);
+
+        // hover over (this) element fades it to full opacity of 1.0 and then when the mouse has left (this) element, it fades back to original value of 0.7
+		$('.artist-list ul li').hover(function(event) {
+			$(this).stop().fadeTo("fast", 0.8);
+		}, function(event) {
+			$(this).stop().fadeTo("fast", 1.0);
+		});
+	});
+</script>
+<script type="text/javascript" src="js/jquery.bxSlider.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#slideshow').bxSlider({
+			mode: 'fade',
+			auto: true,
+			pager: true,
+			controls: false,
+			speed: 800,
+			pause: 4000
+		});
+	});
+</script>
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+<div id="masthead">
+	<div class="inner">
+    	Bandframe USA: <a href="#">Austin</a> | <a href="#">Nashville</a> | <a href="#">Boston</a>
+    </div>
+</div>
+<div id="wrapper">
+    <div id="header">
+        <h1><a href="#"><span>BandFrame&trade;.</span> The Musician&rsquo;s Website. Redefined.</a></h1>
+        <p class="p1">The one-stop-shop platform for bands, solo artists, musicians, and more.</p>
+        <p>BandFrame is a focused, interactive, customized home on the Internet for musicians of all types. Created by musicians for musicians, BandFrame delivers a media-rich user experience that puts you in control of your very own, personalized web space.</p>
+        <img src="images/logo_img.png" width="492" height="179" alt="">
+    </div><!-- END #header -->
+    <div id="content">
+    	<div class="slide-holder">
+        	<div class="invite">
+                <h2>Coming Fall 2012</h2>
+                <p class="txt1">Be the first to hear about it.</p>
+                <p class="field">
+                    <input name="" type="text" value="e-mail address" onfocus="if (this.value == 'e-mail address') {this.value = '';}" onblur="if (this.value == '') {this.value = 'e-mail address';}">
+                    <input name="" type="submit" value="Request an Invite">
+                </p>
+                <p class="txt2">Don&rsquo;t miss a beat!  BandFrame will contact you once our new service debuts this Fall!</p>
+            </div>
+            <div id="slideshow">
+                <div class="slide">
+                    <div class="ipad">
+                        <a href="#"><img src="images/ipad.png" width="582" height="448" alt="" class="holder"></a>
+                        <img src="images/ipad_img_rodney_howard.jpg" width="471" height="345" alt="" class="img">
+                    </div>
+                    <div class="testimonials">
+                        <div class="img">
+                        	<a href="#">
+                                <img src="images/artist_img_rodney_howard.jpg" width="593" height="270" alt="">
+                                <p><strong>Rodney Howard</strong>Avril Lavigne, Gavin DeGraw, Regina Spektor</p>
+                            </a>
+                        </div>
+                        <div class="quote">
+                            <q>In a paperless age, BandFrame is the best business card I ever had. Complete and right to the point.  Anything worth knowing about me as a musician is all there...</q>
+                            <cite><span>- Rodney Howard</span> <a href="#">www.bandframe.com/rodneyhoward</a></cite>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="ipad">
+                        <a href="#"><img src="images/ipad.png" width="582" height="448" alt="" class="holder"></a>
+                        <img src="images/ipad_img_mike_blong.jpg" width="471" height="345" alt="" class="img">
+                    </div>
+                    <div class="testimonials">
+                        <div class="img">
+                        	<a href="#">
+                                <img src="images/artist_img_mike_blong.jpg" width="593" height="270" alt="">
+                                <p><strong>Mike Blong</strong>Avril Lavigne, Gavin DeGraw, Regina Spektor</p>
+                            </a>
+                        </div>
+                        <div class="quote">
+                            <q>In a paperless age, BandFrame is the best business card I ever had. Complete and right to the point.  Anything worth knowing about me as a musician is all there...</q>
+                            <cite><span>- Mike Blong</span> <a href="#">www.bandframe.com/rodneyhoward</a></cite>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="ipad">
+                        <a href="#"><img src="images/ipad.png" width="582" height="448" alt="" class="holder"></a>
+                        <img src="images/ipad_img_snarky_puppy.jpg" width="471" height="345" alt="" class="img">
+                    </div>
+                    <div class="testimonials">
+                        <div class="img">
+                        	<a href="#">
+                                <img src="images/artist_img_rodney_howard.jpg" width="593" height="270" alt="">
+                                <p><strong>Snarky Puppy</strong>Avril Lavigne, Gavin DeGraw, Regina Spektor</p>
+                            </a>
+                        </div>
+                        <div class="quote">
+                            <q>In a paperless age, BandFrame is the best business card I ever had. Complete and right to the point.  Anything worth knowing about me as a musician is all there...</q>
+                            <cite><span>- Snarky Puppy</span> <a href="#">www.bandframe.com/rodneyhoward</a></cite>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- END #slideshow -->
+            <div class="connect">
+            	<!-- AddThis Button BEGIN -->
+                <div class="addthis_toolbox addthis_default_style addthis_32x32_style left-col">
+                <a class="addthis_button_preferred_1"></a>
+                <a class="addthis_button_compact"></a>
+                </div>
+                <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4febdee358755e76"></script>
+                <!-- AddThis Button END -->
+                
+                <div class="right-col">
+                	<a href="#" class="fb">Facebook</a>
+                    <a href="#" class="tw">Twitter</a>
+                    <a href="#" class="sc">SoundCloud</a>
+                    <a href="#" class="vm">Vimeo</a>
+                </div>
+            </div>
+        </div><!-- END .slide-holders -->
+        
+    	<div class="artist-list">
+        	<h2>A taste of what&rsquo;s to come.</h2>
+            <ul>
+            	<li>
+                	<a href="#">
+                    	<img src="images/tn_snarky_puppy.jpg" width="164" height="164" alt="">
+                        <span>Snarky Puppy</span>
+					</a>
+                </li>
+                <li>
+                	<a href="#">
+                    	<img src="images/tn_willy_beaman.jpg" width="164" height="164" alt="">
+                        <span>Willy Beaman</span>
+					</a>
+                </li>
+                <li>
+                	<a href="#">
+                    	<img src="images/tn_elise_hayes.jpg" width="164" height="164" alt="">
+                        <span>Elise Hayes</span>
+					</a>
+                </li>
+                <li>
+                	<a href="#">
+                    	<img src="images/tn_david_tronzo.jpg" width="164" height="164" alt="">
+                        <span>David Tronzo</span>
+					</a>
+                </li>
+                <li>
+                	<a href="#">
+                    	<img src="images/tn_alan_evans_trio.jpg" width="164" height="164" alt="">
+                        <span>Alan Evans Trio</span>
+					</a>
+                </li>
+                <li>
+                	<a href="#">
+                    	<img src="images/tn_alison_wedding.jpg" width="164" height="164" alt="">
+                        <span>Alison Wedding</span>
+					</a>
+                </li>
+                <li>
+                	<a href="#">
+                    	<img src="images/tn_rodney_howard.jpg" width="164" height="164" alt="">
+                        <span>Rodney Howard</span>
+					</a>
+                </li>
+                <li>
+                	<a href="#">
+                    	<img src="images/tn_mike_wyatt.jpg" width="164" height="164" alt="">
+                        <span>Mike Wyatt</span>
+					</a>
+                </li>
+                <li>
+                	<a href="#">
+                    	<img src="images/tn_dominick_farinacci.jpg" width="164" height="164" alt="">
+                        <span>Dominick Farinacci</span>
+					</a>
+                </li>
+                <li>
+                	<a href="#">
+                    	<img src="images/tn_greg_clark_jr.jpg" width="164" height="164" alt="">
+                        <span>Greg Clark, Jr.</span>
+					</a>
+                </li>
+                <li>
+                	<a href="#">
+                    	<img src="images/tn_scott_kulman.jpg" width="164" height="164" alt="">
+                        <span>Scott Kulman</span>
+					</a>
+                </li>
+                <li>
+                	<a href="#">
+                    	<img src="images/tn_mike_blong.jpg" width="164" height="164" alt="">
+                        <span>Mike Blong</span>
+					</a>
+                </li>
+                <li>
+                	<a href="#">
+                    	<img src="images/tn_cosmodrome.jpg" width="164" height="164" alt="">
+                        <span>Cosmodrome</span>
+					</a>
+                </li>
+                <li>
+                	<a href="#">
+                    	<img src="images/tn_rob_oblock.jpg" width="164" height="164" alt="">
+                        <span>Rob O&rsquo;Block</span>
+					</a>
+                </li>
+                <li>
+                	<a href="#">
+                    	<img src="images/tn_carly_pearce.jpg" width="164" height="164" alt="">
+                        <span>Carly Pearce</span>
+					</a>
+                </li>
+                <li>
+                	<a href="#">
+                    	<img src="images/tn_project_blue_book.jpg" width="164" height="164" alt="">
+                        <span>Project Blue Book</span>
+					</a>
+                </li>
+                <li>
+                	<a href="#">
+                    	<img src="images/tn_black_kettle.jpg" width="164" height="164" alt="">
+                        <span>Black Kettle</span>
+					</a>
+                </li>
+                <li>
+                	<a href="#">
+                    	<img src="images/tn_rapplesauce.jpg" width="164" height="164" alt="">
+                        <span>Rapplesauce</span>
+					</a>
+                </li>
+            </ul>
+            <p>Choose an artist above to visit their BandFrame page!</p>
+        </div>
+    </div><!-- END #content -->
+</div><!-- END #wrapper -->
+<div id="footer">
+    <div class="inner">
+    	<p class="copyright">&copy;2011-2012, <a href="#">BandFrame&trade;</a>, all rights reserved. Patent pending</p>
+        <a href="#" class="contact">Contact Us</a>
+    </div>
+</div><!-- END #footer -->
+</body>
+</html>
+

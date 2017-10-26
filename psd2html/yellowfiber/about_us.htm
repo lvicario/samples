@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>About Us</title>
+<link href="css/style.css" rel="stylesheet">
+<script src="js/jquery-1.6.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.equalheights.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$(".main, .sidebar").equalHeights();
+});
+</script>
+<!-- DROPDOWN MENU -->
+<script type="text/javascript">
+$(function(){
+    $(".main-nav ul li").hover(function(){
+        $(this).addClass("hover");
+        $('ul:first',this).css('visibility', 'visible');
+    }, function(){
+        $(this).removeClass("hover");
+        $('ul:first',this).css('visibility', 'hidden');
+    });
+    $(".main-nav ul li ul li:has(ul)").find("a:first").append(" &raquo; ");
+});
+</script>
+</head>
+
+<body class="about-us">
+
+<div id="wrapper">
+    <div id="header">
+        <h1><a href="index.htm">Yellow Fiber Networks</a></h1>
+        <p class="call">
+        	<span>Call UK</span>
+            <strong>703 544 0229</strong>
+        </p>
+        <div class="main-nav">
+            <ul>
+                <li><a href="index.htm">Home</a></li>
+                <li><a href="#">Colocation</a></li>
+                <li>
+                	<a href="network.htm">Network</a>
+                    <ul class="sub_menu">
+                         <li><a href="#">Network Serives</a></li>
+                         <li><a href="#">Dedicated Internet</a></li>
+                         <li><a href="#">Transport Network</a></li>
+                    </ul>
+                </li>
+                <li>
+                	<a href="#">Services</a>
+                    <ul class="sub_menu">
+                         <li><a href="#">Network Serives</a></li>
+                         <li><a href="#">Dedicated Internet</a></li>
+                         <li><a href="#">Transport Network</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contact Us</a></li>
+                <li class="current"><a href="about_us.htm">About Us</a></li>
+            </ul>
+		</div>
+    </div><!-- END #header -->
+    <div id="content">
+    	<div class="main">
+            <h2>About Us</h2>
+            <p>YellowFiber is a metro fiber optic company with a global presence. Providing on demand high bandwidth solutions since 2005; YellowFiber serves many of the Mid-Atlantic Fortune 1000 as well as medium sized firms. Yellow Fiber's Broadband Access changes everything - with a cost-effective, high-speed, "always-on" nationwide connectivity solution that is easy to deploy, manage and support</p>
+            <p>Our Internet access will allow you to communicate more effectively with your customers, partners, suppliers, employees and other stakeholders. We have the solution, whether you're an enterprise client with high-bandwidth requirements for connecting multiple branches, store fronts, teleworkers, or a small business with huge internet demands. YellowFiber delivers.</p>
+            <hr>
+            <h3>Our Facilities</h3>
+            <p>All of our facililities are SAS70 type 2 certified and include:</p>
+            <ul>
+            	<li>2N and N+1 AC UPS power, DC power is available</li>
+                <li>N+1 emergency generator configuration</li>
+                <li>N+1 cooling systems</li>
+                <li>Dual-interlock, dry-pipe pre-action fire suppression system with VESDA</li>
+                <li>24×7 staffing and site access, CCTV surveillance, hardened data center perimeter and biometric access control</li>
+                <li>24×7 remote hands and mechanical & electrical monitoring, including branch-circuit monitoring from certified data center technicians</li>
+                <li>Carrier-neutral access to over 50 networks and service providers through diverse points of entry Ample space for antenna towers with line-of-sight in all directions</li>
+            </ul>
+        </div><!-- END #main -->
+        <ul class="sidebar">
+        	<li class="widget widget-links">
+            	<h3>Quicl links</h3>
+                <ul>
+                    <li><a href="index.htm">Home</a></li>
+                    <li><a href="#">Colocation</a></li>
+                    <li><a href="network.htm">Network</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li class="current"><a href="about_us.htm">About Us</a></li>
+                </ul>
+            </li>
+            <li class="widget widget-join">
+            	<h3>Join Our National Network</h3>
+                <img src="images/network_map.png" width="176" height="83" alt="">
+                <p>Join our Layer 2 Virual Ciruit Transport Network and get access to a robust Transport service and expand your network presence...</p>
+                <p class="more"><a href="#">read more &gt;&gt;</a></p>
+            </li>
+        </ul>
+    </div><!-- END #content -->
+</div><!-- END #wrapper -->
+
+<div id="footer">
+    <div class="foot-nav">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Colocation</a></li>
+            <li><a href="#">Network</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">About Us</a></li>
+        </ul>
+    </div>
+    <p class="copyright">&copy; 2011 Yellow Fiber Networks. All Right Reserved. <a href="#">Legal</a> | <a href="#">TOS</a></p>
+</div><!-- END #footer -->
+
+</body>
+</html>
+

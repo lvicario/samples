@@ -1,0 +1,49 @@
+/*
+ * CSS Styles that are needed by jScrollPane for it to operate correctly.
+ *
+ * Include this stylesheet in your site or copy and paste the styles below into your stylesheet - jScrollPane
+ * may not operate correctly without them.
+ */
+
+.jspContainer					{overflow: hidden; position: relative;}
+.jspPane						{position: absolute;}
+.jspVerticalBar					{width: 22px; height: 100%; position: absolute; top: 0; right: 0;}
+.jspVerticalBar *				{margin: 0; padding: 0;}
+.jspHorizontalBar				{display: none}
+.jspCap							{display: none;}
+.jspTrack						{background: url(../images/jspTrack.png) repeat-y; position: relative;}
+.jspDrag						{background: #e8e8ea url(../images/jspDrag.png) no-repeat center center; border: 1px solid #b5b5b5; margin: 0 6px 1px 5px;  position: relative; top: 0; left: 0; cursor: pointer;}
+.jspArrow						{text-indent: -20000px; display: block; cursor: pointer;}
+.jspArrow.jspDisabled			{cursor: default; background: #80808d;}
+.jspVerticalBar .jspArrow		{height: 18px;}
+.jspVerticalBar .jspArrowUp		{background: url(../images/jspArrowUp.png) no-repeat;}
+.jspVerticalBar .jspArrowDown	{background: url(../images/jspArrowDown.png) no-repeat;}
+.jspVerticalBar .jspArrow:focus	{outline: none;}
+.jspCorner						{background: #eeeef4; float: left; height: 100%;}
+
+.photos-content .jspVerticalBar					{width: 49px;}
+.photos-content .jspVerticalBar .jspTrack		{background: url(../images/jsp_photos_Track.png) repeat-y;}
+.photos-content .jspVerticalBar .jspDrag		{margin: 0 19px;}
+.photos-content .jspVerticalBar .jspArrow		{height: 31px;}	
+.photos-content .jspVerticalBar .jspArrowUp		{background: url(../images/jsp_photos_ArrowUp.png) no-repeat;}
+.photos-content .jspVerticalBar .jspArrowDown	{background: url(../images/jsp_photos_ArrowDown.png) no-repeat;}
+.photos-content .scroll-pane					{overflow: visible !important;}
+.photos-content .jspContainer					{overflow: visible !important;}
+.photos-content .jspPane						{margin-top: -50px;}
+
+.videos-content .jspVerticalBar					{width: 61px;}
+.videos-content .jspVerticalBar .jspTrack		{background: url(../images/jsp_videos_Track.png) repeat-y;}
+.videos-content .jspVerticalBar .jspDrag		{margin: 0 25px;}
+.videos-content .jspVerticalBar .jspArrow		{height: 43px;}	
+.videos-content .jspVerticalBar .jspArrowUp		{background: url(../images/jsp_videos_ArrowUp.png) no-repeat;}
+.videos-content .jspVerticalBar .jspArrowDown	{background: url(../images/jsp_videos_ArrowDown.png) no-repeat;}
+.videos-content .scroll-pane					{overflow: visible !important;}
+.videos-content .jspContainer					{overflow: visible !important;}
+.videos-content .jspPane						{margin-top: -50px;}
+
+
+.tour-content .box-two .jspPane					{width: 285px !important; padding: 10px 10px 0 10px !important; background: #9d8d83;}
+
+/* Yuk! CSS Hack for IE6 3 pixel bug :( */
+* html .jspCorner				{margin: 0 -3px 0 0;}
+

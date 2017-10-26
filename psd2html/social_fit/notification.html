@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>Notification</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/jquery.fancybox.css">
+	<link rel="stylesheet" href="js/pickadate/themes/default.css" id="theme_base">
+	<link rel="stylesheet" href="js/pickadate/themes/default.date.css" id="theme_date">
+	<link rel="stylesheet" href="js/pickadate/themes/default.time.css" id="theme_time">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+</head>
+<body>
+	
+	<header class="header">
+		<div class="container">
+			<div class="pull-left">
+				<h1 class="logo homestead"><a href="index.html">Social Fit</a></h1>
+				<a href="#" class="icon-flag">
+					<span class="flag-count ellipse">10</span>
+				</a>
+			</div>
+			<ul class="option-link homestead">
+				<li><a href="#modal-create-activity-1" class="fancybox">Create Activity</a></li>
+				<li><a href="join.html">Join Activity</a></li>
+			</ul>
+			<div class="pull-right">
+				<a href="profile.html" class="profile-link">
+					<span class="profile-link-object"><img src="images/temp/profile_img_small.jpg" height="34" width="34" alt="" class="profile-link-object"></span>
+					<strong class="profile-link-name">Darren Maher</strong>
+				</a>
+				<a href="#" class="btn-search"><span class="icon-magnify"></span></a>
+			</div>
+		</div>
+	</header>
+
+	<div class="drop-bar search-bar">
+		<div class="container">
+			<form action="join_activity_and_search_result.html" class="pull-left">
+				<input type="submit" class="search-btn-large hide-text">
+				<input type="search" placeholder="Beach Volleyball" class="search-input">
+			</form>
+			<a href="#modal-advanced-search" class="btn-rounded pull-right fancybox">Advanced Search</a>
+		</div>
+	</div>
+
+	<div class="drop-bar notification-bar">
+		<div class="container">
+			<ul class="notification-list">
+				<li>
+					<img src="images/temp/user_thumb_1.jpg" height="50" width="50" alt="" class="notification-object">
+					<p class="notification-body">
+						Is attending <a href="#">John Smith’s</a> activity
+						<span class="notification-date">2 days ago</span>
+					</p>
+				</li>
+				<li>
+					<img src="images/temp/user_thumb_2.jpg" height="50" width="50" alt="" class="notification-object">
+					<p class="notification-body">
+						Is attending <a href="#">John Smith’s</a> activity
+						<span class="notification-date">2 days ago</span>
+					</p>
+				</li>
+				<li>
+					<img src="images/temp/user_thumb_3.jpg" height="50" width="50" alt="" class="notification-object">
+					<p class="notification-body">
+						Is attending <a href="#">John Smith’s</a> activity
+						<span class="notification-date">2 days ago</span>
+					</p>
+				</li>
+			</ul>
+			<p class="text-right"><a href="notification.html"><em>See all Notification ></em></a></p>
+		</div>
+	</div>
+	
+	<section class="container content-notification">
+		<h3 class="alt-title">Upcoming Activities</h3>
+		<aside class="col-one">
+			<ul class="sub-nav">
+				<li><a href="#">General</a></li>
+				<li class="active"><a href="#">Latest Notifications</a></li>
+				<li><a href="#">Notification Settings</a></li>
+			</ul>
+		</aside>
+		<section class="col-two">
+			<article class="notification-section">
+				<h4 class="alt-sub-title">Today</h4>
+				<ul class="notification-list">
+					<li>
+						<img src="images/temp/profile_img_small.jpg" height="34" width="34" alt="" class="notification-object">
+						<p class="notification-body"><a href="#">John Smith</a> joined your activity <a href="#">Running the Seawall</a></p>
+					</li>
+					<li>
+						<img src="images/temp/profile_img_small.jpg" height="34" width="34" alt="" class="notification-object">
+						<p class="notification-body"><a href="#">Jane Doe</a> changed her status to not attending on <a href="#">Running the </a>Seawall</p>
+					</li>
+					<li>
+						<img src="images/temp/profile_img_small.jpg" height="34" width="34" alt="" class="notification-object">
+						<p class="notification-body"><a href="#">Kick about</a> at <a href="#">Stanley Park</a> is starting in 5 hours</p>
+					</li>
+					<li>
+						<img src="images/temp/profile_img_small.jpg" height="34" width="34" alt="" class="notification-object">
+						<p class="notification-body"><a href="#">Declan Green</a> comented on <a href="#">Doubles Tennis Tournament</a></p>
+					</li>
+				</ul>
+			</article>
+			
+			<article class="notification-section">
+				<h4 class="alt-sub-title">Yesterday</h4>
+				<ul class="notification-list">
+					<li>
+						<img src="images/temp/profile_img_small.jpg" height="34" width="34" alt="" class="notification-object">
+						<p class="notification-body"><a href="#">John Smith</a> joined your activity <a href="#">Running the Seawall</a></p>
+					</li>
+					<li>
+						<img src="images/temp/profile_img_small.jpg" height="34" width="34" alt="" class="notification-object">
+						<p class="notification-body"><a href="#">Jane Doe</a> changed her status to not attending on <a href="#">Running the </a>Seawall</p>
+					</li>
+					<li>
+						<img src="images/temp/profile_img_small.jpg" height="34" width="34" alt="" class="notification-object">
+						<p class="notification-body"><a href="#">Kick about</a> at <a href="#">Stanley Park</a> is starting in 5 hours</p>
+					</li>
+					<li>
+						<img src="images/temp/profile_img_small.jpg" height="34" width="34" alt="" class="notification-object">
+						<p class="notification-body"><a href="#">Declan Green</a> comented on <a href="#">Doubles Tennis Tournament</a></p>
+					</li>
+				</ul>
+			</article>
+
+			<article class="notification-section">
+				<h4 class="alt-sub-title">2 days ago</h4>
+				<ul class="notification-list">
+					<li>
+						<img src="images/temp/profile_img_small.jpg" height="34" width="34" alt="" class="notification-object">
+						<p class="notification-body"><a href="#">John Smith</a> joined your activity <a href="#">Running the Seawall</a></p>
+					</li>
+					<li>
+						<img src="images/temp/profile_img_small.jpg" height="34" width="34" alt="" class="notification-object">
+						<p class="notification-body"><a href="#">Jane Doe</a> changed her status to not attending on <a href="#">Running the </a>Seawall</p>
+					</li>
+					<li>
+						<img src="images/temp/profile_img_small.jpg" height="34" width="34" alt="" class="notification-object">
+						<p class="notification-body"><a href="#">Kick about</a> at <a href="#">Stanley Park</a> is starting in 5 hours</p>
+					</li>
+					<li>
+						<img src="images/temp/profile_img_small.jpg" height="34" width="34" alt="" class="notification-object">
+						<p class="notification-body"><a href="#">Declan Green</a> comented on <a href="#">Doubles Tennis Tournament</a></p>
+					</li>
+				</ul>
+			</article>
+		</section>
+	</section>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="pull-left">
+				<h3 class="logo homestead"><a href="index.html">Social Fit</a></h3>
+				<p class="copyright">© 2013 Social Fit. All rights reserved</p>
+			</div>
+			<div class="pull-right">
+				<ul class="footer-link pull-left">
+					<li><a href="#">Terms & Conditions</a></li>
+					<li><a href="privacy.html">Privacy Policy</a></li>
+				</ul>
+				<ul class="social pull-right">
+					<li class="fb"><a href="#">Facebook</a></li>
+					<li class="tw"><a href="#">Twitter</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Modal - Advanced Search -->
+	<div id="modal-advanced-search" class="modal">
+		<header class="modal-header">
+			<h3 class="modal-heading heading">
+				<span class="font-larger block">Advanced</span>
+				<span class="text-highlight font-largest">Search</span>
+			</h3>
+		</header>
+		<div class="modal-body">
+			<input type="text" placeholder="Select activity" class="modal-field input-block-level">
+			<label for="event-location" class="modal-label">Where do you want to search for activities?</label>
+			<input type="text" placeholder="Vancouver, BC" class="modal-field input-block-level" id="event-location">
+			<div class="modal-control">
+				<input type="text" placeholder="Set Date" class="modal-field modal-icon-calendar">
+				<input type="text" placeholder="Start Time" class="modal-field modal-icon-clock">
+			</div>
+		</div>
+		<footer class="modal-footer mt40 text-center">
+			<button class="btn-rounded active">Search <span class="icon-magnify-alt"></span></button>
+		</footer>
+	</div>
+
+	<!-- Modal - Create Activity (Step 1) -->
+	<div id="modal-create-activity-1" class="modal">
+		<header class="modal-header clearfix">
+			<h3 class="heading pull-left">
+				<span class="font-larger block">Create</span>
+				<span class="text-highlight font-largest">Activity</span>
+			</h3>
+			<ul class="modal-step">
+				<li class="active"><span>1</span></li>
+				<li><span>2</span></li>
+				<li><span>3</span></li>
+			</ul>
+		</header>
+		<div class="modal-body">
+			<input type="text" placeholder="Select activity" class="modal-field input-block-level">
+			<input type="text" placeholder="Title your activity" class="modal-field input-block-level">
+			<textarea name="" cols="30" rows="7" placeholder="Add some notes to your activity" class="modal-field input-block-level"></textarea>
+		</div>
+		<footer class="modal-footer mt40 text-center">
+			<button class="btn-rounded">Previous Step</button>
+			<button class="btn-rounded active">Next Step</button>
+		</footer>
+	</div>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+	<script src="js/jquery.fancybox.pack.js"></script>
+	<script src="js/pickadate/picker.js"></script>
+    <script src="js/pickadate/picker.date.js"></script>
+    <script src="js/pickadate/picker.time.js"></script>
+    <script src="js/pickadate/legacy.js"></script>
+    <script src="js/jquery.placeholder.min.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+</html>

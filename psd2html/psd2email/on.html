@@ -1,0 +1,60 @@
+
+		
+		<script type="text/javascript" charset="utf-8">
+          $(function(){
+            $("input.file").uniform();
+          });
+        </script>
+        <!-- tipTip -->
+		<script src="js/jquery.tipTip.js" type="text/javascript"></script>
+        <script type="text/javascript">
+        $(function(){
+            $(".date a").tipTip({
+                maxWidth: "auto",
+                defaultPosition: "top",
+                delay: 0,
+                edgeOffset: 10
+            });
+        });
+        </script>
+        <div class="package-txt"><span>I want to order an awesome html email package by:</span></div>
+        <ul class="date">
+        	<li><a href="#" class="opt1" title="$599">Tomorrow</a></li>
+            <li><a href="#" class="opt2" title="$699">Dec, 20</a></li>
+            <li class="selected"><a href="#" class="opt3" title="$799">Dec, 21</a></li>
+            <li><a href="#" class="opt4" title="$899">Dec, 22</a></li>
+            <li><a href="#" class="opt5" title="$999">Dec, 23</a></li>
+            <li><a href="#" class="opt6" title="$1099">Next Week</a></li>
+        </ul>
+        <form action="" method="get">
+            <ul class="add-ons">
+                <li class="name"><span>Template Integration</span><input name="Don't need any?" type="reset" value="Don't need any?"></li>
+                <li class="mc">
+                    <label><input name="" type="checkbox" value=""> <img src="images/logo_mailchimp.png" width="126" height="30" alt=""></label>
+                    <span class="price">+ $19</span>
+                </li>
+                <li class="cm selected">
+                    <label><input name="" type="checkbox" value=""> <img src="images/logo_campaignmonitor.png" width="179" height="22" alt=""></label>
+                    <span class="price">+ $19</span>
+                </li>
+                <li class="ic">
+                    <label><input name="" type="checkbox" value=""> <img src="images/logo_icontact.png" width="90" height="22" alt=""></label>
+                    <span class="price">+ $19</span>
+                </li>
+                <li class="cc">
+                    <label><input name="" type="checkbox" value=""> <img src="images/logo_constantcontact.png" width="117" height="42" alt=""></label>
+                    <span class="price">+ $19</span>
+                </li>
+            </ul>
+        </form>
+        <div class="fields">
+        	<p class="col-one">
+                <input name="" type="text" value="John224@gmail.com">
+                <input name="" type="file" class="file">
+                <span class="format">Accepted File formats: .zip, .psd, png, .ai <img src="images/accepted_file_format.png" width="55" height="15" alt=""></span>
+            </p>
+            <p class="col-two">
+            	<textarea name="" cols="" rows="" onblur="this.value=!this.value?'Notes':this.value;" onfocus="this.select()" onclick="this.value='';">Notes</textarea>
+                <input name="" type="image" src="images/btn_submit.png">
+            </p>
+        </div>

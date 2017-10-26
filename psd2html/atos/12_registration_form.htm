@@ -1,0 +1,246 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>12 - Registration Form</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/jqtransform.css" rel="stylesheet" type="text/css" />
+<link href="css/jquery.datepick.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/Bookman_Old_Style_300-Bookman_Old_Style_600-Bookman_Old_Style_italic_300-Bookman_Old_Style_italic_600.font.js"></script>
+<script type="text/javascript">
+	Cufon.replace('.main-reg h2 .txt1');;
+	Cufon.replace('#mainnav li a');;
+	Cufon.replace('fieldset legend');;
+	Cufon.replace('fieldset label span');;
+	Cufon.replace('fieldset p span');;
+	Cufon.replace('.main-reg p.btns a');;
+</script>
+<!-- JQTRANSFORM -->
+<script type="text/javascript" src="js/jquery.jqtransform.js"></script>
+<script language="javascript" type="text/javascript">
+	$(function(){
+		$('fieldset p').jqTransform({imgPath:'jqtransformplugin/img/'});
+	});
+</script>
+<!-- DATE PICKER -->
+<script type="text/javascript" src="js/jquery.datepick.min.js"></script>
+<script language="javascript" type="text/javascript">
+	$(function(){
+		$('.embed').datepick({showOnFocus: false, showTrigger: '#calImg'});
+	});
+</script>
+</head>
+
+<body>
+
+<div id="wrapper">
+    <div id="header">
+    	<h1><a href="#">Atos Worldwide IT Partner</a></h1>
+        <p class="slogan">Your business technologists. Powering progress</p>
+        <p class="log">
+        	<span>Jason is logged in</span>
+            <a href="#">Logout</a>
+        </p>
+    </div>
+    <ul id="mainnav">
+    	<li class="current"><a href="#">Welcome</a></li>
+        <li><a href="#">About the Programme</a></li>
+        <li><a href="#">Select your Waves</a></li>
+        <li><a href="#">Wave Booking</a></li>
+        <li><a href="#">ATOS Info</a></li>
+    </ul>
+    <div class="main main-reg">
+    	<p class="completion-bar">Profile Completion <img src="images/completion_bar.png" width="288" height="15" alt="" /></p>
+    	<h2><span class="txt1">You will attend:</span> <span class="txt2">Wave 2</span> <span class="txt3">29 &amp; 30 - July 2012</span></h2>
+    	<form action="" method="get">
+        	<div class="col-one">
+                <fieldset>
+                    <legend>Guest Personal Details</legend>
+                    <label><span class="txt">First Name</span> <input name="" type="text" /></label>
+                    <label><span class="txt">Last Name</span> <input name="" type="text" /></label>
+                    <label>
+                    	<span class="txt">Title</span>
+                    	<select name="">
+                        	<option>Option 1</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                        </select>
+                    </label>
+                    <label>
+                    	<span class="txt">Gender</span> 
+                        <select name="">
+                        	<option>Option 1</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                        </select>
+                    </label>
+                    <label><span class="txt">Emai.</span> <input name="" type="text" /></label>
+                    <label><span class="txt">Telephone</span> <input name="" type="text" /></label>
+                    <label><span class="txt">Company Name</span> <input name="" type="text" /></label>
+                    <label><span class="txt">Company address 1</span> <textarea name="" cols="" rows=""></textarea></label>
+                    <label><span class="txt">Company address 2</span> <textarea name="" cols="" rows=""></textarea></label>
+                    <label><span class="txt">Preferred Mailing Address</span> <textarea name="" cols="" rows=""></textarea></label>
+                    <label><span class="txt">Company Postcode</span> <input name="" type="text" /></label>
+                    <label><span class="txt">Passport Number</span> <input name="" type="text" /></label>
+                    <label>
+                    	<span class="txt">Passport Country</span>
+                        <select name="">
+                        	<option>Option 1</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                        </select>
+                    </label>
+                    <label>
+                    	<span class="txt">Shirt Size</span>
+                        <select name="">
+                        	<option>Option 1</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                        </select>
+                    </label>
+                    <label>
+                    	<span class="txt">Jacket Size</span>
+                        <select name="">
+                        	<option>Option 1</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                        </select>
+                    </label>
+                    <label><span class="txt">Medical Information</span> <textarea name="" cols="" rows=""></textarea></label>
+                    <label><span class="txt">Dietry Requirements</span> <textarea name="" cols="" rows=""></textarea></label>
+                    <p class="wider"><span class="txt">Are you attending with companion</span> <input name="attend" type="radio" value="" /> <em>Yes</em> <input name="attend" type="radio" value="" /> <em>No</em></p>
+                </fieldset>
+                <fieldset>
+                    <legend>Companion Personal Details</legend>
+                    <label><span class="txt">First Name</span> <input name="" type="text" /></label>
+                    <label><span class="txt">Last Name</span> <input name="" type="text" /></label>
+                    <label>
+                    	<span class="txt">Title</span>
+                    	<select name="">
+                        	<option>Option 1</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                        </select>
+                    </label>
+                    <label>
+                    	<span class="txt">Gender</span> 
+                        <select name="">
+                        	<option>Option 1</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                        </select>
+                    </label>
+                    <label><span class="txt">Emai.</span> <input name="" type="text" /></label>
+                    <label><span class="txt">Telephone</span> <input name="" type="text" /></label>
+                    <label><span class="txt">Company Name</span> <input name="" type="text" /></label>
+                    <label><span class="txt">Company address 1</span> <textarea name="" cols="" rows=""></textarea></label>
+                    <label><span class="txt">Company address 2</span> <textarea name="" cols="" rows=""></textarea></label>
+                    <label><span class="txt">Preferred Mailing Address</span> <textarea name="" cols="" rows=""></textarea></label>
+                    <label><span class="txt">Company Postcode</span> <input name="" type="text" /></label>
+                    <label><span class="txt">Passport Number</span> <input name="" type="text" /></label>
+                    <label>
+                    	<span class="txt">Passport Country</span>
+                        <select name="">
+                        	<option>Option 1</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                        </select>
+                    </label>
+                    <label>
+                    	<span class="txt">Shirt Size</span>
+                        <select name="">
+                        	<option>Option 1</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                        </select>
+                    </label>
+                    <label>
+                    	<span class="txt">Jacket Size</span>
+                        <select name="">
+                        	<option>Option 1</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                        </select>
+                    </label>
+                    <label><span class="txt">Medical Information</span> <textarea name="" cols="" rows=""></textarea></label>
+                    <label><span class="txt">Dietry Requirements</span> <textarea name="" cols="" rows=""></textarea></label>
+                </fieldset>
+            </div>
+            <div class="col-two">
+            	<fieldset>
+                    <legend>Guest Travel Details</legend>
+                    <p><span class="txt">Transportation</span> <input name="transportation" type="radio" value="" /> <em>Plane</em> <input name="transportation" type="radio" value="" /> <em>Train</em> <input name="transportation" type="radio" value="" /> <em>Car</em></p>
+                    <small>We will be providing airport transfers to/from the airport but for logistical reasons, we are encouraging everyo`ne to fly in/out of Heathrow Airport.</small>
+                </fieldset>
+                <fieldset>
+                    <legend>Arrival Details</legend>
+                    <label><span class="txt">Arrival Airport</span> <input name="" type="text" /></label>
+                    <label><span class="txt">Flight Number</span> <input name="" type="text" /></label>
+                    <label><span class="txt">Arrival Time</span> <input name="" type="text" /></label>
+                    <label class="date-picker"><span class="txt">Arrival Date</span> <input name="" type="text" id="embeddedPicker" class="embed" /><img class="trigger datepick-trigger" id="calImg" alt="Popup" src="images/calendar.png" style="opacity: 1;"></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Departure Details</legend>
+                    <label><span class="txt">Arrival Airport</span> <input name="" type="text" /></label>
+                    <label><span class="txt">Flight Number</span> <input name="" type="text" /></label>
+                    <label><span class="txt">Arrival Time</span> <input name="" type="text" /></label>
+                    <label class="date-picker"><span class="txt">Arrival Date</span> <input name="" type="text" id="embeddedPicker" class="embed" /><img class="trigger datepick-trigger" id="calImg" alt="Popup" src="images/calendar.png" style="opacity: 1;"></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Guest Hotel Details</legend>
+                    <label>
+                    	<span class="txt">Hotel Room Type</span>
+                        <select name="">
+                        	<option>Option 1</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                        </select>
+                    </label>
+                    <label><span class="txt">Hotel Special Requests</span> <textarea name="" cols="" rows=""></textarea></label>
+                </fieldset>
+                <fieldset class="companion-travel">
+                    <p class="wider"><span class="txt">Are companion travel &amp; hotel details same as main guest?</span> <input name="companion" type="radio" value="" /> <em>Yes</em> <input name="companion" type="radio" value="" /> <em>No</em></p>
+                </fieldset>
+                <fieldset>
+                    <legend>Companion Travel Details</legend>
+                    <p><span class="txt">Transportation</span> <input name="transportation2" type="radio" value="" /> <em>Plane</em> <input name="transportation2" type="radio" value="" /> <em>Train</em> <input name="transportation2" type="radio" value="" /> <em>Car</em></p>
+                    <small>We will be providing airport transfers to/from the airport but for logistical reasons, we are encouraging everyo`ne to fly in/out of Heathrow Airport.</small>
+                </fieldset>
+                <fieldset>
+                    <legend>Arrival Details</legend>
+                    <label><span class="txt">Arrival Airport</span> <input name="" type="text" /></label>
+                    <label><span class="txt">Flight Number</span> <input name="" type="text" /></label>
+                    <label><span class="txt">Arrival Time</span> <input name="" type="text" /></label>
+                    <label class="date-picker"><span class="txt">Arrival Date</span> <input name="" type="text" id="embeddedPicker" class="embed" /><img class="trigger datepick-trigger" id="calImg" alt="Popup" src="images/calendar.png" style="opacity: 1;"></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Departure Details</legend>
+                    <label><span class="txt">Arrival Airport</span> <input name="" type="text" /></label>
+                    <label><span class="txt">Flight Number</span> <input name="" type="text" /></label>
+                    <label><span class="txt">Arrival Time</span> <input name="" type="text" /></label>
+                    <label class="date-picker"><span class="txt">Arrival Date</span> <input name="" type="text" id="embeddedPicker" class="embed" /><img class="trigger datepick-trigger" id="calImg" alt="Popup" src="images/calendar.png" style="opacity: 1;"></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Guest Hotel Details</legend>
+                    <label>
+                    	<span class="txt">Hotel Room Type</span>
+                        <select name="">
+                        	<option>Option 1</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                        </select>
+                    </label>
+                    <label><span class="txt">Hotel Special Requests</span> <textarea name="" cols="" rows=""></textarea></label>
+                </fieldset>
+                <p class="btns"><a href="#">cancel</a> <input name="" type="submit" value="save" /></p>
+            </div>
+            <div class="clear"></div>
+        </form>
+    </div>
+    <p class="copyright">&copy; Atos S.A. 2011 all rights reserved</p>
+</div><!-- END #wrapper -->
+
+</body>
+</html>

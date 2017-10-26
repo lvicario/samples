@@ -1,0 +1,152 @@
+
+/* CSS RESETS ================================= */
+html, body, div, span, applet, object, iframe,  h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin: 0; padding: 0; border: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline;}
+table						{border-collapse: collapse; border-spacing: 0;}
+caption, th, td				{text-align: left; font-weight: normal;}
+table, td, th				{vertical-align: middle;}
+a img						{border:none;}
+
+/* GLOBAL STYLE ================================ */
+body						{font: normal 14px Arial, Helvetica, sans-serif; line-height: normal; text-decoration: none; text-align: center; color: #000; background: #131313; margin: 0; padding: 0;}
+a							{text-decoration: underline; color: #000; outline: none;}
+a:hover						{text-decoration: underline;}
+h1, h2, h3, h4, h5, h6, p,
+ul, table					{margin: 0 0 20px;}
+h1							{font-size: 24px;}
+h2							{font-size: 18px;}
+h3							{font-size: 14px;}
+h4, h5, h6					{font-size: 12px;}
+strong						{font-weight: bold;}
+em							{font-style: italic;}
+input[type="text"], textarea {width: 210px; padding: 6px 7px; border: 2px solid #9e9885; font-size: 14px; font-family: Arial, Helvetica, sans-serif; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;}
+input[type="text"], textarea {-moz-box-shadow: inset 0px 0px 3px 1px rgba(0,0,0,0.50);; -webkit-box-shadow: inset 0px 0px 3px 1px rgba(0,0,0,0.50); box-shadow: inset 0px 0px 3px 1px rgba(0,0,0,0.50);}
+input						{width: auto;}
+/*hr							{clear: both; height: 1px; margin: 0 0 1em; color: #d3d3d3; background-color: #d3d3d3;  border: 0 none;}*/
+
+/* UTILITIES =================================== */
+.clearfix:after					{content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+.clearfix						{overflow: hidden;}
+* html .clearfix				{height: 1%;}
+
+.clear							{clear: both;}
+.center							{text-align: center;}
+
+/* HEADER ===================================== */
+#header							{width: 100%; padding: 1px 0; background: #000 url(../images/header_bg.png) no-repeat center top; text-align: center;}
+#header .inner					{width: 995px; height: 408px; margin: 0 auto; text-align: left; position: relative;}
+#header h1						{width: 603px; height: 393px; background: url(../images/logo_mascot.png) no-repeat; position: absolute; top: 30px; left: -18px;}
+#header h1 a					{display: block; width: 358px; height: 148px; background: url(../images/logo_text.png) no-repeat; text-indent: -9999px; position: absolute; bottom: 24px; right: 92px;}
+#header p.slogan				{margin: 0; color: #e5e5e5; font-size: 29px; font-weight: bold; position: absolute; top: 80px; left: 335px;}
+#header p.order-now				{margin: 0; width: 225px; height: 242px; background: url(../images/header_order_bg.jpg) no-repeat; position: absolute; bottom: 7px; right: 92px;}
+#header p.order-now a			{display: block; width: 247px; height: 59px; background: url(../images/order_now_btn.png) no-repeat; text-indent: -9999px; position: absolute; bottom: 7px; left: -10px;}
+.main-nav						{}
+.main-nav ul					{height: 35px; padding-top: 12px; background: #fff; border: 1px solid #606060; overflow: hidden; position: absolute; top: 8px; left: 150px; -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px;}
+.main-nav ul					{-moz-box-shadow: inset 0px 0px 0px 1px rgba(255,255,255,1.0); -webkit-box-shadow: inset 0px 0px 0px 1px rgba(255,255,255,1.0); box-shadow: inset 0px 0px 0px 1px rgba(255,255,255,1.0);}
+.main-nav ul					{background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.17, #ffffff), color-stop(0.80, #d6d6d6)); background-image: -moz-linear-gradient(center top, #ffffff 17%, #d6d6d6 80%);}
+.main-nav ul li					{display: inline;}
+.main-nav ul li a				{float: left; display: inline; height: 23px; line-height: 23px; padding: 0 43px; border-left: 1px solid #979494; color: #393939; font-size: 16px; font-weight: bold; text-decoration: none; text-transform: uppercase;}
+.main-nav ul li:first-child a	{border: none;}
+.main-nav ul li a:hover			{color: #922a22;}
+
+
+/* MAIN ===================================== */
+#main 							{width: 995px; min-height: 400px; padding: 25px 0; background: #dfd7b9; text-align: left; margin: 0 auto; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;}
+#main							{-moz-box-shadow: inset 0px 0px 0px 1px rgba(255,255,255,1.0); -webkit-box-shadow: inset 0px 0px 0px 1px rgba(255,255,255,1.0); box-shadow: inset 0px 0px 0px 1px rgba(255,255,255,1.0);}
+#main							{background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.17, #e4ddc4), color-stop(0.80, #bbb49b)); background-image: -moz-linear-gradient(center top, #e4ddc4 17%, #bbb49b 80%);}
+
+/* FOOTER 1 ===================================== */
+#footer 						{width: 995px; height: 94px; margin: 0 auto; background: #000; text-align: left; text-transform: uppercase;}
+#footer, #footer a				{color: #fff; text-decoration: none;}
+.footer-nav						{overflow: hidden;}
+.footer-nav ul					{float: right; display: inline; margin: 32px 15px 3px 0; list-style-type: none; overflow: hidden;}
+.footer-nav ul li				{display: inline;}
+.footer-nav ul li a				{float: left; display: inline; padding: 0 14px; font-size: 15px; font-weight: bold;}
+.copyright						{float: right; display: inlie; padding-right: 29px; font-size: 12px;}
+
+/* ==================================================================================================================
+											INDIVIDUAL PAGES
+================================================================================================================== */
+.box-holder							{clear: both; overflow: hidden;}
+.box								{float: left; display: inline; -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px;}
+
+/* HOMEPAGE ===================================== */
+.home .box							{width: 448px; padding: 20px 20px 5px 20px; margin: 0 0 0 6px; background: url(../images/box_grad.png) repeat-x; font-size: 18px; line-height: 23px;}
+.home .box h2						{float: left; display: inline; padding: 0 5px 7px 0; background: url(../images/box_shadow.png) no-repeat right bottom; font-size: 24px; font-weight: bold; color: #fff;}
+.home .box h2 span					{display: block; height: 45px; line-height: 45px; padding: 0 55px 0 10px; background: #000;}
+.home .box p						{clear: both; text-align: justify;}
+.home .box ul						{clear: both; list-style-type: none;}
+.home .box ul li					{}
+.home .box-why-us ul li				{padding: 0 0 0 28px; margin: 0 0 17px; background: url(../images/bullet_star.png) no-repeat left center;}
+.home .box-sup-client ul li			{float: left; display: inline; width: 223px; margin: 0 0 6px; font-weight: bold;}
+.home .box-sup-client ul li img		{vertical-align: middle;}
+.home .tree-box						{clear: both; width: 936px; height: 147px; margin: 0 0 10px 23px; background: url(../images/tree_box_bg.png) no-repeat;}
+
+/* FAQ ===================================== */
+.faq #main h2							{margin: 20px 0 50px; font-size: 60px; text-align: center; color: #161616;}
+.faq .box-holder					{margin: 0 0 25px 18px;}
+.faq .box							{width: 423px; padding: 15px 25px 10px 25px; margin: 0 10px 0 0; background: #8c8774; }
+.faq .box h3						{padding: 0 0 10px; border-bottom: 1px dashed #fff; font-size: 36px; font-weight: bold;}
+.faq .box ul						{list-style-type: none;}
+.faq .box ul li						{color: #fff; font-size: 16px; line-height: 24px; font-weight: bold;}
+.faq .box-gen ul li					{padding: 0 0 0 20px;  background: url(../images/bullet_arrow_red.png) no-repeat 0 7px;}
+.faq .box-flow ul li				{padding: 0 0 0 30px;  background: url(../images/bullet_check_orange.png) no-repeat 0 7px;}
+.faq .common-content				{margin: 0 32px 0;}
+.faq .common-content h4				{font-size: 18px;}
+
+/* ORDER ===================================== */
+.order #main h2						{margin: 20px 0 35px; font-size: 36px; text-align: center; color: #161616;}
+.order #main h2 span				{display: block; font-size: 22px;}
+.order .box-holder					{margin: 0 0 25px 18px; padding-top: 7px;}
+.order .box							{width: 423px; padding: 15px 25px 10px 25px; margin: 0 10px 0 0; background: #8c8774; position: relative;}
+.order .box h3						{font-size: 36px; font-weight: bold;}
+.order .box p						{font-size: 24px; font-weight: bold; color: #fff;}
+.order .box p a						{color: #fff; border-bottom: 1px solid #fff;}
+.order .box .price-tag				{position: absolute; top: -7px; right: -7px;}
+.order .common-content				{margin: 0 65px 0; font-weight: bold;}
+.order .common-content h2			{margin: 40px 0 10px;}
+.order form							{color: #fff; font-size: 22px;}
+.order .col-one						{float: left; display: inline; width: 300px; margin: 0 35px 0 0;}
+.order .col-two						{float: left; display: inline; width: 425px;}
+.order label						{display: block; margin: 0 0 10px;}
+.order label span					{display: block; margin: 0 0 5px;}
+.order label input					{}
+.order label textarea				{width: 400px; height: 80px;}
+.order input[type="submit"]			{float: right; display: inline; width: 121px; height: 40px; margin: -6px 3px 0 0; background: url(../images/btn_submit.png) no-repeat; border: none; text-indent: -9999px; cursor: pointer;}
+.order small						{display: block; font-size: 12px;}
+.order .txt							{clear: both; padding: 20px 0 0; overflow: hidden;}
+.order .txt h4						{font-size: 22px;}
+.order .txt p						{font-size: 12px;}	
+
+/* SAMPLES ===================================== */
+.samples #main h2					{font-size: 48px; font-weight: bold; text-align: center; margin-bottom: 0;}
+.samples #main h3					{font-size: 24px; font-weight: bold; text-align: center;}
+.samples #main ul					{margin-left: -7px; overflow: hidden;}
+.samples #main ul li				{float: left; display: inline; width: 265px; height: 285px; margin: 0 0 32px 32px; padding: 6px; border: 8px solid #c17a67; position: relative;}
+.samples #main ul li img			{}
+.samples #main ul li p				{width: 261px; height: 41px; line-height: 41px; margin: 0; padding: 0 8px 0; background: rgba(255,255,255,0.70); position: absolute; bottom: 0; left: 0;}
+.samples #main ul li p .name		{font-size: 12px; font-weight: bold; text-transform: uppercase;}
+.samples #main ul li p .btn			{float: right; display: inline; margin-top: 4px;}
+.samples #main ul li p .btn a		{display: inline-block; width: 34px; height: 34px; text-indent: -9999px;}
+.samples #main ul li p .btn a.btn-1	{background: url(../images/icon_round_magnify.png) no-repeat;}
+.samples #main ul li p .btn a.btn-2	{background: url(../images/icon_round_arrow.png) no-repeat;}
+.samples #main .page-nav			{margin: -38px 25px 0 0; text-align: right;}
+.samples #main .page-nav a			{display: inline-block; width: 70px; height: 33px; text-align: left; text-indent: -9999px;}
+.samples #main .page-nav a.prev		{background: url(../images/btn_prev.png) no-repeat;}
+.samples #main .page-nav a.next		{background: url(../images/btn_prev.png) no-repeat;}
+
+/* CONTACT (Popup) ===================================== */
+form.contact						{width: 250px; margin: 30px 0 0 50px; padding: 20px 50px 50px; background: #8c8774; border: 5px solid #fff; text-align: left;}
+form.contact						{-moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 15px; -moz-box-shadow: inset 0px 0px 3px 1px rgba(0,0,0,0.50);; -webkit-box-shadow: inset 0px 0px 3px 1px rgba(0,0,0,0.50);; box-shadow: inset 0px 0px 3px 1px rgba(0,0,0,0.50);}
+form.contact h2						{margin: 0 0 15px; font-size: 60px;}
+form.contact label					{display: block; margin: 0 0 10px;}
+form.contact label span				{display: block; margin: 0 0 3px; color: #fff; font-size: 13px;}
+form.contact label input			{}
+form.contact label textarea			{/*width: 210px; height: 80px;*/}
+form.contact label input,
+form.contact label textarea			{border: 2px solid #696557; -moz-box-shadow: inset 0px 0px 3px 1px rgba(0,0,0,0.50);; -webkit-box-shadow: inset 0px 0px 3px 1px rgba(0,0,0,0.50);; box-shadow: inset 0px 0px 3px 1px rgba(0,0,0,0.50);}
+form.contact input[type="submit"]	{float: right; display: inline; width: 97px; height: 34px; margin: -7px 20px 0 0; background: url(../images/btn_send.png) no-repeat; border: none; text-indent: -9999px; cursor: pointer;}
+
+
+
+
+

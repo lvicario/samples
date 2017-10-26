@@ -1,0 +1,163 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Homepage</title>
+<link href="css/style.css" rel="stylesheet">
+<script src="js/jquery-1.6.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.equalheights.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$(".main, .sidebar").equalHeights();
+});
+</script>
+<script type="text/javascript" src="js/jquery.bxSlider.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('.home-slider').bxSlider({
+			mode: 'fade',
+			auto: true,
+			pager: true,
+			controls: false,
+			pause: 4000
+		});
+	});
+</script>
+<!-- DROPDOWN MENU -->
+<script type="text/javascript">
+$(function(){
+    $(".main-nav ul li").hover(function(){
+        $(this).addClass("hover");
+        $('ul:first',this).css('visibility', 'visible');
+    }, function(){
+        $(this).removeClass("hover");
+        $('ul:first',this).css('visibility', 'hidden');
+    });
+    $(".main-nav ul li ul li:has(ul)").find("a:first").append(" &raquo; ");
+});
+</script>
+</head>
+
+<body class="home">
+
+<div id="wrapper">
+    <div id="header">
+        <h1><a href="index.htm">Yellow Fiber Networks</a></h1>
+        <p class="call">
+        	<span>Call UK</span>
+            <strong>703 544 0229</strong>
+        </p>
+        <div class="main-nav">
+            <ul>
+                <li class="current"><a href="index.htm">Home</a></li>
+                <li><a href="#">Colocation</a></li>
+                <li>
+                	<a href="network.htm">Network</a>
+                    <ul class="sub_menu">
+                         <li><a href="#">Network Serives</a></li>
+                         <li><a href="#">Dedicated Internet</a></li>
+                         <li><a href="#">Transport Network</a></li>
+                    </ul>
+                </li>
+                <li>
+                	<a href="#">Services</a>
+                    <ul class="sub_menu">
+                         <li><a href="#">Network Serives</a></li>
+                         <li><a href="#">Dedicated Internet</a></li>
+                         <li><a href="#">Transport Network</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="about_us.htm">About Us</a></li>
+            </ul>
+		</div>
+    </div><!-- END #header -->
+    <div id="content">
+    	<div class="main">
+        	<ul class="home-slider">
+            	<li>
+                	<img src="images/slide_network_services.jpg" width="940" height="424" alt="">
+                    <p>
+                    	<strong>Network Services</strong>
+                        <span>Today, Internet connectivity is a crucial component of virtually business.</span>
+                        <a href="#">Read more &gt;&gt;</a>
+                    </p>
+				</li>
+                <li>
+                	<img src="images/slide_dedicated_internet.jpg" width="940" height="424" alt="">
+                    <p>
+                    	<strong>Dedicated Internet</strong>
+                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing fusce placerat.</span>
+                        <a href="#">Read more &gt;&gt;</a>
+                    </p>
+				</li>
+                <li>
+                	<img src="images/slide_transport_network.jpg" width="940" height="424" alt="">
+                    <p>
+                    	<strong>Transport Network</strong>
+                        <span>Ut elit quam, mollis ut euismod ac, luctus at nulla ipsum dolor sit amet</span>
+                        <a href="#">Read more &gt;&gt;</a>
+                    </p>
+				</li>
+            </ul>
+            <div class="home-intro">
+            	<h2>Broadband Fiber Network for Your Business</h2>
+                <p>Not all connections are created equally. Why should your business suffer legacy aging technology? Our solutions bring a blazing fast fiber conne- ctions to meet your business' needs.</p>
+            </div>
+            <ul class="features">
+            	<li>
+                	<h3>Network Solutions <span>for Businesses of All Sizes</span></h3>
+                    <a href="#" class="thumb"><img src="images/feature_network_solutions.jpg" width="203" height="106" alt=""></a>
+                    <p>Sooner or later every company faces the battle with offloading.</p>
+                    <p>Their current IT infrastructure into a datacenter the great enviroment. Many companies...</p>
+                    <p class="more"><a href="#">read more &gt;&gt;</a></p>
+                </li>
+                <li>
+                	<h3>Direct Internet Access <span>get connected</span></h3>
+                    <a href="#" class="thumb"><img src="images/feature_direct_internet_access.jpg" width="203" height="106" alt=""></a>
+                    <p>Fast &amp; reliable network connections from 10MBps up to mutli-10GBps straight to your office. </p>
+                    <p>Leverage our optical wave services...</p>
+                    <p class="more"><a href="#">read more &gt;&gt;</a></p>
+                </li>
+                <li>
+                	<h3>Colocation <span>your box, our infrastructure</span></h3>
+                    <a href="#" class="thumb"><img src="images/feature_colocation.jpg" width="203" height="106" alt=""></a>
+                    <p>Offering solutions for all sizes, you we offer Single Server to secure.</p>
+                    <p>Cage enviroments to meet your size requirements. In our SAS70 type 2 certified facililities...</p>
+                    <p class="more"><a href="#">read more &gt;&gt;</a></p>
+                </li>
+                <li>
+                	<h3>Business Solutions <span>Our Businesses Solution</span></h3>
+                    <a href="#" class="thumb"><img src="images/feature_business_solutions.jpg" width="203" height="106" alt=""></a>
+                    <p>Your IT networking requirements for your business of any size. Let us be your go-to IT guys.</p>
+                    <p>That you rely on to take care of your networking needs...</p>
+                    <p class="more"><a href="#">read more &gt;&gt;</a></p>
+                </li>
+            </ul>
+            <div class="join-network">
+            	<h3>Join Our National Network</h3>
+                <p>Join our Layer 2 Virual Ciruit Transport Network and get access to a robust Transport service and expand your network presence overnight with our Plug and Play rapid installation.Today, Internet connectivity is a crucial component of virtually any business. </p>
+                <p>But for some businesses, it is critical to their success. It also means making important data available to your employees quickly, whether they work at home.</p>
+                <p class="more"><a href="#">read more &gt;&gt;</a></p>
+            </div>
+        </div><!-- END #main -->
+    </div><!-- END #content -->
+</div><!-- END #wrapper -->
+
+<div id="footer">
+    <div class="foot-nav">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Colocation</a></li>
+            <li><a href="#">Network</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">About Us</a></li>
+        </ul>
+    </div>
+    <p class="copyright">&copy; 2011 Yellow Fiber Networks. All Right Reserved. <a href="#">Legal</a> | <a href="#">TOS</a></p>
+</div><!-- END #footer -->
+
+</body>
+</html>
+

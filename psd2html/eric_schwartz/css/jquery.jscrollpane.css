@@ -1,0 +1,61 @@
+/*
+ * CSS Styles that are needed by jScrollPane for it to operate correctly.
+ *
+ * Include this stylesheet in your site or copy and paste the styles below into your stylesheet - jScrollPane
+ * may not operate correctly without them.
+ */
+
+.jspContainer					{overflow: hidden; position: relative;}
+.jspPane						{position: absolute;}
+.jspVerticalBar					{width: 14px; height: 100%; position: absolute; top: 0; right: 0;}
+.jspVerticalBar *				{margin: 0; padding: 0;}
+.jspHorizontalBar				{display: none}
+.jspCap							{display: none;}
+.jspTrack						{background: #efefef url(../images/jspTrack.png) repeat-y; position: relative;}
+.jspDrag						{background: #e8e8ea url(../images/jspDrag.png) no-repeat center center; border: 1px solid #b5b5b5; margin: 0 1px 1px;  position: relative; top: 0; left: 0; cursor: pointer;}
+.jspArrow						{text-indent: -20000px; display: block; cursor: pointer;}
+.jspArrow.jspDisabled			{cursor: default; background: #80808d;}
+.jspVerticalBar .jspArrow		{height: 14px;}
+.jspVerticalBar .jspArrowUp		{background: url(../images/jspArrowUp.png) no-repeat;}
+.jspVerticalBar .jspArrowDown	{background: url(../images/jspArrowDown.png) no-repeat;}
+.jspVerticalBar .jspArrow:focus	{outline: none;}
+.jspCorner						{background: #eeeef4; float: left; height: 100%;}
+
+.contentBio .jspVerticalBar,
+.contentBlogDetail .jspVerticalBar					{width: 32px;}
+.contentBio .jspVerticalBar .jspTrack,
+.contentBlogDetail .jspVerticalBar .jspTrack		{background: #efefef url(../images/jsp_bio_bg_middle.png) repeat-y;}
+.contentBio .jspVerticalBar .jspDrag,
+.contentBlogDetail .jspVerticalBar .jspDrag			{margin: 0 11px 0 9px;}
+.contentBio .jspVerticalBar .jspArrow,
+.contentBlogDetail .jspVerticalBar .jspArrow		{height: 24px;}	
+.contentBio .jspVerticalBar .jspArrowUp,
+.contentBlogDetail .jspVerticalBar .jspArrowUp		{background: url(../images/jsp_bio_bg_ArrowUp.png) no-repeat;}
+.contentBio .jspVerticalBar .jspArrowDown,
+.contentBlogDetail .jspVerticalBar .jspArrowDown	{background: url(../images/jsp_bio_bg_ArrowDown.png) no-repeat;}
+
+.tourDates .jspVerticalBar					{width: 32px;}
+.tourDates .jspVerticalBar .jspTrack		{background: #efefef url(../images/jsp_tour_bg_middle.png) repeat-y;}
+.tourDates .jspVerticalBar .jspDrag			{margin: 0 11px 0 9px;}
+.tourDates .jspVerticalBar .jspArrow		{height: 24px;}	
+.tourDates .jspVerticalBar .jspArrowUp		{background: url(../images/jsp_tour_bg_ArrowUp.png) no-repeat;}
+.tourDates .jspVerticalBar .jspArrowDown	{background: url(../images/jsp_tour_bg_ArrowDown.png) no-repeat;}
+
+.contentPhotos .jspVerticalBar,
+.contentMedia .jspVerticalBar					{width: 43px;}
+.contentPhotos .jspVerticalBar .jspTrack,
+.contentMedia .jspVerticalBar .jspTrack			{background: #efefef url(../images/jsp_yellow_bg_middle.png) repeat-y;}
+.contentPhotos .jspVerticalBar .jspDrag,
+.contentMedia .jspVerticalBar .jspDrag			{width: 10px; margin: 0 0 0 24px;}
+.contentPhotos .jspVerticalBar .jspArrowUp,
+.contentMedia .jspVerticalBar .jspArrowUp		{height: 28px; background: url(../images/jsp_yellow_bg_ArrowUp.png) no-repeat;}
+.contentPhotos .jspVerticalBar .jspArrowDown,
+.contentMedia .jspVerticalBar .jspArrowDown		{height: 32px; background: url(../images/jsp_yellow_bg_ArrowDown.png) no-repeat;}
+
+.contentPhotos .jspPane,
+.contentMedia .jspPane							{z-index: 2; width: 1032px !important; }
+.contentPhotos .jspVerticalBar,
+.contentMedia .jspVerticalBar					{z-index: 1;}
+/* Yuk! CSS Hack for IE6 3 pixel bug :( */
+* html .jspCorner				{margin: 0 -3px 0 0;}
+

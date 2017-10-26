@@ -1,0 +1,25 @@
+
+/* IE 7 and 8 */
+.jspCap							{display: block;}
+.jspCap.jspDisabled				{cursor: default; background: #80808d;}
+.jspVerticalBar .jspCap			{height: 18px;}
+.jspVerticalBar .jspCapTop		{background: url(../images/jspArrowUp.png) no-repeat;}
+.jspVerticalBar .jspCapBottom	{background: url(../images/jspArrowDown.png) no-repeat;}
+
+.photos-content .jspVerticalBar					{width: 49px;}
+.photos-content .jspVerticalBar .jspTrack		{background: url(../images/jsp_photos_Track.png) repeat-y;}
+.photos-content .jspVerticalBar .jspDrag		{margin: 0 19px;}
+.photos-content .jspVerticalBar .jspCap			{height: 31px;}	
+.photos-content .jspVerticalBar .jspCapTop		{background: url(../images/jsp_photos_ArrowUp.png) no-repeat;}
+.photos-content .jspVerticalBar .jspCapBottom	{background: url(../images/jsp_photos_ArrowDown.png) no-repeat;}
+
+.videos-content .jspVerticalBar					{width: 61px;}
+.videos-content .jspVerticalBar .jspTrack		{background: url(../images/jsp_videos_Track.png) repeat-y;}
+.videos-content .jspVerticalBar .jspDrag		{margin: 0 25px;}
+.videos-content .jspVerticalBar .jspCap			{height: 43px;}	
+.videos-content .jspVerticalBar .jspCapTop		{background: url(../images/jsp_videos_ArrowUp.png) no-repeat;}
+.videos-content .jspVerticalBar .jspCapBottom	{background: url(../images/jsp_videos_ArrowDown.png) no-repeat;}
+
+/* IE 7 only */
+*+html .main-nav ul li a 			{margin-left: 3px; padding: 3px 9px;}
+*+html .searchby .box-one p a.next	{margin-top: -18px;}

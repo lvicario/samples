@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Homepage</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.flow.1.2.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#myController").jFlow({
+		slides: "#slides",
+		controller: ".jFlowControl", // must be class, use . sign
+		slideWrapper : "#jFlowSlide", // must be id, use # sign
+		selectedWrapper: "jFlowSelected",  // just pure text, no sign
+		auto: false,		//auto change slide, default true
+		width: "468px",
+		height: "270px",
+		duration: 600,  // time in miliseconds to transition one slide
+		interval: 5000, // this is the amount of milliseconds before the switch happens
+		prev: ".jFlowPrev", // must be class, use . sign
+		next: ".jFlowNext" // must be class, use . sign
+	});
+});
+</script>
+<script type="text/javascript" src="js/image-preview.js"></script>
+
+<!-- jquery youtube -->
+<link type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/redmond/jquery-ui.css" rel="stylesheet" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/jquery-youtube.js"></script>
+<script type="text/javascript">
+$(function () {
+    $("a.playbtn").YouTubePopup({ idAttribute: 'id' });
+});
+</script>
+</head>
+
+<body>
+<div id="mainNav">
+	<ul>
+    	<li class="current"><a href="index.htm">Home</a></li>
+        <li><a href="blog.htm">Blog</a></li>
+        <li><a href="tour_dates.htm">Tour Dates</a></li>
+        <li><a href="biography.htm">Bio</a></li>
+        <li><a href="#">Store</a></li>
+        <li><a href="photos.htm">Photos</a></li>
+        <li><a href="media.htm">Media</a></li>
+        <li><a href="contact.htm">Contact</a></li>
+    </ul>
+</div>
+<div id="wrapper">
+    <div id="header">
+    	<h1 class="logo"><a href="#">Eric Schwartz</a></h1>
+        <div class="twitter">
+        	<h4>Follow Me</h4>
+            <p>See you this Friday. Get your tickets early ($10 presale/$16 at the door) ! http://fb.me/VWlGIMEz</p>
+        </div>
+        <ul class="connect">
+        	<li class="fb"><a href="#">Facebook</a></li>
+            <li class="tw"><a href="#">Twitter</a></li>
+            <li class="yt"><a href="#">You Tube</a></li>
+            <li class="gg"><a href="#">Google +</a></li>
+        </ul>
+        <div class="slideContainer">
+            <div id="slides">
+                <div class="slide-wrapper"><a href="#"><img src="images/banner_1.png" width="468" height="270" alt="" /></a></div>
+                <div class="slide-wrapper"><a href="#"><img src="images/banner_1.png" width="468" height="270" alt="" /></a></div>
+                <div class="slide-wrapper"><a href="#"><img src="images/banner_1.png" width="468" height="270" alt="" /></a></div>
+                <div class="slide-wrapper"><a href="#"><img src="images/banner_1.png" width="468" height="270" alt="" /></a></div>
+                <div class="slide-wrapper"><a href="#"><img src="images/banner_1.png" width="468" height="270" alt="" /></a></div>
+            </div>
+            <div id="myController">
+                <span class="jFlowControl">1</span>
+                <span class="jFlowControl">2</span>
+                <span class="jFlowControl">3</span>
+                <span class="jFlowControl">4</span>
+                <span class="jFlowControl">5</span>
+            </div>
+        </div>
+    </div>
+    <div id="topBoxes">
+    	<div class="dates">
+        	<h2>Tour Dates</h2>
+        </div>
+        <div class="video">
+        	<h2>Featured Video</h2>
+            <div class="videoContainer">
+           		<img src="images/video_image.jpg" width="297" height="242" alt="" />
+                <a href="#" id="2WNrx2jq184" class="playbtn">Play</a>
+            </div>
+            <p><a href="#">Visit My Official YouTube Channel</a></p>
+        </div>
+        <div class="blogs">
+        	<h2>Latest Blog</h2>
+            <p><img src="images/blog_thumb_small.jpg" width="85" height="85" alt="" />Lorem ipsum dolor sit amet, onsectetur adipiscing elit. Sed ut turpis urna. Sed et eratnisi. Nullam vitae libero quam. Nunc dapibus viverra elit, nec auctor felis dapibus eu. Aenean odio mauris, tincidunt nec imperdiet in, s+uscipit sit amet tortor. Mauris ut eros quis nulla ultricies ravida. Aenean est vel arcu faucibus luctus. Praesent ipsum velit, rutrum nec lacinia vel, suscipit ut libero. Nulla adipiscing sem quis nibh faucibus porttitor sodales mi volutpat. Aliquam sed nisi arcu. Nam in sapien neque, quis dapibus eros. Aenean eros dolor, bibendum</p>
+            <p><a href="blog_details.htm">View Full Story</a></p>
+        </div>
+    </div>
+    <div id="newsletterBox">
+    	<h3>Newsletter Signup</h3>
+        <input name="" type="text" value="Name" onfocus="if (this.value == 'Name') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Name';}" />
+        <input name="" type="text" value="Email"onfocus="if (this.value == 'Email') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Email';}"  />
+        <input name="" type="text" value="City" onfocus="if (this.value == 'City') {this.value = '';}" onblur="if (this.value == '') {this.value = 'City';}" />
+        <input name="" type="text" value="State" onfocus="if (this.value == 'State') {this.value = '';}" onblur="if (this.value == '') {this.value = 'State';}" />
+        <input name="" type="text" value="Zip" onfocus="if (this.value == 'Zip') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Zip';}" />
+        <input name="" type="submit" value="Submit" />
+    </div>
+    <div id="bottomBoxes">
+    	<div class="photos">
+        	<h2>Featured Photos</h2>
+            <ul>
+            	<li><a href="images/video_image.jpg" class="preview"><img src="images/photo_sample_1.jpg" width="97" height="77" alt="" /></a></li>
+                <li><a href="images/video_image.jpg" class="preview"><img src="images/photo_sample_2.jpg" width="97" height="77" alt="" /></a></li>
+                <li><a href="images/video_image.jpg" class="preview"><img src="images/photo_sample_3.jpg" width="97" height="77" alt="" /></a></li>
+                <li><a href="images/video_image.jpg" class="preview"><img src="images/photo_sample_2.jpg" width="97" height="77" alt="" /></a></li>
+                <li><a href="images/video_image.jpg" class="preview"><img src="images/photo_sample_3.jpg" width="97" height="77" alt="" /></a></li>
+                <li><a href="images/video_image.jpg" class="preview"><img src="images/photo_sample_1.jpg" width="97" height="77" alt="" /></a></li>
+                <li><a href="images/video_image.jpg" class="preview"><img src="images/photo_sample_3.jpg" width="97" height="77" alt="" /></a></li>
+                <li><a href="images/video_image.jpg" class="preview"><img src="images/photo_sample_2.jpg" width="97" height="77" alt="" /></a></li>
+                <li><a href="images/video_image.jpg" class="preview"><img src="images/photo_sample_1.jpg" width="97" height="77" alt="" /></a></li>
+            </ul>
+            <p><a href="#">view more photos</a></p>
+        </div>
+        <div class="cards">
+        	<h2>Exclusive E-cards</h2>
+            <div class="cardContainer">
+           		<h3>Put a Ringtone on it!</h3>
+                <p>Personalized Eric Schwartz ringtones, Smooth-ECards and SmoothElnvites! <small>Send them to friends and they'll be yours forever.</small></p>
+                <p class="btn"><a href="#">Make your Own</a></p>
+                <a href="#" class="poweredBy">Powered By Stargreetz</a>
+            </div>
+        </div>
+        <div class="products">
+        	<h2>New Products</h2>
+            <img src="images/new_products_img.png" width="449" height="365" alt="" />
+            <a href="#">click here to view store</a>
+        </div>
+        <div class="clear"></div>
+    </div>
+    
+    <div id="footer">
+    	<ul>
+            <li><a href="index.htm">Home</a></li>
+            <li><a href="blog.htm">Blog</a></li>
+            <li><a href="tour_dates.htm">Tour Dates</a></li>
+            <li><a href="biography.htm">Bio</a></li>
+            <li><a href="#">Store</a></li>
+            <li><a href="photos.htm">Photos</a></li>
+            <li><a href="media.htm">Media</a></li>
+            <li><a href="contact.htm">Contact</a></li>
+        </ul>
+        <a href="#" class="toTop">To Top</a>
+        <p class="designBy">design by: <a href="#">ArsonHouse</a></p>
+    </div>
+</div><!-- END #wrapper -->
+
+</body>
+</html>

@@ -1,0 +1,307 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Homepage</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/jquery.selectbox.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
+<script type="text/javascript" src="js/modernizr.custom.43934.js"></script>
+<script type="text/javascript" src="js/jquery.flow.1.2.auto.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$(".myController").jFlow({
+		slides: "#slides",
+		controller: ".jFlowControl", // must be class, use . sign
+		slideWrapper : "#jFlowSlide", // must be id, use # sign
+		selectedWrapper: "jFlowSelected",  // just pure text, no sign
+		auto: true,		//auto change slide, default true
+		width: "722px",
+		height: "329px",
+		duration: 600,  // time in miliseconds to transition one slide
+		interval: 5000, // this is the amount of milliseconds before the switch happens
+		prev: ".jFlowPrev", // must be class, use . sign
+		next: ".jFlowNext" // must be class, use . sign
+	});
+});
+</script>
+<!-- SELECTBOX -->
+<script src="js/jquery.selectbox-0.1.3.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+$(function () {
+	$(".find-car select").selectbox();
+});
+</script>
+</head>
+
+<body class="home">
+
+<div id="wrapper">
+    <div id="header">
+    	<p class="logo"><a href="index.htm">Karland</a></p>
+        <div class="top-nav">
+            <ul>
+                <li class="current"><a href="index.htm">Home</a></li>
+                <li><a href="secondary.htm">About Us</a></li>
+                <li><a href="contact.htm">Contact</a></li>
+            </ul>
+        </div>
+        <a href="mailto:contactus@karland.com.au" class="email">contactus@karland.com.au</a>
+        <p class="phone"><strong>1300 586 339</strong><span>1339 Logan Road Mt. Gravatt, QLD 4122</span></p>
+    </div><!-- END #header -->
+    <div id="headnav">
+    	<div class="visit">
+        	<p>Visit our dealership today!</p>
+            <div class="addthis_toolbox addthis_default_style "><a class="addthis_button_facebook_like" fb:like:layout="button_count"></a></div>
+            <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4f220c174ef0687a"></script>
+		</div>
+        <div class="main-nav">
+            <ul>
+                <li class="vehicle"><a href="listing.htm">Our Vehicles <span></span></a></li>
+                <li class="car"><a href="#">Find A Car <span></span></a></li>
+                <li class="special"><a href="#">Specials <span></span></a></li>
+                <li class="finance current"><a href="#">Finance <span></span></a></li>
+                <li class="service"><a href="#">Service <span></span></a></li>
+            </ul>
+        </div>
+    </div><!-- END #headnav -->
+    
+    <div id="content">
+    	<div class="main">
+        	<div class="main-slider">
+                <div id="slides">
+                    <div class="slide-wrapper">
+                        <img src="images/main_slider_img.jpg" width="722" height="329" alt="">
+                        <img src="images/sash_new.png" width="104" height="128" alt="" class="sash">
+                        <div class="info">
+                        	<h3>Service your car fast.</h3>
+                            <p>Book your car in using our online form. Takes 2 secs and you will be logged in!</p>
+                            <a href="#" class="btn">Book time</a>
+                        </div>
+                    </div>
+                    <div class="slide-wrapper">
+                        <img src="images/main_slider_img.jpg" width="722" height="329" alt="">
+                        <img src="images/sash_new.png" width="104" height="128" alt="" class="sash">
+                        <div class="info">
+                        	<h3>Service your car fast.</h3>
+                            <p>Book your car in using our online form. Takes 2 secs and you will be logged in!</p>
+                            <a href="#" class="btn">Book time</a>
+                        </div>
+                    </div>
+                    <div class="slide-wrapper">
+                        <img src="images/main_slider_img.jpg" width="722" height="329" alt="">
+                        <img src="images/sash_new.png" width="104" height="128" alt="" class="sash">
+                        <div class="info">
+                        	<h3>Service your car fast.</h3>
+                            <p>Book your car in using our online form. Takes 2 secs and you will be logged in!</p>
+                            <a href="#" class="btn">Book time</a>
+                        </div>
+                    </div>
+                    <div class="slide-wrapper">
+                        <img src="images/main_slider_img.jpg" width="722" height="329" alt="">
+                        <img src="images/sash_new.png" width="104" height="128" alt="" class="sash">
+                        <div class="info">
+                        	<h3>Service your car fast.</h3>
+                            <p>Book your car in using our online form. Takes 2 secs and you will be logged in!</p>
+                            <a href="#" class="btn">Book time</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="myController">
+                    <span class="jFlowControl car">Car Lovers</span>
+                    <span class="jFlowControl range">Super Range</span>
+                    <span class="jFlowControl finance">Financing</span>
+                    <span class="jFlowControl service">Simple Service</span>
+                </div>
+            </div><!-- END .main-slider -->
+            
+            <div class="home-info">
+            	<div class="intro">
+                	<h3>Used Cars, Mt Gravatt</h3>
+                    <p>At Karland, accommodating to our customers' needs is always our very first priority. Every car at our Brisbane used car dealership is prepared to meet our high brand standards and goes through a meticulous mechanical inspection prior to sale.</p>
+                    <p>We pride ourselves on our large selection of quality Used Cars which allow us to accommodate to a wide range of customers; whether you're looking to spend $5,000 or $100,000.</p>
+                    <p>At any given time we have between 300 and 400 quality used cars for sale, which makes us Queensland's biggest used car yard!</p>
+                </div>
+                <div class="location">
+                	<h3>Location</h3>
+                    <p>3463 Pacific Hwy, Springwood QLD 4127</p>
+                    <p class="map"><img src="images/home_info_gmap.jpg" width="289" height="186" alt=""></p>
+                    <p class="txt-link"><a href="#">Get Directions &gt;&gt;</a></p>
+                </div>
+            </div><!-- END .home-info -->
+            
+        </div><!-- END .main -->
+        <div class="sidebar">
+        	<div class="side-grad find-car">
+            	<h3>Find your car</h3>
+                <!--[if gte IE 7]> <div class="select-one"> <![endif]-->
+                <select name="">
+                    <option>Kia</option>
+                    <option>Toyota</option>
+                    <option>Honda</option>
+                </select>
+                <!--[if gte IE 7]> </div> <![endif]-->
+                <!--[if gte IE 7]> <div class="select-two"> <![endif]-->
+                <select name="">
+                    <option>Model</option>
+                    <option>Model 2</option>
+                    <option>Model 3</option>
+                </select>
+                <!--[if gte IE 7]> </div> <![endif]-->
+                <div class="type">
+                	<h4>Vehicle Type</h4>
+                    <ul>
+                    	<li class="type1"><a href="#">Vehicle Type 1</a></li>
+                        <li class="type2"><a href="#">Vehicle Type 2</a></li>
+                        <li class="type3"><a href="#">Vehicle Type 3</a></li>
+                        <li class="type4"><a href="#">Vehicle Type 4</a></li>
+                    </ul>
+                </div>
+                <div class="range">
+                	<h4>Price Range</h4>
+                    <p class="inputs"><input name="" type="text" value="Amount"> to <input name="" type="text" value="Amount"></p>
+                    <p class="range-bar"><img src="images/range_price_sample.png" width="245" height="28" alt=""></p>
+                </div>
+                <div class="range">
+                	<h4>Year Range</h4>
+                    <p class="inputs"><input name="" type="text" value="Year"> to <input name="" type="text" value="Year"></p>
+                    <p class="range-bar"><img src="images/range_year_sample.png" width="263" height="29" alt=""></p>
+                </div>
+                <p class="btn"><input name="" type="submit" value="Search"></p>
+            </div><!-- END .find-car -->
+            
+            <div class="side-grad afford-calc">
+            	<h3>How much can I afford</h3>
+                <p>Ever thought about just paying a little a week?</p>
+                <p class="field">I Can Afford <input name="" type="text"> Per Week</p>
+                <p class="btn">
+                	<span>Note: Based on a 13% Interest Rate.</span>
+                    <input name="" type="submit" value="Calculator">
+                </p>
+            </div>
+        </div><!-- END .sidebar -->
+        
+        <div class="home-deals">
+        	<h3>Deals you won’t want to miss</h3>
+            <ul>
+            	<li>
+                	<h4>2008 Toyota Kluger </h4>
+                    <h5>KX-R AWD GSU45R</h5>
+                    <img src="images/deals_sample.jpg" width="204" height="132" alt="" class="thumb">
+                    <p class="price">Just <span>$16,995</span></p>
+                    <dl>
+                    	<dt>Distance</dt>
+                        <dd>12,800Ks</dd>
+                        <dt>dealer</dt>
+                        <dd>Brisbane</dd>
+                        <dt>Fuel Type</dt>
+                        <dd>Petrol</dd>
+                    </dl>
+                    <a href="listing-detail.htm" class="btn">Check it out</a>
+                    <img src="images/sash_new_small.png" width="76" height="69" alt="" class="sash">
+                </li>
+                <li>
+                	<h4>2008 Toyota Kluger </h4>
+                    <h5>KX-R AWD GSU45R</h5>
+                    <img src="images/deals_sample.jpg" width="204" height="132" alt="">
+                    <p class="price">Just <span>$16,995</span></p>
+                    <dl>
+                    	<dt>Distance</dt>
+                        <dd>12,800Ks</dd>
+                        <dt>dealer</dt>
+                        <dd>Brisbane</dd>
+                        <dt>Fuel Type</dt>
+                        <dd>Petrol</dd>
+                    </dl>
+                    <a href="listing-detail.htm" class="btn">Check it out</a>
+                    <img src="images/sash_new_small.png" width="76" height="69" alt="" class="sash">
+                </li>
+                <li>
+                	<h4>2008 Toyota Kluger </h4>
+                    <h5>KX-R AWD GSU45R</h5>
+                    <img src="images/deals_sample.jpg" width="204" height="132" alt="">
+                    <p class="price">Just <span>$16,995</span></p>
+                    <dl>
+                    	<dt>Distance</dt>
+                        <dd>12,800Ks</dd>
+                        <dt>dealer</dt>
+                        <dd>Brisbane</dd>
+                        <dt>Fuel Type</dt>
+                        <dd>Petrol</dd>
+                    </dl>
+                    <a href="listing-detail.htm" class="btn">Check it out</a>
+                    <img src="images/sash_new_small.png" width="76" height="69" alt="" class="sash">
+                </li>
+                <li>
+                	<h4>2008 Toyota Kluger </h4>
+                    <h5>KX-R AWD GSU45R</h5>
+                    <img src="images/deals_sample.jpg" width="204" height="132" alt="">
+                    <p class="price">Just <span>$16,995</span></p>
+                    <dl>
+                    	<dt>Distance</dt>
+                        <dd>12,800Ks</dd>
+                        <dt>dealer</dt>
+                        <dd>Brisbane</dd>
+                        <dt>Fuel Type</dt>
+                        <dd>Petrol</dd>
+                    </dl>
+                    <a href="listing-detail.htm" class="btn">Check it out</a>
+                    <img src="images/sash_new_small.png" width="76" height="69" alt="" class="sash">
+                </li>
+            </ul>
+        </div><!-- END .home-deals -->
+        
+    </div><!-- END #content -->
+</div><!-- END #wrapper -->
+    
+</div><!-- END #wrapper -->
+
+<div id="footer">
+	<div class="inner">
+        <div class="cols">
+            <div class="col">
+                <h4>Buying a Car</h4>
+                <ul>
+                    <li><a href="#">Search For Vehicles</a></li>
+                    <li><a href="#">Browse Our Stock</a></li>
+                    <li><a href="#">Find-A-Car Form</a></li>
+                    <li><a href="#">Specials</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h4>Financing a Car</h4>
+                <ul>
+                    <li><a href="#">Finance With Karland</a></li>
+                    <li><a href="#">Finance Enquiry Form</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h4>Servicing your Car</h4>
+                <ul>
+                    <li><a href="#">About Karland Servicing</a></li>
+                    <li><a href="#">Service Booking Form</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h4>About Karland</h4>
+                <ul>
+                    <li><a href="#">Our Company</a></li>
+                    <li><a href="#">Contact Details</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h4>Contact Karland</h4>
+                <ul>
+                    <li><a href="#">Location Map</a></li>
+                    <li><a href="#">Contact Us Form</a></li>
+                </ul>
+            </div>
+        </div><!-- END .cols -->
+        <p class="phone"><strong>1300 586 339</strong><span>contactus@karland.com.au</span></p>
+        <p class="copyright">&copy; 2012 Karland &nbsp;&nbsp;/ <a href="#">Sitemap</a> / <a href="#">Privacy Policy &amp; Disclaimer</a> / <a href="#">Mobile Site</a></p>
+        <p class="dmdn"><a href="#">Website Design, Development, SEO and Media by <span>DMDN</span></a></p>
+	</div>
+</div><!-- END #footer -->
+
+</body>
+</html>

@@ -1,0 +1,361 @@
+
+/* CSS RESETS ================================= */
+html, body, div, span, applet, object, iframe,  h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin: 0; padding: 0; border: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline;}
+table						{border-collapse: collapse; border-spacing: 0;}
+caption, th, td				{text-align: left; font-weight: normal;}
+table, td, th				{vertical-align: middle;}
+a img						{border:none;}
+
+@font-face {
+    font-family: 'GillSansMTUltraBoldRegular';
+    src: url('../type/gill_sans_mt_ultra_bold-webfont.eot');
+    src: url('../type/gill_sans_mt_ultra_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../type/gill_sans_mt_ultra_bold-webfont.woff') format('woff'),
+         url('../type/gill_sans_mt_ultra_bold-webfont.ttf') format('truetype'),
+         url('../type/gill_sans_mt_ultra_bold-webfont.svg#GillSansMTUltraBoldRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'LeagueGothicRegular';
+    src: url('../type/league_gothic-webfont.eot');
+    src: url('../type/league_gothic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../type/league_gothic-webfont.woff') format('woff'),
+         url('../type/league_gothic-webfont.ttf') format('truetype'),
+         url('../type/league_gothic-webfont.svg#LeagueGothicRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* GLOBAL STYLE ================================ */
+html						{background: url(../images/bg_bottom.png) no-repeat center bottom;}
+body						{font-family: Arial, Helvetica, sans-serif;	font-size: 12px; font-weight: normal; line-height: 18px; text-decoration: none; text-align: center; color: #141414; background: url(../images/bg_top.png) no-repeat center top; margin: 0 0 425px; padding: 0 0 50px; position: relative;}
+html.inner					{background: url(../images/bg_bottom_inner.png) no-repeat center bottom;}
+a							{text-decoration: none;}
+a:hover						{text-decoration: underline;}
+h1, h2, h3, h4, h5, h6, p,
+ul, table					{margin: 1em 0;}
+h1							{font-size: 24px;}
+h2							{font-size: 28px; font-family: 'GillSansMTUltraBoldRegular'; text-transform: uppercase;}
+h3							{font-size: 14px;}
+h4, h5, h6					{font-size: 12px;}
+strong						{font-weight: bold;}
+em							{font-style: italic;}
+input, select, textarea		{font-family: Arial, Helvetica, sans-serif;}
+
+/* UTILITIES =================================== */
+.clearfix:after					{visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0;}
+* html .clearfix				{zoom: 1;} /* IE6 */
+*+html .clearfix				{zoom: 1;} /* IE7 */
+
+.clear							{clear: both;}
+.center							{text-align: center;}
+
+/* WRAPPER ===================================== */
+#wrapper 						{width: 1066px; text-align: left; margin: 0 auto;}
+
+/* MAINNAV ==================================== */
+#mainNav						{height: 52px; padding: 1px 0; text-align: center; background: url(../images/bg_mainnav.png) repeat-x left top;}
+#mainNav ul						{width: 1066px; margin: 4px auto 0; padding-left: 35px; text-align: left; list-style-type: none; overflow: hidden;}
+#mainNav ul li					{display: inline;}
+#mainNav ul li a				{float: left; display: inline; margin-right: 3px; padding: 3px 17px; color: #40697b; font: 21px 'GillSansMTUltraBoldRegular'; text-transform: uppercase; background-color: #66c3ed;}
+#mainNav ul li a:hover,
+#mainNav ul li.current a		{color: #ff0000; background-color: #fff; text-decoration: none;}
+
+/* HEADER ====================================== */
+#header							{height: 412px; margin-top: -3px; padding: 1px 0; position: relative; z-index: 2;}
+#header h1.logo					{margin: 0;}
+#header h1.logo a				{display: block; width: 358px; height: 160px; background: url(../images/logo.png) no-repeat; text-indent: -9999px; position: absolute; top: 17px; left: 30px;}
+#header .twitter				{width: 380px; height: 119px; background: url(../images/Eric-Homepage_03.png) no-repeat left top; position: absolute; top: 0px; right: -52px;}
+#header .twitter h4				{margin: 8px 85px 2px 65px; padding: 0 0 0 40px; color: #ff0000; font: normal 16px 'GillSansMTUltraBoldRegular'; text-transform: uppercase; background: url(../images/icon_twitter.png) no-repeat left center;}
+#header .twitter p				{margin: 0 85px 0 105px; font-size: 11px; line-height: normal;}
+#header .connect				{width: 175px; list-style-type: none; position: absolute; top: 144px; right: 55px;}
+#header .connect li				{display: inline;}
+#header .connect li a			{display: inline-block; margin-bottom: 7px; margin-left: 5px; text-indent: -9999px;}
+#header .connect li.fb a		{width: 78px; height: 82px; background: url(../images/connect_facebook.png) no-repeat;}
+#header .connect li.tw a		{width: 76px; height: 80px; background: url(../images/connect_twitter.png) no-repeat;}
+#header .connect li.yt a		{width: 77px; height: 80px; background: url(../images/connect_youtube.png) no-repeat;}
+#header .connect li.gg a		{width: 77px; height: 80px; background: url(../images/connect_google.png) no-repeat;}
+#header .connect li a:hover		{background-position: left bottom;}
+/* Slider */
+#header .slideContainer			{width: 260px; height: 270px; padding-left: 208px; background: url(../images/motion_lines.png) no-repeat left top; position: absolute; top: 165px; left: -150px;}
+#jFlowSlide						{}
+#slides							{}
+.jFlowSlideContainer			{}
+.slide-wrapper					{}
+#myController					{display: none;}
+
+/* TOP BOXES ====================================== */
+#topBoxes									{margin-left: -5px; overflow: hidden; position: relative; z-index: 1;}
+#topBoxes h2								{margin: 15px 0 12px; font: normal 28px 'GillSansMTUltraBoldRegular';}
+#topBoxes p a								{color: #141414; font-size: 19px; font-family: 'LeagueGothicRegular'; text-transform: uppercase;}
+#topBoxes .dates,
+#topBoxes .video,
+#topBoxes .blogs							{float: left; display: inline; position: relative;}
+#topBoxes .dates							{width: 313px; height: 406px; padding: 0 44px 0 18px; background: url(../images/top_boxes_bg_dates.png) no-repeat; z-index: 1;}
+#topBoxes .video							{width: 307px; height: 406px; padding: 0 18px 0 18px; background: url(../images/top_boxes_bg_videos.png) no-repeat; z-index: 2; margin: 0 -12px 0 -15px;}
+#topBoxes .blogs							{width: 308px; height: 406px; padding: 0 18px 0 49px; background: url(../images/top_boxes_bg_blogs.png) no-repeat; z-index: 1;}
+#topBoxes .video .videoContainer			{width: 297px; height: 242px; padding: 8px; margin: 0 -3px; background-color: #252525; position: relative;}
+#topBoxes .video .videoContainer .playbtn	{display: block; width: 164px; height: 161px; background: url(../images/video_play_button.png) no-repeat; text-indent: -9999px; position: absolute; top: 35px; left: 0px;}
+#topBoxes .blogs							{font-size: 13px; font-family: Tahoma, Geneva, sans-serif;}
+#topBoxes .blogs img						{float: left; display: inline; margin: 0 10px 0 0; padding: 7px; background-color: #252525;}
+
+/* BOTTOM BOXES ====================================== */
+#bottomBoxes									{margin-left: -5px; overflow: ; position: relative; z-index: 1;}
+#bottomBoxes h2									{margin: 42px 0 12px; font: normal 26px 'GillSansMTUltraBoldRegular';}
+#bottomBoxes .cards h2							{font-size: 25px;}
+#bottomBoxes .products h2						{font-size: 31px;}
+#bottomBoxes .photos,
+#bottomBoxes .cards,
+#bottomBoxes .products							{float: left; display: inline; position: relative;}
+#bottomBoxes .photos							{width: 313px; height: 406px; padding: 0 44px 0 18px; background: url(../images/bottom_boxes_bg_photos.png) no-repeat; z-index: 1;}
+#bottomBoxes .cards								{width: 317px; height: 406px; padding: 0 13px 0 13px; background: url(../images/bottom_boxes_bg_cards.png) no-repeat; z-index: 2; margin: 0 -12px 0 -15px;}
+#bottomBoxes .products							{width: 308px; height: 406px; padding: 0 18px 0 49px; background: url(../images/bottom_boxes_bg_products.png) no-repeat; z-index: 1;}
+#bottomBoxes .photos ul							{margin: 0 0 0 -6px; padding: 8px 3px 3px 8px; background-color: #285266; list-style-type: none; overflow: hidden;}
+#bottomBoxes .photos ul li						{display: inline;}
+#bottomBoxes .photos ul li a					{float: left; display: inline; width: 97px; height: 77px; margin: 0 5px 5px 0;}
+#bottomBoxes .photos ul li a img				{width: 97px; height: 77px;}
+#bottomBoxes .photos p a						{font: normal normal 19px 'GillSansMTUltraBoldRegular'; color: #141414;}
+#bottomBoxes .cards h2							{}
+#bottomBoxes .cards .cardContainer				{width: 316px; height: 364px; color: #203b57; background: url(../images/exclusive_ecards_img.png) no-repeat; position: absolute; bottom: 13px; left: 13px;}
+#bottomBoxes .cards .cardContainer h3			{margin: 255px 30px 3px 24px; text-align: center; font-weight: bold; font-size: 18px; text-transform: uppercase;}
+#bottomBoxes .cards .cardContainer p			{margin: 0 30px 0 24px; text-align: center; font-weight: bold;}
+#bottomBoxes .cards .cardContainer p small		{display: block; font-size: 10px;}
+#bottomBoxes .cards .cardContainer p.btn		{margin-top: 10px; text-align: center;}
+#bottomBoxes .cards .cardContainer p.btn a		{display: inline-block; text-align: left; width: 193px; height: 33px; line-height: 33px; padding-left: 15px; color: #fff; font-size: 20px; font-weight: bold; background: url(../images/btn_bg_exclusive_ecards.png) no-repeat;}
+#bottomBoxes .cards .cardContainer a.poweredBy	{display: block; width: 24px; height: 265px; background: url(../images/powered_by_stargreetz.png) no-repeat; text-indent: -9999px; position: absolute; bottom: 10px; right: 2px;}
+#bottomBoxes .products img						{position: absolute; top: 37px; left: -22px;}
+#bottomBoxes .products a						{display: block; font: normal normal 18px 'GillSansMTUltraBoldRegular'; color: #141414; text-transform: uppercase; position: absolute; bottom: 25px; left: 49px;}
+/* Image Preivew */
+#preview										{display:none; padding:8px; background:#285266; color:#fff; position:absolute; z-index: 200;}
+#preview img									{width: 300px; height: auto;}
+
+/* CONTENT ====================================== */
+.content							{}
+.content .mainContent				{float: left; display: inline;}
+.content .sidebar					{float: right; display: inline;}
+.content .mainContent h2			{margin-left: 20px; margin-bottom: 8px;}
+
+/* BIO ====================================== */
+.contentBio								{}
+.contentBio .mainContent				{width: 670px; height: 663px; background: url(../images/bg_box_about.png) no-repeat left top;}
+.contentBio .mainContent h2				{}
+.contentBio .mainContent .scroll-pane	{width: 600px; height: 563px; margin: 0 0 0 20px; overflow: auto;}
+.contentBio .sidebar					{}
+.contentBio .sidebar h3					{margin: 5px 5px 0 0; text-align: right; font: normal 78px 'GillSansMTUltraBoldRegular'; color: #f3c12f; position: relative; z-index: 1;}
+.contentBio .sidebar .box				{width: 375px; height: 488px; margin: -30px 0 -12px 0; background: url(../images/bg_box_about_img.png) no-repeat; position: relative; z-index: 2;}
+.contentBio .sidebar .box	 img		{float: right; display: inline; margin: 10px 12px 0 0;}
+.contentBio .sidebar p.download			{width: 375px; height: 112px; margin: 0 0 0 0; background: url(../images/bg_box_about_download.png) no-repeat; position: relative; z-index: 3;}
+.contentBio .sidebar p.download a		{display: inline-block; margin: 27px 0 0 42px; padding-right: 48px; font: normal 28px 'GillSansMTUltraBoldRegular'; color: #393939; text-transform: uppercase; background: url(../images/icon_disk.png) no-repeat right center;}
+
+/* TOUR DATES ====================================== */
+.tourDates								{}
+.tourDates .mainContent					{width: 670px; height: 662px; background: url(../images/bg_box_tour.png) no-repeat left top; position: relative;}
+.tourDates .mainContent h2				{}
+.tourDates .mainContent .scroll-pane	{width: 600px; height: 563px; margin: 0 0 0 20px; overflow: auto;}
+.tourDates .mainContent p.poweredBy		{margin: 0; color: #dc0000; text-transform: uppercase; position: absolute; bottom: 6px; left: 15px;}
+.tourDates .mainContent p.poweredBy a	{display: inline-block; width: 96px; height: 36px; vertical-align: middle; background: url(../images/logo_laughstub.png) no-repeat; text-indent: -9999px;}
+.tourDates .sidebar						{float: left; margin-top: -9px;}
+.tourDates .sidebar h3					{margin: 0 0 0 25px; text-align: left; font: normal 78px 'GillSansMTUltraBoldRegular'; text-transform: uppercase; color: #f3c12f; position: relative; z-index: 1;}
+.tourDates .sidebar .box				{width: 388px; height: 575px; padding: 1px 0; margin: -30px 0 -12px 0; background: url(../images/bg_grad_sidebar_tour.png) repeat-x left top; position: relative; z-index: 2;}
+.tourDates .sidebar .box h4				{margin: 12px 0 12px 10px; color: #111111; font: normal 35px 'GillSansMTUltraBoldRegular'; text-transform: uppercase;}
+.tourDates .sidebar .box .videoBox		{width: 402px; height: 257px; margin-left: -13px; padding: 11px 13px 47px 10px; background: url(../images/bg_tour_feature_video.png) no-repeat; position: relative;}
+.tourDates .sidebar .box .videoBox img	{width: 402px; height: auto;}
+.tourDates .sidebar .box .videoBox .btn	{display: block; width: 61px; height: 61px; padding: 20px 25px; background: #efbf2e url(../images/play_button.png) no-repeat center center; text-indent: -9999px; position: absolute; top: 88px; right: 0;}
+.tourDates .sidebar .box p.cloud		{margin: 0; width: 329px; height: 236px; background: url(../images/cloud.png) no-repeat; position: absolute; bottom: 7px; left: 28px;}
+.tourDates .sidebar .box p.cloud a		{display: inline-block; width: 250px; margin: 70px 0 0 57px; color: #121212; font: normal 28px 'GillSansMTUltraBoldRegular'; text-transform: uppercase; background: url(../images/arrow_red.png) no-repeat 62% 89%;}
+
+/* CONTACT ====================================== */
+.contentContact								{}
+.contentContact .col1,
+.contentContact .col2,
+.contentContact .col3						{float: left; display: inline; position: relative;}
+.contentContact .box h2						{padding-top: 25px; margin-bottom: 20px;}
+*+ .contentContact .box h2					{margin-top: 0;}
+.contentContact .col1						{width: 376px; z-index: 1;}
+.contentContact .col1 .box					{height: 557px; padding: 0 55px 0 24px; background: url(../images/bg_contact_col_1.png) no-repeat;}
+*+html .contentContact .col1 .box			{padding-right: 50px;} /* IE7 fix */
+.contentContact .col1 .box p				{font-size: 18px; color: #454545; line-height: 22px;}
+.contentContact .col2						{width: 338px; margin: 0 -14px 0 -16px; z-index: 2;}
+.contentContact .col2 .box					{height: 460px; padding: 0 23px 0 24px; background: url(../images/bg_contact_col_2a.png) no-repeat;}
+.contentContact .col2 .box p				{}
+.contentContact .col2 .box p input			{width: 274px; padding: 7px 8px; font-size: 15px; color: #62c3f4; text-transform: uppercase; border: none; background-color: #346983;}
+.contentContact .col2 .box p textarea		{width: 274px; height: 190px; padding: 7px 8px; font-size: 15px; color: #62c3f4; text-transform: uppercase; border: none; background-color: #346983;}
+.contentContact .col2 .boxSubmit			{height: 104px; padding: 0 14px; margin-top: -9px; background: url(../images/bg_contact_col_2b.png) no-repeat;}
+.contentContact .col2 .boxSubmit input		{width: 309px; padding: 7px 20px; margin-top: 14px; color: #fff; text-align: left; font: normal 28px 'GillSansMTUltraBoldRegular'; text-transform: uppercase; background: #ff0000 url(../images/icon_plus_sign.png) no-repeat 90% 50%; border: none; cursor: pointer;}
+*+html .contentContact .col2 .boxSubmit input	{padding-top: 1px; padding-bottom: 1px;} /* IE7 fix */
+.contentContact .col3						{width: 369px; z-index: 1;}
+.contentContact .col3 .box					{height: 457px; padding: 0 20px 0 55px; background: url(../images/bg_contact_col_3a.png) no-repeat;}
+.contentContact .col3 .box ul				{list-style-type: none;}
+.contentContact .col3 .box ul li			{display: block; position: relative;}
+.contentContact .col3 .box ul li a			{}
+.contentContact .col3 .box ul li a img		{width: 273px; height: auto; max-height: 97px; margin-bottom: 10px; border: 9px solid #b89223;}
+.contentContact .col3 .box ul li a.save		{display: block; width: 27px; height: 27px; background: url(../images/icon_disk_small.png) no-repeat; text-indent: -9999px; position: absolute; top: 65px; right: 20px; z-index: 1;}
+.contentContact .col3 .boxDownload			{height: 102px; padding: 1px 14px; margin-top: -6px; background: url(../images/bg_contact_col_3b.png) no-repeat;}
+.contentContact .col3 .boxDownload a		{display: block; padding: 11px 0; margin: 14px 2px 0 31px; color: #1d1d1d; text-align: center; font: normal 22px 'GillSansMTUltraBoldRegular'; text-transform: uppercase; background-color: #b79223; border: none; cursor: pointer;}
+.contentContact .col2 input, .col2 textarea,
+.contentContact .col3 .boxDownload a		{box-shadow: inset 2px 2px 5px #242424;}
+
+/* BLOG ======================================= */
+.contentBlog .news						{position: relative; z-index: 1;}
+.contentBlog .grayBar					{position: relative; z-index: 2; margin: -14px 0 -17px;}
+.contentBlog .press						{position: relative; z-index: 3;}
+.contentBlog							{}
+.contentBlog h2							{margin-bottom: 8px; margin-right: 172px; font-size: 78px; color: #f5c32f; text-align: right;}
+.contentBlog .col1,
+.contentBlog .col2,
+.contentBlog .col3						{float: left; display: inline; position: relative;}
+.contentBlog .box h3					{padding-top: 25px; margin-top: 0; margin-bottom: 20px; font-size: 28px; font-family: 'GillSansMTUltraBoldRegular'; text-transform: uppercase;}
+.contentBlog .box						{height: 406px; font-size: 13px; font-family: Tahoma, Geneva, sans-serif;}
+.contentBlog .box img					{float: left; display: inline; margin: 0 10px 0 0; padding: 7px; background-color: #252525;}
+.contentBlog .col1						{width: 375px; z-index: 1;}
+.contentBlog .col1 .box					{padding: 0 55px 0 24px; background: url(../images/blog_bg_blue_left.png) no-repeat;}
+.contentBlog .col2						{width: 343px; margin: 0 -14px 0 -16px; z-index: 2;}
+.contentBlog .col2 .box					{padding: 0 23px 0 24px; background: url(../images/blog_bg_blue_center.png) no-repeat;}
+.contentBlog .col3						{width: 375px; z-index: 1;}
+.contentBlog .col3 .box					{padding: 0 20px 0 55px; background: url(../images/blog_bg_blue_right.png) no-repeat;}
+.contentBlog .box .readMore				{margin-top: 20px;}
+.contentBlog .box .readMore a			{color: #141414; font-size: 19px; font-family: 'LeagueGothicRegular'; text-transform: uppercase;}
+.contentBlog .press .col1 .box			{background-image: url(../images/blog_bg_yellow_left.png);}
+.contentBlog .press .col2 .box			{background-image: url(../images/blog_bg_yellow_center.png);}
+.contentBlog .press .col3 .box			{background-image: url(../images/blog_bg_yellow_right.png);}
+.grayBar								{width: 1062px; height: 65px; background: url(../images/blog_bg_bar.png) no-repeat;}
+.grayBar h4								{margin: -10px 0 0 0; font: normal 28px 'GillSansMTUltraBoldRegular'; text-transform: uppercase;}
+.grayBar h4 span						{}
+.grayBar h4 a							{color: #fff; font-size: 20px;}
+.grayBar h4.newsTitle					{float: left; display: inline; margin-left: 18px;}
+.grayBar h4.pressTitle					{float: right; display: inline; margin-right: 18px;}
+*+html .grayBar h4						{margin-top: 2px;} /* IE7 fix */
+.grayBar .newsArrow						{position: absolute; top: -50px; left: -75px;}
+.grayBar .pressArrow					{position: absolute; bottom: -22px; right: -78px;}
+/* BLOG DETAIL ====================================== */
+.contentBlogDetail									{}
+.contentBlogDetail .mainContent						{width: 670px; position: relative; z-index: 1;}
+.contentBlogDetail .mainContent .box				{padding: 1px 0; height: 663px; background: url(../images/bg_box_about.png) no-repeat left top;}
+.contentBlogDetail .mainContent .box h2				{}
+.contentBlogDetail .mainContent .box .scroll-pane	{width: 600px; height: 563px; margin: 0 0 0 20px; overflow: auto;}
+.contentBlogDetail .mainContent .prevNext			{height: 65px; margin-top: -12px; background: url(../images/blog_bg_prev_next.png) no-repeat; position: relative; z-index: 2;}
+.contentBlogDetail .mainContent .prevNext a			{margin-top: 6px; color: #141414; font: normal 22px 'GillSansMTUltraBoldRegular'; text-transform: uppercase;}
+.contentBlogDetail .mainContent .prevNext .prev		{float: left; display: inline; margin-left: 12px;}
+.contentBlogDetail .mainContent .prevNext .next		{float: right; display: inline; margin-right: 45px;}
+.contentBlogDetail .sidebar							{width: 374px;}
+.contentBlogDetail .sidebar h3						{margin: 5px 35px 0 0; text-align: right; color: #f3c12f; font: normal 78px 'GillSansMTUltraBoldRegular'; text-transform: uppercase; position: relative; z-index: 1;}
+.contentBlogDetail .sidebar .box					{height: 597px; padding: 1px 21px 1px 57px; margin: -30px 0 -12px 0; background: url(../images/blog_bg_side_post.png) no-repeat; position: relative; z-index: 2;}
+.contentBlogDetail .sidebar .box h2					{margin: 25px 0 20px;}
+.contentBlogDetail .sidebar .box ul					{list-style-type: none;}
+.contentBlogDetail .sidebar .box ul li				{padding: 6px 12px 8px; margin-bottom: 12px; background-color: #b89223;}
+.contentBlogDetail .sidebar .box ul li h4			{margin: 0 0 0px;}
+.contentBlogDetail .sidebar .box ul li h4 a			{color: #141414; font: normal 20px 'GillSansMTUltraBoldRegular';}
+.contentBlogDetail .sidebar .box ul li p			{margin: 0; font-size: 12px;}
+
+/* PHOTOS ====================================== */
+.contentPhotos								{margin-top: 30px;}
+.contentPhotos .mainContent					{float: none; display: block; margin-top: -30px;}
+.contentPhotos .mainContent h2				{margin-bottom: 14px; margin-right: 35px; font-size: 78px; color: #f5c32f; text-align: right;}
+.contentPhotos .topBar						{height: 81px; background: url(../images/bg_top_bar.png) no-repeat; position: relative; z-index: 2;}
+.contentPhotos .topBar .sbHolder			{float: left; display: inline; margin: 13px 0 0 14px;}
+.contentPhotos .topBar .submit				{float: right; width: 260px; margin: 8px 38px 0 0; padding: 7px 20px; color: #fff; text-align: left; font: normal 24px 'GillSansMTUltraBoldRegular'; text-transform: uppercase; background: #ff0000 url(../images/icon_plus_sign.png) no-repeat 90% 50%; border: none; cursor: pointer; box-shadow: inset 2px 2px 5px #242424;}
+.contentPhotos .scroll-pane					{height: 498px; margin: -5px 0 0 0; overflow: auto;  position: relative; z-index: 1;}
+.contentPhotos .scroll-pane ul				{width: 1032px; list-style-type: none;}
+.contentPhotos .scroll-pane ul li			{float: right; display: inline; width: 177px; height: 168px; margin: 0 0 -2px -7px; background: url(../images/bg_photos_box.png) no-repeat; position: relative;}
+.contentPhotos .scroll-pane ul li a.img		{float: right; display: inline; width: 150px; height: 144px; margin: 6px 6px 0 0;}
+.contentPhotos .scroll-pane ul li a.img img	{width: 150px; height: 144px;}
+.contentPhotos .scroll-pane ul li a.btn		{display: block; width: 32px; height: 26px; padding: 10px 8px; background: #e0b32b url(../images/btn_preview.png) no-repeat center center; text-indent: -9999px; position: absolute; top: 95px; left: 20px;}
+
+/* MEDIA ====================================== */
+.contentMedia								{margin-top: 30px;}
+.contentMedia .mainContent					{float: none; display: block; margin-top: -30px;}
+.contentMedia .mainContent h2				{margin-bottom: 14px; margin-right: 35px; font-size: 78px; color: #f5c32f; text-align: right;}
+.contentMedia .topBar						{height: 81px; background: url(../images/bg_top_bar.png) no-repeat; position: relative; z-index: 2;}
+.contentMedia .topBar .sbHolder				{float: left; display: inline; margin: 13px 0 0 14px;}
+.contentMedia .topBar .demo					{float: right; width: 270px; margin: 8px 15px 0 0; padding: 8px 20px; color: #fff; text-align: left; font: normal 24px 'GillSansMTUltraBoldRegular'; text-transform: uppercase; background: #2a5469; box-shadow: inset 2px 2px 5px #242424;}
+.contentMedia .topBar .submit				{float: right; width: 260px; margin: 8px 38px 0 0; padding: 7px 20px; color: #fff; text-align: left; font: normal 24px 'GillSansMTUltraBoldRegular'; text-transform: uppercase; background: #ff0000 url(../images/icon_plus_sign.png) no-repeat 90% 50%; border: none; cursor: pointer; box-shadow: inset 2px 2px 5px #242424;}
+.contentMedia .scroll-pane					{height: 512px; margin: -9px 0 0 0; overflow: auto; position: relative; z-index: 1;}
+.contentMedia .scroll-pane ul				{width: 1032px; padding-right: 0px; list-style-type: none;}
+.contentMedia .scroll-pane ul li			{float: right; display: inline; width: 355px; height: 248px; margin: 0 0 -8px -15px; background: url(../images/bg_video_box.png) no-repeat; position: relative;}
+.contentMedia .scroll-pane ul li a.img		{float: right; display: inline; width: 316px; height: 204px; margin: 8px 9px 0 0;}
+.contentMedia .scroll-pane ul li a.img img	{width: 316px; height: 204px;}
+.contentMedia .scroll-pane ul li a.btn		{display: block; width: 48px; height: 48px; padding: 14px 20px; background: #f1bf2e url(../images/play_button_small.png) no-repeat center center; text-indent: -9999px; position: absolute; top: 72px; right: 0px;}
+
+.contentMusic							{margin: -25px 0 0 0;}
+.contentMusic .scroll-pane				{height: 462px !important; margin: -6px 0 0 0; overflow: auto; position: relative; z-index: 1;}
+.contentMusic .scroll-pane ul			{padding-right: 0px; list-style-type: none;}
+.contentMusic .scroll-pane ul li		{float: right; display: inline; width: auto; height: 81px; margin: 0 0 -6px -14px; background: none; position: relative;}
+.contentMusic .scroll-pane ul li span	{display: block; font: normal 11.5px 'GillSansMTUltraBoldRegular'; text-transform: uppercase;}
+.contentMusic .boxSong,
+.contentMusic .boxOption				{width: 270px; height: 81px; background: url(../images/bg_box_music.png) no-repeat;}
+.contentMusic .boxSong					{float: left; display: inline;}
+.contentMusic .boxSong h3				{float: left; display: inline; margin: 15px 0 0 38px; font: normal 20.5px/16px 'GillSansMTUltraBoldRegular'; text-transform: uppercase;}
+.contentMusic .boxSong h3 em			{display: block; font: normal normal 14.5px Arial, Helvetica, sans-serif; text-transform: none;}
+.contentMusic .boxSong p				{float: right; display: inline; margin: 5px 12px 0 0;}
+.contentMusic .boxSong p a				{color: #141414;}
+.contentMusic .boxSong p a span			{}
+.contentMusic .boxSong p a img			{}
+.contentMusic .boxOption				{float: right; display: inline; margin-left: -16px;}
+.contentMusic .boxOption .share			{float: left; display: inline; margin: 5px 0 0 30px;}
+.contentMusic .boxOption .share a.fb	{float: left; display: inline; width: 34px; height: 35px; background: url(../images/icon_facebook_small.png) no-repeat; text-indent: -9999px; margin-right: 2px;}
+.contentMusic .boxOption .share a.tw	{float: left; display: inline; width: 33px; height: 35px; background: url(../images/icon_twitter_small.png) no-repeat; text-indent: -9999px;}
+.contentMusic .boxOption .purchase 		{float: right; display: inline; margin: 5px 6px 0 0;}
+.contentMusic .boxOption .purchase a 	{display: block; width: 140px; height: 40px; margin-top: -5px; background: url(../images/btn_purchase.png) no-repeat; text-indent: -9999px;}
+*+html .contentMusic .scroll-pane ul li	{width: 524px;} /* IE7 fix */
+
+/* Selectbox - Photos */
+div.sbHolder					{height: 30px; color: #fff; font: normal 25px 'GillSansMTUltraBoldRegular'; text-transform: uppercase; position: relative;}
+*+html div.sbHolder				{width: 350px;}
+a.sbSelector					{display: block; padding-right: 40px; white-space: nowrap; text-indent: 10px; background: url(../images/icon_arrow_down.png) no-repeat right center; overflow: hidden; position: absolute; top: 0; left: 0;}
+a.sbSelector:link,
+a.sbSelector:visited,
+a.sbSelector:hover				{color: #fff; outline: none; text-decoration: none;}
+a.sbToggle						{display: none; width: 30px; height: 30px;  background: url(../images/icon_arrow_down.png) no-repeat 50% 50%; position: absolute; right: 0; top: 0;}
+a.sbToggle:hover				{background-image: url(../images/icon_arrow_down.png);}
+a.sbToggleOpen					{background-image: url(../images/icon_arrow_down.png);}
+a.sbToggleOpen:hover			{background-image: url(../images/icon_arrow_down.png);}
+div.sbHolderDisabled			{background-color: #3C3C3C; border: solid 1px #1F1B11;}
+div.sbHolderDisabled .sbHolder	{}
+div.sbHolderDisabled .sbToggle	{}
+ul.sbOptions					{list-style: none; margin: 24px 0 0 !important; padding: 0; position: absolute; top: 30px;left: -1px;  z-index: 1;}
+ul.sbOptions li					{width: 277px; height: 81px; padding: 1px 0; margin: 0 0 -13px 0; background: url(../images/bg_blue_box.png) no-repeat;}
+ul.sbOptions a					{display: block; width: 255px; height: 64px; line-height: 62px; text-align: center;}
+ul.sbOptions a:link,
+ul.sbOptions a:visited			{color: #fff; text-decoration: none;}
+ul.sbOptions a:hover			{color: #fff;}
+ul.sbOptions li.last a			{border-bottom: none;}
+ul.sbOptions .sbDisabled		{border-bottom: dotted 1px #1F1B11; color: #999; display: block; padding: 7px 0 7px 3px;}
+ul.sbOptions .sbGroup			{border-bottom: dotted 1px #1F1B11;  color: #000; display: block; font-weight: bold; padding: 7px 0 7px 3px;}
+ul.sbOptions .sbSub				{padding-left: 17px;}
+/* Alternate Style */
+ul.sbOptions li.item2,
+ul.sbOptions li.item4,
+ul.sbOptions li.item6,
+ul.sbOptions li.item8,
+ul.sbOptions li.item10,
+ul.sbOptions li.item12,
+ul.sbOptions li.item14,
+ul.sbOptions li.item16			{margin-left: -18px;}
+/* Selectbox - Media */
+.contentMedia div.sbHolder		{}
+.contentMedia a.sbSelector		{}
+.contentMedia ul.sbOptions		{margin-top: 30px !important; font-size: 13px;}
+.contentMedia ul.sbOptions li	{width: 187px; height: 54px; margin-bottom: -5px; background: url(../images/bg_blue_box_small.png) no-repeat;}
+.contentMedia ul.sbOptions a	{display: block; width: 171px; height: 43px; line-height: 43px;}
+/* Selectbox - Media - Music */
+.contentMusic ul.sbOptions		{font-size: 17px;}
+.contentMusic ul.sbOptions li	{width: 270px; height: 56px; margin-bottom: -5px; background: url(../images/bg_blue_box_music.png) no-repeat;}
+.contentMusic ul.sbOptions a	{width: 251px;}
+
+/* NEWSLETTER BOX ====================================== */
+#newsletterBox						{margin: 10px 0;}
+#newsletterBox h3					{display: inline; margin-left: 33px; margin-right: 10px; color: #9b9b9b; font: 23px 'LeagueGothicRegular'; text-transform: uppercase;}
+#newsletterBox input				{margin-right: 5px; border: none; width: 137px; padding: 0px 5px; color: #1f1f1f; font: 19px 'LeagueGothicRegular'; text-transform: uppercase; background-color: #cfcfcf;}
+#newsletterBox input[type="submit"]	{width: auto; margin: 0; padding-right: 20px; background: #cfcfcf url(../images/icon_plus.png) no-repeat 90% 50%; color: #da3022; cursor: pointer;}
+
+/* FOOTER ====================================== */
+#footer								{width: 1066px; position: absolute; bottom: -83px;}
+#footer ul							{float: left; display: inline; margin: 4px 15px 0 8px; text-align: left; list-style-type: none; overflow: hidden;}
+#footer ul li						{display: inline;}
+#footer ul li a						{float: left; display: inline; margin-right: 2px; padding: 2px 10px; color: #141414; font: 14px 'GillSansMTUltraBoldRegular'; text-transform: uppercase; background-color: #e3b42c;}
+#footer ul li a:hover,
+#footer ul li.current a				{color: #ff0000; background-color: #fff; text-decoration: none;}
+#footer a.toTop						{float: left; display: inline; width: 37px; height: 81px; margin: -24px 0 0; background: url(../images/btn_to_top.png) no-repeat; text-indent: -9999px;}
+#footer p.designBy					{float: left; display: inline; margin: 0; font: bold 12.5px Tahoma, Geneva, sans-serif; position: absolute; top: -10px; right: 72px;}
+#footer p.designBy a				{display: inline-block; width: 178px; height: 40px; vertical-align: text-bottom; background: url(../images/logo_arsonhouse.png) no-repeat; text-indent: -9999px;}

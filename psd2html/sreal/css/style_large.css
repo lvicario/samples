@@ -1,0 +1,20 @@
+.page-option p.resize a.large	{font-weight: bold;}
+
+body					{font-size: 16px; line-height: normal;}
+h1						{font-size: 24px;}
+h2						{font-size: 20px;}
+h3						{font-size: 16px;}
+
+.services-box ul li a	{font-size: 16px;}
+
+.breadcrumb				{font-size: 16px;}
+
+.page-option p.links a	{font-size: 16px;}
+
+.contact-box ul li strong, .contact-box ul li span {font-size: 16px;}
+
+.sf-menu a 				{padding: 8px 7px;}
+.sf-menu a.sf-with-ul 	{padding-right: 22px;}
+.sf-sub-indicator		{right: 9px;}
+
+.footer					{font-size: 16px;}

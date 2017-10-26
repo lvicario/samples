@@ -1,0 +1,63 @@
+.sbHolder					{float: left; display: inline; width: 247px; height: 27px; margin: 0 0 10px; background: #ebebeb url(../images/selectbox_gradient.png) repeat-x; border: 1px solid #d6d6d6; font-family: Arial, Helvetica, sans-serif; font-size: 14px; position: relative;}
+.sbHolder					{-moz-border-radius: 8px; -webkit-border-radius: 8px; border-radius: 8px;}
+
+.sbSelector					{display: block; width: 247px; height: 27px; line-height: 27px; text-indent: 10px; outline: none; overflow: hidden; position: absolute; top: 0; left: 0;}
+.sbSelector:link,
+.sbSelector:visited,
+.sbSelector:hover			{color: #646464; text-decoration: none; outline: none;}
+
+.sbToggle					{display: block; width: 33px; height: 29px; background: #989ca0 url(../images/selectbox_arrow.png) no-repeat center center; outline: none; position: absolute; top: -1px; right: -1px;}
+.sbToggle					{-webkit-border-top-right-radius: 8px; -webkit-border-bottom-right-radius: 8px; -moz-border-radius-topright: 8px; -moz-border-radius-bottomright: 8px; border-top-right-radius: 8px; border-bottom-right-radius: 8px;}
+.sbToggle:hover				{}
+.sbToggleOpen				{}
+.sbToggleOpen:hover			{}
+.sbHolderDisabled			{background-color: #3C3C3C;	border: solid 1px #515151;}
+.sbHolderDisabled .sbHolder	{}
+.sbHolderDisabled .sbToggle	{}
+
+.sbOptions					{width: 247px; margin: 0; padding: 3px 0 0; background: #f2f2f2; border: 1px solid #d6d6d6; border-bottom: none; list-style: none; overflow-y: auto; position: absolute; top: 27px !important; left: -1px; z-index: 1;}
+.sbOptions					{-moz-border-radius: 8px; -webkit-border-radius: 8px; border-radius: 8px;}
+.sbOptions					{background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.00, #f4f4f4), color-stop(1.00, #e1e1e1)); background-image: -moz-linear-gradient(center top, #f4f4f4 0%, #e1e1e1 100%);}
+.sbOptions li				{display: inline;}
+.sbOptions a				{display: block; border-bottom: 1px solid #d6d6d6; line-height: 27px; color: #646464; text-decoration: none; text-indent: 10px; outline: none;}
+.sbOptions a:link,
+.sbOptions a:visited		{}
+.sbOptions a:hover			{}
+.sbOptions li.last a		{}
+.sbOptions .sbDisabled		{display: block;}
+.sbOptions .sbGroup			{display: block;}
+.sbOptions .sbSub			{}
+
+/* FILTERS  */
+.filters .sbHolder						{width: 147px; height: 13px; margin: 0 0 0 2px; background: #e2e2e2 url(../images/selectbox_small_grad.png) repeat-x left top; border: 1px solid #9b9b9b; font-size: 10px;}
+.filters .sbHolder						{-moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;}
+
+.filters .sbSelector					{width: 147px; height: 13px; line-height: 13px; text-indent: 10px;}
+.filters .sbSelector:link,
+.filters .sbSelector:visited,
+.filters .sbSelector:hover				{color: #1a1a1a; text-decoration: none; outline: none;}
+
+.filters .sbToggle						{width: 5px; height: 9px; background: url(../images/selectbox_small_arrow.png) no-repeat center center; top: 2px; right: 6px;}
+.filters .sbToggle						{-webkit-border-top-right-radius: 0; -webkit-border-bottom-right-radius: 0; -moz-border-radius-topright: 0; -moz-border-radius-bottomright: 0; border-top-right-radius: 0; border-bottom-right-radius: 0;}
+.filters .sbToggle:hover				{}
+.filters .sbToggleOpen					{}
+.filters .sbToggleOpen:hover			{}
+.filters .sbHolderDisabled				{}
+.filters .sbHolderDisabled .sbHolder	{}
+.filters .sbHolderDisabled .sbToggle	{}
+
+.filters .sbOptions						{width: 147px; margin: 0; padding: 0 0 0; background: #f2f2f2; border: 1px solid #9b9b9b; border-bottom: 0; top: 13px !important; left: -1px; z-index: 1;}
+.filters .sbOptions						{-moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;}
+.filters .sbOptions						{background: #eee;}
+.filters .sbOptions li					{padding: 0;}
+.filters .sbOptions a					{border-bottom: 1px solid #9b9b9b; line-height: 18px; color: #1a1a1a;}
+.filters .sbOptions a:link,
+.filters .sbOptions a:visited			{}
+.filters .sbOptions a:hover				{}
+.filters .sbOptions li.last a			{}
+.filters .sbOptions .sbDisabled			{}
+.filters .sbOptions .sbGroup			{}
+.filters .sbOptions .sbSub				{}
+
+
+

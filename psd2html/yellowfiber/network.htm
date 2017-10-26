@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Network</title>
+<link href="css/style.css" rel="stylesheet">
+<script src="js/jquery-1.6.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.equalheights.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$(".main, .sidebar").equalHeights();
+});
+</script>
+<!-- DROPDOWN MENU -->
+<script type="text/javascript">
+$(function(){
+    $(".main-nav ul li").hover(function(){
+        $(this).addClass("hover");
+        $('ul:first',this).css('visibility', 'visible');
+    }, function(){
+        $(this).removeClass("hover");
+        $('ul:first',this).css('visibility', 'hidden');
+    });
+    $(".main-nav ul li ul li:has(ul)").find("a:first").append(" &raquo; ");
+});
+</script>
+</head>
+
+<body>
+
+<div id="wrapper">
+    <div id="header">
+        <h1><a href="index.htm">Yellow Fiber Networks</a></h1>
+        <p class="call">
+        	<span>Call UK</span>
+            <strong>703 544 0229</strong>
+        </p>
+        <div class="main-nav">
+            <ul>
+                <li><a href="index.htm">Home</a></li>
+                <li><a href="#">Colocation</a></li>
+                <li class="current">
+                	<a href="network.htm">Network</a>
+                    <ul class="sub_menu">
+                         <li><a href="#">Network Serives</a></li>
+                         <li><a href="#">Dedicated Internet</a></li>
+                         <li><a href="#">Transport Network</a></li>
+                    </ul>
+                </li>
+                <li>
+                	<a href="#">Services</a>
+                    <ul class="sub_menu">
+                         <li><a href="#">Network Serives</a></li>
+                         <li><a href="#">Dedicated Internet</a></li>
+                         <li><a href="#">Transport Network</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="about_us.htm">About Us</a></li>
+            </ul>
+		</div>
+    </div><!-- END #header -->
+    <div id="content">
+    	<div class="main">
+            <h2>Network Services</h2>
+            <p>Today, Internet connectivity is a crucial component of virtually any business. But for some businesses, it is critical to their success. It also means making important data available to your employees quickly, whether they work at home, at small branch offices, in retail stores, or just need to work from home once they leave the office. </p>
+            <p>Yellow Fiber's Broadband Access changes everything - with a cost-effective, high-speed, "always-on" nationwide connectivity solution that is easy to deploy, manage and support. Yellow Fiber delivers just that. Our Internet access will allow you to communicate more effectively with your customers, partners, suppliers, employees and other stakeholders.</p>
+            <p>Yellow Fiber has the solution, whether you're an enterprise with high-bandwidth requirements for connecting lots of branches, store fronts, teleworkers or even the corporate headquarters; or you're an operator of a home or single-site business.</p>
+            <hr>
+            <h3>Our Services</h3>
+            <p>We offer a wide varitiy of Network Services Small to Large businesses with needs small, growwing, and large. Give us a call and see what we can do for you.</p>
+            <div class="highlight">
+                <h4>Business Solutions</h4>
+                <p>Today, Internet connectivity is a crucial component of virtually any business. But for some businesses, it is critical to their success. We offer solutions between providing a Broadband Service, to private Networks, and more.</p>
+                <p class="more"><a href="#">read more &gt;&gt;</a></p>
+            </div>
+            <div class="highlight">
+                <h4>Dedicated Internet Access</h4>
+                <p>Today, Internet connectivity is a crucial component of virtually any business. But for some businesses, it is critical to their success. We offer solutions between providing a Broadband Service, to private Networks, and more.</p>
+                <p class="more"><a href="#">read more &gt;&gt;</a></p>
+            </div>
+            <div class="highlight">
+                <h4>Network Transport Services</h4>
+                <p>You never have to worry that you are buying too much capacity or needing more in a moment's notice. Our Layer 2 Virtual Circuit Transport service is a plug-and-play approach that allows you to "right size" capacity according to your traffic. </p>
+                <p class="more"><a href="#">read more &gt;&gt;</a></p>
+            </div>
+        </div><!-- END #main -->
+        <ul class="sidebar">
+        	<li class="widget widget-links">
+            	<h3>Quicl links</h3>
+                <ul>
+                    <li><a href="index.htm">Home</a></li>
+                    <li><a href="#">Colocation</a></li>
+                    <li class="current"><a href="network.htm">Network</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="about_us.htm">About Us</a></li>
+                </ul>
+            </li>
+            <li class="widget widget-colocation">
+            	<h3>Colocation, at it's Best</h3>
+                <img src="images/datacenter_img.jpg" width="179" height="108" alt="">
+                <p>Yellow Fiber Networks offers colocation in various carrier neutral Tier III datacenters around the world.</p>
+                <p>Our network allows us to connect virtually any building located in this region back to the datacenter, where the IT equipment belongs.</p>
+                <p class="more"><a href="#">read more &gt;&gt;</a></p>
+            </li>
+            <li class="widget widget-join">
+            	<h3>Join Our National Network</h3>
+                <img src="images/network_map.png" width="176" height="83" alt="">
+                <p>Join our Layer 2 Virual Ciruit Transport Network and get access to a robust Transport service and expand your network presence...</p>
+                <p class="more"><a href="#">read more &gt;&gt;</a></p>
+            </li>
+        </ul>
+    </div><!-- END #content -->
+</div><!-- END #wrapper -->
+
+<div id="footer">
+    <div class="foot-nav">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Colocation</a></li>
+            <li><a href="#">Network</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">About Us</a></li>
+        </ul>
+    </div>
+    <p class="copyright">&copy; 2011 Yellow Fiber Networks. All Right Reserved. <a href="#">Legal</a> | <a href="#">TOS</a></p>
+</div><!-- END #footer -->
+
+</body>
+</html>
+

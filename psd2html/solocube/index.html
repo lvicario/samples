@@ -1,0 +1,419 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Solocube</title>
+<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<link rel="stylesheet" media="all" href=""/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- Adding "maximum-scale=1" fixes the Mobile Safari auto-zoom bug: http://filamentgroup.com/examples/iosScaleBug/ -->
+<link href="css/global.css" type="text/css" rel="stylesheet" media="screen" />
+<link href="favicon.ico" rel="shorcut icon" />
+<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="js/my.js"></script>
+<script type="text/javascript" src="js/jquery.cycle.all.js"></script>
+<script type="text/javascript">
+	$('#slider').cycle({ 
+		fx:     'scrollHorz', 
+		speed:  500, 
+		//speed:  1500, 
+		timeout: 10000000, 
+		//timeout: 5000, 
+		next:   '#next', 
+		prev:   '#prev',
+		pager:  '#nav-slider',
+        pagerAnchorBuilder: function paginate(idx, el) {
+			return '<a class="slider' + idx + '" href="#" ></a>';
+		}
+	});
+	$('#services-list').cycle({ 
+		fx:     'scrollHorz', 
+		speed:  'slow', 
+		timeout: 0, 
+		next:   '#next2', 
+		prev:   '#prev2' 
+	});
+	$('#recent-news-list').cycle({ 
+		fx:     'scrollHorz', 
+		speed:  'slow', 
+		timeout: 0, 
+		next:   '#next3', 
+		prev:   '#prev3' 
+	});
+	$('#logos-list').cycle({ 
+		fx:     'scrollHorz', 
+		speed:  'slow', 
+		timeout: 0, 
+		next:   '#next4', 
+		prev:   '#prev4' 
+	});	
+</script>
+</head>
+<body>
+	<ul class="MobileMenu">
+
+	</ul>
+	<div id="header-wrapper">
+		<div class="header-top-wrapper">
+			<div class="header-top">
+				<a href="index.html" class="logo left"></a>
+                <a href="#" class="naviToggle">Navigation</a>
+				<ul class="right">
+					<li><a href="about.html">About</a></li>
+					<li>
+						<a href="services.html">Services</a>
+						<ul>
+							<li><a href="#">Web</a></li>							
+							<li><a href="#">Print</a></li>
+							<li><a href="#">Branding</a></li>
+							<li><a href="#">Internet Marketing</a></li>
+							<li><a href="#">Web Applications</a></li>
+							<li><a href="#">Mobile Applications</a></li>
+						</ul>
+					</li>
+					<li><a href="portfolio.html">Portfolio</a></li>
+					<li><a href="news.html">News</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="banner">
+			<div id="slider">
+				<div class="banner-content">
+					<img src="images/pic-banner.png" class="pic-banner" alt="" />
+					<div class="banner-content-text">
+						<h1 class="left"><span>Professional Web Design</span><br />for your business ideas</h1>
+						<img src="images/logo-html5.png" class="logos right" alt="" />
+						<img src="images/logo-css3.png" class="logos right" alt="" />
+						<div class="clr"></div>
+						<p>We are a creative agency based in Vancouver, BC with an international reach. We create custom Websites, user interfaces, web applications &amp;  print design solutions to make your business grow.</p>
+						<a href="#" class="learn-more right">Learn More</a>
+						<div class="clr"></div>
+						<div class="banner-content-border"></div>
+					</div>				
+				</div>
+				<div class="banner-content">					
+					<div class="banner-content-text banner-content-text2">
+						<h1 class="left"><span>Responsive</span> Web Design</h1>					
+						<div class="clr"></div>
+						<p>Nowadays, marketing your website on mobile devices such as the iPad, iPhone and Android smartphones is a must. Mobile searches are increasing every year and with a solid Website presence on smartphones you are bound to attend to your audience more efficiently.</p>
+						<a href="#" class="banner-learn right">Learn More</a>						
+						<div class="clr"></div>
+						<div class="banner-content-border"></div>						
+					</div>
+					<img src="images/pic-banner2.png" class="pic-banner2" alt="" />
+				</div>
+				<div class="banner-content">					
+					<div class="banner-content-text banner-content-text3">
+						<h1 class="left"><span>Internet Marketing</span> Strategies</h1>						
+						<div class="clr"></div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor turpis nec erat viverra tincidunt. Vestibulum sagittis urna ut elit vestibulum porta. Cras eleifend leo ante, nec rhoncus quam. Phasellus urna orci, dictum et pharetra adipis...</p>
+						<ul class="left">
+							<li>Promote your Website</li>
+							<li>Optimize Content Writing</li>
+							<li>Blog &amp; PR Writing</li>
+						</ul>
+						<ul class="left">
+							<li>Link Campaigns</li>
+							<li>Mobile Marketing</li>
+							<li>Paid Search Marketing</li>
+						</ul>
+						<div class="clr"></div>
+						
+					</div>
+				</div>
+				<div class="banner-content">					
+					<div class="banner-content-text banner-content-text4">
+						<h1 class="left"><span>Print</span> Design that Works</h1>						
+						<div class="clr"></div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac purus nec diam laoreet sollicitudin. Fusce ullamcorper imperdiet turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac purus nec diam laoreet sollicitudin. Fusce ullamcorper imperdiet turpis.</p>
+						<ul class="left">
+							<li>Business Cards</li>
+							<li>Packaging</li>
+						</ul>
+						<ul class="mid-list left">
+							<li>Catalogues &amp; Brochures</li>
+							<li>Business Folders &amp; Letterheads</li>
+						</ul>
+						<ul class="right-list left">
+							<li>Trade Show Booths</li>
+							<li>Annual Reports</li>
+						</ul>
+						<div class="clr"></div>
+					</div>
+				</div>
+				<div class="banner-content">					
+					<div class="banner-content-text banner-content-text5">
+						<h1 class="left"><span>Branding</span> your Reputation</h1>
+						<div class="clr"></div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac purus nec diam laoreet sollicitudin. Fusce ullamcorper imperdiet turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac purus nec diam laoreet sollicitudin. Fusce ullamcorper imperdiet turpis.</p>
+											
+						<a href="#" class="banner-learn right">Learn More</a>
+					</div>
+				</div>				
+			</div>
+			<a href="#" id="prev" class="banner-left-arrow"></a>
+			<a href="#" id="next" class="banner-right-arrow"></a>
+			<div id="nav-slider" class="nav-slider-bullet"></div>
+		</div>		
+	</div>
+	<div id="sub-header-wrapper">
+		<div class="sub-header">
+			<h2 class="left">Solocube is a <span class="green">digital strategy</span> and full service agency</h2>
+			<div class="social-media right">
+				<a href="#" class="facebook left"></a>
+				<a href="#" class="gplus left"></a>
+				<a href="#" class="twitter left"></a>
+				<a href="#" class="linkedin left"></a>	
+			</div>
+		</div>
+	</div>
+	<div id="content-wrapper">
+		<div class="content">
+			<h2 class="left">Our <span class="green">Services</span></h2>
+			<div class="services-arrow right">
+				<a href="#" id="prev2" class="services-left-arrow left"></a>
+				<a href="#" id="next2" class="services-right-arrow left"></a>
+			</div>
+			<div class="clr"></div>
+			<div id="services-list">
+				<div class="services-list">
+					<div class="services-item left">
+						<img src="images/services1.png" alt="" />
+						<h3><a href="#">Web Design &amp; Development</a></h3>
+						<p>With expertise in identity, print, packaging, interactivity and environments, the Marcfolio studio crafts initiatives that integrate multiple disciplines.</p>						
+						<a href="#" class="right">Learn More</a>
+					</div>				
+					<div class="services-item left">
+						<img src="images/services2.png" alt="" />
+						<h3><a href="#">Print Design &amp; Branding</a></h3>
+						<p>With expertise in identity, print, packaging, interactivity and environments, the Marcfolio studio crafts initiatives that integrate multiple disciplines.</p>
+						<a href="#" class="right">Learn More</a>
+					</div>
+					<div class="services-item services-item-right left">
+						<img src="images/services3.png" alt="" />
+						<h3><a href="#">Internet Marketing</a></h3>
+						<p>With expertise in identity, print, packaging, interactivity and environments, the Marcfolio studio crafts initiatives that integrate multiple disciplines.</p>
+						<a href="#" class="right">Learn More</a>
+					</div>
+					<div class="clr"></div>
+				</div>
+				<div class="services-list">
+					<div class="services-item left">
+						<img src="images/services1.png" alt="" />
+						<h3><a href="#">Web Design &amp; Development 2</a></h3>
+						<p>With expertise in identity, print, packaging, interactivity and environments, the Marcfolio studio crafts initiatives that integrate multiple disciplines.</p>
+						<a href="#" class="right">Learn More</a>
+					</div>				
+					<div class="services-item left">
+						<img src="images/services2.png" alt="" />
+						<h3><a href="#">Print Design &amp; Branding 2</a></h3>
+						<p>With expertise in identity, print, packaging, interactivity and environments, the Marcfolio studio crafts initiatives that integrate multiple disciplines.</p>
+						<a href="#" class="right">Learn More</a>
+					</div>
+					<div class="services-item services-item-right left">
+						<img src="images/services3.png" alt="" />
+						<h3><a href="#">Internet Marketing 2</a></h3>
+						<p>With expertise in identity, print, packaging, interactivity and environments, the Marcfolio studio crafts initiatives that integrate multiple disciplines.</p>
+						<a href="#" class="right">Learn More</a>
+					</div>
+					<div class="clr"></div>
+				</div>
+			</div>
+			<h2 class="left">Recent <span class="green">News</span></h2>
+			<div class="news-arrow right">
+				<a href="#" id="prev3" class="news-left-arrow left"></a>
+				<a href="#" id="next3" class="news-right-arrow left"></a>
+			</div>
+			<div class="clr"></div>
+			<div id="recent-news-list">
+				<div class="recent-news">
+					<div class="recent-news-item left">
+						<img src="images/news1.png" alt="" />
+						<h5><a href="#">Independence Means Greater Innovation and Superior Advice at DW Financial Solutions</a></h5>
+						<p>DeSchutter Witmeyer Financial Solutions (DW Financial Solutions), a leading independent wealth management partnership located in Vancouver, British Columbia, a leading independent wealth management partnership located in Vancouver, British Columbia,</p>
+						<a href="#" class="right">Read This Article</a>
+					</div>
+					<div class="recent-news-item left">
+						<img src="images/news2.png" alt="" />
+						<h5><a href="#">Brand &amp; Website Redesign for West Pacific Coatings</a></h5>
+						<p>DeSchutter Witmeyer Financial Solutions (DW Financial Solutions), a leading independent wealth management partnership located in Vancouver, British Columbia, a leading independent wealth management partnership located in Vancouver, British Columbia,</p>
+						<a href="#" class="right">Read This Article</a>
+					</div>
+					<div class="recent-news-item recent-news-item-right left">
+						<img src="images/news3.png" alt="" />
+						<h5><a href="#">Acumen Law Website Gets a Complete Redesign</a></h5>
+						<p>DeSchutter Witmeyer Financial Solutions (DW Financial Solutions), a leading independent wealth management partnership located in Vancouver, British Columbia, a leading independent wealth management partnership located in Vancouver, British Columbia,</p>
+						<a href="#" class="right">Read This Article</a>
+					</div>
+					<div class="clr"></div>
+				</div>
+				<div class="recent-news">
+					<div class="recent-news-item left">
+						<img src="images/news1.png" alt="" />
+						<h5><a href="#">Independence Means Greater Innovation and Superior Advice at DW Financial Solutions 2</a></h5>
+						<p>DeSchutter Witmeyer Financial Solutions (DW Financial Solutions), a leading independent wealth management partnership located in Vancouver, British Columbia, a leading independent wealth management partnership located in Vancouver, British Columbia,</p>
+						<a href="#" class="right">Read This Article</a>
+					</div>
+					<div class="recent-news-item left">
+						<img src="images/news2.png" alt="" />
+						<h5><a href="#">Brand &amp; Website Redesign for West Pacific Coatings 2</a></h5>
+						<p>DeSchutter Witmeyer Financial Solutions (DW Financial Solutions), a leading independent wealth management partnership located in Vancouver, British Columbia, a leading independent wealth management partnership located in Vancouver, British Columbia,</p>
+						<a href="#" class="right">Read This Article</a>
+					</div>
+					<div class="recent-news-item recent-news-item-right left">
+						<img src="images/news3.png" alt="" />
+						<h5><a href="#">Acumen Law Website Gets a Complete Redesign 2</a></h5>
+						<p>DeSchutter Witmeyer Financial Solutions (DW Financial Solutions), a leading independent wealth management partnership located in Vancouver, British Columbia, a leading independent wealth management partnership located in Vancouver, British Columbia,</p>
+						<a href="#" class="right">Read This Article</a>
+					</div>
+					<div class="clr"></div>
+				</div>
+			</div>				
+			<h2>About <span class="green">Solocube</span></h2>
+			<div class="about-solocube">
+				<div class="about-item left">
+					<img src="images/icon-why.png" class="left" alt="" />
+					<div class="details left">
+						<h4><a href="#">Why Solocube?</a></h4>
+						<p>At Solocube we aim to serve our clients with an engaging design presence that speaks their business at one glance.</p>
+					</div>
+				</div>
+				<div class="about-item left">
+					<img src="images/icon-service.png" class="left" alt="" />
+					<div class="details left">
+						<h4><a href="#">Full Service Agency</a></h4>
+						<p>Solocube is a Vancouver, BC based full service agency, specializing in web design &amp; development, print design &amp; Internet marketing. We service to clients locally and throughout the world.</p>
+					</div>
+				</div>
+				<div class="about-item about-item-right left">
+					<img src="images/icon-simple.png" class="left" alt="" />
+					<div class="details left">
+						<h4><a href="#">Keeping it Simple</a></h4>
+						<p>Our goals are simple, to visualize, execute and captivate! We always strive to surpass our client's expectations, help them communicate their business ideas effectively to their target audience via an effective web branding and internet marketing campaign.</p>
+					</div>
+				</div>
+				<div class="clr"></div>
+			</div>
+			<div class="clients">
+				<div class="client-label left">
+					<h4>Some of our Clients</h4>
+					<a href="#">full client list</a>
+				</div>
+				<div class="logos left">
+					<a href="#" id="prev4" class="logos-arrow-left"></a>
+					<div id="logos-list">
+						<div class="logos-group">
+							<img src="images/logo-scott.png" class="left" alt="" />
+							<img src="images/logo-dominion.png" class="left" alt="" />
+							<img src="images/logo-ssdg.png" class="left" alt="" />
+							<img src="images/logo-polytan.png" class="left" alt="" />
+						</div>
+						<div class="logos-group">
+							<img src="images/logo-scott.png" class="left" alt="" />
+							<img src="images/logo-dominion.png" class="left" alt="" />
+							<img src="images/logo-ssdg.png" class="left" alt="" />
+							<img src="images/logo-polytan.png" class="left" alt="" />
+						</div>
+					</div>
+					<a href="#" id="next4" class="logos-arrow-right"></a>
+				</div>
+				<div class="clr"></div>
+			</div>
+		</div>
+	</div>
+	<div id="footer-wrapper">
+		<div class="footer-top">
+			<div class="footer-box left">
+				<h2>Our Services</h2>
+				<ul>
+					<li><a href="#">Web Design</a></li>
+					<li><a href="#">Web &amp; Mobile Development</a></li>
+					<li><a href="#">eCommerce Websites</a></li>
+					<li><a href="#">Website Maintenance &amp; Support</a></li>
+					<li><a href="#">Consultation</a></li>
+				</ul>
+				<ul>
+					<li><a href="#">Internet Marketing</a></li>
+					<li><a href="#">SEO - Search Engine Optimization</a></li>
+					<li><a href="#">Email Marketing</a></li>
+					<li><a href="#">Website Promotion</a></li>
+				</ul>
+				<ul>
+					<li><a href="#">Print Design</a></li>
+					<li><a href="#">Logo Design &amp; Branding</a></li>
+					<li><a href="#">Business Card Design</a></li>
+					<li><a href="#">Letterheard Design</a></li>
+					<li><a href="#">Packaging Design</a></li>
+				</ul>
+			</div>
+			<div class="footer-box footer-box-mid left">
+				<h2>Latest From Blog</h2>
+				<div class="blog-item">
+					<h3><a href="#">Blog Post Name Goes in Here</a></h3>
+					<p class="date">November 15, 2011 &#149; 120 Comments</p>
+					<p>Here we go again with another post that is great.</p>
+				</div>
+				<div class="blog-item">
+					<h3><a href="#">Blog Post Name Goes in Here</a></h3>
+					<p class="date">November 15, 2011 &#149; 120 Comments</p>
+					<p>Here we go again with another post that is great.</p>
+				</div>
+				<div class="blog-item">
+					<h3><a href="#">Blog Post Name Goes in Here</a></h3>
+					<p class="date">November 15, 2011 &#149; 120 Comments</p>
+					<p>Here we go again with another post that is great.</p>
+				</div>
+			</div>
+			<div class="footer-box footer-box-last right">
+				<h2>Contact</h2>
+				<div class="contact-item">
+					<div>
+						<img src="images/icon-phone.png" alt="" /> 604 210 9480  |  <span class="number">1 800 923 9293</span>
+					</div>
+					<div class="clr"></div>
+					<div>
+						<img src="images/icon-mail.png" alt="" /> <a href="#">web@solocube.com</a>
+					</div>
+				</div>
+				<div class="contact-item">
+					<h4>Subscribe</h4>
+					<p>Subscribe to our newsletter to receive our latest news and blog posts.</p>
+					<input type="text" class="field" name="email" value="Email Address" />
+					<input type="submit" class="submit" name="submit" value="" />					
+				</div>
+				<div class="contact-item">
+					<h4 class="connect left">Connect</h4>
+					<div class="social-media-footer left">
+						<a href="#" class="facebook left"></a>
+						<a href="#" class="gplus left"></a>
+						<a href="#" class="twitter left"></a>
+						<a href="#" class="linkedin left"></a>					
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bot-wrapper">
+			<div class="footer-bot">
+				<ul class="left">
+					<li><a href="#">About</a></li>
+					<li>|</li>
+					<li><a href="#">Services</a></li>
+					<li>|</li>
+					<li><a href="#">Portfolio</a></li>
+					<li>|</li>
+					<li><a href="#">News</a></li>
+					<li>|</li>
+					<li><a href="#">Blog</a></li>
+					<li>|</li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+				<a href="#" class="logo-footer right"></a>
+				<div class="clr"></div>
+				<p>Copyright &copy; 2003 - 2012 Solocube Creative Group. All rights reserved. Vancouver, BC</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

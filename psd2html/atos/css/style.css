@@ -1,0 +1,224 @@
+
+/* CSS RESETS ================================= */
+html, body, div, span, applet, object, iframe,  h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin: 0; padding: 0; border: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline;}
+table						{border-collapse: collapse; border-spacing: 0;}
+caption, th, td				{text-align: left; font-weight: normal;}
+table, td, th				{vertical-align: middle;}
+a img						{border:none;}
+
+@font-face {
+	font-family: 'BOOKOS';
+	src: url('../type/BOOKOS.eot');
+	src: local('☺'), url('../type/BOOKOS.woff') format('woff'), url('../type/BOOKOS.ttf') format('truetype'), url('../type/BOOKOS.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'BOOKOSB';
+	src: url('../type/BOOKOSB.eot');
+	src: local('☺'), url('../type/BOOKOSB.woff') format('woff'), url('../type/BOOKOSB.ttf') format('truetype'), url('../type/BOOKOSB.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* GLOBAL STYLE ================================ */
+body						{font: normal 11px Verdana, Geneva, sans-serif; line-height: normal; text-decoration: none; text-align: center; color: #666; background: #f2f2f2; margin: 0; padding: 0;}
+a							{text-decoration: undeline; color: #666; outline: none;}
+a:hover						{text-decoration: none;}
+h1, h2, h3, h4, h5, h6, p,
+ul, table					{margin: 13px 0;}
+h1							{font-size: 24px;}
+h2							{font-size: 16px; font-weight: bold; color: #0066ab;}
+h3							{font-size: 14px;}
+h4, h5, h6					{font-size: 12px;}
+strong						{font-weight: bold;}
+em							{font-style: italic;}
+small						{font-size: 10px;}
+input[type="text"]			{font-family: Verdana, Geneva, sans-serif;}
+/*hr							{clear: both; height: 1px; margin: 0 0 1em; color: #d3d3d3; background-color: #d3d3d3;  border: 0 none;}*/
+
+/* UTILITIES =================================== */
+.clearfix:after					{visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0;}
+* html .clearfix				{zoom: 1;} /* IE6 */
+*+html .clearfix				{zoom: 1;} /* IE7 */
+
+.clear							{clear: both;}
+.center							{text-align: center;}
+
+.btn a, a.btn					{display: inline-block; padding: 6px 12px 7px; background-color: #0066ab; font-size: 18px; font-weight: bold; color: #fff; text-decoration: none;}
+.btn a, a.btn					{background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.00, #00528a), color-stop(1.00, #0066ab)); background-image: -moz-linear-gradient(center top, #00528a 0%, #0066ab 100%);}
+
+/* WRAPPER ===================================== */
+#wrapper 						{width: 930px; padding: 0 30px 1px; background-color: #fff; text-align: left; margin: 0 auto;}
+
+/* HEADER ====================================== */
+#header							{height: 130px; position: relative;}
+#header h1						{margin: 0;}
+#header h1 a					{float: left; display: inline; width: 274px; height: 58px; margin: 49px 0 0; background: url(../images/logo.png) no-repeat; text-indent: -9999px;}
+#header .slogan					{float: right; display: inline; width: 376px; height: 16px; margin: 51px 0 0; background: url(../images/slogan.png) no-repeat; text-indent: -9999px;}
+#header .log					{margin: 0; position: absolute; top: 0; right: 0;}
+#header .log span				{}
+#header .log a					{display: inline-block; margin-left: 5px; padding: 3px 7px; background-color: #a626aa; color: #fff; vertical-align: super; text-transform: uppercase; text-decoration: none;}
+
+/* MIAN NAV */
+#mainnav						{margin: 0 0 0 -2px; list-style-type: none;}
+#mainnav li						{display: inline;}
+#mainnav li a					{float: left; display: inline; width: 184px; padding: 10px 0; text-align: center; margin: 0 0 6px 2px; background: #66a3c7; color: #f4f4f4; font-weight: bold; text-decoration: none; text-transform: uppercase;}
+#mainnav li a:hover,
+#mainnav li.current a			{background: url(../images/mainnav_bg.png) repeat-x;}
+
+/* LOGIN BOX */
+.login-box									{text-align: center;}
+.login-box .inner							{width: 399px; padding: 1px 5px 1px 20px; margin: 6px auto 0; background-color: #66a3c7; color: #1f1f1f; text-align: left;}
+.login-box h2								{font-size: 28px; color: #1f1f1f;}
+.login-box p								{letter-spacing: -0.5px;}
+.login-box p.fields							{}
+.login-box p.fields input[type="text"]		{width: 130px; padding: 4px 5px; border: none; color: #bfbfbf; font-size: 14px;}
+.login-box p.fields input[type="submit"]	{display: inline-block; width: 96px; height: 26px; border: none; background: url(../images/btn_login.png) no-repeat; text-indent: -9999px; cursor: pointer;}
+.login-box p.options						{}
+.login-box p.options label					{margin-right: 37px;}
+.login-box p.options label input			{vertical-align: middle;}
+.login-box p.options a						{color: #1f1f1f;}
+.login-box p.note							{margin: 7px 0 0; color: #6699cc;}
+
+/* MAIN =========================================== */
+.main							{clear: both; padding: 1px 0; margin: 0 0 25px;}
+.main ul						{margin-left: 35px;}
+.main .two-column				{-moz-column-count: 2; -webkit-column-count: 2; -moz-column-gap: 60px; -webkit-column-gap: 60px; column-count: 2; column-gap: 60px;}
+.main p.intro					{margin: 0; padding: 10px 0 12px; border-bottom: 2px solid #bfd9e8; font-size: 21px;}
+.main p.intro span				{font-size: 26px; text-transform: uppercase; color: #0066ab; font-weight: bold; margin-right: 15px;}
+.main p.find-out,
+.main p.find-out a				{text-align: center; color: #0066a1; font-size: 14px; font-weight: bold;}
+.main .btn-select-waves			{margin-top: 50px; text-align: right;}
+
+.main .col-one					{float: left; display: inline; width: 435px;}
+.main .col-two					{float: right; display: inline; width: 435px;}
+
+/* FAQ */
+.main ul.faqs					{margin: 0; list-style-type: none;}
+.main ul.faqs li				{margin-bottom: 15px; font-size: 13px; line-height: 14px;}
+.main ul.faqs li a				{}
+.main ul.faqs li.selected a		{font-weight: bold; text-decoration: none; cursor: text;}
+.main .answer					{margin-bottom: 65px;}
+.main .additional-info			{clear: both; font-size: 10px;}
+.idTabs							{}
+.idTabs ul						{float: left; display: inline; width: 435px; margin: 0; list-style-type: none;}
+.idTabs ul li					{margin-bottom: 15px; font-size: 13px; line-height: 14px;}
+.idTabs ul li a					{}
+.idTabs ul li a.selected		{font-weight: bold; text-decoration: none; cursor: text;}
+.idTabs .items					{float: right; display: inline; width: 435px;}
+.idTabs .items>div				{display:none;}
+.idTabs .items>div p			{margin-top: 0;}
+.idTabs .items .additional-info	{clear: both; display: block; margin-top: 60px; font-size: 10px;}
+
+.main .schedule					{padding-bottom: 40px;}
+.main .schedule h3				{font-size: 11px; font-weight: bold; color: #0066ab;}
+.main .schedule p				{margin: 0;}
+.main .schedule p strong		{display: inline-block; width: 95px;}
+
+/* Wave Booking */
+.main-booking									{}
+.main-booking h2								{font-size: 20px;}
+.main-booking .calendar							{margin: 5px 0 0 -5px;}
+.main-booking .calendar li						{float: left; display: inline;}
+.main-booking .calendar li a					{float: left; display: inline; width: 128px; height: 107px; margin: 0 0 5px 5px; background-color: #a4cce5; color: #0066a1; text-align: center; text-decoration: none;}
+.main-booking .calendar li a h3					{margin: 14px 0 0; font-size: 18px; font-weight: normal; text-transform: uppercase; font-family: 'BOOKOSB';}
+.main-booking .calendar li a p.date				{margin: 9px 0 0; font-family: 'BOOKOS';}
+.main-booking .calendar li a p.date span		{padding: 2px 0;}
+.main-booking .calendar li a p.date span strong	{font-weight: normal; font-family: 'BOOKOSB';}
+.main-booking .calendar li a p.game-name		{margin: 4px 0 0; font-size: 12px; font-family: 'BOOKOSB';}
+.main-booking .calendar li a:hover				{background-color: #005792; color: #ffffff;}
+.main-booking .calendar li.medalled a			{background-color: #d4e5f0; color: #999;}
+.main-booking .calendar li.medalled a img		{margin-top: 10px;}
+.main-booking .col-one ul						{margin-left: 0; padding-right: 70px; list-style-type: none;}
+.main-booking .col-one ul li					{margin-bottom: 15px; color: #333;}
+.main-booking .col-one ul li strong span		{color: #0066a1; font-size: 14px;}
+.main-booking .col-two							{width: 445px; font-weight: bold; color: #333;}
+.main-booking .col-two h2						{margin-bottom: 0;}
+.main-booking .col-two ul						{margin: 0; padding: 15px; background-color: #66a3c7; list-style-type: none; overflow: hidden; position: relative;}
+.main-booking .col-two ul li					{float: left; display: inline; width: 128px; height: 107px; margin-left: 15px; background-color: #b3d2e4; color: #333; text-align: center;}
+.main-booking .col-two ul li:first-child		{margin-left: 0;}
+.main-booking .col-two ul li .icon				{margin: -2px 0 10px;}
+.main-booking .col-two ul li p					{margin: 0 0 0; font-size: 16px;}
+.main-booking .col-two ul li p .num				{display: block; font-size: 24px;}
+.main-booking .col-two ul li p .num .suffix		{font-size: 13px; vertical-align: top;}
+.main-booking .col-two ul li p .txt				{text-transform: uppercase;}
+.main-booking .col-two ul li .tick				{margin-top: 7px;}
+.main-booking .col-two ul li.selected			{background-color: #006eab; box-shadow: inset 0 0 15px #00507d; color: #fff;}
+.main-booking .col-two ul li.selected .icon		{margin-bottom: 8px;}
+.main-booking .col-two ul li.selected .num		{font-size: 17px;}
+.main-booking .col-two ul li.selected .txt		{font-size: 17px; text-transform: none;}
+.main-booking .col-two .book-now				{margin: 0;}
+.main-booking .col-two .book-now span			{display: inline-block; margin-top: 10px;}
+.main-booking .col-two .book-now .btn			{float: right; display: inline; padding: 6px 30px 6px; background: #66a3c7;}
+.main-booking .col-two .book-now .active		{background-color: #0066ab; background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.00, #00528a), color-stop(1.00, #0066ab)); background-image: -moz-linear-gradient(center top, #00528a 0%, #0066ab 100%);}
+/* Popup */
+.popup										{width: 557px; padding: 25px 25px; text-align: center; background-color: #66a3c7; color: #000; font-size: 14px; line-height: 18px;}
+.popup h2									{color: #000; font-size: 20px; text-transform: uppercase;}
+.popup p									{margin-top: 0; padding: 0 20px;}
+
+/* Registration Form */
+.main-reg									{}
+.main-reg .completion-bar					{margin: 5px 0; text-align: right; font-size: 13px;}
+.main-reg .completion-bar img				{vertical-align: middle;}
+.main-reg .col-one, .main-reg .col-two		{width: 405px;}
+.main-reg form								{padding: 20px 20px; background: #b2d1e3 url(../images/bg_dassed_vertical.png) repeat-y center top; color: #333;}
+.main-reg h2								{padding-left: 20px; font-size: 21.5px;}
+.main-reg h2 .txt1							{color: #333;}
+.main-reg h2 .txt2							{color: #333;}
+.main-reg h2 .txt3							{font-size: 19px; font-weight: normal;}
+.main-reg fieldset							{margin-bottom: 30px; margin-right: -16px;}
+.main-reg fieldset.companion-travel			{margin-top: 90px;}
+.main-reg fieldset legend					{float: left; display: block; margin-bottom: 10px; font-size: 16px; font-weight: bold; color: #0066ab;}
+.main-reg fieldset label					{}
+.main-reg fieldset label .txt				{float: left; clear: left; width: 180px; font-size: 13px;}
+.main-reg fieldset label.wider .txt			{width: 255px;}
+.main-reg fieldset label input[type="text"],
+.main-reg fieldset label select,
+.main-reg fieldset label textarea			{float: left; display: inline; width: 214px; margin-bottom: 4px; padding: 3px; border: 1px solid #0066a1; font-size: 11px; color: #333; font-family: Verdana, Geneva, sans-serif;}
+.main-reg fieldset label input[type="text"]	{}
+.main-reg fieldset label select				{width: 222px;}
+.main-reg fieldset label textarea			{}
+.main-reg fieldset p						{margin: 0;}
+.main-reg fieldset p .txt					{float: left; clear: left; width: 180px; font-size: 13px;}
+.main-reg fieldset p.wider .txt				{width: 255px;}
+.main-reg fieldset p em						{float: left; display: inline; margin: 0 20px 13px 0; line-height: 25px; font-style: normal;}
+.main-reg form small						{clear: both; display: block; margin-top: 13px;}
+.main-reg p.btns							{margin-top: 60px; text-align: right;}
+.main-reg p.btns a							{color: #666; font-size: 15px;}
+.main-reg p.btns input						{display: inline-block; width: 110px; height: 30px; margin-right: 3px; margin-left: 62px; border: none; background: url(../images/btn_save.png) no-repeat; text-indent: -9999px; cursor: pointer;}
+/* Date Picker */
+.main-reg fieldset label.date-picker		{margin-right: -16px;}
+.embed + img								{float: left; display: inline; cursor: pointer; position: relative; left: -19px; top: 4px; }
+img + img									{display: none;}
+/* calendar */
+.datepick									{width: 220px !important;}
+.datepick-month								{width: 100% !important;}
+.datepick-month-header,
+.datepick-month-header select,
+.datepick-month-header input				{height: 17px !important;}
+.datepick-month-header select,
+.datepick-month-header input				{font-size: 11px;}
+
+
+
+/* DROPDOWN CONENT ====================================== */
+.dropdown									{width: 350px; margin: 147px 0 0 115px; padding: 7px; text-align: left; visibility: hidden; position:absolute; z-index: 200;}
+.dropdown .arrow							{display: block; width: 9px; height: 14px; background: url(../images/dropdown_arrow_left.png)  no-repeat; text-indent: -9999px; position: absolute; top: 50px; left: 0;}
+.dropdown .inner							{padding: 1px 15px; background-color: #fff; border: 2px solid #a4c2d5; border-radius: 6px;}
+.dropdown .inner h3							{font-size: 17px; color: #0066ab; font-weight: bold;}
+.dropdown .inner ul							{margin-left: 13px;}
+#opt-dropdown-5, #opt-dropdown-6,
+#opt-dropdown-7, #opt-dropdown-12,
+#opt-dropdown-13, #opt-dropdown-14			{margin-left: -116px;}
+#opt-dropdown-5 .arrow,
+#opt-dropdown-6 .arrow,
+#opt-dropdown-7 .arrow,
+#opt-dropdown-12 .arrow,
+#opt-dropdown-13 .arrow,
+#opt-dropdown-14 .arrow						{background-image: url(../images/dropdown_arrow_right.png); left: auto; right: 0;}
+
+
+
+.copyright						{clear: both; font-size: 10px;}
+

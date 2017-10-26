@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>Get Involved</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+</head>
+<body class="involve">
+
+	<header class="header container">
+		<img src="images/logo_gmos.png" height="201" width="248" alt="" class="logo-gmos">
+		<img src="images/logo_natures_path.png" height="180" width="222" alt="" class="logo-np">
+		<ul class="social">
+			<li class="facebook"><a href="#">Facebook</a></li>
+			<li class="twitter"><a href="#">Twitter</a></li>
+			<li class="youtube"><a href="#">Youtube</a></li>
+			<li class="pinterest"><a href="#">Pinterest</a></li>
+		</ul>
+		<nav>
+			<ul>
+				<li><a href="#">Get the Magazine</a></li>
+				<li><a href="#">Do you know GMOS?</a></li>
+				<li><a href="#">Ask the Experts</a></li>
+				<li class="current-menu-item"><a href="#">Get Involved</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="container">
+		<section class="main">
+			<div class="col-one">
+				<h1>Get involved in the <span class="highlight">GMO</span> conversation</h1>
+				<p>Continent-wide, people are making an effort to know more about GMOs. There are political movements, documentaries, information sharing,certifications, and more. The more you know about GMOs, the more you can munch and crunch smartly. Check out what’s going on in your community.</p>
+			</div>
+			<div class="col-two">
+				<div id="container">
+					<div class="item w176"><a href="#"><img src="images/tile/tile_logo_food_chemical.jpg" height="81" width="176" alt=""></a></div>
+					<div class="item w278"><a href="#"><img src="images/tile/tile_logo_gmo_omg.jpg" height="409" width="278" alt=""></a></div>
+					<div class="item w188"><a href="#"><img src="images/tile/tile_logo_i_522.jpg" height="220" width="188" alt=""></a></div>
+					<div class="item w176"><a href="#"><img src="images/tile/tile_logo_gmwatch.jpg" height="150" width="176" alt=""></a></div>
+					<div class="item w176"><a href="#"><img src="images/tile/tile_logo_right_to_know.jpg" height="172" width="176" alt=""></a></div>
+					<div class="item w188"><a href="#"><img src="images/tile/tile_logo_cornucopia.jpg" height="167" width="188" alt=""></a></div>
+					<div class="item w138"><a href="#"><img src="images/tile/tile_logo_natures_path.jpg" height="101" width="138" alt=""></a></div>
+					<div class="item w316"><a href="#"><img src="images/tile/tile_logo_just_lable_it.jpg" height="101" width="316" alt=""></a></div>
+					<div class="item w188"><a href="#"><img src="images/tile/tile_logo_non_gmo_project.jpg" height="126" width="188" alt=""></a></div>
+					<div class="item w256"><a href="#"><img src="images/tile/tile_logo_prevention.jpg" height="57" width="256" alt=""></a></div>
+					<div class="item w110"><a href="#"><img src="images/tile/tile_logo_gmo_inside.jpg" height="181" width="110" alt=""></a></div>
+					<div class="item w276"><a href="#"><img src="images/tile/tile_logo_earthopensource.jpg" height="51" width="276" alt=""></a></div>
+					<div class="item w256"><a href="#"><img src="images/tile/tile_logo_food_democracy.jpg" height="121" width="256" alt=""></a></div>
+					<div class="item w108"><a href="#"><img src="images/tile/tile_logo_food_safety.jpg" height="127" width="108" alt=""></a></div>
+					<div class="item w165"><a href="#"><img src="images/tile/tile_logo_shopping_guide.jpg" height="127" width="165" alt=""></a></div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/vendor/jquery-2.0.3.min.js"><\/script>')</script>
+	<script src="js/masonry.pkgd.min.js"></script>
+	<script src="js/main.js"></script>
+
+	<script>
+		jQuery(document).ready(function() {
+			var $container = $('#container');
+			// initialize
+			$container.masonry({
+			  columnWidth: 188,
+			  itemSelector: '.item',
+			  gutter: 3
+			});
+			var msnry = $container.data('masonry');
+		});
+	</script>
+
+</body>
+</html>

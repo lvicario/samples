@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Login Page</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
+<!-- SLIDER -->
+<script type="text/javascript" src="js/jquery.bxSlider.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('.login-slider').bxSlider({
+			mode: 'fade',
+			auto: true,
+			pager: true,
+			controls: false,
+			pause: 4000
+		});
+	});
+</script>
+</head>
+
+<body class="login">
+
+<div id="wrapper">
+    <div id="header">
+        <h1><a href="index.htm">Vision Zeor</a></h1>
+        <div class="top-right">
+            <div class="info">
+                <p>
+                    <span class="line1"><a href="#">Contact Sysco Vision Zero</a></span>
+                    <span class="line2"><em>1-800-123-4567</em></span>
+                </p>
+                <a href="#" class="sysco"><img src="images/logo_sysco.png" width="88" height="44" alt=""></a>
+            </div>
+		</div>
+    </div><!-- END #header -->
+    <div id="content">
+    	<ul class="login-slider">
+        	<li class="i-work-safe">
+            	<p>
+                	<img src="images/sysco_login_logo_work_safe.png" width="95" height="30" alt="">
+                    <span>Occupational Safety &amp; Health</span>
+				</p>
+            </li>
+            <li class="i-green">
+            	<p>
+                	<img src="images/sysco_login_logo_green.png" width="73" height="33" alt="">
+                    <span>Environmental Safety</span>
+				</p>
+            </li>
+            <li class="i-drive-safe">
+            	<p>
+                	<img src="images/sysco_login_logo_drive_safe.png" width="105" height="33" alt="">
+                    <span>Vehicle Operation Safety</span>
+				</p>
+            </li>
+            <li class="i-secure">
+            	<p>
+                	<img src="images/sysco_login_logo_secure.png" width="81" height="33" alt="">
+                    <span>Security Crisis Management Preparedness</span>
+				</p>
+            </li>
+            <li class="i-wellness">
+            	<p>
+                	<img src="images/sysco_login_logo_wellness.png" width="103" height="33" alt="">
+                    <span>Health &amp; Wellness</span>
+				</p>
+            </li>
+        </ul>
+        <div class="access">
+        	<div class="member">
+            	<h3>Already a Member?</h3>
+                <p>Sysco Email Address: <input name="" type="text"></p>
+                <p>Password: <input name="" type="text"></p>
+                <p class="btn">
+                	<label><input name="" type="checkbox" value=""> Remember</label>
+                    <input name="" type="submit" value="Enter">
+                </p>
+                <p class="forgot"><a href="#">Forgot Username or Password?</a></p>
+            </div>
+            <div class="request">
+            	<h3>Request Access</h3>
+            	<p>The Sysco Vision Zero Website is a resource for Sysco Associates and may only be accessed using an approved Sysco Corporation Email address. If you are a Sysco Associate please click the Register button below to request access to this website. Thank you! </p>
+                <p class="btn"><a href="#">Register</a></p>
+            </div>
+        </div>
+    </div><!-- END #content -->
+</div><!-- END #wrapper -->
+
+<div id="footer">
+	<div class="inner">
+        <p>&copy; Sysco Corporation . All Rights Reserved.</p>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Contact Sysco Vision Zero</a></li>
+            <li><a href="#">Site Map</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">Sysco Work Safe</a></li>
+            <li><a href="#">Sysco Green</a></li>
+            <li><a href="#">Sysco Drive Safe</a></li>
+            <li><a href="#">Sysco Secure</a></li>
+            <li><a href="#">Sysco Wellness</a></li>
+        </ul>
+	</div>
+</div><!-- END #footer -->
+
+</body>
+</html>
+

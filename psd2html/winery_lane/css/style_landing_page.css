@@ -1,0 +1,60 @@
+
+/* CSS RESETS ================================= */
+html, body, div, span, applet, object, iframe,  h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin: 0; padding: 0; border: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline;}
+table						{border-collapse: collapse; border-spacing: 0;}
+caption, th, td				{text-align: left; font-weight: normal;}
+table, td, th				{vertical-align: middle;}
+a img						{border:none;}
+
+/* GLOBAL STYLE ================================ */
+body						{font: normal 14px/15px "Myriad Pro", Arial, sans-serif; text-decoration: none; text-align: center; color: #000; background: url(../images/bg_landing_page.jpg) no-repeat center top; margin: 0; padding: 40px 0 0;}
+a							{text-decoration: none; color: #f2b400; outline: none;}
+a:hover						{text-decoration: underline;}
+h1, h2, h3, h4, h5, h6, p,
+ul, table					{margin: 1em 0;}
+h1							{font-size: 24px;}
+h2, h3						{margin-top: 33px; font-size: 26px; font-weight: normal; text-transform: uppercase; font-family: Arial, Helvetica, sans-serif;}
+
+
+#wrapper							{width: 909px; text-align: left; margin: 0 auto; overflow: hidden; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px;}
+.col-one							{float: left; display: inline; width: 436px;}
+.col-one h1							{height: 117px; margin: 0; padding: 1px 0; background-color: rgba(255,255,255,0.80);}
+.col-one h1 a						{display: block; width: 369px; height: 86px; margin: 20px 0 0 20px; background: url(../images/logo.png) no-repeat; text-indent: -9999px;}
+.col-one .intro						{height: 132px; padding: 1px 35px; background-color: rgba(255,255,255,0.40);}
+.col-one .intro h2					{}
+.col-one .intro p					{color: #282828;}
+.col-one .login						{height: 284px; padding: 1px 35px; background-color: rgba(0,0,0,0.70); color: #fff;}
+.col-one .login h3					{}
+.col-one .login dl					{overflow: hidden;}
+.col-one .login dl dt				{clear: left; float: left; display: inline; width: 110px; text-align: right;}
+.col-one .login dl dd				{margin: 0 0 3px 125px;}
+.col-one .login input[type="text"]	{width: 200px; padding: 3px; border: 1px solid #ccc; font-size: 11px;}
+.col-one .login .btn-login			{margin: 0; text-align: right; padding-right: 24px;}
+.col-one .login .btn-login input	{border: none; background: none; font-size: 14px; font-weight: bold; text-transform: uppercase; color: #fff; cursor: pointer;}
+.col-one .login .signup				{margin-top: 50px;}
+.col-one .login .signup span		{font-size: 24px; color: #acdae9; text-transform: uppercase;}
+.col-one .login .signup a			{display: inline-block; width: 94px; height: 48px; margin-left: 30px; background: url(../images/btn_sign_up.png) no-repeat; text-indent: -9999px; vertical-align: middle;}
+.col-one .login .signup a:hover		{background-position: left bottom;}
+.col-two							{float: left; display: inline; height: 539px; background-color: #fff;}
+.col-two img						{margin-top: 25px;}
+.col-two p							{margin-top: 60px; text-align: center; font-size: 19px; color: #0b6181;}
+
+.no-rgba .col-one h1				{background-color: #bde7f5;}
+.no-rgba .col-one .intro			{background-color: #82b6b1;}
+.no-rgba .col-one .login			{background-color: #1a2723;}
+
+.col-one-only h1					{-webkit-border-top-right-radius: 10px; -moz-border-radius-topright: 10px; border-top-right-radius: 10px;}
+.col-one-only .login				{-webkit-border-bottom-right-radius: 10px; -moz-border-radius-bottomright: 10px; border-bottom-right-radius: 10px;}
+/*
+	Supersized - Fullscreen Background jQuery Plugin Stylesheet
+	Version 3.1.3 Core
+	www.buildinternet.com/project/supersized
+	
+	By Sam Dunn / One Mighty Roar (www.onemightyroar.com)
+	Released under MIT License / GPL License
+*/
+
+#supersized-loader			{position:absolute; top:50%; left:50%; z-index:10; width:60px; height:60px; margin:-30px 0 0 -30px; text-indent:-999em; background-color:#111; background:rgba(0,0,0,0.8) url(../img/progress.gif) no-repeat center center; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px;}
+#supersized					{position:fixed; left:0; top:0; overflow:hidden; z-index:-999; height:100%; width:100%;}
+#supersized img				{height:auto; width:auto; position:relative; outline:none; border:none; -ms-interpolation-mode:bicubic; image-rendering: optimizeQuality;}
+

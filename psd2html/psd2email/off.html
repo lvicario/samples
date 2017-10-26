@@ -1,0 +1,19 @@
+		
+		
+		<script type="text/javascript" charset="utf-8">
+		  $(function(){
+			$("input.file").uniform();
+		  });
+		</script>
+        <div class="package-txt package-txt-no"><span>I'm not quite ready. I have some questions</span></div>
+        <div class="fields">
+        	<p class="col-one">
+                <input type="text" value="Email Address" onfocus="if (this.value == 'Email Address') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Email Address';}" />
+                <input name="" type="file" class="file">
+                <span class="format">Accepted File formats: .zip, .psd, png, .ai <img src="images/accepted_file_format.png" width="55" height="15" alt=""></span>
+            </p>
+            <p class="col-two">
+            	<textarea name="" cols="" rows="" onblur="this.value=!this.value?'Notes':this.value;" onfocus="this.select()" onclick="this.value='';">Notes</textarea>
+                <input name="" type="image" src="images/btn_submit.png">
+            </p>
+        </div>

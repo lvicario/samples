@@ -1,0 +1,186 @@
+
+/* CSS RESETS ================================= */
+html, body, div, span, applet, object, iframe,  h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin: 0; padding: 0; border: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline;}
+table						{border-collapse: collapse; border-spacing: 0;}
+caption, th, td				{text-align: left; font-weight: normal;}
+table, td, th				{vertical-align: middle;}
+a img						{border:none;}
+
+@font-face {
+    font-family: 'TungaRegular';
+    src: url('../type/tunga-webfont.eot');
+    src: url('../type/tunga-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../type/tunga-webfont.woff') format('woff'),
+         url('../type/tunga-webfont.ttf') format('truetype'),
+         url('../type/tunga-webfont.svg#TungaRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TungaBold';
+    src: url('../type/tungab-webfont.eot');
+    src: url('../type/tungab-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../type/tungab-webfont.woff') format('woff'),
+         url('../type/tungab-webfont.ttf') format('truetype'),
+         url('../type/tungab-webfont.svg#TungaBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* GLOBAL STYLE ================================ */
+body						{font: normal 11pt Verdana, Geneva, sans-serif; line-height: normal; letter-spacing: -0.25px; text-decoration: none; text-align: center; color: #808080; background: #f4f4f4; margin: 0; padding: 0;}
+a							{text-decoration: none; outline: none; color: #1b82c4;}
+a:hover						{text-decoration: underline;}
+h1, h2, h3, h4, h5, h6, p,
+ul, table					{margin: 0 0 18px;}
+h1							{font-size: 24pt;}
+h2							{font-size: 36pt; text-transform: uppercase; font-family: 'TungaBold';}
+h3							{font-size: 30pt; text-transform: uppercase; font-family: 'TungaBold';}
+h4, h5, h6					{font-size: 24pt; font-family: 'TungaRegular';}
+strong						{font-weight: bold;}
+em							{font-style: italic;}
+hr							{clear: both; height: 2px; margin: 0 0 1em; color: #c3c3c3; background-color: #c3c3c3;  border: 0 none;}
+
+/* UTILITIES =================================== */
+.clearfix:after					{content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+.clearfix						{overflow: hidden;}
+* html .clearfix				{height: 1%;}
+
+.clear							{clear: both;}
+.center							{text-align: center;}
+
+/* MAIN STYLES ===================================== */
+#wrapper 						{width: 100%; text-align: left;}
+.inner, #content,
+#footer-nav ul					{width: 950px; margin: 0 auto; text-align: left;}
+#content						{}
+.interior						{background-color: #fff;}
+.interior #header				{background: none;}
+.interior #header .inner		{height: 159px; margin-bottom: 15px; border-bottom: 1px solid #d0d0d0;}
+
+/* HEADER ===================================== */
+#header							{background: #fbfbfb url(../images/bg_grad_header.png) repeat-x left bottom;}
+#header .inner					{padding: 1px 0; position: relative;}
+#header	h1						{margin: 0;}
+#header	h1 a					{float: left; display: inline; width: 266px; height: 118px; margin: 14px 0 27px 1px; background: url(../images/logo.png) no-repeat; text-indent: -9999px;}
+#header .slogan					{font-family: 'TungaRegular'; color: #676666; font-size: 14pt; letter-spacing: 0.50px; position: absolute; top: 127px; left: 40px;}
+#header .quote					{float: right; display: inline; width: 363px; height: 112px; padding: 1px 0; background: url(../images/bg_quote.png) no-repeat; font-family: 'TungaRegular'; text-transform: uppercase;}
+#header .quote .btn				{float: left; display: inline; width: 167px; height: 39px; margin: 12px 0 0 28px; padding: 3px 0 0 10px; background: url(../images/btn_quote.png) no-repeat; color: #fff; font-size: 18pt;}
+#header .quote span				{float: right; display: inline; width: 135px; margin: 13px 16px 0 0; color: #02984c; text-align: center; font-size: 14pt; line-height: 18px;}
+#header .quote span strong		{font-size: 18pt; font-weight: normal;}
+#header .quote span a			{color: #02984c;}
+.main-nav						{position: absolute; top: 90px; right: 0px;}
+.main-nav ul					{margin: 0; list-style-type: none;}
+.main-nav ul li					{display: inline;}
+.main-nav ul li a				{float: left; display: inline; margin-left: 13px; font-family: 'TungaRegular'; color: #ababaa; font-size: 16pt; text-transform: uppercase; letter-spacing: -0.50px; text-decoration: none; line-height: 26px;}
+.main-nav ul li a:hover			{border-bottom: 2px solid #ed1c24; color: #515050;}
+/* Slideshow */
+#slides							{width: 950px; height: 403px; margin: 0; list-style-type: none;}
+.bx-wrapper						{clear: both;}
+.bx-window						{height: auto !important;}
+.bx-captions					{width: 930px; height: 40px; padding-left: 20px; line-height: 37px; background: url(../images/slide_bg_grad_blue.png) repeat-x; font-family: 'TungaRegular'; color: #fff; font-size: 16pt; text-transform: uppercase; position: absolute; bottom: 0; left: 0; z-index: 10000;}
+
+/* CONTENT ===================================== */
+
+#main							{float: right; display: inline; width: 640px; padding-bottom: 50px; font-size: 12pt; line-height: 16pt;}
+#main h2						{margin-bottom: 10px; font-size: 30pt; color: #119854; line-height: 35pt;}
+#main p.thumb					{}
+#main p.thumb img				{}
+
+#sidebar						{float: left; display: inline; width: 265px; margin: 58px 0 0 -12px; padding-bottom: 50px; list-style-type: none;}
+#sidebar .widget				{}
+#side-nav		 				{margin: 0 0 30px; padding: 1px 0 16px 30px; background: #f6f6f6 url(../images/side_box_shadow_top.png) no-repeat 0 -15px; position: relative; -moz-box-shadow: 0px 0px 10px 0px #c2c2c2; -webkit-box-shadow: 0px 0px 10px 0px #c2c2c2; box-shadow: 0px 0px 10px 0px #c2c2c2;}
+#side-nav h3	 				{margin: 16px 0 0 0; padding-left: 18px; background: url(../images/bullet_green.png) no-repeat left center; font-size: 14pt;}
+#side-nav h3 a	 				{color: #119854;}
+#side-nav ul	 				{margin: 0 0 0 25px; list-style-type: none;}
+#side-nav ul li	 				{}
+#side-nav ul li a	 			{color: #8f8f8e; font-size: 11pt; line-height: 14pt;}
+#side-nav .bg-top				{width: 265px; height: 15px; background: url(../images/side_box_shadow_top.png) no-repeat; position: absolute; top: -15px; left: 0;}
+#side-nav .bg-bottom			{width: 265px; height: 15px; background: url(../images/side_box_shadow_bottom.png) no-repeat; position: absolute; bottom: -15px; left: 0;}
+#testimonials					{font-size: 10.5pt; line-height: 15pt;}
+#testimonials blockquote		{width: 237px; height: 144px; padding: 35px 25px 0 35px; margin: 0 0 0 -18px; background: url(../images/bg_quote_bubble_light.png) no-repeat;}
+#testimonials blockquote a		{float: right; color: #ed1c24;}
+#testimonials blockquote a:hover {text-decoration: underline;}
+#testimonials cite				{display: block; margin-left: 30px; font-style: italic; color: #aba9a9;}
+#testimonials cite span			{display: block; margin-left: 15px;}
+
+/* Homepage */
+.home-intro						{padding: 36px 15px 18px;}
+.home-intro h2					{line-height: 18px; color: #0072bc;}
+.home-intro p					{font-family: 'TungaRegular'; color: #828080; font-size: 20pt; line-height: 20px; letter-spacing: 0.50px; text-transform: uppercase;}
+.home-intro p strong			{font-size: 30pt; font-weight: normal;}
+.why-us							{padding: 36px 15px 18px;}
+.why-us h2						{line-height: 18px; color: #199b5a;}
+.why-us p						{line-height: 18pt;}
+.why-us p.intro					{margin-bottom: 30px; font-family: 'TungaRegular'; color: #676565; font-size: 24pt; letter-spacing: 0.50px; text-transform: uppercase;}
+.why-us p.two-column			{font-size: 14pt; -moz-column-count: 2; -webkit-column-count: 2; -moz-column-gap: 28px; -webkit-column-gap: 20px; column-count: 2; column-gap: 28px;}
+
+.features						{margin: 0 0 50px -23px; list-style-type: none; overflow: hidden;}
+.features li					{float: left; display: inline; width: 218px; margin-left: 23px; border: 1px solid #dedede; overflow: hidden;}
+.features li h3					{margin: 0 0 9px; background-color: #b0adad; background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.00, #d1cfcf), color-stop(0.70, #b0adad)); background-image: -moz-linear-gradient(center top, #d1cfcf 0%, #b0adad 70%);}
+.features li h3 a				{display: block; height: 35px; line-height: 35px; margin-left: 12px; padding-left: 16px; background: no-repeat left center; font-size: 18pt;}
+.features li h3 a:hover			{text-decoration: none;}
+.features li img				{width: 203px; margin: 0 0 8px 8px;}
+.features li p					{margin: 0 11px 10px;}
+.features li .btn				{float: right; display: block; width: 90px; height: 29px; line-height: 27px; margin: 0 11px 15px 0; padding-left: 8px; background: no-repeat; font-family: 'TungaRegular'; color: #fff; font-size: 11pt; text-transform: uppercase;}
+.features li.com h3 a			{background-image: url(../images/bullet_blue.png);}
+.features li.com .btn			{background-image: url(../images/btn_feat_more_blue.png);}
+.features li.res h3 a			{background-image: url(../images/bullet_yellow.png); color: #e6dc3b;}
+.features li.res .btn			{background-image: url(../images/btn_feat_more_yellow.png);}
+.features li.ins h3 a			{background-image: url(../images/bullet_red.png); color: #da4e53;}
+.features li.ins .btn			{background-image: url(../images/btn_feat_more_red.png);}
+.features li.env h3 a			{background-image: url(../images/bullet_green.png); color: #119854;}
+.features li.env .btn			{background-image: url(../images/btn_feat_more_green.png);}
+.features li.res h3 a			{text-shadow: 1px 1px 0px #a09e9e, -1px -1px 0px #a09e9e;}
+
+.portfolio						{padding: 3px 0 25px 15px;}
+.portfolio h3					{margin: 0 0 2px; color: #ad1c21; font-size: 30pt; letter-spacing: 0.50px; text-transform: uppercase;}
+.portfolio ul					{margin: 0 0 20px -26px; overflow: hidden; list-style-type: none;}
+.portfolio ul li				{float: left; display: inline; width: 127px; height: 127px; margin: 0 0 0 26px; border: 2px solid #c1bbbb;}
+.portfolio ul li a				{}
+.portfolio ul li img			{}
+
+/* FOOTER 1 ===================================== */
+#sub-section					{background: #e7e7e7 url(../images/bg_sub_section.png) repeat-x left bottom; border-top: 2px solid #c3c3c3; position: relative;}
+#sub-section .inner				{padding: 17px 0; overflow: hidden;}
+#sub-section .sect1				{float: left; display: inline; width: 270px; margin-right: 40px; margin-left: 15px;}
+#sub-section .sect2				{float: left; display: inline; width: 290px; margin-right: 13px;}
+#sub-section .sect3				{float: left; display: inline; width: 320px;}
+#sub-section h4					{height: 30px; line-height: 25px; margin: 0 0 15px; padding-left: 15px; background: url(../images/gray_bullet.png) no-repeat left center; color: #767474;}
+#sub-section p					{padding: 0 0 0 15px;}
+#sub-section ul					{padding: 0 0 0 15px; list-style-type: none;}
+#sub-section ul li				{}
+#sub-section ul li a			{color: #848484; text-decoration: underline; line-height: 18pt;}
+#sub-section ul li a:hover		{color: #1b84c8;}
+#sub-section blockquote			{width: 293px; height: 149px; padding: 8px 13px 0; background: url(../images/bg_quote_bubble.png) no-repeat; color: #fff; font-size: 12pt; line-height: 14pt;}
+#sub-section blockquote a		{float: right; font-size: 9pt; color: #fff; text-decoration: underline;}
+#sub-section blockquote a:hover	{text-decoration: none;}
+#sub-section cite				{display: block; margin: 0 0 20px; font-size: 12pt; line-height: 14pt; font-style: italic;}
+#sub-section p.btn				{padding-right: 25px; text-align: right;}
+#sub-section p.btn a			{display: inline-block; padding-right: 20px; background: url(../images/arrow_blue.png) no-repeat right center; font-family: 'TungaRegular'; font-size: 14pt; letter-spacing: 0.50px; text-transform: uppercase;}
+#sub-section .white-line		{width: 100%; height: 2px; background: #f4f4f4; border-bottom: 1px solid #e0e0e0; position: absolute; top: 0; left: 0;}
+
+#footer-nav						{clear: both; border-top: 1px solid #b2b2b2; border-bottom: 1px solid #898989; background-color: #5e5e5e; background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.00, #898989), color-stop(1.00, #5e5e5e)); background-image: -moz-linear-gradient(center top, #898989 0%, #5e5e5e 100%);}
+#footer-nav ul					{height: 34px; line-height: 31px; text-align: center; list-style-type: none;}
+#footer-nav ul li				{display: inline;}
+#footer-nav ul li a				{margin: 0 10px; font-family: 'TungaRegular'; color: #cdcdcd; font-size: 16pt; text-transform: uppercase; letter-spacing: -0.75px; text-decoration: none;}
+#footer-nav ul li a:hover		{border-bottom: 2px solid #ed1c24; color: #515050; color: #fff;}
+
+#footer							{color: #fefefe; font-size: 9pt; line-height: 18pt; background-color: #6e6e6e; background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.00, #858484), color-stop(1.00, #646464)); background-image: -moz-linear-gradient(center top, #858484 0%, #646464 100%);}
+#footer .inner					{padding: 20px 0 10px;}
+#footer .col-one				{float: left; display: inline; width: 200px; margin-right: 66px;}
+#footer .col-two				{float: left; display: inline; width: 200px; margin-right: 73px;}
+#footer .col-two a				{text-decoration: none;}
+#footer .col-two a:hover		{color: #1B82C4;}
+#footer .col-three				{float: left; display: inline; width: 200px; margin-right: 66px;}
+#footer .col-four				{float: left; display: inline; width: 145px;}
+#footer a						{color: #fefefe; text-decoration: underline;}
+#footer a:hover					{text-decoration: none;}
+#footer h5						{font-size: 18pt; text-transform: uppercase; letter-spacing: -0.75px;}
+#footer p						{}
+#footer ul						{list-style-type: none;}
+#footer ul li					{}
+#footer ul li a					{}
+#footer .copyright				{clear: both; color: #969494; text-align: right;}
+#footer .copyright a			{color: #969494; text-decoration: none;}
+#footer .copyright a:hover		{color: #fefefe;}
