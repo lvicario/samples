@@ -1,0 +1,23 @@
+@import 'global/common';
+
+// Section/Components
+@import 'components/language-selector';
+@import 'components/checkbox';
+@import 'vendor/jquery.fancybox';
+@import 'components/language-lightbox';
+
+.balance-option {
+	margin: 20px 0;
+	padding: 0 10px 0 20px;
+}
+
+.language-selector {
+    a {
+        padding: 0 50px 0 35px;
+        font-size: 12px;
+
+        @include media(">=tablet") {
+        	font-size: 14px;
+        }
+    }
+}

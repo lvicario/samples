@@ -1,0 +1,10 @@
+@import 'global/common';
+
+// Section/Components
+@import 'components/form';
+@import 'components/contact-option';
+
+.contact-container {
+    width: 270px;
+    margin: 0 auto;
+}

@@ -1,0 +1,51 @@
+//
+// CSS File for ezMark jQuery Plugin
+//
+.ez-hide {
+    opacity: 0;
+}
+
+.ez-checkbox {
+    display: inline-block;
+    background: url('../images/sprite.png') no-repeat 0 -1420px;
+
+    .ez-hide {
+        width: 21px;
+        height: 19px;
+    }
+
+    &.ez-checked {
+        background-position: -40px -1420px;
+    }
+}
+
+.ez-radio {
+    display: inline-block;
+    background: transparent url('../images/radio-black.png') 0 1px no-repeat;
+}
+
+.ez-selected {
+    background-position: 0 -19px;
+}
+
+
+// iPhone style icon
+.ez-checkbox-iphone {
+    @include transition(all .1s);
+    float: right;
+    display: inline-block;
+    margin-top: -5px;
+    background: transparent url('../images/checkbox_iphone_style.png') 0 0 no-repeat;
+    cursor:pointer;
+    vertical-align: middle;
+}
+
+.ez-checked-iphone {
+    background-position: -44px 0;
+}
+
+.ez-checkbox-iphone .ez-hide {
+    width: 46px;
+    height: 24px;
+    cursor:pointer;
+}

@@ -1,0 +1,76 @@
+@import '../components/checkbox';
+
+.login {
+
+    &-form {
+        width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+
+        .form-item {
+            
+        }
+
+        .form-text {
+            height: 32px;
+            line-height: 32px;
+            padding-left: 40px;
+            background-image: url(../images/sprite.png);
+            background-repeat: no-repeat;
+            font-size: 16px;
+
+            &[type="text"] {
+                background-position: 10px -936px;
+            }
+
+            &[type="password"] {
+                background-position: 10px -996px;
+            }
+        }
+
+        .error-client-side {
+            position: relative;
+            display: block;
+            margin-top: 7px;
+            padding: 8px 10px;
+            background-color: #750101;
+            text-align: center;
+
+            &:before {
+                @include triangle(top, 10px, #750101);
+                position: absolute;
+                top: -10px;
+                left: 50%;
+                margin-left: -5px;
+                content: " ";
+            }
+        }
+
+        .form-actions {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .form-submit {
+
+        }
+    }
+
+    &-option {
+        @extend .clearfix;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        line-height: 20px;
+
+        a {
+            color: #fff;
+        }
+    }
+
+    &-blurb {
+
+        a {
+            color: #ffe000;
+        }        
+    }
+}

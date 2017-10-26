@@ -1,0 +1,50 @@
+.language-selector {
+    // width: 100%;
+
+    ul {
+        @extend .clearfix;
+        padding-left: 0;
+        list-style-type: none;
+    }
+
+    li {
+        border-bottom: 1px solid #970404;
+    }
+
+    a {
+        position: relative;
+        display: block;
+        height: 55px;
+        line-height: 55px;
+        padding: 0 50px 0 35px;
+        border-bottom: 1px solid #af0000;
+        background-color: #a30404;
+        color: #fff;
+        font-size: 16px;
+        text-decoration: none;
+
+        &:before {
+            position: absolute;
+            top: 50%;
+            right: 25px;
+            content: " ";
+            width: 13px;
+            height: 24px;
+            margin-top: -12px;
+            background: url(../images/sprite.png) no-repeat 0 -1060px;
+        }
+
+        &:hover {
+            color: #e5c99b;
+        }
+
+        &:hover:before {
+            background-position: 0 -1120px;
+        }
+    }
+
+    li:last-child,
+    li:last-child a {
+        border-bottom: none;
+    }
+}

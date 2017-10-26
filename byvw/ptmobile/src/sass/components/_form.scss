@@ -1,0 +1,112 @@
+button,
+input,
+select,
+textarea {
+    margin: 0;
+    padding: 6px 8px;
+    border: none;
+    font-size: 12px;
+    vertical-align: middle;
+}
+
+button,
+input {
+    *overflow: visible;
+    line-height: normal;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    padding-left: 15px;
+    padding-right: 15px;
+    cursor: pointer;
+    -webkit-appearance: button;
+}
+
+label,
+select,
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+input[type="radio"],
+input[type="checkbox"] {
+    cursor: pointer;
+}
+
+input[type="search"] {
+    -webkit-box-sizing: content-box;
+         -moz-box-sizing: content-box;
+                    box-sizing: content-box;
+    -webkit-appearance: textfield;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+}
+
+textarea {
+    overflow: auto;
+    vertical-align: top;
+}
+
+select {
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: #fff;
+}
+
+option {
+    color: #000;
+}
+
+.form-item {
+    @extend .clearfix;
+    margin-bottom: 12px;
+}
+
+.form-action {
+    margin-bottom: 20px;
+}
+
+.form-horizontal .form-label {
+    float: left;
+}
+
+.form-horizontal .form-field {
+    float: left;
+}
+
+.form-vertical .form-label {
+    width: 100%;
+}
+
+.form-vertical .form-field {
+    width: 100%;
+}
+
+// Error notification/messages
+.form-notification,
+.error-client-side {
+    color: #ff9939;
+}
+
+.form-notification {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.error-client-side {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: -5px;
+}
