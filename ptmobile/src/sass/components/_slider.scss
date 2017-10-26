@@ -1,0 +1,65 @@
+@import '../vendor/jquery.bxslider';
+
+// Slider
+.main-slider {
+	max-width: $container-max-width;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.main-slider .bx-wrapper {
+	margin-bottom: 0;
+}
+
+.main-slider .bx-wrapper img {
+    width: 100%;
+}
+
+.main-slider .bx-wrapper .bx-viewport {
+	@include box-shadow(none);
+    border: none;
+    left: 0;
+}
+
+// Controls
+.main-slider .bx-wrapper .bx-controls-direction a {
+	width: 9px;
+	height: 23px;
+	background-image: url(../images/sprite.png);
+	@include transition(none);
+}
+
+.main-slider .bx-wrapper .bx-prev {
+	background-position: 0 -760px;
+	&:hover {
+		background-position: 0 -880px;
+	}
+}
+
+.main-slider .bx-wrapper .bx-next {
+	background-position: 0 -700px;
+	&:hover {
+		background-position: 0 -820px;
+	}
+}
+
+@include media(">=tablet") {
+	.main-slider .bx-wrapper .bx-controls-direction a {
+		width: 9px;
+		height: 23px;
+	}
+
+	.main-slider .bx-wrapper .bx-prev {
+		background-position: 0 -760px;
+		&:hover {
+			background-position: 0 -880px;
+		}
+	}
+
+	.main-slider .bx-wrapper .bx-next {
+		background-position: 0 -700px;
+		&:hover {
+			background-position: 0 -820px;
+		}
+	}
+}

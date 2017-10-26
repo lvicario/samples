@@ -1,0 +1,33 @@
+.logo {
+    position: relative;
+    width: 100%;
+    margin: 10px 0 0;
+    text-align: center;
+
+    a {
+        @extend .inline-block;
+        position: relative;
+        width: 130px;
+        height: 31px;
+        margin-right: 20px;
+        text-indent: -9999px;
+    }
+    
+    img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+    }
+}
+
+@include media(">=tablet") {
+    .logo, .logo a {
+        width: 130px;
+        height: 31px;
+    }
+
+    .logo {
+        float: left;
+    }
+}

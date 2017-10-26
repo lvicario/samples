@@ -1,0 +1,178 @@
+*,
+*:before,
+*:after {
+    @include box-sizing();
+}
+
+html {
+    // font-size: 200%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: $default-bg-color;
+    color: $default-font-color;
+    font-weight: normal;
+    font-family: $default-font-family;
+    font-size: $default-font-size;
+    line-height: $default-line-height;
+    text-decoration: none;
+    -webkit-text-size-adjust: 100%; // Stops Mobile Safari from auto-adjusting font-sizes
+
+    @include media(">=tablet") {
+        font-size: 13px;
+        line-height: 18px;
+    }
+}
+
+// Links
+a {
+    color: $default-link-color;
+    text-decoration: underline
+}
+
+a:hover {
+    @include transition();
+    color: $default-link-color-hover;
+    text-decoration: none;
+}
+
+a:focus {
+    outline: none;
+}
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol, table, dl, form, menu {
+    margin: 0 0 $default-element-margin-bottom;
+}
+
+h1, .h1 {font-size: $h1; color: $default-heading-color; font-weight: normal;}
+h2, .h2 {font-size: $h2; color: $default-heading-color; font-weight: normal;}
+h3, .h3 {font-size: $h3; color: $default-heading-color; font-weight: normal;}
+h4, .h4 {font-size: $h4; color: $default-heading-color; font-weight: normal;}
+h5, .h5 {font-size: $h5; color: $default-heading-color; font-weight: normal;}
+h6, .h6 {font-size: $h6; color: $default-heading-color; font-weight: normal;}
+
+.page-title {
+    margin-bottom: 15px;
+    padding-bottom: 3px;
+    border-bottom: 1px solid $sitewide-border-color;
+    font-weight: normal;
+    text-transform: uppercase;
+
+    @include media(">=tablet") {
+        text-align: center;
+    }
+}
+
+.page-title-alt {
+    height: 50px;
+    line-height: 50px;
+    padding-left: $side-gap;
+    padding-right: $side-gap;
+    background-color: #af0000;
+    // background: #af0000 url(../images/sprite.png) no-repeat $side-gap -747px;
+    color: #e5c99b;
+    text-align: center;
+
+    @include media(">=tablet") {
+        padding-left: $side-gap + $side-gap-addition;
+        padding-right: $side-gap + $side-gap-addition;
+        // background-position: ($side-gap + $side-gap-addition) -747px;
+    }
+}
+
+ul {
+    padding-left: 15px;
+}
+
+ol {
+    padding-left: 22px;
+}
+
+.unstyled {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+blockquote {
+    padding-left: 30px;
+    background: url(../images/quote_white.png) no-repeat left top;
+    background-size: 18px auto;
+    font-size: 16px;
+    line-height: 24px;
+
+    @include media(">=tablet") {
+        padding-left: 50px;
+        background-size: auto;
+        font-size: 17px;
+    }
+}
+
+html, button, input, select, textarea {
+    color: #222;
+}
+
+// A better looking default horizontal rule
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid $default-hr-border-color;
+    margin: 35px 0;
+    padding: 0;
+}
+
+// Remove the gap between images and the bottom of their containers
+img {vertical-align: middle; max-width: 100%; height: auto;}
+
+// Remove default fieldset styles
+fieldset {border: 0; margin: 0; padding: 0;}
+
+// Allow only vertical resizing of textareas
+textarea {resize: vertical;}
+
+// Placeholder
+::-webkit-input-placeholder {color: $input-color-placeholder;}
+:-moz-placeholder           {color: $input-color-placeholder;}
+::-moz-placeholder          {color: $input-color-placeholder;}
+:-ms-input-placeholder      {color: $input-color-placeholder;}
+
+// Icons
+[class^="icon-"],
+[class*=" icon-"] {
+    @include iconify-text('../images/sprite.png', -40px, -1180px, 41px, 41px);
+}
+
+.icon {
+    &-bubble-rounded        {background-position: -40px -1180px;}
+    &-email-rounded         {background-position: 0 -1240px;}
+    &-facebook-rounded      {background-position: -60px -1240px;}
+    &-twitter-rounded       {background-position: 0 -1300px;}
+    &-bubble-alt-rounded    {background-position: -60px -1300px;}
+    &-phone-rounded         {background-position: 0 -1360px;}
+    &-hand-rounded          {background-position: -60px -1360px;}
+}
+
+main {
+    padding: 1px 0;
+}
+
+.container {
+    position: relative;
+    max-width: $container-max-width;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: $side-gap;
+    padding-right: $side-gap;
+
+    @include media(">=tablet") {
+        padding-left: $side-gap + $side-gap-addition;
+        padding-right: $side-gap + $side-gap-addition;
+    }
+}
